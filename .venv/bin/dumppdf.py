@@ -466,7 +466,8 @@ def main(argv: Optional[List[str]] = None) -> None:
                 show_fallback_xref=args.show_fallback_xref,
             )
 
-    outfp.close()
+    if args.outfile != "-":
+        outfp.close()
 
 
 if __name__ == "__main__":

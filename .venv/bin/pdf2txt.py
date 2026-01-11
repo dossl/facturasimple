@@ -309,7 +309,8 @@ def parse_args(args: Optional[List[str]]) -> argparse.Namespace:
 def main(args: Optional[List[str]] = None) -> int:
     parsed_args = parse_args(args)
     outfp = extract_text(**vars(parsed_args))
-    outfp.close()
+    if parsed_args.outfile != "-":
+        outfp.close()
     return 0
 
 
