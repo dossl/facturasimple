@@ -1,0 +1,14 @@
+[version: 1.5.2]
+
+	1.5.2 El módulo a nivel de producto es opcional
+	1.5.1 Código de producto (B-5 y C-9) no puede ser vacío.
+	1.5.0 Se hacen ajustes de acuerdo a la cartilla "FORMATO DE INFORME PROVEEDORES DE SOFTWARE" v01.3*
+	1.0.8 Se ajusta el campo TipoRegistro en Item_DetalleProcesos e Item_DetalleProcesosCubiertos
+	1.0.7 Se ajusta cardinalidad de Soluciones y Clientes del Proveedor (De 99/99 pasó a 999/99999)
+	1.0.6 Se ajusta texto fijo, se elimina período máximo (205012) y ajustes menores
+	1.0.5 Se cambió la definición del campo de texto de la declaración porque validaba con texto vacío
+	1.0.4 Los clientes, las soluciones contratadas y los procesos cubiertos por ellas tienen mínimo FechaDesde = 1/7/2012
+	1.0.3 Se incluye el texto fijo de la declaración
+	1.0.2 Se renombra tag Caratula, se elimina un tag de Declaracion (estaba dos veces), se reubica tag Signature
+	1.0.1 Se agrega campo texto de la declaración y a nivel de la solución se agrega código de producto según el proveedor
+	1.0.0 Versión inicial del XSD, de acuerdo a cartilla "FORMATO DE INFORME PROVEEDORES DE SOFTWARE" v01

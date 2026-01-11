@@ -1,0 +1,7688 @@
+SOURCE_PDF: /Users/sergiolazaro/Documents/GitHub/facturasimple/Fuentes-Gub.uy/Generales-Documentos de Interes/Formato_CFE_v24-Publicado.pdf
+EXTRACTED_AT: 2026-01-11T16:27:34.127260
+PARAGRAPH_RULE: paragraphs are blocks separated by blank lines in extracted text; numbering restarts each page.
+
+=== PAGE 1 ===
+[P1] DDOOCCUUMMEENNTTOO FFUUNNCCIIOONNAALL 
+FFOORRMMAATTOO DDEE LLOOSS CCFFEE 
+CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+VVEERRSSIIÓÓNN 2244--3300//0066//22002233
+
+=== PAGE 2 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+Fecha: 
+3300//0066//22002233 
+Í N D I C E 
+ACTUALIZACIONES DE VERSIÓN ............................................................................................................................................................................................................................................................ 3 
+INTRODUCCIÓN ...................................................................................................................................................................................................................................................................... 15 
+1. 
+CONTENIDO DE LOS COMPROBANTES FISCALES ELECTRÓNICOS ........................................................................................................................................................................................................ 16 
+2. 
+2.1. ZONAS DEL COMPROBANTE FISCAL ELECTRÓNICO....................................................................................................................................................................................................................... 16 
+2.2. DETALLES POR ZONA ............................................................................................................................................................................................................................................................ 18 
+A.- ENCABEZADO .................................................................................................................................................................................................................................................................... 19 
+B.- DETALLE DE PRODUCTOS O SERVICIOS ................................................................................................................................................................................................................................... 48 
+C.- SUBTOTALES INFORMATIVOS ................................................................................................................................................................................................................................................ 58 
+D.- INFORMACIÓN DE DESCUENTOS O RECARGOS ......................................................................................................................................................................................................................... 59 
+E.- MEDIOS DE PAGO .............................................................................................................................................................................................................................................................. 63 
+F.- INFORMACIÓN DE REFERENCIA ............................................................................................................................................................................................................................................. 64 
+G.- CONSTANCIA AUTORIZACIÓN PARA EMISIÓN DE CFE (CAE) ...................................................................................................................................................................................................... 66 
+H.- FECHA Y HORA DE FIRMA ELECTRÓNICA AVANZADA DEL COMPROBANTE ...................................................................................................................................................................................... 68 
+I.- FIRMA ELECTRÓNICA AVANZADA DEL COMPROBANTE COMPLETO ................................................................................................................................................................................................ 69 
+J.- ANEXO-ADENDA ................................................................................................................................................................................................................................................................ 70 
+K.- COMPLEMENTO FISCAL ....................................................................................................................................................................................................................................................... 71 
+FORMATO DE LA REPRESENTACIÓN IMPRESA ........................................................................................................................................................................................................................................ 75 
+TABLAS ......................................................................................................................................................................................................................................................................................... 82 
+A.- TIPO DE COMPROBANTE ........................................................................................................................................................................................................................................................ 82 
+B.- TASAS DE IVA ...................................................................................................................................................................................................................................................................... 83 
+C.- PERCEPCIÓN/RETENCIÓN ....................................................................................................................................................................................................................................................... 83 
+D.- TABLA DE MONEDAS ............................................................................................................................................................................................................................................................. 85 
+ESTÁNDAR INTERNACIONAL ISO 4217 .................................................................................................................................................................................................................................... 85 
+ 
+OTRAS ............................................................................................................................................................................................................................................................................... 86 
+ 
+E.- IDENTIFICACIÓN DEL RECEPTOR Y ENVÍO OBLIGATORIO DE E-TICKETS Y SUS NOTAS DE CORRECIÓN .............................................................................................................................................................. 86 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 2 de 86
+
+=== PAGE 3 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+Actualizaciones de Versión 
+Versión 24- 30/06/2023 
+ A-C16, A-C51 y A-C68: se agrega descripción 
+ B-C8 y B-C22.1: se agrega descripción 
+ F-C2 Indicador de referencia global: se modifica descripción 
+ F-C3, C4 y C5: se agrega validación. 
+ F-C6 Razón de referencia: se modifica descripción 
+ Formato Representación Impresa: se agrega información relativa a la impresión de las leyendas o constancias obligatorias cuando la 
+normativa preceptivamente establezca su ubicación. 
+Versión 23-3- 13/12/2022 
+ B-C2 Tipo de código: se modifica nomenclatura código GTIN en descripción 
+Versión 23-2- 10/08/2022 
+ B-C4: se modifica texto de la validación del indicador 16 
+ D-C7: se modifica texto de la validación del indicador 16 
+Versión 23-1- 27/07/2022 
+Versión 23 – 02/05/2022 
+ A-C18: se agrega validación 
+ A-C21: se agrega validación 
+ A-60: se agrega validación para e-boleta de entrada 
+ A-C63, C64 y C65: se agrega información a la validación para e-boleta de entrada 
+ 2.1 Zonas del Comprobante Fiscal Electrónico : se agrega información en Tabla de obligatoriedad para zona K- Complemento Fiscal 
+ A-C10: se especifica validación si se trata de comprobantes de venta por cuenta ajena 
+ A-C20: se modifica código de obligatoriedad 
+ A-C21: se agrega validación para operaciones por cuenta ajena 
+ A-C60: se agregan validaciones 
+ A-C62: se agrega descripción y validación 
+ A-C63, A-C64 y A-C65: se agrega validación 
+ A-C66: se modifica código de obligatoriedad para e-remito de exportación 
+ B-C2: se agrega información 
+ B-C3: se agrega validación 
+ B-C4: se agrega descripción, y validación para indicadores 16 y 17 
+ D-C7: se agrega descripción, y validación para indicadores 16 y 17 
+ En Zona K Complemento fiscal: se agrega información, código de obligatoriedad y validación correspondiente a e-boleta de entrada 
+ K-C1: se agrega descripción y código de obligatoriedad para e-boleta de entrada 
+ K-C2: se agrega descripción, validación y código de obligatoriedad para e-boleta de entrada 
+ K-C3: se agrega código de obligatoriedad para e-boleta de entrada 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 3 de 86
+
+=== PAGE 4 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+ K-C4: se agrega descripción y código de obligatoriedad para e-boleta de entrada 
+ K-C5: se agrega código de obligatoriedad para e-boleta de entrada 
+ Formato representación impresa: se agrega información en “Ejemplares tributarios obligatorios” y en “Identificación receptor” 
+ Tabla E: se modifica tope para Identificación del receptor y envío obligatorio de e-tickets y sus notas de corrección 
+Versión 22-2- 03/08/2021 
+ A-C14: se agrega modalidad de venta para régimen Tax Free-Dto.378/2012, se modifica validación y código de obligatoriedad para e-
+Versión 22-1- 25/05/2021 
+Versión 22- 15/03/2021 
+factura 
+ A-C61: se agrega validación para NIE 
+ A-C62: se agrega validación para NIE 
+ A-C112: se agrega validación 
+ A-C21: se agrega descripción y validación 
+ A-C110: se agrega validación 
+ A-C112: se agrega descripción y validación para e-boleta de entrada y sus notas de corrección 
+ B-C4: se agrega descripción y validación por nuevo indicador de facturación (17) para e-boleta de entrada y sus notas de corrección 
+ D-C7: se agrega descripción y validación por nuevo indicador de facturación (17) para e-boleta de entrada y sus notas de corrección. 
+ 2.1 Zonas del CFE: se modifican códigos de obligatoriedad combo exportación en Anexo Adenda 
+ A-C14: se agrega validación y se modifican códigos de obligatoriedad 
+ A-C16: se modifica código de obligatoriedad 
+ A-C18: se agrega validación y se modifica código de obligatoriedad para e-boleta de entrada 
+ A-C21: se modifica código de impresión 
+ A-C51: se modifica código de obligatoriedad 
+ En Zona Encabezado- Área Receptor se modifican códigos de obligatoriedad para e-boleta de entrada y venta por cuenta ajena 
+ A-C60; se modifica validación y códigos de obligatoriedad 
+ A-C61: se modifica códigos de obligatoriedad 
+ A-C62: se agrega información y se modifica códigos de obligatoriedad 
+ A-C62.1, A-C63, A-C64 , A-C65, A-C66 y A-C66.1: se agregan validaciones y se modifican códigos de obligatoriedad 
+ A-C68: se modifica código de obligatoriedad 
+ B-8: se modifica código de obligatoriedad 
+ B- Tabla de distribución del descuento: se modifica código de obligatoriedad para e- resguardo 
+ B- Tabla de distribución del recargo: se modifica código de obligatoriedad para e-resguardo 
+ B-22.1: se modifican códigos de obligatoriedad 
+ J Anexo Adenda: se modifica información y se modifican códigos de obligatoriedad para combo de exportación. 
+ K-C2: se agrega código de tipo documento receptor NIFE y validación 
+ K-C3: se agrega validación 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 4 de 86
+
+=== PAGE 5 ===
+[P1] Versión 21- 29/05/2020 
+COMPROBANTE FISCAL ELECTRÓNICO 
+ K-C4: se agrega información en descripción 
+ Formato Representación Impresa/Identificación receptor: se agrega información para identificación en e-boleta de entrada 
+ A-C4.1: se agrega nuevo campo: Número interno 
+ A-C5.1: se agrega nuevo campo: Fecha valor 
+ A-C10: se agrega validación 
+ A-C21: se agrega nuevo campo: Indicador compra M/E para reventa 
+ A-C60: se modifica texto validación 
+ A-C62: se agrega descripción y validación 
+ B-Detalle de Productos o Servicios/Tabla de códigos del ítem: se modifican códigos de obligatoriedad 
+ B-C2: se especifica la descripción del tipo de código 
+ B-C4: se explicita forma de impresión para indicador de facturación 7 
+ B-C7.1: se agrega nuevo campo: NCM 
+ D-C7: se explicita forma de impresión para indicador de facturación 7 
+ G-C5: se agrega validación 
+ Formato Representación Impresa: 
+o 
+Identificación del emisor: se agrega información para exonerado parcial y para IVA mínimo. 
+ Identificación del receptor: se modifica texto de la información 
+ Tabla Otras: se corrige nombre moneda UYR 
+ Tablas: Se incorpora tabla con calendario y detalle de topes establecidos para envío obligatorio de e-tickets y sus notas de corrección 
+Versión 20- 03/05/2019 
+ A-C10: se agrega descripción y validación 
+ A-C17: se agrega descripción. 
+ A-C20: se agrega descripción y se modifica leyenda de la validación 
+ A-C112: se agrega descripción y validación. 
+ B-C4 Indicador de facturación: 
+o se agrega descripción y validación 
+o se agrega indicador de facturación 16 
+ D-C7 indicador de facturación: 
+o se agrega indicador de facturación 16 
+o se agrega descripción y validación 
+ G-C5: se agrega validación 
+ Formato Representación Impresa: 
+Identificación del comprobante: se flexibiliza ubicación de la leyenda Pagos por cuenta de terceros. 
+o 
+o Totales: se agrega información para IVA mínimo. 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 5 de 86
+
+=== PAGE 6 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+Versión 19.1- 22/03/2019 
+ En Zona Encabezado- Área Receptor: se agrega validación 
+ En Zona Medios de Pago: se elimina obligación de su identificación. 
+o Pie del comprobantes/Leyenda: se agrega información a mostrar 
+Versión 19- 28/08/2018 
+ 2.1 Zonas del Comprobante Fiscal Electrónico : se modifica información en Tabla de obligatoriedad para: 
+o Medios de Pago 
+o Complemento Fiscal. 
+ A-C6.1 – Se ajusta información en validación. 
+ A-C18 Secreto Profesional: se incorpora nueva validación. 
+ A-C19: se incorpora nuevo campo “Indicador Pagos por cuenta de terceros”. 
+ A-C20: se incorpora nuevo campo “Indicador Cobranza propia”. 
+ En Zona Encabezado- Área Receptor se modifican códigos de obligatoriedad del área. 
+ A-C60: se agrega descripción y validación. 
+ A-C62; se agrega descripción y validación. 
+ A-C118: se modifica nombre del campo y se agrega descripción. 
+ A-C123: se modifica nombre del campo y se agrega descripción. 
+ A-C129: se agrega validación. 
+ A-C130: se agrega validación. 
+ B-C4: se agrega descripción para los indicadores 4 y 6, y validación para los 6 y 7. 
+ En Zona Descuentos y Recargos se agrega validación 
+ D-C7: se agrega descripción para el indicador 4. 
+ En Zona Medios de Pago: 
+o se modifican códigos de obligatoriedad de la zona y se agrega nueva validación 
+o E-C2: se modifica modo de impresión. 
+o E-C3: se agrega descripción. 
+ En Zona Información de referencia se agrega validación 
+ En Zona Adenda: se agrega información. 
+ En Zona Complemento Fiscal: 
+o Obligatoriedad de la Zona: se modifica códigos de obligatoriedad y se agrega validación 
+o K-C5: se modifica descripción. 
+ Formato Representación Impresa: 
+o 
+o 
+o 
+Identificación del emisor electrónico: se agrega información para emisor electrónico exonerado 
+Identificación del comprobante: se agrega información para e-Remito, para comprobantes que documenten pagos por cuenta 
+de terceros (reintegro de gastos) y cobranzas propias. 
+Identificación del receptor: operaciones a Consumo Final/Recuadro Consumo Final: se excluye e-resguardo 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 6 de 86
+
+=== PAGE 7 ===
+[P1] Versión 18- 17/10/2017 
+Versión 17- 23/03/2017 
+COMPROBANTE FISCAL ELECTRÓNICO 
+o Cuerpo del comprobantes: se agrega información para Medios de pago 
+o Pie del comprobante: 
+ Sello digital: se modifica información/Código de seguridad del CFE. 
+ Leyenda: se agrega información para e-Boleta de entrada. 
+ A.C110: se agrega descripción. 
+ D- Tablas de Monedas: se incorpora la Tabla “Otras” 
+ Se incorporan nuevos tipos de CFE: e-Boleta de entrada y sus notas de corrección 
+ 2.1 Zonas del Comprobante Fiscal Electrónico : se modifica información en Tabla de obligatoriedad para la Adenda 
+ A-C4: se agrega validación 
+ A-C6.1 a A-C6.6: se incorporan nuevos campos para identificar al titular de la mercadería transportada 
+ A-C10: se agrega descripción y validación por nuevo indicador de montos brutos 
+ A-C17: se incorpora nuevo campo “IVA al día” 
+ A-C18: se incorpora nuevo campo “Secreto Profesional” 
+ A-C40: se agrega descripción 
+ En Zona Encabezado- Área Receptor: se modifica códigos de obligatoriedad y se agrega validación 
+ A-C60: se incorpora nuevo tipo de identificación (NIFE), se agrega descripción y validación, y nota al pie correspondiente a la impresión 
+de “Otros”. 
+ A-C61: se agrega validación 
+ A-C62: se agrega descripción y validación. 
+ A-C62.1: se agrega descripción y validación 
+ A-C110: se modifica descripción y se agrega nota al pie correspondiente a la impresión. 
+ A-C112; se agrega descripción y validación 
+ A-C115: se agrega validación 
+ A-C116: se agrega validación 
+ A-C117: se agrega validación 
+ A-C130: se agrega descripción y validación 
+ B-C4: se especifica la descripción y se incorporan nuevos indicadores de facturación 
+ B-C22.1: se incorpora nuevo campo en B- Tabla de Retenciones/Percepciones 
+ En Zona D Información de descuentos y recargos: se agrega información 
+ D- C6: se especifica la descripción. 
+ D-C7: se agrega descripción y se incorporan nuevos indicadores de facturación 
+ F- C2: se especifica descripción. 
+ F-C6: se agrega descripción y validación 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 7 de 86
+
+=== PAGE 8 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+ G-C5 y C6: se agregan nuevos campos en G: Constancia Autorización para emisión de CFE 
+ J- Adenda: se agrega información 
+ En Formato Representación Impresa se agrega contenido en: 
+o 
+o 
+o 
+Identificación del emisor: se agrega información para el contribuyente exonerado 
+Identificación del comprobante: se especifica información y se agregan nuevos tipos de CFE 
+Identificación del receptor: se agrega información para e-Boleta de entrada y sus notas de corrección. 
+ Pie del Comprobante- Fecha Vencimiento del CAE: se flexibiliza impresión 
+ 3- Tablas- A.- Tipo de Comprobante: se incorpora Tipo de Comprobante e-Boleta de entrada y sus notas de corrección 
+ D- Tablas de Monedas: se elimina la Tabla “Otras” 
+Versión 16 – 06/06/2016 
+ A-C5: se modifica validación 
+ A-C8: se amplía información en validación 
+ A-C130; se modifica obligatoriedad de impresión 
+ B-C4: se agrega descripción. 
+ B-C11: se modifica validación. 
+ F-C6: se agrega información en descripción. 
+ F-C7: se modifica validación 
+ K-C4: se agrega descripción 
+ En Formato Representación Impresa se agrega contenido en 
+o 4 Cuerpo del comprobante 
+ Totales: se agrega información 
+ Descuentos: se agrega información 
+Versión 15.1 - 02/09/2015 
+ A-C119 y A-C120: se incorpora asterisco (*) 
+ A-C125 y A-C125.1: se cambia código obligatoriedad para e-resguardo 
+Versión 15 - 05/08/2015 
+ A-C16: se agrega nuevo campo “Información adicional comprobante” 
+ A-C47: se modifica validación 
+ A-C51: se agrega nuevo campo “Información adicional emisor” 
+ A-C60 61, C62, C62.1: se modifica código de obligatoriedad para CFE de exportación 
+ A-C111: se modifica obligatoriedad de impresión. 
+ A-C112, C113, C114, C115, C116, C117 y 118: se incorpora validación y asterisco (*) 
+ A-C123: se incorpora validación y asterisco (*) 
+ A-C124: se modifica validación para e-Remito de exportación. 
+ A-C125: se modifica descripción y validación 
+ A-C125.1: se incorpora nuevo campo “Créditos fiscales” 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 8 de 86
+
+=== PAGE 9 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+ A- Tabla de Retenciones/Percepciones(A-C127 y C128): se modifica denominación y descripción 
+ A-C129; se agrega validación y asterisco (*) 
+ B-C4: se agrega descripción 
+ B-C6: se modifica descripción y validación, y se agrega asterisco (*) 
+ B-C11: se modifica validación y se agrega asterisco (*) 
+ B- Tabla de Retenciones/Percepciones: se modifica denominación, descripción y validación 
+ D-C3, C5 y C7: se modifica código de obligatoriedad 
+Versión 14 – 16/04/2015 
+ Versión anulada. 
+Versión 13 – 26/05/2014 
+ 2.1: Zonas del CFE: 
+o se eliminan Zonas L y M, 
+o se modifican Zona I y K. 
+ Se incorporan actualizaciones de la versión 11-1 
+ A-C60: se modifica validación 
+ A-C126: se modifica descripción y validación. 
+ A-C128: se incorpora validación. 
+ B-C4: se modifica nota al pie correspondiente a la impresión del indicador de facturación. 
+ B-C1: se modifica descripción y validación. 
+ B-C11: se modifica validación. 
+ I-3: se modifica descripción 
+ Zona K: se modifica información y contenido, 
+o se eliminan los campos tipo CFE, Serie y Nº de comprobante (K1, 2 y 3 en versión 12) 
+o se renumeran los campos: RUC emisor, Cód. tipo documento, Nº documento y Nombre mandante (K4, 5, 6 y 7 en versión 12) 
+o se agrega campo K3 Código país. 
+ En Formato Representación Impresa: 
+o 
+ se incorporan tipos de CFE ventas por cuenta ajena en: 
+ 2-Identificación del comprobante, 
+ 3-Identificación del receptor 
+ 5-Pie del comprobante-Leyenda. 
+o 3-Identificación del receptor 
+o Se modifica información en Complemento Fiscal. 
+Versión 12 – 12/12/2013 
+ Se incorpora tipo de comprobantes: “Ventas a nombre propio y por cuenta ajena” 
+ Se incorporan Zonas K, L y M 
+ B-C11: se modifica validación 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 9 de 86
+
+=== PAGE 10 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+ I-C3: se modifica descripción de la Firma Electrónica Avanzada del Comprobante Completo 
+ En Formato Representación Impresa se incorpora Complemento Fiscal 
+Versión 11-1 – 26/01/2014 
+ A-C13: se modifica descripción y se elimina asterisco. 
+ A-C14: se modifica código de obligatoriedad. 
+ A-C15: se modifica descripción y se agrega código en validación. 
+ En Formato Representación Impresa en: 
+Versión 11 – 29/11/2013 
+Identificación receptor en operaciones de exportación se agrega domicilio 
+o 
+o Adenda: se agrega información. 
+ Se incorpora tipo de comprobantes: e-Factura de Exportación y sus notas de corrección, e-Remito de Exportación 
+ A-C13, A-C14 y A-C15: se incorporan campos para los comprobantes de exportación 
+ A-C60: se agrega validación y se modifica código de obligatoriedad. 
+ B-C11: se modifica validación y código de obligatoriedad 
+ F-C3: se modifica código obligatoriedad de impresión. 
+ J-Anexo-Adenda: se recomienda tipo de formato. 
+ En Formato Representación Impresa 
+o 2- Identificación del tipo de Comprobante: se agregan nuevos tipos de CFE de exportación. 
+o 3- Identificación del receptor: se agrega obligación de impresión en exportación 
+o 5- Pie del Comprobante: 
+ Sello Digital: se incorpora parámetros por nuevos CFE de exportación 
+ Leyenda: se incorpora frase por nuevos CFE de exportación. 
+ 3 Tablas A. Tipo de Comprobantes: se incorporan nuevos tipos de CFE de exportación 
+Versión 10-21/10/2013 
+ A-C7 y A-C12 se modifica validación. 
+ A-C47: se agrega asterisco de obligatoriedad. 
+ A-C60, A-C61 y A-C63: se modifica código de obligatoriedad para el e-resguardo. 
+ A-C62-1: se modifica descripción 
+ A-C128 y A-C129: se modifica descripción. 
+ B-C4: se explicita forma de impresión para indicador de facturación. 
+ B-C22 y B-C23: se modifica validación. 
+Versión 09 – 05/08/2013 
+ A-C124 y 125: se incorpora validaciones. 
+Versión 08 – 31/07/2013 
+Versión anulada. 
+Versión 07 – 16/07/2013 
+ A-C60,61 y 62: se modifica validación 
+ A-C62.1: se incorpora campo 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 10 de 86
+
+=== PAGE 11 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+ A-C66: se modifica nombre del campo. 
+ A-C66.1: se incorpora campo 
+ A-69 a A-C70: se incorporan campos 
+ A-C111: se agrega validación y código de obligatoriedad. 
+ A-C121 y A-C122: se agrega validación y código de obligatoriedad. 
+ A-C125: se modifica nombre del campo 
+ A-C127: se modifica descripción, validación y se agrega asterisco de obligatoriedad. 
+ A-C128: se agrega asterisco de obligatoriedad. 
+ B-C4: se modifica descripción validación indicador facturación 9 
+ B-C20: se modifica descripción, validación y obligatoriedad de impresión. 
+ B-C21 a B-C23: se modifica obligatoriedad de impresión. 
+ H-C1: se modifica validación 
+ En Formato Representación Impresa: Se flexibiliza ubicación de la información necesaria para la distribución del CFE. 
+Versión 06 – 31/01/2013 
+ A-C48 y A-C64: se modifica tipo 
+Versión 05 – 29/01/2013 
+Versión 04 – 21/09/2012 
+Versión 03 – 07/09/2012 
+ A-C68: se incorpora campo. 
+ D-C7: se modifica tipo y se agregan validaciones. 
+ En Formato Representación Impresa 3- Identificación del receptor: Se flexibiliza modo de impresión. 
+ En 4-B.- Tasas de IVA, se agregaron 3 decimales a las tasas. 
+ A-C61: se modifica validación. 
+ En Formato Representación Impresa: 
+o Se flexibiliza ubicación de CAE. 
+ A-C43: se modifica obligación de impresión. 
+ A-C61: se modifica obligación de impresión. 
+ A-C130: se modifica validación. 
+ En Formato Representación Impresa: 
+o Información General: se agrega campo: Personalización. 
+o 3-Identificación del receptor: se modifica impresión para operaciones a consumo final cuyo monto neto es superior a 10.000 UI. 
+o 4-Cuerpo del comprobante: 
+ Fecha del comprobante: se flexibiliza modo de impresión. 
+ Totales: se modifica obligación de impresión. 
+o 5-Pie del comprobante: se modifica modo de impresión del código de seguridad. 
+o Adenda: se flexibiliza impresión y su ubicación dentro del cuerpo del CFE. 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 11 de 86
+
+=== PAGE 12 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+Versión 02 – 26/07/2012 
+ En Formato Representación Impresa se modifica: 
+o impresión en varias hojas 
+o impresión de la Adenda 
+Versión 01 – 01/07/2012 
+Preliminar 
+Versión 11 – 18/04/2012 
+Preliminar 
+Versión 10 – 28/02/2012 
+Preliminar 
+Versión 09 – 26/01/2012 
+Preliminar 
+Versión 08 – 15/11/2011 
+ B-C4 se modifica texto en validación del indicador de facturación 9. 
+ B-C10: se modifica descripción y se modifica modo de impresión. 
+ En Formato Representación Impresa: 5- Pie del comprobante: Se modifica los datos que contiene el QR-Code 
+ A-C61: se modifica validación 
+ A-C67: se modifica código de impresión 
+ A-C125: se modifica validación 
+ B-C4: se modifica tipo, se incorpora validación y se modifica obligatoriedad 
+ H-C1: se modifica validación 
+ En Formato Representación Impresa: se modifican: 
+o Dimensiones mínimas 
+o Tamaño mínimo del rollo de papel continuo 
+ Apartado 2.1. Zonas del CFE: se incorpora información en la zona Adenda y se modifica obligatoriedad de la misma en el cuadro 
+Obligatoriedad de la zona según tipo de CFE. 
+ En Zona J, se incorpora información y se modifica obligatoriedad de la zona según tipo de CFE 
+ En Formato Representación Impresa: 5- Pie del comprobante: 
+o Se flexibiliza ubicación de datos 
+o Se incorpora la Serie en Número inicial y final del CAE 
+ En Formato Representación Impresa – Adenda: se incorpora información 
+ A-C110 se modifica descripción y validación por incorporarse código para la Unidad Indexada y Unidad reajustable 
+ En Formato Representación Impresa: 5 – Pie del comprobante se modifica ubicación del campo Constancia de IVA al día 
+ D-Estándar Internacional ISO 4217: se sustituye por D-Tabla de monedas 
+ Se modifican los campos con tipo NUM18 a NUM17 
+ Se modifica en campos tasa, el Tipo. 
+ Se modifica en campos fecha o fecha y hora, el Tipo. 
+ A-C129: se modifica modo de impresión. 
+ En Zona H, se agrega validación. 
+ I-C2: se especifica descripción 
+ Se agrega Zona J. Adenda y se elimina el punto 2.3. 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 12 de 86
+
+=== PAGE 13 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+Preliminar 
+Versión 07 – 24/10/2011 
+Preliminar 
+Versión 06 – 06/10/2011 
+ En detalle de las zonas se incorpora la “Obligatoriedad de la zona según tipo de CFE”, a título informativo. 
+ A-C127 y A-C128: se modifica obligatoriedad. 
+ B-Tabla de Códigos del Ítem, C2 y C3: se modifica obligatoriedad. 
+ B-Tabla de Distribución del Descuento, C14 y C15: se modifica obligatoriedad. 
+ B-Tabla de Distribución del Recargo, C18 y C19: se modifica obligatoriedad. 
+ B-Tabla de Retenciones/Percepciones, C20 y C23: se modifica obligatoriedad. 
+ C-C1, C-C2 y C-C4: se modifica obligatoriedad. 
+ H-C1: se modifica tipo de campo. 
+ A-C5, A-C7, A-C8, A-C12, E-C7 y H-C1: se modifica tipo. 
+ A-C60, A-C61 y A-C62 se modifica validación 
+ A-C130 se modifica obligatoriedad para e-resguardo 
+ B-C9 y B-C11 se modifica obligatoriedad de impresión para prestación de servicios. 
+ En Zona C se modifica código obligatoriedad para e-remito y e-resguardo 
+ En Zona G se modifica contenido 
+ En Zona I se modifica contenido 
+ En Formato Representación Impresa: 
+o 4- Cuerpo del comprobante: se agrega descuentos y/o recargos 
+o 5- Pie del comprobante: se agrega Nº y rango del CAE. 
+Preliminar 
+Versión 05 – 21/09/2011 
+ A-C60 se elimina validación para e-resguardo. 
+ A-C125 se modifica nombre del campo y agrega validación. 
+ B-C24 Monto Ítem (B-C21 en versión 04): se modifica número de campo. 
+ En Zona B, Tabla de retenciones/Percepciones, se agrega B-C21 Tasa, B-C22 Monto sujeto a retención/percepción y B-C23 Valor de la 
+retención/percepción. Se modifica descripción y obligatoriedad. 
+ F-C2: se cambia a 40 el número de CFE para usar referencia global. 
+ En Formato Representación Impresa: 
+o Información General – Impresión en varias hojas: se precisan los datos a imprimir en cada hoja. 
+o 3- Identificación del Receptor: se especifica el contenido. 
+o 5- Pie de comprobante: 
+ Sello Digital: se agrega contenido 
+ Fecha de vencimiento: se incorpora tamaño de letra 
+Preliminar 
+Versión 04 – 15/08/2011 
+ Zona F: se incorpora F-C7, fecha CFE de referencia. 
+Preliminar 
+ A-C60 (A-C61 en versión 02): se incorporaron nuevos códigos: 5- Pasaporte, 6- DNI 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 13 de 86
+
+=== PAGE 14 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+ A-C61: se incorpora el país emisor del documento. 
+ A-C63: se dejó opcional el nombre para e-ticket y notas de corrección con montos netos mayores a 10000 UI 
+ D-C4: se incorpora concepto: código de descuento/recargo. 
+ D-C5 (D-C4 en versión 02): se modificó número de campo y extensión. 
+ D-C6 (D-C5 en versión 02): se modificó número de campo. 
+ D-C7 (D-C6 en versión 02): se modificó número de campo. 
+ Se agregó en Zona D el campo 4Código del Descuento/Recargo. 
+ Se agregó Zona E: Medios de Pago. 
+ Se incorpora tabla Percepción/ Retención. 
+ Obligatoriedad de la zona según tipo de CFE: Se eliminó el Sello electrónico y se incorporó el CAE. 
+ Se eliminó la “Aceptación con reparos” 
+ Se eliminó A-C60. Se modifica A-C61 y A-C62 
+ A-C110: se incorporó Código de Monedas 
+ A-C126: e-Ticket 700 líneas 
+ A-C127: se modificó la descripción y el tipo de campo 
+ B-C9: se modificó la validación 
+ B-C20: se modificó la descripción y el tipo de campo. 
+ D-C3: se incorporo línea Tipo de Descuento. 
+ D-C6: se incorporó indicador de facturación. 
+ E-C6: se modificó validación 
+ F-C2: se sustituyó Sello digital por CAE 
+ Se incorporó el formato de la representación impresa 
+ Se incorporó las tablas: Tipo de Comprobante, Tasa de IVA, Código de Monedas. 
+Versión 03 – 27/07/2011 
+Preliminar 
+Versión 02 – 15/07/2011 
+Preliminar 
+Versión 01 – 19/05/2011 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 14 de 86
+
+=== PAGE 15 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+FORMATO DE LOS COMPROBANTES FISCALES ELECTRÓNICOS 
+1. INTRODUCCIÓN 
+En este documento se describe el contenido que deben tener los Comprobantes Fiscales Electrónicos (en adelante CFE). La información considerada en la definición de 
+los formatos es aquella específica de la transacción y que es necesaria para emisor y receptor. El objetivo es tener un documento que sea un instrumento adecuado para 
+el respaldo de la transacción desde el punto de vista de las partes y contenga la información que se requiere para la fiscalización. 
+Si hay otra información que el emisor/receptor requiere y que no está incluida en el formato definido por DGI, puede incluirse en una adenda. La información contenida en 
+la adenda no debe ser enviada a DGI ya que no forma parte del CFE. 
+En este documento se describe el formato electrónico de los siguientes documentos: 
+ e-Factura: Factura electrónica 
+ Nota de Crédito de e-Factura: Nota de crédito de factura electrónica 
+ Nota de Débito de e-Factura: Nota de débito de factura electrónica 
+ e-Ticket: Ticket electrónico 
+ Nota de Crédito de e-Ticket: Nota de crédito de ticket electrónico 
+ Nota de Débito de e-Ticket: Nota de débito de ticket electrónico 
+ e-Remito: Remito electrónico 
+ e-Resguardo: Resguardo electrónico: 
+ e-Factura de Exportación: Factura electrónica de exportación 
+ Nota de Crédito de e-Factura Exportación: Nota de crédito de factura electrónica de exportación 
+ Nota de Débito de e-Factura Exportación: Nota de débito de factura electrónica de exportación 
+ e-Remito de Exportación: Remito electrónico de exportación 
+ e-Factura Venta por Cuenta Ajena: Factura electrónica de venta por cuenta ajena 
+ Nota de Crédito de e-Factura Venta por Cuenta Ajena: Nota de crédito de factura electrónica de venta por cuenta ajena 
+ Nota de Débito de e-Factura Venta por Cuenta Ajena: Nota de débito de factura electrónica de venta por cuenta ajena 
+ e-Ticket Venta por Cuenta Ajena: Ticket electrónico de venta por cuenta ajena 
+ Nota de Crédito de e-Ticket Venta por Cuenta Ajena: Nota de crédito de ticket electrónico de venta por cuenta ajena 
+ Nota de Débito de e-Ticket Venta por Cuenta Ajena: Nota de débito de ticket electrónico de venta por cuenta ajena 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 15 de 86
+
+=== PAGE 16 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+ e-Boleta de entrada: Boleta de entrada electrónica 
+ Nota de Crédito de e-Boleta de entrada: Nota de crédito de boleta de entrada electrónica 
+ Nota de Débito de e-Boleta de entrada: Nota de débito de boleta de entrada electrónica 
+2. CONTENIDO DE LOS COMPROBANTES FISCALES ELECTRÓNICOS 
+El formato de los CFE, los datos contenidos en ellos y su obligatoriedad, se definieron de acuerdo a las normas de facturación generales aplicables y las específicas para 
+documentación electrónica dispuestas por el Decreto Nº 36/012 de 08/02/2012, Resolución de la DGI Nº 798/012 de 08/05/2012 y sus modificativas, y por la Resolución 
+de la DGI Nº 1643/2014 de 21 de mayo de 2014. 
+Se establece un formato único para toda la documentación electrónica y su aplicación en cada tipo de CFE está dada por la obligatoriedad o no de los datos. Todo CFE 
+que se emita, debe contener una firma electrónica avanzada que además de asegurar la identidad y el “no repudio” del Emisor, garantiza la integridad del CFE. 
+2.1. Zonas del Comprobante Fiscal Electrónico 
+En el Comprobante Fiscal Electrónico (CFE), se distinguen las siguientes zonas: 
+A. Encabezado: Corresponde a la identificación del comprobante, información del emisor, información del receptor y montos de la transacción. 
+B. Detalle de Productos o Servicios: En esta zona se debe detallar una línea por cada Ítem. 
+C. Subtotales Informativos Estos subtotales no aumentan ni disminuyen la base del impuesto ni modifican los campos totalizadores, sólo son campos informativos. 
+D. Descuentos o Recargos. Esta zona se utiliza para especificar descuentos o recargos que afectan al total del documento y que no se requiere especificar ítem a 
+ítem. 
+E. Medios de Pago. Se utiliza para detallar los distintos medios de pagos con que se cancela el comprobante: efectivo, tarjeta, nota de crédito, etc. Puede 
+F. 
+incorporarse también el concepto “Cambio”. 
+Información de Referencia: En esta zona se deben detallar los documentos de referencia, por ejemplo se debe identificar el comprobante que se está modificando 
+con una Nota de crédito o de débito. 
+G. Constancia de Autorización para Emisión de CFE (CAE) 
+H. Fecha y hora de Firma Electrónica Avanzada 
+I. Firma Electrónica Avanzada: Se firma toda la información para garantizar la integridad del CFE enviado a la DGI (Zonas A, B, C, D, E, F, G, H, y K). Esta firma no 
+incluye la información contenida en la zona J- Adenda. 
+J. Anexo Adenda: Corresponde a la información de carácter comercial que el emisor requiere transmitir al receptor electrónico. También se utiliza para incluir las 
+constancias o leyendas u otra información que por las normas vigentes, deban obligatoriamente incorporarse a la documentación de ventas. Esta información no 
+debe ser enviada a la DGI. 
+K. Complemento Fiscal: Corresponde a la información de carácter fiscal que la DGI requiere del sujeto por cuenta de quien se realiza la operación para 
+determinados tipos de comprobantes. 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 16 de 86
+
+=== PAGE 17 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+Los e-Tickets, los e-Tickets por cuenta ajena así como sus notas de corrección, no podrán exceder de 700 líneas de ítem de detalle y para el resto de los CFE el máximo 
+es de 200 líneas. Además, en caso de requerir impresión, se debe poder imprimir en un papel que no exceda de los máximos definidos en el “Formato de la 
+Representación Impresa”. 
+En el formato de los CFE se definen distintas zonas. La obligatoriedad de cada una de las zonas para cada tipo de CFE se especifica en la siguiente tabla: 
+OBLIGATORIEDAD DE LA ZONA SEGÚN TIPO DE CFE 
+ZONAS del CFE 
+e-Ticket y 
+e-
+Tic.Cta.Aj 
+101-131 
+NC-ND 
+e-Ticket y 
+e-Tic.Cta.Aj 
+102-103-132-
+133- 
+e-Factura, 
+e-
+Fac.Cta.Aj 
+111-141 
+NC-ND 
+e-Factura, 
+e-
+Fac.Cta.Aj 
+112-113-142-
+143 
+e-
+Remito 
+181 
+e-
+Resguardo 
+182 
+e-
+Fac.Exp 
+121 
+NC-ND 
+e.Fac.Exp 
+122-123 
+e-
+Rem.Exp 
+124 
+e.Bol.Entr 
+151 
+NC- ND e-
+Bol.Entr 
+152-153 
+A.- ENCABEZADO 
+B.- 
+DETALLE DE PRODUCTOS O 
+SERVICIOS 
+C.- SUBTOTALES INFORMATIVOS 
+D.- DESCUENTOS Y RECARGOS 
+E.- MEDIOS DE PAGO 
+F.- INFORMACIÓN DE REFERENCIA 
+G.- CAE 
+H.- 
+FECHA Y HORA DE FIRMA 
+ELECTRÓNICA 
+I.- FIRMA ELECTRÓNICA AVANZADA 
+J.- ANEXO ADENDA 
+K.- COMPLEMENTO FISCAL 
+Códigos de Obligatoriedad: 
+1 
+1 
+3 
+2 
+2 
+2 
+1 
+1 
+1 
+2 
+2 
+1 
+1 
+3 
+2 
+2 
+1 
+1 
+1 
+1 
+2 
+2 
+1 
+1 
+3 
+2 
+2 
+2 
+1 
+1 
+1 
+2 
+2 
+1 
+1 
+3 
+2 
+2 
+1 
+1 
+1 
+1 
+2 
+2 
+1 
+1 
+3 
+0 
+0 
+2 
+1 
+1 
+1 
+3 
+0 
+1 
+1 
+3 
+0 
+0 
+2 
+1 
+1 
+1 
+2 
+0 
+1 
+1 
+3 
+2 
+2 
+2 
+1 
+1 
+1 
+2 
+0 
+1 
+1 
+3 
+2 
+2 
+1 
+1 
+1 
+1 
+2 
+0 
+1 
+1 
+3 
+0 
+0 
+2 
+1 
+1 
+1 
+2 
+0 
+1 
+1 
+3 
+2 
+2 
+2 
+1 
+1 
+1 
+2 
+2 
+1 
+1 
+3 
+2 
+2 
+1 
+1 
+1 
+1 
+2 
+2 
+0: No corresponde. Significa que el dato no debe ir en un determinado comprobante. 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 17 de 86
+
+=== PAGE 18 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+1: Dato obligatorio. El dato debe estar en el documento siempre, independiente de las características de la transacción. 
+2: Dato condicional. El dato no es obligatorio en todos los comprobantes, pero pasa a ser obligatorio en determinadas operaciones si se cumple una cierta 
+condición. 
+3: Opcional El dato se registra si se entiende necesario 
+2.2. Detalles por zona 
+A continuación se especificarán el contenido de cada Zona, el formato de cada dato de la zona y códigos de obligatoriedad del dato según tipo de comprobante. 
+En la columna (*) se indica que, si el documento recibido por la DGI no verifica las validaciones de los campos marcados con (*), el CFE no se considerará válidamente 
+emitido y será rechazado. 
+En la columna (I) se indica si el dato debe constar en la representación impresa del documento. Los códigos utilizados en la misma son: 
+N: No es obligatorio que el campo sea impreso en el documento. 
+I: Debe estar impreso. La impresión de un dato no debe necesariamente ser igual al formato que se especifica en el presente documento. Como ejemplo, una 
+fecha no tiene necesariamente que estar en el formato AAAAMMDD, sino que puede ser impresa con el mes en letras o cambiando el orden en que aparecen 
+el año, el mes y día, de manera de facilitar su lectura. Adicionalmente, se puede optar porque un dato que es obligatorio imprimir, esté pre impreso. 
+P: Debe estar impreso, traduciendo el código a la correspondiente glosa (expresado en palabras.) Por ejemplo: en el comprobante electrónico el tipo de 
+documento está codificado, sin embargo en la representación impresa del documento se debe indicar el nombre del documento (e-Factura, Nota de Crédito de 
+e-Factura, etc.) 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 18 de 86
+
+=== PAGE 19 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+A.- ENCABEZADO 
+ZONAS del CFE 
+e-Ticket y 
+e-Tic.Cta.Aj 
+101-131 
+OBLIGATORIEDAD DE LA ZONA SEGÚN TIPO DE CFE 
+NC-ND 
+e-Ticket y 
+e-Tic.Cta.Aj 
+102-103-132-133- 
+NC-ND 
+e-Factura, 
+e-Fac.Cta.Aj 
+112-113-142-143 
+e-Factura, 
+e-Fac.Cta.Aj 
+111-141 
+e-Resguardo 
+182 
+e-Remito 
+181 
+e-Fac.Exp 
+121 
+NC-ND 
+e-Fac.Exp 
+122-123 
+e-Rem.Exp 
+124 
+e-Bol.Entr 
+151 
+NC- ND e-Bol 
+Entr. 
+152-153 
+A.- ENCABEZADO 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+1 VERSIÓN 
+Versión del formato 
+utilizado. 
+ALFA 3 Valor: 1.0 
+ÁREA IDENTIFICACIÓN DEL COMPROBANTE 
+Tipo CFE 
+Indica el CFE o el CFC 
+NUM 3 Valida con tabla de códigos de 
+2 
+informado. 
+3 Serie del Comprobante 
+Serie asignada al 
+comprobante. 
+4 Número de Comprobante Nº asignado al 
+comprobante. 
+los CFE/ CFC 
+ALFA 2 Sin validación 
+NUM 7 1 ≤ C4 ≤ 9999999 
+4.1 Número interno 
+Nº interno que referencia 
+ALFA50 Sin validación 
+al comprobante 
+5 
+Fecha del Comprobante Fecha del comprobante. 
+FECHA - AAAAMMDD; 
+- Fecha válida entre 
+01/10/2011 a 31/12/2050 
+- C5 debe ser ≤ fecha del 
+servidor de DGI + 60 días. 
+* N 1 
+1 
+* P 1 
+* I 1 
+* I 1 
+ N 2 
+* I 1 
+1 
+1 
+1 
+1 
+1 
+2 
+1 
+1 
+1 
+1 
+1 
+1 
+2 
+1 
+1 
+1 
+1 
+1 
+1 
+2 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+2 
+2 
+2 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+2 
+1 
+1 
+1 
+1 
+1 
+1 
+2 
+1 
+1 
+1 
+1 
+1 
+1 
+2 
+1 
+1 
+1 
+1 
+1 
+1 
+2 
+1 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 19 de 86
+
+=== PAGE 20 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+5.1 Fecha Valor 
+Fecha valor del 
+comprobante 
+FECHA -AAAAMMDD 
+I 0 
+0 
+0 
+0 
+0 
+2 
+0 
+0 
+0 
+0 
+0 
+-Fecha válida entre 01/10/2011 
+a 31/12/2050 
+Sólo para e-resguardo: 
+Indica la fecha valor de 
+la retención /percepción 
+cuando no coincide con 
+la fecha de 
+comprobante 
+6 
+6.1 
+Indicador Tipo de traslado 
+de bienes 
+Indicador propiedad 
+mercadería transportada 
+Obligatorio para remitos. NUM 2 1: Venta 
+ P 0 
+2: Traslados internos 
+NUM 2 1: Bienes de Terceros 
+ P 0 
+Obligatorio para remito y 
+e-remito de exportación 
+cuando se traslada 
+mercadería de terceros 
+0 
+0 
+0 
+0 
+0 
+0 
+1 
+0 
+0 
+2 
+0 
+0 
+0 
+0 
+1 
+2 
+0 
+0 
+0 
+0 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 20 de 86
+
+=== PAGE 21 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+NUM 2 Obligatorio completar si C6.1=1 
+ P 0 
+0 
+0 
+0 
+2 
+0 
+0 
+0 
+2 
+0 
+0 
+Si existe C6.2, deben existir 
+C6.3 y C6.4 o C6.5 
+6.2 Código Tipo Documento 
+Propietario mercadería 
+transportada 
+Indica si se trata de RUC, 
+C.I., Otros, pasaporte, 
+DNI o NIFE: 
+2: RUC (Uruguay) 
+3: C.I. (Uruguay) 
+4: Otros 
+5: Pasaporte (todos los 
+países) 
+6: DNI (documento de 
+identidad de Argentina, 
+Brasil, Chile o 
+Paraguay) 
+7.NIFE número de 
+identificación fiscal 
+extranjero (todos los 
+países 
+6.3 Código País 
+Se utiliza el Estándar 
+ALFA 2 Si existe C 6.3, deben existir 
+I 0 
+0 
+0 
+0 
+2 
+0 
+0 
+0 
+2 
+0 
+0 
+Internacional ISO 3166-
+1 alfa-2, códigos de 
+países de 2 letras. 
+Tabla disponible en la 
+Web DGI: Aplicación 
+Sigma 
+C6.2 y, C6.4 o C6.5 
+- si C 6.2 =2 o 3; C6.3= UY 
+- si C6.2 =6; C6.3= AR, BR, CL 
+o PY 
+- Si C6.2: 4, 5 o 7: C6.3 = 
+código del país según tabla, o 
+C6.3 = 99 si no existe código 
+del país en la tabla. 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 21 de 86
+
+=== PAGE 22 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+6.4 Nº Documento Propietario 
+uruguayo mercadería 
+transportada 
+Corresponde al número 
+ALFA12 - Si existe C6.4, debe existir 
+I 0 
+0 
+0 
+0 
+2 
+0 
+0 
+0 
+2 
+0 
+0 
+del documento del 
+propietario uruguayo de 
+la mercadería 
+transportada 
+C6.2 y C6.3 
+- Si existe C6.4, no debe existir 
+C6.5 
+-Obligatorio completar si 
+C6.2=2 o 3 
+- Valida: 
+2: Digito verificador RUC 
+3: Digito verificador CI 
+6.5 Nº Documento Propietario 
+Extranjero/Otros 
+mercadería transportada 
+Corresponde al número 
+del documento: Otros, 
+Pasaporte, DNI o NIFE 
+6.6 Nombre o Denominación 
+Propietario mercadería 
+transportada 
+7 Período desde 
+8 Período hasta 
+Nombre o Denominación 
+Propietario mercadería 
+transportada. 
+Período de facturación 
+para Servicios. Fecha 
+desde (Fecha inicial del 
+servicio facturado). 
+Período de facturación 
+para Servicios. Fecha 
+hasta (Fecha final del 
+servicio facturado). 
+ALFA 20 -Si existe C6.5, debe existir 
+I 0 
+0 
+0 
+0 
+2 
+0 
+0 
+0 
+2 
+0 
+0 
+C6.2 y C6.3 
+- Si existe C6.5 no debe existir 
+C6.4 
+- Obligatorio completar si 
+C6.2=4,5, 6 o 7 
+ALFA 
+150 
+- Obligatorio completar si 
+C6.1=1 
+I 0 
+0 
+0 
+0 
+2 
+0 
+0 
+0 
+2 
+0 
+FECHA - AAAAMMDD; 
+ N 3 
+3 
+3 
+3 
+0 
+0 
+3 
+3 
+0 
+3 
+- Fecha válida entre 
+01/10/2011 a 31/12/2050 
+0 
+3 
+FECHA - AAAAMMDD; 
+ N 3 
+3 
+3 
+3 
+0 
+0 
+3 
+3 
+0 
+3 
+3 
+- Fecha válida; ≥ que C7: 
+“Período desde” 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 22 de 86
+
+=== PAGE 23 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+10 
+Indicador Montos Brutos 
+Indica si las líneas de 
+NUM 1 1: Líneas de detalle se 
+ N 2 
+2 
+2 
+2 
+0 
+0 
+2 
+2 
+0 
+2 
+2 
+detalle se expresan en 
+montos brutos (IVA 
+incluido o 
+IMEBA/adicionales 
+incluidos). 
+También se utiliza para 
+indicar que la línea de 
+detalle corresponde a 
+una venta realizada por 
+un contribuyente con 
+obligación IVA mínimo, 
+Monotributo o 
+Monotributo MIDES: 
+expresan con IVA incluido. 
+2: Líneas de detalle se 
+expresan con IMEBA y 
+adicionales incluidos 
+3: Líneas de detalle 
+corresponden a ventas 
+realizadas por contribuyentes 
+con obligación IVA mínimo, 
+Monotributo o Monotributo 
+MIDES. 
+Si G-C5=2, 3 o 4, A-C10, debe 
+ser igual a 3, y viceversa 
+excepto para CFE ventas por 
+cuenta ajena. 
+11 Forma de Pago 
+Indica en qué forma se 
+NUM 1 1: Contado 
+pagará. 
+2: Crédito 
+12 Fecha de vencimiento 
+Fecha de vencimiento 
+FECHA - AAAAMMDD; 
+ P 1 
+I 3 
+1 
+3 
+1 
+3 
+1 
+3 
+0 
+0 
+1 
+0 
+0 
+3 
+1 
+3 
+0 
+0 
+1 
+3 
+13 Cláusula de venta 
+Incoterms: FOB, CIF, etc. 
+En caso que no 
+corresponda, poner N/A 
+y no es obligatorio 
+imprimir. 
+- Fecha válida entre 
+01/01/2000 a 31/12/2050 
+ALFA 3 Sin validación 
+I 0 
+0 
+0 
+0 
+0 
+0 
+1 
+1 
+3 
+0 
+1 
+3 
+0 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 23 de 86
+
+=== PAGE 24 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+14 Modalidad de venta 
+Obligatorio para 
+NUM 2 1 – Régimen General-
+* N 2 
+2 
+2 
+2 
+0 
+0 
+1 
+2 
+1 
+0 
+0 
+exportación de bienes y 
+servicios y para 
+operaciones 
+comprendidas en el 
+régimen de Tax Free 
+(Dto, Nº 378/2012): 
+Indica la modalidad de 
+venta 
+exportación de bienes 
+2 – Consignación 
+3 – Precio Revisable 
+4 – Bienes propios a exclaves 
+aduaneros 
+80 –Régimen TAX FREE - Dto. 
+Nº 378/2012 
+90 – Régimen General-
+exportación de servicios 
+99 – Otras transacciones 
+Para Régimen General-
+Exportación de bienes y de 
+servicios: si Tipo de CFE (A-
+C2) = 121, 122, 123 o 124; A-
+C14= 1,2, 3, 4, 90 o 99 
+Para Régimen General-
+Exportación de servicios: si 
+Tipo de CFE (A-C2) = 101, 
+102, 103, 111, 112 o 113; A-
+C14=90 
+Para operaciones en Régimen 
+TAX FREE: si Tipo de CFE 
+(A-C2) = 101, 102 o 103; A-
+C14= 80 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 24 de 86
+
+=== PAGE 25 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+15 Vía de transporte 
+Indica el medio de 
+NUM 2 1 – Marítimo 
+ N 0 
+0 
+0 
+0 
+0 
+0 
+1 
+1 
+1 
+0 
+0 
+16 
+Información adicional 
+comprobante 
+17 
+IVA al día 
+transporte en que se 
+traslada la mercadería. 
+En caso que no 
+corresponda, poner 8: 
+N/A. 
+Otra información relativa 
+al Comprobante. 
+Si la información 
+corresponde a una 
+leyenda o constancia 
+específica establecida 
+expresamente por la 
+normativa, es obligatoria 
+su impresión. 
+Indica al receptor que el 
+emisor no está al día 
+con el IVA 
+Los contribuyentes 
+Monotributo y 
+Monotributo MIDES, no 
+corresponde que usen 
+este campo. 
+2 – Aéreo 
+3 – Terrestre 
+8 – N/A 
+9 – Otro 
+ALFA 
+150 
+Sin validación 
+ N 2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+NUM 2 1 – No IVA al día 
+ P 2 
+2 
+2 
+2 
+0 
+0 
+2 
+2 
+0 
+0 
+0 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 25 de 86
+
+=== PAGE 26 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+18 Secreto profesional 
+Indica si la operación 
+está amparada por el 
+secreto profesional 
+NUM 1 1 – Operación amparada por el 
+secreto profesional 
+2 – Operación de venta por 
+cuenta ajena amparada por el 
+secreto profesional 
+ N 2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+Si A-C18=2, A-C2 (tipo de 
+CFE) debe ser 131,132,133, 
+141,142 o143, o sus 
+respectivas contingencias 
+Si A-21=2, no puede existir A-
+18 
+19 
+Indicador Pagos por 
+cuenta de terceros 
+Indica si los montos 
+NUM 1 1- Pagos por cuenta de 
+ P 
+2 
+2 
+2 
+2 
+0 
+0 
+2 
+2 
+0 
+0 
+0 
+facturados 
+corresponden a un pago 
+por cuenta de terceros 
+(reintegro de gastos) 
+terceros 
+20 
+Indicador Cobranza propia Indica si los montos 
+NUM 1 1- Cobranza 
+ P 2 
+0 
+2 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+informados 
+corresponden a una 
+cobranza propia o 
+adelanto de precios. 
+Corresponde utilizar el 
+indicador de facturación 
+6 o 7. 
+Si existe A-C20, B-C4 debe ser 
+6 o 7 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 26 de 86
+
+=== PAGE 27 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+21 
+Indicador compra M/E 
+para su reventa 
+Para tipo de CFE=151, 
+152 y 153 (e-boleta de 
+entrada y sus notas de 
+corrección): indica que 
+la compra de M/E es 
+para su reventa, por 
+ejemplo Bancos, Casas 
+de cambio, si la 
+contrapartida es en 
+moneda local 
+NUM 1 1- Compra M/E para su 
+reventa 
+Valida B-C4=17 y/o D-C7=17 
+2- Operación de compra de 
+M/E para su reventa por 
+cuenta ajena 
+Valida B-C4=17 y/o D-C7=17 
+Si A-21= 2, no puede existir 
+A18 
+FIN AREA IDENTIFICACIÓN DEL COMPROBANTE 
+ N 0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+2 
+2 
+ AREA EMISOR 
+1 
+40 RUC Emisor 
+Corresponde al RUC del 
+NUM 12 Dígito verificador 
+* I 1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+emisor electrónico. 
+Si tipo de CFE: 151, 152 
+y 153: (e-boleta de 
+entrada, N/C, N/D): 
+corresponde al RUC del 
+que emite el CFE, que 
+es el comprador de los 
+bienes. 
+41 Nombre o Denominación 
+Emisor 
+42 Nombre comercial Emisor 
+Sin validación 
+ALFA 
+150 
+ALFA 30 Sin validación 
+I 1 
+I 2 
+1 
+2 
+1 
+2 
+1 
+2 
+1 
+1 
+1 
+2 
+2 
+2 
+1 
+2 
+1 
+2 
+1 
+2 
+1 
+1 
+1 
+2 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 27 de 86
+
+=== PAGE 28 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+43 Giro del negocio del 
+Emisor 
+44 Teléfono Emisor 
+45 Correo Emisor 
+46 Nombre de la Casa 
+Principal /Sucursal 
+Glosa indicando giro del 
+emisor. No es preciso 
+registrar todos los giros, 
+sino que se podrá 
+registrar sólo el giro que 
+corresponde a la 
+transacción. 
+Hasta 2 Repeticiones 
+Correo electrónico 
+Indica nombre de la casa 
+principal o sucursal que 
+emite el CFE. 
+Corresponde a un dato 
+administrado por el 
+emisor que puede ser 
+un texto o un número. 
+ALFA 60 Sin validación 
+ N 3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+ALFA 20 Sin validación 
+ALFA 80 Sin validación 
+ALFA 20 Sin validación 
+ N 3 
+ N 3 
+ N 3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+47 Código Casa Principal 
+Código numérico 
+/Sucursal 
+entregado por la DGI 
+que identifica a la casa 
+principal o a la sucursal 
+desde donde se realiza 
+la operación. 
+NUM 4 Debe corresponder a un código 
+la DGI, 
+en 
+registrado 
+asociado al RUC emisor en la 
+fecha 
+informada en A-C5 
+(“Fecha del comprobante”) 
+* N 1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+48 Domicilio Fiscal 
+Domicilio fiscal declarado 
+ALFA 70 Sin validación 
+I 1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+en el RUC, que 
+identifica a la casa 
+principal o a la sucursal 
+desde donde se realiza 
+la operación 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 28 de 86
+
+=== PAGE 29 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+49 Ciudad 
+Análogo a Domicilio 
+ALFA 30 Sin validación 
+Fiscal 
+50 Departamento 
+Análogo a Domicilio 
+ALFA 30 Sin validación 
+51 
+Información adicional 
+emisor 
+Sin validación 
+Fiscal 
+Otra información relativa 
+al Emisor 
+Si la información 
+ALFA 
+150 
+corresponde a una 
+leyenda o constancia 
+específica establecida 
+expresamente por la 
+normativa, es obligatoria 
+su impresión 
+FIN AREA EMISOR 
+I 1 
+ N 1 
+ N 2 
+1 
+1 
+2 
+1 
+1 
+2 
+1 
+1 
+2 
+1 
+1 
+1 
+1 
+1 
+1 
+2 
+2 
+2 
+1 
+1 
+2 
+1 
+1 
+2 
+1 
+1 
+2 
+1 
+1 
+2 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 29 de 86
+
+=== PAGE 30 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+ÁREA RECEPTOR 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+A-C18=1 o 2: no es obligatorio completar los campos del área receptor 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 30 de 86
+
+=== PAGE 31 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+60 Código Tipo Documento 
+Indica si se trata de NIE, 
+NUM 2 Si existe C60, deben existir “C61” y 
+* p1 2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+Receptor 
+RUC, C.I. Otros, 
+Pasaporte, DNI o NIFE: 
+1: NIE 
+2: RUC (Uruguay) 
+3: C.I. (Uruguay) 
+4: Otros 
+5: Pasaporte (todos los 
+países) 
+6: DNI (documento de 
+identidad de Argentina, 
+Brasil, Chile o 
+Paraguay) 
+7: NIFE: número de 
+identificación fiscal 
+extranjero (todos los 
+países 
+“C62 o C62.1” 
+-Si A-C18 ≠1 o 2, C60 es 
+obligatorio completar si tipo de 
+CFE: 
+ -e-Fac, e-Fac.Cta ajena, y sus 
+respectivas NC, ND (111,112, 113, 
+141, 142,143): obligatorio RUC 
+(C60= 2). 
+ - e-Tick, e-Tick.Cta aj, y sus 
+respectivas NC, ND (101,102, 103, 
+131, 132, 133): si monto neto ∑ 
+(C112 a C118) > a tope 
+establecido (ver tabla E), o sin 
+importar su monto se 
+documentan retenciones 
+ (C60 debe ser: 1, 2, 3, 4, 5, 6 o 7). 
+ -Free Shop: siempre se debe 
+identificar al receptor. 
+ -e-Boleta de entrada, NC, ND 
+(151, 152,153): siempre debe existir 
+C60 y puede ser cualquiera de los 
+códigos, excepto si C60 ≠2, C21=1 
+o 2, y el monto neto ∑ (C112 a 
+C118) es < a tope establecido (ver 
+tabla E) que no es obligatorio 
+identificar al receptor. 
+ -e. resguardo(182) y e-remito 
+(181): siempre se debe identificar al 
+receptor 
+- Si A-C18=1 o 2, C60 no es 
+obligatorio completar 
+1 El tipo de documento correspondiente a “otros”, puede imprimirse en lugar de la glosa “Otros” 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 31 de 86
+
+=== PAGE 32 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+61 Código País 
+Se utiliza el Estándar 
+ALFA 2 Si existe C61, deben existir 
+* I 2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+Internacional ISO 3166-
+1 alfa-2, códigos de 
+países de 2 letras. 
+Tabla disponible en la 
+Web DGI: Aplicación 
+Sigma 
+“C60” y “C62” o “C62.1” 
+- si C60=1, 2 o 3 ; C61= UY 
+- si C60=6; C61= AR, BR, CL o 
+PY 
+- Si C60: 4, 5 o 7: C61 = código 
+del país según tabla, o C61 = 
+99 si no existe código del país 
+en la tabla. 
+62 Nº Documento Receptor 
+Uruguayo 
+Corresponde al número 
+del documento NIE, 
+RUC o C.I. 
+ALFA12 - Si existe C62, deben existir 
+* I 2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+C60 y C61 
+- Si existe C62, no debe existir 
+C62.1 
+Para e-boleta de entrada 
+- Obligatorio completar si 
+y sus notas de 
+corrección, el Nº de 
+RUC del receptor no 
+puede ser el de un 
+emisor electrónico, 
+excepto si se trata de un 
+receptor emisor 
+electrónico que vende 
+moneda extranjera y el 
+comprador la destina 
+para su reventa (A-21=1 
+o 2) y la contrapartida 
+sea la entrega de 
+moneda local 
+C60=1, 2 o 3. 
+Valida: 
+1: Dígito verificador NIE 
+2: Digito verificador RUC 
+3: Digito verificador CI 
+- Para tipo CFE: e-Boleta de 
+entrada, NC/ND (151,152,153): 
+valida que si C60= 2, C62 no 
+puede ser el Nº de RUC de un 
+emisor electrónico, excepto si 
+A-C21=1 o 2 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 32 de 86
+
+=== PAGE 33 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+ALFA 20 - Si existe C62.1, no debe 
+* I 2 
+2 
+0 
+0 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+62.1 Nº Documento Receptor 
+Extranjero/Otros 
+Corresponde al número 
+del documento: Otros, 
+Pasaporte, DNI o NIFE 
+Campo no válido para los 
+tipos de CFE: e-Factura, 
+e_Factura Cuenta Ajena 
+y sus respectivas Notas 
+de corrección. 
+63 Nombre o Denominación 
+Nombre o Denominación 
+Receptor 
+Receptor. 
+ALFA 
+150 
+I 3 
+3 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+existir C62 
+- Si existe C62.1 deben existir 
+C60 y C61 
+- Obligatorio completar si 
+C60=4,5, 6 o 7 
+- Si tipo de CFE 111,112, 113, 
+141, 142,143; C62.1 = 0 
+- Si A-C18 ≠ 1 o 2: 
+obligatorio completar si tipo 
+CFE: 
+ - e-Fac, e-Fac.Cta ajena, y 
+sus respectivas NC y ND 
+(111,112, 113, 141, 142,143). 
+ -e-remito (124), 
+ -Fac.Exp, NC,ND,e.Rem Ex 
+(121.122,123,124) 
+ -e-resguardo (182) 
+- e-Boleta de entrada, NC, ND 
+(151, 152,153), excepto si C60 
+≠2, C21=1 o 2, y el monto neto 
+∑ (C112 a C118) es < a tope 
+establecido (ver tabla E) que 
+no es obligatorio identificar al 
+receptor. 
+-Si A-C18=1 o 2, C-63 no es 
+obligatorio completar 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 33 de 86
+
+=== PAGE 34 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+64 Dirección Receptor 
+Domicilio del Receptor ALFA 70 -Si A-C18 ≠ 1 o 2: 
+ N 3 
+3 
+2 
+2 
+2 
+3 
+2 
+2 
+2 
+2 
+2 
+obligatorio completar si tipo 
+CFE: 
+ - e-Fac, e-Fac.Cta ajena, y 
+sus respectivas NC, ND 
+(111,112, 113, 141, 142,143). 
+ -e-remito (124), 
+ -Fac.Exp, NC,ND,e.Rem Ex 
+(121.122,123,124) 
+- e-Boleta de entrada, NC, ND 
+(151, 152,153), excepto si C60 
+≠2, C21=1 o 2, y el monto neto 
+∑ (C112 a C118) es < a tope 
+establecido (ver tabla E) que 
+no es obligatorio identificar al 
+receptor. 
+-Si A-C18=1 o 2, C-64 no es 
+obligatorio completar. 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 34 de 86
+
+=== PAGE 35 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+65 Ciudad Receptor 
+Análogo a Dirección 
+ALFA 30 -Si A-C18 ≠1 o 2: 
+I 3 
+3 
+2 
+2 
+2 
+3 
+2 
+2 
+2 
+2 
+2 
+Receptor 
+obligatorio completar si tipo 
+CFE: 
+ - e-Fac, e-Fac.Cta ajena, y 
+sus respectivas NC, ND 
+(111,112, 113, 141, 142,143). 
+ -e-remito (124), 
+ -Fac.Exp, NC, ND, e.Rem Ex 
+(121.122,123,124) 
+- e-Boleta de entrada, NC, ND 
+(151, 152,153), excepto si C60 
+≠2, C21=1 o 2, y el monto neto 
+∑ (C112 a C118) es < a tope 
+establecido (ver tabla E) que 
+no es obligatorio identificar al 
+receptor. 
+-Si A-C18=1 o 2, C-65 no es 
+obligatorio completar 
+66 Dep/Prov/Estado 
+Análogo a Dirección 
+ALFA 30 -Si A-C18 ≠ 1 o 2: 
+ N 3 
+3 
+3 
+3 
+3 
+3 
+2 
+2 
+2 
+3 
+3 
+Receptor 
+obligatorio completar si tipo 
+CFE: Fac.Exp, NC, ND, e.Rem 
+Ex (121.122,123,124) 
+-Si A-C18=1 o 2, C-66 no es 
+obligatorio completar 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 35 de 86
+
+=== PAGE 36 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+66.1 País Receptor 
+Análogo a Dirección 
+ALFA 30 -Si A-C18 ≠ 1 o 2: 
+ N 3 
+3 
+3 
+3 
+3 
+3 
+2 
+2 
+2 
+3 
+3 
+Receptor 
+obligatorio completar si tipo 
+CFE: Fac.Exp, NC, ND, e.Rem 
+Ex (121.122,123,124) 
+-Si A-C18=1 o 2, C-66.1 no es 
+obligatorio completar 
+67 Código Postal 
+Análogo a Dirección 
+NUM 5 Sin validación 
+68 
+Información Adicional 
+Receptor 
+Sin validación 
+Receptor 
+Otra información relativa 
+al Receptor 
+Si la información 
+ALFA 
+150 
+corresponde a una 
+leyenda o constancia 
+específica establecida 
+expresamente por la 
+normativa, es obligatoria 
+su impresión 
+ N 3 
+ N 2 
+3 
+2 
+3 
+2 
+3 
+2 
+3 
+3 
+3 
+2 
+2 
+2 
+3 
+2 
+3 
+2 
+3 
+2 
+3 
+2 
+69 Lugar de Destino/Entrega 
+Indicación de donde se 
+entrega la mercadería o 
+se presta el servicio 
+(Dirección, Sucursal, 
+Puerto, etc,). 
+ALFA 
+100 
+Sin validación 
+ N 3 
+3 
+3 
+3 
+3 
+0 
+3 
+3 
+3 
+3 
+3 
+70 Nº Identificación Compra Número que identifica la 
+ALFA 50 Sin validación 
+ N 3 
+3 
+3 
+3 
+3 
+0 
+3 
+3 
+3 
+3 
+3 
+compra: número de 
+pedido, número orden 
+de compra etc. 
+FIN ÁREA RECEPTOR 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 36 de 86
+
+=== PAGE 37 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+AREA TOTALES ENCABEZADO 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+0 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+ALFA 3 Según Tabla de Monedas 
+* I2 1 
+Si A-C21= 1, A-C110 debe ser 
+UYU 
+110 Tipo moneda transacción Código que corresponde 
+a la moneda en que se 
+registra la transacción. 
+Todos los campos de 
+montos del documento 
+estarán indicados en 
+esta moneda. 
+Se utiliza codificación 
+según el Estándar 
+Internacional ISO 4217. 
+Se adjunta tabla de 
+moneda: 
+ 
+ Otras (UI y UR) 
+ISO 4217 parcial 
+Factor de conversión 
+utilizado: de otra 
+moneda a pesos 
+111 Tipo de Cambio 
+NUM 7 
+ Valor numérico de 4 enteros y 
+3 decimales, mayor que cero 
+* N 2 
+2 
+2 
+2 
+0 
+2 
+2 
+2 
+2 
+2 
+2 
+- Obligatorio completar si A-
+C110 ≠ UYU 
+2 Se imprime el código, la moneda o el símbolo, según corresponda 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 37 de 86
+
+=== PAGE 38 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+112 Total Monto - No gravado Si tipo de CFE= 151,152 
+y 153 (e-Boleta de 
+entrada y sus notas de 
+corrección): 
+C112: Suma de ítems 
+con indicador de 
+facturación B-C4=13, 
+14, 15 o 17, menos 
+descuentos globales 
+más recargos globales 
+con indicador de 
+facturación B-C4=13, 
+14, 15 o 17. 
+Sino 
+C112: Suma de ítems 
+con indicador de 
+facturación B-C4= 1 o 
+16, menos descuentos 
+globales más recargos 
+globales con indicador 
+de facturación B-C4= 1 
+o 16. 
+NUM 17 -Valor numérico de 15 enteros 
+y 2 decimales ≥0 
+* I 2 
+2 
+2 
+2 
+0 
+0 
+0 
+0 
+0 
+2 
+2 
+Si tipo de CFE= 151,152 y 153 
+(e-Boleta de entrada y sus 
+notas de corrección), 
+C112= 
+∑ B-C24 (si B-C4=13, 14, 15 o 
+17) menos 
+∑ D-C6 (si D-C7=13, 14 , 15 o 
+17) y si D-C2=D) más 
+∑ D-C6 (si D-C7=13, 14, 15 o 
+17) y si D-C2=R), sino 
+- C112= 
+∑ B-C24 (si B-C4=1 o 16) 
+menos 
+∑ D-C6 (si D-C7=1 o 16 )y si 
+D-C2=D) más 
+∑ D-C6 (si D-C7=1 o 16 )y si 
+D-C2=R) 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 38 de 86
+
+=== PAGE 39 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+113 Total Monto - Exportación 
+Si tipo de CFE= 124 (e-
+NUM 17 -Valor numérico de 15 enteros 
+* I 2 
+2 
+2 
+2 
+0 
+0 
+1 
+1 
+1 
+0 
+0 
+y asimiladas 
+remito de exportación): 
+y 2 decimales 
+Suma de ítems del e-
+remito de exportación 
+ Menos 
+ Suma de ítems del e-
+remito de exportación 
+con indicador de 
+facturación (B-C4)=8, 
+sino: 
+Suma de ítems de 
+exportación y 
+asimilados, menos 
+descuentos globales 
+más recargos globales 
+(asignados a ítems de 
+exportación y 
+asimilados). 
+Si A-C2=124, 
+C113= ∑B-C24 - ∑B-C24 (si B-
+C4=8), sino 
+C113= ∑ B-C24 (si B-C4=10) 
+menos 
+∑ D-C6 (si D-C7=10 y si D-
+C2=D) más 
+∑ D-C6 (si D-C7=10 y si D-
+C2=R)) 
+114 Total Monto - Impuesto 
+Importe del concepto en 
+NUM 17 Valor numérico de 15 enteros y 
+* I 2 
+2 
+2 
+2 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+percibido 
+el CFE 
+2 decimales ≥0 
+- C114= 
+∑ B-C24 (si B-C4=11) menos 
+∑ D-C6 (si D-C7=11 y si D-
+C2=D) más 
+∑ D-C6 (si D-C7=11 y si D-
+C2=R) 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 39 de 86
+
+=== PAGE 40 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+115 Total Monto - IVA en 
+Importe del concepto en 
+suspenso 
+el CFE 
+NUM 17 -Valor numérico de 15 enteros 
+y 2 decimales ≥0 
+* I 2 
+2 
+2 
+2 
+0 
+0 
+0 
+0 
+0 
+2 
+2 
+- C115= 
+∑ B-C24 (si B-C4=12) menos 
+∑ D-C6 (si D-C7=12 y si D-
+C2=D) más 
+∑ D-C6 (si D-C7=12 y si D-
+C2=R) 
+Si existe A-C115 y tipo CFE 
+151,152 y 153 (e-Bol. Entrada 
+y sus correcciones), A-C10=2 
+116 Total Monto Neto - IVA 
+- Suma de ítems 
+NUM 17 -Valor numérico de 15 enteros 
+* I 2 
+2 
+2 
+2 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+Tasa mínima 
+gravados a tasa mínima 
+menos descuentos 
+globales más recargos 
+globales (asignados a 
+ítems gravados a tasa 
+mínima) 
+- Si el valor de montos 
+brutos: C10=1, entonces 
+el resultado anterior se 
+debe dividir por (1+ tasa 
+mínima IVA vigente) 
+y 2 decimales ≥0 
+- C116= 
+∑ B-C24 (si B-C4=2) menos 
+∑ D-C6 (si D-C7=2 y si D-
+C2=D) más 
+∑ D-C6 (si D-C7=2 y si D-
+C2=R) 
+- Si C116>0, C119≠0 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 40 de 86
+
+=== PAGE 41 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+117 Total Monto Neto - IVA 
+Tasa básica 
+Suma de ítems gravados 
+a tasa básica menos 
+descuentos globales 
+más recargos globales 
+(asignados a ítems 
+gravados a tasa básica) 
+Si el valor de montos 
+brutos: C10=1, entonces 
+el resultado anterior se 
+debe dividir por (1+ tasa 
+básica de IVA vigente) 
+* I 2 
+2 
+2 
+2 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+NUM 17 -Valor numérico de 15 enteros 
+y 2 decimales, ≥0 
+- C117= 
+∑ B-C24 (si B-C4=3) menos 
+∑ D-C6 (si D-C7=3 y si D-
+C2=D) más 
+∑ D-C6 (si D-C7=3 y si D-
+C2=R) 
+ - Si C117>0, C120≠0 
+118 Total Monto Neto – IVA 
+Importe neto del 
+NUM 17 Valor numérico de 15 enteros y 
+* I 2 
+2 
+2 
+2 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+otra tasa/IVA sobre fictos 
+119 Tasa Mínima IVA 
+concepto en el CFE 
+Se utiliza también para 
+informar el importe neto 
+total de la operación 
+cuando el cálculo del 
+IVA se aplica 
+exclusivamente sobre 
+un ficto (por ej.: venta 
+de autos usados, 5 de 
+oro, etc.). El IVA 
+correspondiente al ficto 
+se informa en el campo 
+A-123 
+Tasa mínima vigente a la 
+fecha del comprobante 
+en % 
+3 La tasa de IVA puede ser parte del título del campo impreso 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+2 decimales, ≥0 
+- Si C123>0, C118>0 
+- C118= 
+∑ B-C24 (si B-C4=4) menos 
+∑ D-C6 (si D-C7=4 y si D-
+C2=D) más 
+∑ D-C6 (si D-C7=4 y si D-
+C2=R) 
+NUM 6 Valida con tabla 
+* I3 2 
+2 
+2 
+2 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+- Valor numérico de 3 enteros y 
+3 decimales 
+Página 41 de 86
+
+=== PAGE 42 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+NUM 6 Valida con tabla 
+* I4 2 
+2 
+2 
+2 
+0 
+0 
+0 
+0 
+0 
+0 
+- Valor numérico de 3 enteros y 
+3 decimales 
+NUM 17 - Valor numérico de 15 enteros 
+y 2 decimales, ≥0 
+- C121=C116*C119 
+NUM 17 - Valor numérico de 15 enteros 
+y 2 decimales, ≥0 
+- C122=C117*C120 
+NUM 17 Valor numérico de 15 enteros y 
+2 decimales, ≥0 
+- Si C118>0, C123>0 
+* I 2 
+2 
+2 
+2 
+0 
+0 
+0 
+0 
+0 
+0 
+* I 2 
+2 
+2 
+2 
+0 
+0 
+0 
+0 
+0 
+0 
+* I 2 
+2 
+2 
+2 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+120 Tasa Básica IVA 
+Tasa básica vigente a la 
+fecha del comprobante 
+en % 
+121 Total IVA – Tasa Mínima 
+Importe del concepto en 
+el CFE 
+122 Total IVA – Tasa Básica 
+Importe del concepto en 
+el CFE 
+123 Total IVA – Otra tasa/IVA 
+Importe del concepto en 
+sobre fictos 
+el CFE 
+Se utiliza también para 
+informar el importe del 
+IVA cuando la tasa se 
+aplica sobre un ficto y 
+no sobre el total del 
+monto neto (por ej.: 
+venta de autos usados, 
+5 de oro, etc.). El 
+importe total neto de la 
+operación se informa en 
+el campo A-118 
+4 La tasa de IVA puede ser parte del título del campo impreso 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 42 de 86
+
+=== PAGE 43 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+124 Total Monto Total 
+Importe de la sumatoria 
+de los montos netos e 
+IVAs 
+NUM 17 - Si tipo de CFE= 124 (e-remito 
+* I 1 
+1 
+1 
+1 
+0 
+0 
+1 
+1 
+1 
+1 
+1 
+de exportación), Valor 
+numérico de 15 enteros y 2 
+decimales, 
+sino: 
+Valor numérico de 15 enteros y 
+2 decimales ≥0 
+- C124=(C112:C118)+ 
+(C121:C123) 
+125 Total Monto 
+Importe de la sumatoria 
+NUM 17 - Valor numérico de 15 enteros 
+* I 2 
+2 
+2 
+2 
+0 
+2 
+0 
+0 
+0 
+2 
+2 
+Retenido/Percibido 
+de los valores de 
+retención/percepción 
+(∑C128 si C127≠ 
+2181xxx) 
+y 2 decimales 
+- C125= (C128), si C127 es 
+≠ 2181xxx. 
+125.1 Total Créditos Fiscales 
+Importe de la sumatoria 
+NUM 17 - Valor numérico de 15 enteros 
+* I 2 
+2 
+2 
+2 
+0 
+2 
+0 
+0 
+0 
+0 
+0 
+de los valores de 
+créditos fiscales (∑C128 
+si C127 = 2181xxx) 
+126 Líneas 
+Número de líneas de 
+NUM 3 
+detalle: 
+- e-Ticket, e-Ticket cta. 
+Ajena y sus respectivas 
+NC/ND: Hasta 700 
+- Otros CFE: Hasta 200 
+y 2 decimales 
+- C125.1=(C128), si C127 = 
+2181xxx 
+- e.Ticket, , e-Ticket cta ajena y 
+sus respectivas NC/ND (101-
+102-103-131-132-133): >0 y 
+≤ 700 
+- Otros CFE: >0 y ≤ 200 
+* N 1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 43 de 86
+
+=== PAGE 44 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+TABLA: Retención, 
+Percepción o 
+Crédito Fiscal 
+. Se pueden incluir 20 repeticiones de pares código-valor 
+2 
+2 
+2 
+2 
+0 
+1 
+0 
+0 
+0 
+2 
+2 
+127 Código de 
+-Código 
+ALFA 8 
+ Debe corresponder a un 
+* P 1 
+1 
+1 
+1 
+0 
+1 
+0 
+0 
+0 
+1 
+1 
+Retención/Percepción/ 
+Crédito Fiscal 
+Retención/Percepción 
+de acuerdo a 
+codificación DGI: Nº de 
+Formulario más Nº de 
+línea. 
+- Código Crédito Fiscal 
+de acuerdo a 
+codificación DGI Nº de 
+Formulario 2181 más Nº 
+de línea. 
+ - Códigos 9999001 a 
+9999999 para 
+retenciones/percepcione
+s de impuestos no 
+administrados por DGI. 
+código registrado en la DGI, 
+asociado a la 
+retención/percepción/crédito 
+fiscal. 
+Códigos 9999001 al 9999999: 
+sin validación. 
+Estos códigos no se repiten, se 
+acumulan los valores de las 
+retenciones/percepciones/crédi
+to fiscal por código, 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 44 de 86
+
+=== PAGE 45 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+128 Valor de la 
+Valor de la 
+NUM 17 ∑ B-C23 - ∑ B-C23 con 
+* I 1 
+1 
+1 
+1 
+0 
+1 
+0 
+0 
+0 
+1 
+1 
+Retención/Percepción/Cré
+dito Fiscal 
+Retención/Percepción/ 
+Crédito Fiscal asociado 
+al código indicado 
+anteriormente 
+Menos 
+Valor de la 
+Retención/Percepción/ 
+Crédito Fiscal asociado 
+al código indicado 
+anteriormente con 
+indicador de facturación 
+(B-C4)=9 
+indicador de facturación 9 (B-
+C4) ocurrencias en la Tabla 
+de Retenciones 
+/Percepciones/Crédito Fiscal 
+de la zona de Detalle de 
+Productos o Servicios, ambos 
+sumandos asociados al 
+código indicado en A-C127 
+Valor numérico de 15 enteros y 
+2 decimales 
+FIN TABLA: Retención, Percepción o Crédito Fiscal 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 45 de 86
+
+=== PAGE 46 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+NUM 17 Valor numérico de 15 enteros y 
+* I5 2 
+2 
+2 
+2 
+0 
+0 
+2 
+2 
+0 
+2 
+2 
+129 Monto no Facturable 
+Sumatoria de: 
+Montos de bienes o 
+servicios con Indicador 
+de facturación (B-C4)=6 
+Menos descuentos 
+globales asignados a 
+ítems con indicador de 
+facturación (D-C7)=6 
+Más recargos globales 
+asignados a ítems con 
+indicador de facturación 
+(D-C7)=6 
+Menos montos de bienes 
+o servicios con 
+Indicador de facturación 
+(B-C4)=7 
+2 decimales 
+- C129= 
+∑ B-C24 (si B-C4=6) 
+menos ∑ D-C6 (si D-C2=D y si 
+D-C7 =6) 
+más ∑ D-C6 (si D-C2 =R y si 
+D-C7 =6) 
+menos ∑ B-C24 (si B-C4=7) 
+más ∑ D-C6 (si D-C2=D y si D-
+C7 =7) 
+menos ∑ D-C6 (si D-C2 =R y si 
+D-C7 =7) 
+Si A-C20=1, debe existir AC-
+129 y A-C130 
+Más descuentos globales 
+asignados a ítems con 
+indicador de facturación 
+(D-C7)=7 
+Menos recargos globales 
+asignados a ítems con 
+indicador de facturación 
+(D-C7)=7 
+5 El concepto del monto no facturable puede imprimirse en lugar del título del campo 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 46 de 86
+
+=== PAGE 47 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.
+Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND e-
+Fac.Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol. 
+Entr 
+130 Monto total a pagar 
+Suma de (monto total + 
+NUM 17 Valor numérico de 15 enteros y 
+* I 1 
+1 
+1 
+1 
+0 
+0 
+1 
+1 
+0 
+1 
+1 
+valor de la 
+retención/percepción + 
+monto no facturable) 
+Si A-C130 = A-C124, no 
+es obligatoria su 
+impresión 
+Si tipo CFE= 151,152 y/o 
+153 (e-Bol.Entrada y 
+sus correcciones) y A-
+C10= 2, 
+A-C130= Suma de 
+(monto total – valor de 
+la retención + monto no 
+facturable) 
+2 decimales 
+Si C124+C125+C129 ≥0, 
+C130=C124+C125+C129 
+ Si C124+C125+C129 <0, se 
+admite los valores: 
+C130=C124+C125+C129 o 
+C130=0 
+Si tipo CFE= 151,152 y/o 153 
+(e-Bol.Entrada y sus 
+correcciones) y A-C10= 2, 
+C130= C124 – C125+C129 
+Si A-C20=1, debe existir C-129 
+y C130 
+FIN ÁREA TOTALES ENCABEZADO 
+ FIN ZONA A.- ENCABEZADO 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 47 de 86
+
+=== PAGE 48 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+B.- DETALLE DE PRODUCTOS O SERVICIOS 
+Corresponde a la información de un ítem. Debe ir al menos una línea de detalle. El máximo de ítems es de 700 para e-tickets, los e-Tickets por cuenta ajena y sus notas 
+de corrección y 200 ítems para el resto de los CFE. 
+ZONAS del CFE 
+e-Ticket y 
+e-Tic.Cta.Aj 
+101-131 
+NC-ND 
+e-Ticket y 
+e-Tic.Cta.Aj 
+102-103-132-133- 
+e-Factura, 
+e-Fac.Cta.Aj 
+111-141 
+NC-ND 
+e-Factura, 
+e-Fac.Cta.Aj 
+112-113-142-143 
+e-Remito 
+181 
+e-Resguardo 
+182 
+e-Fac.Exp 
+121 
+NC-ND 
+e-Fac.Exp 
+122-123 
+e-Rem.Exp 
+124 
+e.BolEnt 
+151 
+NC.ND 
+ e-Bol 
+Entr. 
+152-153 
+B.- DETALLE DE PRODUCTOS O SERVICIOS 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+OBLIGATORIEDAD DE LA ZONA SEGÚN TIPO DE CFE 
+OBLIGATORIEDAD 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+e-Tic 
+y 
+Cta.Aj 
+1 Nº de línea o Nº Secuencial Número del ítem: 
+- e-Ticket, e-Ticket cta. Ajena 
+y sus respectivas notas de 
+corrección: Hasta 700 
+- Otros CFE: Hasta 200 
+NUM 
+3 
+Numero secuencial de la 
+ N 1 
+línea: 
+- e.Ticket, , e-Ticket cta 
+ajena y sus respectivas 
+NC/ND (101-102-103-131-
+132-133): >0 y ≤ 700 
+- Otros CFE: >0 y ≤ 200 
+NC.ND 
+e-Tic y 
+Cta.Aj 
+1 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+1 
+e-Fac 
+y 
+Cta.Aj 
+1 
+e-
+Rem 
+e-
+Res 
+1 1 
+NC.ND 
+e-Fac 
+Exp 
+1 
+e-
+Rem 
+Exp 
+1 
+e.Fac 
+Exp 
+1 
+e.Bol 
+Entr 
+1 
+NCND 
+e-Bol 
+Entr 
+1 
+ TABLA de Códigos del 
+Se pueden incluir 5 
+Ítem 
+repeticiones 
+2 
+2 
+2 
+2 
+2 0 
+2 
+2 
+2 
+2 
+2 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 48 de 86
+
+=== PAGE 49 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+OBLIGATORIEDAD 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+e-Tic 
+y 
+Cta.Aj 
+NC.ND 
+e-Tic y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Res 
+e.Fac 
+Exp 
+NC.ND 
+e-Fac 
+Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NCND 
+e-Bol 
+Entr 
+e-
+Rem 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+2 Tipo de código 
+Tipo de codificación utilizada 
+para identificar el ítem. 
+ALFA 
+10 
+ N 1 
+1 
+1 
+1 
+1 0 
+1 
+1 
+1 
+1 
+1 
+Pueden utilizarse los 
+siguientes valores: 
+- GTIN8 (EAN 8) 
+- GTIN12 (UPC A) 
+- GTIN13 (EAN 13) 
+- GTIN14 (EAN 13) 
+(entre paréntesis se incluye el 
+nombre anterior sólo a modo 
+informativo, sin ser parte del 
+valor a ingresar) 
+Estos códigos permiten 
+registrar un código del 
+estándar internacional GS1 
+EAN). 
+-PLU: Permite registrar el 
+código PLU. 
+INT1 o INT2: Permite registrar 
+uno o dos códigos internos. 
+ARCE: permite registrar 
+código de productos ARCE 
+asociado a artículos, 
+servicios y obras 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 49 de 86
+
+=== PAGE 50 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+OBLIGATORIEDAD 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+e-Tic 
+y 
+Cta.Aj 
+NC.ND 
+e-Tic y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Res 
+e.Fac 
+Exp 
+NC.ND 
+e-Fac 
+Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NCND 
+e-Bol 
+Entr 
+e-
+Rem 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+3 Código del ítem 
+Código del producto de 
+acuerdo a tipo de 
+codificación indicada en 
+campo anterior 
+ALFA 
+35 
+Si B2=GTIN8, GTIN12, 
+GTIN13 y GTIN14, valida 
+dígito verificador. 
+ N 1 
+1 
+1 
+1 
+1 0 
+1 
+1 
+1 
+1 
+1 
+ FIN TABLA de Códigos 
+del ítem 
+Indicador de facturación 
+4 
+Cálculo dígito verificador 
+códigos GTIN (Ver 
+documento disponible en la 
+web de DGI/Portal e-
+Factura/Información 
+General/Documentos de 
+interés) 
+Indica si el producto o servicio 
+es exento, o a que tasa está 
+gravado o si corresponde a 
+un concepto no facturable 
+NUM 
+2 
+1: Exento de IVA 
+2: Gravado a Tasa Mínima 
+3: Gravado a Tasa Básica 
+4: Gravado a Otra Tasa/IVA 
+N/A para e-remito y e-remito 
+de exportación, excepto: 
+ usar indicador de 
+facturación 8 si 
+corresponde a un ítem a 
+rebajar de otro remito ya 
+emitido, 
+ usar indicador de 
+facturación 5 si 
+corresponde a un ítem 
+con valor unitario igual a 
+sobre fictos 
+5: Entrega Gratuita. Por 
+ejemplo docenas de trece 
+6: Producto o servicio no 
+facturable. No existe 
+validación, excepto si A-
+C20= 1, B-C4=6 o 7. 
+7: Producto o servicio no 
+facturable negativo. . No 
+existe validación, excepto si 
+A-C20= 1, B-C4=6 o 7. 
+8: Sólo para remitos: Ítem a 
+ N6 1 
+1 
+1 
+1 
+2 2 
+1 
+1 
+2 
+1 
+1 
+6 El signo correspondiente a los indicadores de facturación 7, 8 y 9, debe imprimirse en lugar del código correspondiente 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 50 de 86
+
+=== PAGE 51 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+OBLIGATORIEDAD 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Res 
+e.Fac 
+Exp 
+NC.ND 
+e-Fac 
+Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NCND 
+e-Bol 
+Entr 
+e-
+Rem 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+e-Tic 
+y 
+Cta.Aj 
+NC.ND 
+e-Tic y 
+Cta.Aj 
+cero (sólo para e-remito 
+de exportación). 
+N/A para e-resguardo. Sólo 
+usar indicador de facturación 
+9 si corresponde a un ítem a 
+anular 
+Para e-Boleta de entrada y 
+sus notas de corrección: 
+ Sólo utilizar indicadores 
+12,13, 14,15, 17, 5, 6 o 7 
+(6 o 7 únicamente en 
+caso de existir conceptos 
+correspondientes a 
+montos no facturables) 
+ Si A-C60=2,B-C4 ≠ 13 
+Si A-C20=1, sólo utilizar 
+indicador 6 o 7. 
+Si A-C21=1 o 2, sólo utilizar 
+indicador 17 
+Si A-C10=3, no puede utilizar 
+indicadores 1, 2, 3, 4, 11 ni 
+12 
+rebajar en e-remitos y en e-
+remitos de exportación. En 
+área de referencia se debe 
+indicar el N° de remito que 
+ajusta 
+9: Sólo para resguardos: 
+Ítem a anular en 
+resguardos. En área de 
+referencia se debe indicar 
+el N° de resguardo que 
+anular 
+10: Exportación y asimiladas 
+11: Impuesto percibido 
+12: IVA en suspenso 
+13: Sólo para e-Boleta de 
+entrada y sus notas de 
+corrección: Ítem vendido 
+por un no contribuyente 
+(valida que A-C60≠2) 
+14: Sólo para e-Boleta de 
+entrada y sus notas de 
+corrección: Ítem vendido 
+por un contribuyente IVA 
+mínimo, Monotributo o 
+Monotributo MIDES (valida 
+que A-C60=2) 
+15: Sólo para e-Boleta de 
+entrada y sus notas de 
+corrección: Ítem vendido 
+por un contribuyente 
+IMEBA (valida A-C60 = 2) 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 51 de 86
+
+=== PAGE 52 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+OBLIGATORIEDAD 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Res 
+e.Fac 
+Exp 
+NC.ND 
+e-Fac 
+Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NCND 
+e-Bol 
+Entr 
+e-
+Rem 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+e-Tic 
+y 
+Cta.Aj 
+NC.ND 
+e-Tic y 
+Cta.Aj 
+16: Sólo para ítems vendidos 
+por contribuyentes con 
+obligación IVA mínimo, 
+Monotributo o Monotributo 
+MIDES, o si se trata de un 
+CFE de venta por cuenta 
+ajena que el mandante 
+tenga la obligación IVA 
+mínimo. 
+17. Sólo para e-Boleta de 
+entrada y sus notas de 
+corrección si se trata de 
+compra de moneda 
+extranjera para su reventa 
+y la contrapartida es en 
+moneda local (valida A-
+C21=1 o 2) 
+Si A-C10=3, no puede 
+utilizar indicadores 1, 2, 3, 
+4, 11 ni 12. 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 52 de 86
+
+=== PAGE 53 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+OBLIGATORIEDAD 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+e-Tic 
+y 
+Cta.Aj 
+NC.ND 
+e-Tic y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Res 
+e.Fac 
+Exp 
+NC.ND 
+e-Fac 
+Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NCND 
+e-Bol 
+Entr 
+e-
+Rem 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+6 
+Indicador 
+Agente/Responsable 
+7 Nombre del ítem 
+7.1 NCM 
+ALFA 
+1 
+Obligatorio para 
+agentes/responsables: 
+corresponde indicar, para 
+cada transacción, si es 
+agente/responsable: 
+- sobre un producto o servicio 
+vendido (R), 
+- o sobre un concepto 
+asociado al producto o 
+servicio vendido (A). 
+N/A para e-Resguardo 
+Nombre del producto o 
+servicio 
+Código correspondiente a la 
+posición arancelaria del 
+producto 
+ALFA 
+80 
+ALFA 
+20 
+R : responsable sobre un 
+* N 2 
+2 
+2 
+2 
+0 0 
+0 
+0 
+0 
+2 
+2 
+producto o servicio vendido 
+A: responsable sobre un 
+concepto asociado al 
+producto o servicio 
+vendido. 
+Si existe B-C6, debe existir 
+la Tabla de Retenciones 
+/Percepciones en la Zona 
+de Detalle de Productos o 
+servicios. 
+Sin validación 
+Sin validación 
+I 
+I 
+1 
+0 
+1 
+0 
+1 
+0 
+1 
+0 
+1 0 
+1 
+0 0 
+2 
+1 
+2 
+1 
+2 
+1 
+0 
+1 
+0 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 53 de 86
+
+=== PAGE 54 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+OBLIGATORIEDAD 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+e-Tic 
+y 
+Cta.Aj 
+NC.ND 
+e-Tic y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Res 
+e.Fac 
+Exp 
+NC.ND 
+e-Fac 
+Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NCND 
+e-Bol 
+Entr 
+e-
+Rem 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+8 Descripción Adicional 
+Descripción Adicional del 
+producto o servicio. 
+Se utiliza por ejemplo para 
+informar pack, servicios con 
+detalle, leyendas o 
+constancias específicas 
+establecidas expresamente 
+por la normativa. 
+Cantidad del ítem. Se admite 
+negativo sólo para eliminar 
+un ítem del propio CFE. 
+Para prestación de servicios 
+no es obligatorio imprimir. 
+Indica la unidad de medida en 
+que está expresada la 
+cantidad (A.C9) En caso que 
+no corresponda, poner N/A y 
+no es obligatorio imprimir. 
+Precio unitario para el ítem 
+Para prestación de servicios 
+no es obligatorio imprimir. 
+9 Cantidad 
+10 Unidad de medida 
+11 Precio unitario 
+Sin validación 
+I 
+2 
+2 
+2 
+2 
+2 0 
+2 
+ 2 
+2 
+2 
+2 
+ALFA 
+1000 
+NUM 
+17 
+Valor numérico de 14 
+enteros y 3 decimales 
+ I7 1 
+1 
+1 
+1 
+1 0 
+1 
+1 
+1 
+1 
+1 
+Sin validación 
+ALFA 
+4 
+ I8 1 
+1 
+1 
+1 
+1 0 
+1 
+1 
+1 
+1 
+1 
+* I9 1 
+1 
+1 
+1 
+0 0 
+1 
+1 
+1 
+1 
+1 
+NUM 
+17 
+Valor numérico de 11 
+enteros y 6 decimales >0 
+ excepto: 
+-Si B-C4=5, B-C11 debe ser 
+0 
+-Si B-C4=8, B-C11 puede 
+ser ≥0 
+12 Descuento en % 
+Descuento por ítem en % 
+NUM6 Valor numérico de 3 enteros 
+ N 3 
+3 
+3 
+3 
+0 0 
+3 
+3 
+0 
+3 
+3 
+y 3 decimales 
+7 Para prestación de servicios no es obligatorio imprimir 
+8 La unidad de medida puede ser parte del título del campo impreso si todos los ítems de detalle se expresan en la misma unidad de medida. Cuando la unidad de medida es N/A, no es obligatorio imprimir. 
+9 Para prestación de servicios no es obligatorio imprimir 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 54 de 86
+
+=== PAGE 55 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+OBLIGATORIEDAD 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+e-Tic 
+y 
+Cta.Aj 
+NC.ND 
+e-Tic y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Res 
+e.Fac 
+Exp 
+NC.ND 
+e-Fac 
+Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NCND 
+e-Bol 
+Entr 
+e-
+Rem 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+13 Monto Descuento 
+Correspondiente al anterior. 
+Totaliza todos los descuentos 
+NUM 
+17 
+otorgados al ítem 
+Valor numérico de 15 
+enteros y 2 decimales 
+Si existe C12, debe existir 
+C13. 
+I 
+2 
+2 
+2 
+2 
+0 0 
+2 
+2 
+0 
+2 
+2 
+ TABLA de Distribución del 
+Se pueden incluir 5 
+ N 3 
+3 
+3 
+3 
+0 0 
+3 
+3 
+0 
+3 
+3 
+Descuento 
+repeticiones de pares Tipo-
+Valor. Incluye los dos 
+campos siguientes: 
+14 Subdescuento – Tipo 
+Indica si el sub-descuento 
+está en $ o % 
+15 Subdescuento – valor 
+Total de sub-descuentos 
+otorgado por ítem 
+NUM 
+1 
+NUM 
+17 
+1: $ 
+2: % 
+Valor numérico de 15 
+enteros y 2 decimales 
+Sin validación 
+ N 1 
+ N 1 
+ FIN TABLA de 
+Distribución del 
+descuento 
+16 Recargo en % 
+17 Monto Recargo 
+Recargo en % por ítem 
+NUM6 Valor numérico de 3 enteros 
+ N 3 
+y 3 decimales. 
+Correspondiente al anterior. 
+Totaliza todos los recargos 
+otorgados al ítem. 
+NUM 
+17 
+- Valor numérico de 15 
+enteros y 2 decimales. 
+- Si existe C16, debe existir 
+I 
+2 
+C17. 
+1 
+1 
+3 
+2 
+1 
+1 
+3 
+2 
+1 
+1 
+3 
+2 
+0 0 
+1 
+0 0 
+1 
+0 0 
+3 
+0 0 
+2 
+1 
+1 
+3 
+2 
+0 
+0 
+0 
+0 
+1 
+1 
+3 
+2 
+1 
+1 
+3 
+2 
+ TABLA de Distribución del 
+Se pueden incluir 5 
+ N 3 
+3 
+3 
+3 
+0 0 
+3 
+3 
+0 
+3 
+3 
+Recargo 
+repeticiones de pares Tipo-
+Valor. Incluye los dos 
+campos siguientes: 
+18 Subrecargo – Tipo 
+Indica si el subrecargo está en 
+$ o % 
+NUM 
+1 
+1: $ 
+2: % 
+ N 1 
+1 
+1 
+1 
+0 0 
+1 
+1 
+0 
+1 
+1 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 55 de 86
+
+=== PAGE 56 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+OBLIGATORIEDAD 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+e-Tic 
+y 
+Cta.Aj 
+NC.ND 
+e-Tic y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Res 
+e.Fac 
+Exp 
+NC.ND 
+e-Fac 
+Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NCND 
+e-Bol 
+Entr 
+e-
+Rem 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+19 Subrecargo – valor 
+Total de subrecargo otorgado 
+por ítem 
+NUM 
+17 
+- Valor numérico de 15 
+enteros y 2 decimales 
+- Sin validación 
+ N 1 
+1 
+1 
+1 
+0 0 
+1 
+1 
+0 
+1 
+1 
+ FIN TABLA Distribución 
+del recargo 
+ TABLA de Retenciones/ 
+Se pueden incluir 5 
+e-Resguardo: Obligatorio 
+2 
+2 
+2 
+2 
+0 1 
+0 
+0 
+0 
+2 
+2 
+Percepciones 
+repeticiones de códigos de 
+percepción o retención o 
+crédito fiscal-tasa por ítem. 
+completar. 
+Restantes CFE: Si utiliza 
+tabla, entonces debe existir 
+B-C6 
+20 Código de 
+Código Retención / 
+Percepción /Crédito Fiscal de 
+acuerdo a codificación DGI: 
+Nº de Formulario más Nº de 
+línea. 
+ Por ejemplo: 2183211 
+(Formulario 2183-IVA 
+Frigoríficos y Mataderos), 
+2181410 (formulario 2181-
+Reducción Alícuota Ley 
+17.934) 
+Códigos 9999001 a 9999999 
+para retenciones/ 
+percepciones de impuestos 
+no administrados por DGI. 
+Tasa vigente a la fecha del 
+comprobante en % 
+Retención/Percepción 
+21 Tasa 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Valor numérico >0 
+ N 1 
+1 
+1 
+1 
+0 1 
+0 
+0 
+0 
+1 
+1 
+ALFA 
+8 
+ Debe corresponder a un 
+código registrado en la 
+DGI, asociado a la 
+retención/percepción/crédit
+o fiscal. 
+Códigos 9999001 al 
+9999999: sin validación 
+NUM 
+6 
+Sin validación 
+Valor numérico de 3 enteros 
+y 3 decimales 
+ N 
+2 
+2 
+2 
+2 
+0 2 
+0 
+0 
+0 
+2 
+2 
+Página 56 de 86
+
+=== PAGE 57 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+OBLIGATORIEDAD 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+e-Tic 
+y 
+Cta.Aj 
+NC.ND 
+e-Tic y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e-
+Res 
+e.Fac 
+Exp 
+NC.ND 
+e-Fac 
+Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NCND 
+e-Bol 
+Entr 
+e-
+Rem 
+NC.ND 
+e-Fac 
+y 
+Cta.Aj 
+22 Monto sujeto a 
+Monto informado asociado al 
+retención/percepción/crédito 
+fiscal 
+código y tasa indicados 
+anteriormente 
+NUM 
+17 
+- Sin validación 
+- Valor numérico de 15 
+enteros y 2decimales>0 
+ N 
+2 
+2 
+2 
+2 
+0 1 
+0 
+0 
+0 
+2 
+Sin validación 
+ N 
+2 
+2 
+2 
+2 
+2 2 
+0 
+0 
+0 
+2 
+ALFA 
+150 
+2 
+2 
+22.1 Información adicional 
+23 Valor de la retención/ 
+percepción/crédito fiscal 
+ FIN TABLA de 
+Retenciones/Percepciones 
+Otra información relativa a la 
+retención/percepción/crédito 
+Si la información corresponde 
+a una leyenda o constancia 
+específica establecida 
+expresamente por la 
+normativa, es obligatoria su 
+impresión 
+Valor de la 
+Retención/Percepción/Crédit
+o Fiscal asociada al código y 
+tasa indicados anteriormente 
+NUM 
+17 
+Sin validación 
+ N 
+1 
+1 
+1 
+1 
+0 1 
+0 
+0 
+0 
+1 
+1 
+Valor numérico de 15 
+enteros y 2decimales>0 
+24 
+Monto Ítem 
+Valor por línea de detalle 
+NUM 
+17 
+C24=(C9*C11)–C13+C17 
+I 
+1 
+1 
+1 
+1 
+0 0 
+1 
+1 
+1 
+1 
+1 
+FIN ZONA B.- DETALLE DE PRODUCTOS O SERVICIOS 
+Valor numérico de 15 
+enteros y 2 decimales 
+Debe ser cero cuando: C4=5 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 57 de 86
+
+=== PAGE 58 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+C.- SUBTOTALES INFORMATIVOS 
+Pueden ser de 0 hasta 20 subtotales. Estos subtotales no aumentan o disminuyen la base del impuesto, ni modifican los campos totalizadores, sólo son campos 
+informativos. 
+Estos subtotales tienen una glosa que especifica el concepto. Por ejemplo un subtotal aplicado a un determinado grupo de productos, servicios o elementos. 
+En la representación impresa, estos subtotalizadores pueden indicarse en forma agrupada en una sección aparte. 
+OBLIGATORIEDAD DE LA ZONA SEGÚN TIPO DE CFE 
+ZONAS del CFE 
+e-Ticket y 
+e-Tic.Cta.Aj 
+101-131 
+NC-ND 
+e-Ticket y 
+e-Tic.Cta.Aj 
+102-103-132-133- 
+e-Factura, 
+e-Fac.Cta.Aj 
+111-141 
+NC-ND 
+e-Factura, 
+e-Fac.Cta.Aj 
+112-113-142-143 
+e-Remito 
+181 
+e-Resguardo 
+182 
+e-Fac.Exp 
+121 
+NC-ND 
+e-Fac.Exp 
+122-123 
+e-Rem.Exp 
+124 
+e-BolEntr. 
+151 
+NC-ND 
+e-Bol 
+Entr. 
+152-153 
+C.- SUBTOTALES INFORMATIVOS 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+3 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* 
+I 
+OBLIGATORIEDAD 
+e-Tic 
+ y 
+Cta.Aj 
+NC-ND 
+e-Tic 
+ y 
+Cta.Aj 
+e-Fac 
+ y 
+Cta.Aj 
+NC-ND 
+ e-Fac 
+y 
+Cta.Aj 
+e-
+Rem 
+e- 
+Res 
+e-Fac 
+Exp 
+NC-ND 
+e-Fac 
+Exp 
+e-
+Rem 
+Exp 
+e-
+Bol 
+Ent 
+NC.ND 
+e-Bol 
+Entr 
+1 Número Subtotal 
+2 Glosa 
+3 Orden 
+Número Subtotal 
+Título del Subtotal 
+Ubicación para Impresión 
+NUM 2 
+ALFA 40 
+NUM 2 
+ N 
+ N 
+ N 
+1 
+1 
+3 
+1 
+1 
+3 
+1 
+1 
+3 
+1 
+1 
+3 
+1 
+1 
+3 
+1 
+1 
+3 
+1 
+1 
+3 
+1 
+1 
+3 
+1 
+1 
+3 
+1 
+1 
+3 
+1 
+1 
+3 
+Sin validación. De uso 
+para el contribuyente 
+como ayuda para indicar 
+como imprimirá 
+subtotales. 
+4 Valor del Subtotal 
+Valor del Subtotal 
+NUM 17 
+- Valor numérico de 15 
+ N 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+enteros y 2 decimales. 
+- Sin validación. 
+FIN ZONA C.- SUBTOTALES INFORMATIVOS 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 58 de 86
+
+=== PAGE 59 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+D.- INFORMACIÓN DE DESCUENTOS O RECARGOS 
+Pueden ser de 0 hasta 20 líneas. Estos aumentan o disminuyen la base del impuesto. 
+Estos descuentos o recargos tienen una glosa que especifica el concepto. Por ejemplo un descuento global aplicado a un determinado tipo de producto o un descuento 
+por pago contado que afecta a todos los ítems. 
+En caso que se apliquen descuentos o recargos globales y hayan ítems exentos, gravados a distintas tasas o no facturables (indicados en la Zona de Detalle B-C4 
+“Indicador de Facturación” códigos 1, 2, 3, 4, 6, 7, 10, 11, 12, 13, 14, 15), deberá haber tantas líneas como conceptos diferentes existan. 
+OBLIGATORIEDAD DE LA ZONA SEGÚN TIPO DE CFE 
+ZONAS del CFE 
+e-Ticket y 
+e-Tic.Cta.Aj 
+101-131 
+NC-ND 
+e-Ticket y 
+e-Tic.Cta.Aj 
+102-103-132-133- 
+e-Factura, 
+e-Fac.Cta.Aj 
+111-141 
+NC-ND 
+e-Factura, 
+e-Fac.Cta.Aj 
+112-113-142-143 
+e-Remito 
+181 
+e-Resguardo 
+182 
+e-Fac.Exp 
+121 
+NC-ND 
+e-Fac.Exp 
+122-123 
+e-Rem.Exp 
+124 
+e-BolEntr. 
+151 
+NC-ND 
+e-Bol 
+Entr. 
+152-153 
+D.- DESCUENTOS Y RECARGOS 
+2 
+2 
+2 
+2 
+0 
+0 
+2 
+2 
+0 
+2 
+2 
+Si A-C20=1, no puede existir esta Zona 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* 
+I 
+OBLIGATORIEDAD 
+e-Tic y 
+Cta.Aj 
+NC-ND 
+e-Tic y 
+Cta.Aj 
+NC-ND 
+ e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e- 
+Rem 
+e- 
+Res 
+e-Fac 
+ Exp 
+NC-
+ND 
+ e-Fac 
+ Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol 
+Entr 
+1 N° de línea o N° 
+Secuencial 
+Número de descuento o recargo. 
+NUM 2 Número secuencial de la 
+ N 
+1 
+1 
+1 
+1 
+0 
+0 
+1 
+1 
+0 
+1 
+1 
+De 1 a 20. 
+línea. 
+La obligatoriedad se 
+refiere a que, si se 
+incluye esta zona, debe 
+haber al menos una 
+línea y en este caso 
+debe ir el dato del 
+número de línea 
+2 Tipo de movimiento 
+D (descuento) o R (recargo) 
+ALFA 1 D o R 
+ N 
+1 
+1 
+1 
+1 
+0 
+0 
+1 
+1 
+0 
+1 
+1 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 59 de 86
+
+=== PAGE 60 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* 
+I 
+OBLIGATORIEDAD 
+e-Tic y 
+Cta.Aj 
+NC-ND 
+e-Tic y 
+Cta.Aj 
+NC-ND 
+ e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e- 
+Rem 
+e- 
+Res 
+e-Fac 
+ Exp 
+NC-
+ND 
+ e-Fac 
+ Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol 
+Entr 
+ N 
+ N 
+I 
+I 
+1 
+3 
+1 
+1 
+ N10 1 
+1 
+3 
+1 
+1 
+1 
+1 
+3 
+1 
+1 
+1 
+1 
+3 
+1 
+1 
+1 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+1 
+3 
+1 
+1 
+1 
+1 
+3 
+1 
+1 
+1 
+0 
+0 
+0 
+0 
+0 
+1 
+3 
+1 
+1 
+1 
+1 
+3 
+1 
+1 
+1 
+3 Tipo Descuento o 
+Indica si el descuento o recargo en 
+Recargo 
+4 Código del 
+Descuento/Recargo 
+$ o % 
+Código asignado al concepto 
+NUM 1 
+1: $ 
+2: % 
+NUM 3 Sin validación 
+5 Glosa 
+6 Valor 
+7 Indicador de 
+facturación 
+Especificación de descuento o 
+ALFA 50 Sin Validación 
+recargo 
+Monto del descuento o recargo 
+NUM 17 Valor numérico de 15 
+Indica si el descuento o recargo 
+aplica a productos o servicios 
+exentos, o a que tasa están 
+gravados o si corresponde a un 
+concepto no facturable. 
+NUM 2 
+Para e-Boleta de entrada y sus 
+notas de corrección: 
+ Sólo utilizar indicadores12, 13, 
+14,15, 17, 5, 6 o 7 (6 o 7 
+únicamente en caso de existir 
+conceptos correspondientes a 
+montos no facturables) 
+ Si A-C60=2, B-C4 ≠ 13 
+ Si A-C21=1 o 2, sólo utilizar 
+indicador 17 
+Si A-C10=3, no puede utilizar 
+indicadores 1, 2, 3, 4, 11 ni 12 
+enteros y 2 decimales. 
+1: Exento de IVA 
+2: Gravado a Tasa 
+Mínima 
+3: Gravado a Tasa 
+Básica 
+4: Gravado a Otra 
+Tasa/IVA sobre fictos 
+6: Producto o servicio no 
+facturable 
+7: Producto o servicio no 
+facturable negativo 
+10: Exportación y 
+asimiladas 
+11: Impuesto percibido 
+12: IVA en suspenso 
+13: Sólo para e-Boleta 
+de entrada y sus notas 
+de corrección: Ítem 
+vendido por un no 
+contribuyente (valida 
+10 El signo correspondiente al indicador de facturación 7 debe imprimirse en lugar del código correspondiente 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 60 de 86
+
+=== PAGE 61 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* 
+I 
+OBLIGATORIEDAD 
+e-Tic y 
+Cta.Aj 
+NC-ND 
+e-Tic y 
+Cta.Aj 
+NC-ND 
+ e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e- 
+Rem 
+e- 
+Res 
+e-Fac 
+ Exp 
+NC-
+ND 
+ e-Fac 
+ Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol 
+Entr 
+que A-C60≠2) 
+14: Sólo para e-Boleta 
+de entrada y sus notas 
+de corrección: Ítem 
+vendido por un 
+contribuyente IVA 
+mínimo, Monotributo o 
+Monotributo MIDES 
+(valida que A-C60=2) 
+15: Sólo para e-Boleta 
+de entrada y sus notas 
+de corrección: Ítem 
+vendido por un 
+contribuyente IMEBA 
+(valida que A-C60=2) 
+16: Sólo para ítems 
+vendidos por 
+contribuyentes con 
+obligación IVA mínimo, 
+Monotributo o 
+Monotributo MIDES, o 
+si se trata de un CFE 
+de venta por cuenta 
+ajena que el mandante 
+tenga la obligación IVA 
+mínimo. 
+17. Sólo para e-Boleta 
+de entrada y sus notas 
+de corrección si se trata 
+de compra de moneda 
+extranjera para su 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 61 de 86
+
+=== PAGE 62 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* 
+I 
+OBLIGATORIEDAD 
+e-Tic y 
+Cta.Aj 
+NC-ND 
+e-Tic y 
+Cta.Aj 
+NC-ND 
+ e-Fac 
+y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+e- 
+Rem 
+e- 
+Res 
+e-Fac 
+ Exp 
+NC-
+ND 
+ e-Fac 
+ Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol 
+Entr 
+FIN ZONA D.- DESCUENTOS Y RECARGOS 
+reventa y la 
+contrapartida es en 
+moneda local (valida A-
+C21=1 o 2) 
+ Si A-C10=3, no puede 
+utilizar indicadores 1, 2, 
+3, 4, 11 ni 12 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 62 de 86
+
+=== PAGE 63 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+E.- MEDIOS DE PAGO 
+OBLIGATORIEDAD DE LA ZONA SEGÚN TIPO DE CFE 
+ZONAS del CFE 
+e-Ticket y 
+e-Tic.Cta.Aj 
+101-131 
+NC-ND 
+e-Ticket y 
+e-Tic.Cta.Aj 
+102-103-132-133- 
+e-Factura, 
+e-Fac.Cta.Aj 
+111-141 
+NC-ND 
+e-Factura, 
+e-Fac.Cta.Aj 
+112-113-142-143 
+e-Remito 
+181 
+e-Resguardo 
+182 
+e-Fac.Exp 
+121 
+NC-ND 
+e-Fac.Exp 
+122-123 
+e-Rem.Exp 
+124 
+e-BolEntr. 
+151 
+NC-ND 
+e-Bol 
+Entr. 
+152-153 
+E.- MEDIOS DE PAGO 
+2 
+2 
+2 
+2 
+0 
+0 
+2 
+2 
+0 
+2 
+2 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* 
+I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.Aj 
+NC-
+ND e-
+Tic y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+NC-ND 
+e-Fac, 
+Cta.Aj 
+e- 
+Rem 
+e- 
+Res 
+e-Fac 
+ Exp 
+NC.ND 
+ e-Fac 
+ Exp 
+e-
+Rem 
+Exp 
+e.Bol 
+Entr 
+NCND 
+e-Bol 
+Entr 
+1 N° Línea o N° 
+Secuencial 
+Número de la referencia. De 1 a 40 NUM 2 Número secuencial de la 
+ N 
+1 
+línea. 
+2 Código del Medio de 
+Código asignado al concepto 
+NUM 3 Sin validación 
+ P 
+3 
+Pago 
+3 Glosa 
+Identificación detallada del medio 
+ALFA 50 Sin Validación 
+I 
+1 
+4 Orden 
+Ubicación para Impresión 
+de pago 
+NUM 2 Sin validación. De uso 
+para el contribuyente 
+como ayuda para 
+indicar como imprimirá 
+los medios de pago. 
+ N 
+3 
+1 
+3 
+1 
+3 
+1 
+3 
+1 
+3 
+1 
+3 
+1 
+3 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+1 
+3 
+1 
+3 
+1 
+3 
+1 
+3 
+0 
+0 
+0 
+0 
+1 
+3 
+1 
+3 
+1 
+3 
+1 
+3 
+5 Valor del pago 
+Valor del pago 
+NUM 17 - Valor numérico de 15 
+ N 
+1 
+1 
+1 
+1 
+0 
+0 
+1 
+1 
+0 
+1 
+1 
+enteros y 2 decimales. 
+- Sin validación. 
+FIN ZONA E.- MEDIOS DE PAGO 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 63 de 86
+
+=== PAGE 64 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+F.- INFORMACIÓN DE REFERENCIA 
+De 0 a 40 posibles repeticiones. 
+ZONAS del CFE 
+e-Ticket y 
+e-Tic.Cta.Aj 
+101-131 
+OBLIGATORIEDAD DE LA ZONA SEGÚN TIPO DE CFE 
+NC-ND 
+e-Factura, 
+e-Fac.Cta.Aj 
+112-113-142-143 
+NC-ND 
+e-Ticket y 
+e-Tic.Cta.Aj 
+102-103-132-133- 
+e-Factura, 
+e-Fac.Cta.Aj 
+111-141 
+e-Resguardo 
+182 
+e-Remito 
+181 
+e-Fac.Exp 
+121 
+NC-ND 
+e-Fac.Exp 
+122-123 
+e-Rem.Exp 
+124 
+e-Bol.Entr. 
+151 
+NC-ND 
+e-Bol 
+Entr. 
+152-153 
+F.- INFORMACIÓN DE REFERENCIA 
+2 
+1 
+2 
+1 
+2 
+2 
+2 
+1 
+2 
+2 
+1 
+Si A-C20=1, es obligatorio completar la referencia a/los comprobante/s que se está/n cobrando. 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+e-Tic 
+y 
+Cta.Aj 
+Número de la referencia. De 1 a 40 
+NUM 2 Número secuencial de 
+ N 1 
+la línea. 
+OBLIGATORIEDAD 
+NC-ND 
+e-Tic y 
+Cta.Aj 
+1 
+NC-ND 
+ e-Fac 
+Cta.Aj 
+1 
+e-Fac, 
+Cta.Aj 
+1 
+e-
+Rem 
+1 
+e-
+Res 
+1 
+e-
+Fac 
+Exp 
+1 
+NC.ND 
+ e-Fac 
+Exp 
+1 
+e.Rem 
+Exp 
+1 
+e.Bol 
+Entr 
+1 
+NC.ND 
+e-Bol 
+Entr 
+1 
+Se utiliza cuando no se puede identificar los CFE 
+de referencia, debiendo explicitar el motivo en el 
+campo “Razón Referencia” (C6) 
+Por ejemplo cuando se referencia a un documento 
+no codificado. 
+No corresponde usar el indicador de referencia 
+global cuando se referencia a más de 40 CFE, 
+sino que deberá emitir otro comprobante. 
+Indica el CFE o CFC de referencia 
+NUM 1 Valor =1 
+ N 2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+NUM 3 Válida con tabla de 
+códigos CFE/CFC. 
+Valida que exista 
+ tipo, serie y número 
+ P 2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+1 N° Línea o N° 
+Secuencial 
+2 Indicador de 
+Referencia 
+Global 
+3 Tipo CFE de 
+referencia 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 64 de 86
+
+=== PAGE 65 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic 
+y 
+Cta.Aj 
+NC-ND 
+e-Tic y 
+Cta.Aj 
+NC-ND 
+ e-Fac 
+Cta.Aj 
+e-Fac, 
+Cta.Aj 
+e-
+Rem 
+e-
+Res 
+e-
+Fac 
+Exp 
+NC.ND 
+ e-Fac 
+Exp 
+e.Rem 
+Exp 
+e.Bol 
+Entr 
+NC.ND 
+e-Bol 
+Entr 
+4 Serie del CFE 
+de referencia 
+5 Número del 
+CFE de 
+referencia 
+6 Razón 
+referencia 
+Serie asignada al comprobante. 
+ALFA 2 Valida que exista 
+ I 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+de CFE de referencia 
+ tipo, serie y número 
+de CFE de referencia 
+Nº asignado al comprobante. 
+NUM 7 Valida que exista 
+ I 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+ tipo, serie y número 
+de CFE de referencia 
+Explicitar razón. 
+Si C2=1: 
+ obligatorio completar C6 con el motivo, en 
+ALFA 
+90 
+Si C2=1, debe existir 
+C6 (debe completar 
+el motivo) 
+ I 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+restantes casos es opcional. 
+ Si la razón de referencia es un documento no 
+codificado, debe indicar cada uno de los 
+documentos relacionados o sobre los que se 
+practicó la retención (tipo y número). 
+7 Fecha CFE de 
+Fecha del comprobante de referencia. 
+FECHA - AAAAMMDD; 
+ I 
+3 
+3 
+3 
+3 
+3 
+2 
+3 
+3 
+3 
+3 
+3 
+referencia 
+FIN ZONA F.- INFORMACIÓN DE REFERENCIA 
+- Fecha válida entre 
+01/10/2011 a 
+31/12/2050 
+- C7 debe ser ≤ fecha 
+del servidor de DGI + 
+60 días. 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 65 de 86
+
+=== PAGE 66 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+G.- CONSTANCIA AUTORIZACIÓN PARA EMISIÓN DE CFE (CAE) 
+OBLIGATORIEDAD DE LA ZONA SEGÚN TIPO DE CFE 
+ZONAS del CFE e-Ticket y 
+e-Tic.Cta.Aj 
+101-131 
+NC-ND 
+e-Ticket y 
+e-Tic.Cta.Aj 
+102-103-132-133- 
+e-Factura, 
+e-Fac.Cta.Aj 
+111-141 
+NC-ND 
+e-Factura, 
+e-Fac.Cta.Aj 
+112-113-142-143 
+e-Remito 
+181 
+e-Resguardo 
+182 
+e-Fac.Exp 
+121 
+NC-ND 
+e-Fac.Exp 
+122-123 
+e-Rem.Exp 
+124 
+e-Bol.Entr. 
+151 
+NC-ND 
+e-Bol 
+Entr. 
+152-153 
+G.- CAE 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+1 Número de CAE 
+Número asignado por DGI a la 
+Constancia de autorización de 
+emisión 
+NUM 11 
+2 Número inicial del 
+Número inicial del rango autorizado 
+NUM 7 
+CAE 
+en el CAE 
+3 Número final del CAE Número final del rango autorizado 
+NUM 7 Sin validación 
+en el CAE 
+4 Fecha vencimiento 
+Fecha de vencimiento del CAE 
+FECHA 
+- AAAAMMDD 
+Fecha válida entre 
+01/10/2011y 31/12/2050 
+ I 
+ I 
+ I 
+ I 
+OBLIGATORIEDAD 
+e-Tic y 
+Cta.Aj 
+1 
+NC-ND 
+e-Tic y 
+Cta.Aj 
+1 
+e-Fac 
+y 
+Cta.Aj 
+1 
+NC-ND 
+e-Fac 
+y 
+Cta.Aj 
+1 
+e- 
+Rem 
+1 
+e- 
+Res 
+1 
+e.Fac 
+Exp 
+1 
+NC.ND 
+ e-Fac 
+ Exp 
+1 
+e,Rem 
+Exp 
+1 
+E.Bol 
+Entr 
+1 
+NC.ND 
+e-Bol 
+Entr 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+5 CAE especial 
+Se completa sólo si utiliza un CAE 
+especial y se debe indicar el tipo 
+utilizado. 
+NUM 1 1: Exonerado 
+2: IVA mínimo 
+3: Monotributo 
+4: Monotributo MIDES 
+Si C5=1, debe existir C6 
+y B-C4 debe ser distinto 
+de 2, 3, 4, 11 y 12 
+Si C5=2, 3 o 4, A-C10 
+debe ser igual a 3 
+ P 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 66 de 86
+
+=== PAGE 67 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* I 
+OBLIGATORIEDAD 
+e-Tic y 
+Cta.Aj 
+NC-ND 
+e-Tic y 
+Cta.Aj 
+e-Fac 
+y 
+Cta.Aj 
+NC-ND 
+e-Fac 
+y 
+Cta.Aj 
+e- 
+Rem 
+e- 
+Res 
+e.Fac 
+Exp 
+NC.ND 
+ e-Fac 
+ Exp 
+e,Rem 
+Exp 
+E.Bol 
+Entr 
+NC.ND 
+e-Bol 
+Entr 
+6 Causal tipo del CAE Se completa sólo si debe indicarse 
+la causa del tipo de CAE especial 
+(por ej: la causa de la 
+exoneración) 
+NUM 3 
+Debe corresponder a un 
+código según Tabla de 
+tipos de CAE especial 
+Si existe C6; entonces 
+C5=1 
+FIN ZONA G.- CAE 
+ P 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 67 de 86
+
+=== PAGE 68 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+H.- FECHA Y HORA DE FIRMA ELECTRÓNICA AVANZADA DEL COMPROBANTE 
+ZONAS del CFE 
+OBLIGATORIEDAD DE LA ZONA SEGÚN TIPO DE CFE 
+e-Ticket y 
+e-
+Tic.Cta.Aj 
+101-131 
+NC-ND 
+e-Ticket y 
+e-Tic.Cta.Aj 
+102-103-132-
+133- 
+e-Factura, 
+e-
+Fac.Cta.Aj 
+111-141 
+NC-ND 
+e-Factura, 
+e-
+Fac.Cta.Aj 
+112-113-142-
+143 
+e-
+Remito 
+181 
+e-
+Resguardo 
+182 
+e-
+Fac.Exp 
+121 
+NC-ND 
+e-
+Fac.Exp 
+122-123 
+e-
+Rem.Exp 
+124 
+e-
+Bol.Entr. 
+151 
+NCND 
+e-Bol 
+Entr. 
+152-153 
+H.- FECHA Y HORA DE FIRMA ELECTRÓNICA 
+AVANZADA 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+1 Fecha y hora de la firma electrónica 
+avanzada del CFE 
+FIN ZONA H.- FECHA Y HORA DE FIRMA ELECRÓNICA AVANZADA 
+FECHA-
+HORA 
+- AAAA-MM-DDTHH:MM:SS-hh:mm 
+- Fecha válida entre el 01/10/2011 al DD/MM/AAAA 
+donde ésta última es la del servidor de DGI + 1 día 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 68 de 86
+
+=== PAGE 69 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+I.- FIRMA ELECTRÓNICA AVANZADA DEL COMPROBANTE COMPLETO 
+Esta firma: no incluye la Zona J-Adenda. 
+ZONAS del CFE 
+OBLIGATORIEDAD DE LA ZONA SEGÚN TIPO DE CFE 
+NC-ND 
+e-Factura, 
+e-Fac.Cta.Aj 
+112-113-142-143 
+NC-ND 
+e-Ticket y 
+e-Tic.Cta.Aj 
+102-103-132-133- 
+e-Factura, 
+e-Fac.Cta.Aj 
+111-141 
+e-Resguardo 
+182 
+e-Remito 
+181 
+e-Fac.Exp 
+121 
+e-Ticket y 
+e-Tic.Cta.Aj 
+101-131 
+NC-ND 
+e-Fac.Exp 
+122-123 
+e-Rem.Exp 
+124 
+e-Bol.Entr. 
+151 
+NC-ND 
+e-Bol 
+Entr. 
+152-153 
+I.- FIRMA ELECTRÓNICA AVANZADA 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+1 Serial del certificado 
+Número serial del certificado electrónico 
+Número serial asociado a un Certificado vigente, no 
+revocado y habilitado para facturación electrónica al 
+momento de generar la firma 
+2 Emisor del certificado 
+Código correspondiente al emisor del certificado electrónico 
+ALFA 
+3 Firma Electrónica Avanzada 
+Firma electrónica avanzada sobre todo el documento, excepto 
+Firma electrónica avanzada según el estándar XML 
+la Zona J-Adenda. 
+Digital Signature. 
+FIN ZONA I.- FIRMA ELECTRÓNICA AVANZADA 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 69 de 86
+
+=== PAGE 70 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+J.- ANEXO-ADENDA 
+La Adenda es un elemento opcional del CFE que comprende información de carácter comercial que el emisor requiere trasmitir al receptor. Es un nodo dentro del 
+esquema XML (XSD) con información no fiscal pero que está relacionada al CFE. 
+DGI no definió un formato estándar para la adenda, pero recomienda utilizar el formato etiqueta-valor. 
+La Adenda será un elemento obligatorio del CFE y su información deberá constar en la representación impresa siempre que: 
+ existan leyendas o constancias específicas que deban incluirse en la documentación de acuerdo a lo previsto en la normativa relativa a determinadas 
+operaciones, excepto que la misma haya establecido expresamente otra ubicación. 
+ el emisor no consigne la información correspondiente al área Identificación del Receptor, por estar amparada la operación por el secreto profesional. 
+La información contenida en la adenda no debe ser enviada a DGI. 
+OBLIGATORIEDAD DE LA ZONA SEGÚN TIPO DE CFE 
+ZONAS del CFE 
+e-Ticket y 
+e-Tic.Cta.Aj 
+101-131 
+NC-ND 
+e-Ticket y 
+e-Tic.Cta.Aj 
+102-103-132-133- 
+e-Factura, 
+e-Fac.Cta.Aj 
+111-141 
+NC-ND 
+e-Factura, 
+e-Fac.Cta.Aj 
+112-113-142-143 
+e-Remito 
+181 
+e-Resguardo 
+182 
+e-Fac.Exp 
+121 
+NC-ND 
+e-Fac.Exp 
+122-123 
+e-Rem.Exp 
+124 
+E-Bol.Entr. 
+151 
+NC-ND 
+e-Bol 
+Entr. 
+152-153 
+J.- ANEXO ADENDA 
+2 
+2 
+2 
+2 
+3 
+2 
+2 
+2 
+2 
+2 
+2 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+Texto libre 
+Cualquier objeto binario 
+ALFA 
+BINARIO 
+Sin validación 
+Sin Validación 
+1 Texto 
+2 Otro 
+FIN ZONA J.- ADENDA 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 70 de 86
+
+=== PAGE 71 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+ K.- COMPLEMENTO FISCAL 
+Incluye información de carácter fiscal que la DGI requiere del sujeto por cuenta de quien se realiza la operación para determinados tipos de comprobantes. 
+La información contenida en esta zona debe enviarse al receptor en todos los casos, en forma libre o encriptada. Si se opta por encriptar la información deberán utilizar el 
+standard de W3C: http://www.w3.org/2001/04/xmlenc# (haciendo uso de la clave pública de DGI). De esta forma solo será legible por ésta y no por el receptor del 
+comprobante. 
+La información contenida en esta zona podrá excluirse de la representación impresa. 
+Se informa: 
+ Nº del RUC del emisor del comprobante venta por cuenta ajena o de la e-boleta de entrada si A-C21=2 
+ 
+Identificación del Mandante/ Comitente/ Consignador cuyos datos deben informarse cuando: 
+o 
+o 
+ se trate de operaciones realizadas por cuenta ajena y a nombre propio: e-Ticket Venta por Cuenta Ajena, Nota de Crédito de e-Ticket Venta por Cuenta 
+Ajena, Nota de Débito de e-Ticket Venta por Cuenta Ajena, e-Factura Venta por Cuenta Ajena, Nota de Crédito de e-Factura Venta por Cuenta Ajena y 
+Nota de Débito de e-Factura Venta por Cuenta Ajena. 
+ se trate de operaciones de compra de moneda extranjera para su reventa, realizadas por cuenta ajena (A-C21=2): e-Boleta de entrada y sus notas de 
+corrección. 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 71 de 86
+
+=== PAGE 72 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+OBLIGATORIEDAD DE LA ZONA SEGÚN TIPO DE CFE 
+ZONAS del CFE 
+e-Ticket Cta.Ajena 
+131 
+NC-ND e-Tick.Cta.Ajena 
+132-133 
+e-Factura Cta.Ajena 
+141 
+NC-ND e-
+Fac.Cta.Ajena 
+142-143 
+e-Boleta de 
+entrada 
+151-153-153 
+K.- COMPLEMENTO FISCAL 
+- Si A-C18=2, no es obligatorio completar esta Zona 
+- Si A-C21=2, se habilita esta zona para e-Boleta de 
+entrada 
+ 2 
+- 
+ 2 
+- 
+2 
+- 
+2 
+- 
+- 
+2 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* 
+I 
+OBLIGATORIEDAD 
+e-Ticket 
+Vta.Cta.Ajena 
+NC-ND e-
+Ticket 
+Vta.Cta.Ajena 
+e-Factura 
+Vta.Cta.Ajena 
+NC-ND e-
+Factura 
+Vta.Cta.Ajena 
+e-Boleta 
+de entrada 
+1 RUC Emisor 
+Corresponde al RUC del emisor 
+electrónico del comprobante 
+venta por cuenta ajena o de la 
+e-boleta de entrada si A-C21=2 
+NUM 12 
+Dígito verificador 
+* N 
+1 
+1 
+1 
+1 
+1 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 72 de 86
+
+=== PAGE 73 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* 
+I 
+OBLIGATORIEDAD 
+e-Ticket 
+Vta.Cta.Ajena 
+NC-ND e-
+Ticket 
+Vta.Cta.Ajena 
+e-Factura 
+Vta.Cta.Ajena 
+NC-ND e-
+Factura 
+Vta.Cta.Ajena 
+e-Boleta 
+de entrada 
+2 Código Tipo Documento 
+Indica si se trata de RUC, C.I. 
+NUM 2 
+Mandante 
+3 Código País 
+Otros, Pasaporte, DNI o NIFE: 
+1: NIE 
+2: RUC (Uruguay) 
+3: C.I. (Uruguay) 
+4: Otros 
+5: Pasaporte (todos los países) 
+6: DNI (documento de identidad 
+de Argentina, Brasil, Chile o 
+Paraguay) 
+7.NIFE número de identificación 
+fiscal extranjero (todos los 
+países) 
+Si se trata de compra de 
+moneda extranjera para su 
+reventa, debe ser NIE, RUC o 
+NIFE 
+Se utiliza el Estándar 
+Internacional ISO 3166-1 alfa-
+2, códigos de países de 2 
+letras. 
+Tabla disponible en la Web DGI: 
+Aplicación Sigma. 
+* N 
+1 
+1 
+1 
+1 
+1 
+ Valida 
+1: NIE 
+2: RUC (Uruguay) 
+3: C.I. (Uruguay) 
+4: Otros 
+5: Pasaporte (todos los 
+países) 
+6: DNI (documento de 
+identidad de Argentina, 
+Brasil, Chile o 
+Paraguay) 
+7: NIFE (todos los 
+países) 
+Si A-C21=2, K2 debe 
+ser 1, 2 o 7 
+ALFA 2 
+Si K2 = 1, 2 o 3; K3= UY 
+* N 
+1 
+1 
+1 
+1 
+1 
+ Si K2= 4, 5 o 7; 
+K3=código del país 
+según tabla, o K3 = 99 si 
+no existe código del país 
+en la tabla. 
+ Si K2 = 6; K3 = AR, BR, 
+CL, o PY 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 73 de 86
+
+=== PAGE 74 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+* 
+I 
+OBLIGATORIEDAD 
+e-Ticket 
+Vta.Cta.Ajena 
+NC-ND e-
+Ticket 
+Vta.Cta.Ajena 
+e-Factura 
+Vta.Cta.Ajena 
+NC-ND e-
+Factura 
+Vta.Cta.Ajena 
+e-Boleta 
+de entrada 
+4 Nº Documento 
+Mandante 
+Corresponde al número del 
+documento: NIE, RUC, C.I, 
+Otros, Pasaporte, DNI o NIFE 
+Si se trata de compra de 
+moneda extranjera para su 
+reventa, corresponde al 
+número de NIE, RUC o NIFE 
+ALFA20 
+Valida: 
+1: Dígito verificador NIE 
+2: Digito verificador RUC 
+3: Digito verificador CI 
+* N 
+1 
+1 
+1 
+1 
+1 
+5 Nombre o Denominación 
+Nombre o Denominación 
+ALFA 150 Sin validación 
+ N 
+1 
+1 
+1 
+1 
+1 
+Mandante 
+Mandante 
+FIN ZONA K.- COMPLEMENTO FISCAL 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 74 de 86
+
+=== PAGE 75 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+FORMATO DE LA REPRESENTACIÓN IMPRESA 
+INFORMACION GENERAL 
+Ejemplares tributarios obligatorios 
+ Receptor Electrónico: 
+Dimensiones 
+Tipo de papel 
+Calidad de Impresión 
+o 1 ejemplar si el CFE debe respaldar el transporte de bienes; 
+o Ningún ejemplar si el CFE no es respaldo para el transporte de bienes. 
+ Receptor No Electrónico: 
+o 1 ejemplar; 
+o Puede omitirse la impresión de la representación impresa, si no hay traslado de bienes y el adquirente autorizó al emisor, en 
+forma previa y expresa para que le envíe o publique solo la representación gráfica de los documentos señalados. Asimismo 
+podrá omitirse su entrega en los casos establecidos por la normativa, en los que se entiende que el receptor no electrónico 
+otorga el consentimiento expreso, salvo que la solicite. 
+ Dimensiones mínimas: 15 x 5,7 cm (largo y ancho o viceversa); 
+ Dimensiones máximas 21,6 x 35,6 cm (largo y ancho o viceversa); 
+ Rollo de papel continuo: ancho mínimo 5,7 cms. 
+ Color: blanco; 
+ Gramaje ≥ 50 gr/m2. 
+Papel para impresoras de transferencia térmica: 
+ Se admite para impresión de e-Tickets y sus notas de corrección; 
+ Los otros CFE pueden imprimirse en papel térmico si los mismos quedan disponibles en la página WEB del emisor por 5 años, 
+posibilitando que el receptor pueda reimprimirlo cuando lo requiera. 
+ Impresión láser o de inyección de tinta, con resolución mayor o igual a 300 dpi; 
+ Impresoras de transferencia térmica, con resolución mayor o igual a 200 dpi, en las condiciones establecidas anteriormente; 
+ Color de impresión: negro; 
+ La calidad de impresión deberá ser tal que asegure la legibilidad del documento. 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 75 de 86
+
+=== PAGE 76 ===
+[P1] Impresión en varias hojas 
+ Podrán imprimirse en varias hojas siempre que en cada una: 
+COMPROBANTE FISCAL ELECTRÓNICO 
+o se imprima como mínimo el nombre o denominación y número de inscripción en el RUC del emisor electrónico y del receptor y 
+el tipo, serie y número del CFE; 
+o se indique el número de página y el total de páginas (no corresponde si la impresión es en una hoja); 
+o se imprima el Sello Digital. 
+ Los otros datos indicados en el “Pie del comprobante” se imprimen sólo en la última hoja; 
+ Separación mínima entre líneas de una línea (interlineado simple). 
+Mínimo 5 mm. 
+En los datos sin especificaciones especiales, las letras y números utilizados deberán ser de tamaño igual o superior a 2mm. 
+Ubicación: parte superior del comprobante, 
+Tamaño: máximo 1/5 del documento. 
+Las empresas podrán personalizar la representación impresa imprimiendo el logo en color o que el papel tenga algún fondo o diseño 
+preimpreso, siempre y cuando el mismo no obstaculice la correcta lectura de los datos obligatorios a ser impresos. 
+Borde sin letras 
+Tipo de letra 
+Logotipo 
+Personalización 
+Orden de la información obligatoria 
+En forma alternativa, si el tamaño del papel no permite mantener las formalidades de ubicación establecidas, el documento 
+electrónico en su versión impresa deberá tener la información en el siguiente orden: 
+1) Identificación del emisor electrónico; 
+2) Identificación del comprobante; 
+3) Identificación del receptor; 
+4) Cuerpo del comprobante; 
+5) Pie del comprobante. 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 76 de 86
+
+=== PAGE 77 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+1- IDENTIFICACIÓN DEL EMISOR ELECTRÓNICO 
+Identificación del emisor 
+En el ángulo superior izquierdo deberán constar en el siguiente orden: 
+ Nombre o denominación; 
+ Nombre comercial, cuando exista; 
+ Domicilio fiscal: identifica a la casa principal o a la sucursal declarado en el RUC, desde donde se realiza la operación. 
+Emisores electrónicos exonerados por todas sus operaciones de impuestos administrados por la Dirección General Impositiva así 
+como aquellos que desarrollan más de una actividad, a efectos de documentar operaciones vinculadas a una actividad exonerada, y 
+aquellos comprendidos en el literal E) del artículo 52 del Título 4 del Texto Ordenado 1996 deberán incluir, sin ubicación 
+predeterminada y previo a la identificación del receptor, en un recuadro no inferior a 4 cm de largo por 1 cm de ancho, las leyendas 
+“Contribuyente Exonerado” complementada por la referencia a la norma que otorga la exoneración o “IVA MINIMO” ,según 
+corresponda, en caracteres no inferiores a 3 mm de alto o la. El referido recuadro podrá establecerse en forma preimpresa. 
+Información preimpresa 
+La información que es permanente del emisor tal como RUC, Nombre o Denominación y Domicilio Fiscal, podrán estar preimpresas. 
+En este caso, deberán ser idénticas a las informadas en el documento en su versión electrónica. 
+En aquellos casos en que las leyendas o constancias sean una obligación, éstas deben ser expresadas también en la representación 
+impresa del documento en caracteres no inferiores a 3 mm de alto. 
+2- IDENTIFICACIÓN DEL COMPROBANTE 
+Identificación del tipo de comprobante 
+En el ángulo superior derecho deberán constar en el siguiente orden, impreso en caracteres no inferiores a 3 mm de alto: 
+ RUC del emisor; 
+ Tipo de CFE: Indica el CFE utilizado correspondiente a la descripción establecida en la TABLA A.- TIPO DE COMPROBANTE que 
+forma parte de este documento Opcionalmente, si necesita optimizar el espacio en la representación impresa, podrá abreviar los 
+términos “Nota de crédito” y “Nota de débito”, por “NC” y “ND”. 
+ Serie y número asignado al comprobante; 
+ Forma de pago: Contado o Crédito. 
+Los e-Remitos que trasladen bienes de terceros, deberán contener, sin ubicación predeterminada, la leyenda “Bienes de Terceros” y 
+el nombre o denominación, y documento o número de inscripción en DGI, del propietario de los mismos, en caracteres no inferiores 
+a 3 mm. de alto. 
+Los comprobantes que documenten pagos por cuenta de terceros (reintegros de gastos) deberán contener, sin ubicación 
+predeterminada, la leyenda “Pagos por cuenta de terceros” 
+Las CFE que documenten cobranzas propias deberán contener, seguido al tipo de comprobante, la leyenda “Cobranza”. 
+En aquellos casos en que las leyendas o constancias sean una obligación, éstas deben ser expresadas también en la representación 
+impresa del documento en caracteres no inferiores a 3 mm de alto. 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 77 de 86
+
+=== PAGE 78 ===
+[P1] 3- IDENTIFICACION DEL RECEPTOR 
+Identificación del receptor 
+COMPROBANTE FISCAL ELECTRÓNICO 
+Deberá constar en el siguiente orden: 
+ Operaciones entre contribuyentes (e-Factura, e-Factura por cuenta ajena, e-Boleta de entrada, y sus respectivas notas de 
+corrección, e-Remito y e-Resguardo) 
+o Un recuadro no inferior a 4 cm de largo por 1cm de ancho conteniendo la mención “RUC COMPRADOR” y en renglón 
+siguiente, dentro del recuadro, el Nº de RUC del receptor, ambos impresos en caracteres no inferiores a 3 mm de alto. En las 
+e-Boletas de Entrada y sus notas de corrección, el recuadro referido contendrá la mención “RUC VENDEDOR”, y en el 
+espacio dentro del recuadro se ingresará el número de RUC del vendedor. En ambos casos corresponde consignar Nombre o 
+Denominación y Domicilio Fiscal, 
+ Operaciones a Consumo Final (e-Ticket, e-Ticket por cuenta ajena y sus respectivas notas de corrección: 
+o Un recuadro no inferior a 4 cm de largo por 1cm de ancho conteniendo la mención “CONSUMO FINAL”, en caracteres no 
+inferiores a 3 mm de alto (no aplicable para e-resguardo), 
+o Si el monto neto del CFE es > al tope establecido (ver Tabla E) o en el mismo, sin importar su monto, se documentan 
+retenciones o percepciones, debe consignarse el Nº de documento del receptor (C.I., RUC u otro) indicando el país emisor 
+del documento. 
+ Operaciones a Consumo Final (e-resguardo): Nombre o denominación y número de identificación del retenido, sin perjuicio de las 
+excepciones expresamente establecidas para determinadas operaciones. 
+ Operaciones de Exportación (e-Factura de Exportación sus notas de corrección, e-Remito de Exportación): Nombre o 
+Denominación del receptor y Domicilio. 
+ Restantes operaciones/operaciones de compra documentadas mediante e-Boleta de entrada: 
+o Literal a) del apartado m) del numeral 1º de la Res.Nº798/2012: debe siempre consignarse la identificación del receptor 
+indicando Nombre, Nº de documento, tipo y país de emisión, y su domicilio. 
+o Literal b) del apartado m) del numeral 1º de la Res.Nº798/2012: si el monto del CFE es > al tope establecido (ver Tabla E) o 
+en el mismo sin importar su monto, se documentan retenciones o percepciones, debe consignarse la identificación de 
+receptor indicando Nº de documento, tipo y país de emisión. 
+En aquellos casos en que la operación esté amparada al secreto profesional, la información correspondiente a la identificación del 
+receptor podrá omitirse, debiendo consignarse la misma en la adenda. 
+En aquellos casos en que las leyendas o constancias sean una obligación, éstas deben ser expresadas también en la representación 
+impresa del documento en caracteres no inferiores a 3 mm de alto. 
+Se flexibiliza la ubicación en la representación impresa de los campos que contienen información necesaria para la distribución del 
+CFE. 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 78 de 86
+
+=== PAGE 79 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+4- CUERPO DEL COMPROBANTE 
+Fecha del comprobante 
+Mercaderías o servicios 
+Totales 
+Descuentos y/o Recargos 
+Referencias 
+Fecha del comprobante. (opcionalmente puede imprimirse fecha y hora) 
+ Detalle de mercaderías o servicios, con indicación de cantidades físicas, precio unitario y final; 
+ En servicios puede omitirse el precio unitario y la cantidad. 
+En aquellos casos en que las leyendas o constancias sean una obligación, éstas deben ser expresadas también en la representación 
+impresa del documento en caracteres no inferiores a 3 mm de alto. 
+ Montos netos totales por tasa de IVA; 
+ Total de IVA discriminado por tasa; 
+ Si se trata de contribuyentes con obligación IVA mínimo, no podrá contener ninguna mención al IVA, salvo la constancia de estar 
+al día con el IVA, cuando corresponda. 
+ Impuestos adicionales, otros impuestos, otros montos, en caso de corresponder; 
+ En e-Tickets no será necesaria la discriminación de los montos netos y total de IVA por tasa aplicable, debiendo en este caso 
+establecer exclusivamente el monto bruto total. 
+ Si el “Total monto total” es igual al “Total a pagar”, puede optar por imprimir sólo uno de totales. 
+En aquellos casos en que sea obligatoria su impresión, pudiendo imprimir el detalle por indicador de facturación o el total. 
+En aquellos casos en que la indicación de referencias sea una obligación, éstas deben ser expresadas claramente también en la 
+representación impresa del documento. 
+Medios de Pago 
+En aquellos casos en que la indicación de los medios de pago sea una obligación, los mismos deben ser identificados detalladamente 
+en la representación impresa del documento. 
+En aquellos casos en que las leyendas o constancias sean una obligación, éstas deben ser expresadas también en la representación 
+impresa del documento en caracteres no inferiores a 3 mm de alto. 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 79 de 86
+
+=== PAGE 80 ===
+[P1] 5- PIE DEL COMPROBANTE 
+Sello digital 
+COMPROBANTE FISCAL ELECTRÓNICO 
+En el ángulo inferior izquierdo del documento deberá tener impreso: 
+ el QR-Code: 
+o Tamaño: mínimo de 22 x 22 mm con un margen de 3mm en los lados del sello; 
+o Tamaño máximo de 30 x 30 mm con un margen de 5mm en los lados del sello. 
+ Debajo del QR-Code: 
+o la leyenda “Código de seguridad” (opcionalmente puede imprimirse en forma abreviada) 
+o y los 6 primeros caracteres del hash. 
+Datos que contiene el QR-Code: 
+Link al Portal de e-factura con los siguientes parámetros: 
+o Nº de RUC emisor; 
+o Tipo de CFE; 
+o Nº de comprobante (Serie y Nº); 
+o Monto : (Remito “0”, Resguardo “A-C125” , e-Remito de Exportación “A-C124” y resto “A-C130”); 
+o Fecha de firma del CFE (dd/mm/yyyy); 
+o Código de seguridad del CFE (hash SHA-2). 
+El link tendrá la siguiente forma: 
+https://www.efactura.dgi.gub.uy/consultaQR/cfe?ruc,tipoCFE,serie,nroCFE,monto,fecha,hash 
+Leyenda 
+Debajo o al costado del sello digital, deberá imprimirse: 
+ La leyenda “Fecha emisor” y la correspondiente fecha de incorporación del emisor al régimen, quienes hubiesen sido 
+incorporados por resolución, deberán incluir exclusivamente el número de la misma: “Res. XX/año” (Nº y año de la resolución que 
+autoriza al contribuyente a emitir documentos electrónicos). 
+ La frase que se indica, según se trate: 
+Constancia de IVA al día 
+Número de CAE 
+Serie y Número Inicial y Final del CAE Debajo o al costado del Número de CAE deberá constar el rango del mismo. 
+Fecha de vencimiento del CAE 
+o e-Tickets y sus notas de corrección: “Puede verificar comprobante en www…(URL de la empresa)” 
+o Restantes comprobantes: “Puede verificar comprobante en www.dgi.gub.uy”. 
+Debajo deberá constar la constancia de estar al día con el I.V.A., cuando corresponda. 
+Debajo deberá constar el Número de CAE. 
+En el sector inferior, al centro o en el ángulo inferior derecho, se incluirá un recuadro no inferior a 2 cm de largo por 1cm de ancho 
+donde constará la leyenda "Fecha de vencimiento" y la correspondiente fecha, escriturado en caracteres no inferiores a 3 mm de 
+alto. Se habilita incluir la mención “CAE” en este recuadro. 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 80 de 86
+
+=== PAGE 81 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+ADENDA 
+La Adenda es un elemento opcional del CFE que comprende información de carácter comercial que el emisor requiere trasmitir al receptor. Es un nodo dentro del esquema 
+XML (XSD) con información no fiscal pero que está relacionada al CFE. En aquellos casos en que la adenda sea una obligación, ésta debe ser expresada también en la 
+representación impresa del documento. 
+Impresión 
+La información incorporada en la adenda podrá agregarse en la representación impresa del comprobante dentro de una zona 
+debidamente delimitada con la mención “ADENDA” , en las siguientes condiciones: 
+ En hoja separada; 
+ En la misma hoja, imprimiendo primero el CFE, respetando las dimensiones mínimas y máximas establecidas para éste, y luego la 
+Adenda; 
+ Dentro del cuerpo del CFE, manteniendo márgenes de 5 mm con los datos del comprobante. 
+Importante: 
+ En aquellos casos en que la Adenda contenga leyenda o constancia especifica obligatoria, las mismas deberán incluirse, en 
+caracteres no inferiores a 3 mm de alto, previo a cualquier mención no obligatoria contenida en el referido espacio. 
+ Se habilita extraer del contenido de la Adenda la información correspondiente al código (número) y símbolo (representación gráfica) 
+necesaria para la distribución del CFE e imprimirla, en hasta dos líneas, fuera del espacio delimitado de la Adenda. 
+COMPLEMENTO FISCAL 
+Incluye información de carácter fiscal que la DGI requiere del sujeto por cuenta de quien se realiza la operación para determinados tipos de comprobantes o actividades. 
+La información del mandante podrá excluirse de la representación impresa del CFE, salvo en los casos que exista normativa relativa a determinadas operaciones que 
+establezca que debe informarse al receptor la identificación del sujeto por cuenta de quien se realiza la operación. 
+Impresión 
+Ubicación libre después de Identificación del Emisor e Identificación del Comprobante y antes del Pie del Comprobante. 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 81 de 86
+
+=== PAGE 82 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+TABLAS 
+A.- TIPO DE COMPROBANTE 
+CFE 
+e-Ticket 
+e-Factura 
+CÓDIGO 
+101 
+102 Nota de Crédito de e-Ticket 
+103 Nota de Débito de e-Ticket 
+111 
+112 Nota de Crédito de e-Factura 
+113 Nota de Débito de e-Factura 
+121 
+e-Factura Exportación 
+122 Nota de Crédito de e-Factura Exportación 
+123 Nota de Débito de e-Factura Exportación 
+124 
+131 
+132 Nota de Crédito de e-Ticket Venta por Cuenta Ajena 
+133 Nota de Débito de e-Ticket Venta por Cuenta Ajena 
+141 
+142 Nota de Crédito de e-Factura Venta por Cuenta Ajena 
+143 Nota de Débito de e-Factura Venta por Cuenta Ajena 
+151 
+152 Nota de Crédito de e-Boleta de entrada 
+153 Nota de Débito de e-Boleta de entrada 
+181 
+182 
+e-Remito de Exportación 
+e-Ticket Venta por Cuenta Ajena 
+e-Factura Venta por Cuenta Ajena 
+e-Remito 
+e-Resguardo 
+e-Boleta de entrada 
+CFC 
+e-Ticket Contingencia 
+e-Factura Contingencia 
+TIPO DE COMPROBANTE 
+CÓDIGO 
+201 
+202 Nota de Crédito de e-Ticket Contingencia 
+203 Nota de Débito de e-Ticket Contingencia 
+211 
+212 Nota de Crédito de e-Factura Contingencia 
+213 Nota de Débito de e-Factura Contingencia 
+221 
+e-Factura Exportación Contingencia 
+222 Nota de Crédito de e-Factura Exportación Contingencia 
+223 Nota de Débito de e-Factura Exportación Contingencia 
+224 
+231 
+232 Nota de Crédito de e-Ticket Venta por Cuenta Ajena Contingencia 
+233 Nota de Débito de e-Ticket Venta por Cuenta Ajena Contingencia 
+241 
+242 Nota de Crédito de e-Factura Venta por Cuenta Ajena Contingencia 
+243 Nota de Débito de e-Factura Venta por Cuenta Ajena Contingencia 
+251 
+e-Boleta de entrada Contingencia 
+252 Nota de Crédito de e-Boleta de entrada 
+253 Nota de Débito de e-Boleta de entrada 
+281 
+282 
+e-Remito de Exportación Contingencia 
+e-Ticket Venta por Cuenta Ajena Contingencia 
+e-Remito Contingencia 
+e-Resguardo Contingencia 
+e-Factura Venta por Cuenta Ajena Contingencia 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 82 de 86
+
+=== PAGE 83 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+IVA 
+TASA 
+VIGENCIA 
+DESDE 
+HASTA 
+Tasa Mínima 
+Tasa Básica 
+10,000% 
+22,000% 
+1/10/2011 
+1/10/2011 
+B.- TASAS DE IVA 
+C.- PERCEPCIÓN/RETENCIÓN 
+Listado completo en WEB DGI 
+Sujeto pasivo 
+Contribuyente retenido 
+Agente/Responsable 
+Formulario/Línea del 
+Beta 
+Frigoríficos y Mataderos carne fresca 
+Vendedores minoristas 
+Frigoríficos y Mataderos - servicio faena Vendedores minoristas 
+Estaciones de servicio 
+Contribuyente Imesi Num.12 Dist.de 
+Ancap S.A. Grasas y lubricantes 
+Importadores o Fabricantes Sistema Venta 
+Directa 
+Contribuyente Imesi Num.11 Vehiculos 
+Automotores 
+Fabricantes e importadores de preformas 
+PET 
+Vendedores de gasoil a estaciones de 
+servicio 
+Empresas comercializadoras mayoristas 
+de supergas 
+Estaciones de servicio 
+Revendedores independientes 
+Vendedores etapa minorista 
+Vendedores minoristas de supergas y 
+distribuidores 
+Adquirentes de envases de bebidas 
+Agente de percepción 2183211 
+Agente de percepción 2183212 
+Agente de percepción 2183213 
+Agente de percepción 2183214 
+Agente de percepción 2183215 
+Agente de percepción 2183217 
+Agente de percepción 2183219 
+Agente de percepción 2183220 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 83 de 86
+
+=== PAGE 84 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+Sujeto pasivo 
+Contribuyente retenido 
+Agente/Responsable 
+Formulario/Línea del 
+Beta 
+Agente de percepción 2183218 (IVA) 
+2183228 (IRAE) 
+Agente de percepción 2183220 (IVA) 
+2183229 (IRAE) 
+Agente de percepción 218360 (IMESI) 
+Establecimientos que faenen aves 
+(especie aviar gallus) 
+Quienes enajenen medicamentos y 
+especialidades farmacéuticas a farmacias 
+Rematadores por bienes en infracción 
+aduanera –Num. 9 Art. 1 T.11 
+Empresas administradoras de créditos 
+Adquirentes de pollos y menudencias no 
+consumidores finales ni responsables 
+designados en Dto. 312/06 
+Farmacias 
+Adquirentes en remate 
+Contribuyentes que efectúen ventas de 
+bienes y prestaciones de servicios 
+Empresas administradoras de tarjetas 
+Contribuyentes que efectúen ventas de bs. y 
+servicios con reducción de alícuota 
+Contribuyentes IRIC y rematadores 
+Enajenantes de bienes gravados por IMEBA 
+no contribuyente de I.R.I.C. 
+Responsables 
+Obligaciones 
+Tributarias de 
+Terceros 
+Responsables 
+Obligaciones 
+Tributarias de 
+Terceros 
+Agente de retención 
+Exportadores 
+Productores de bienes gravados por IMEBA Agente de retención 
+CGN, ANDA, Administradoras de 
+propiedades 
+Rematadores 
+Arrendadores de inmuebles 
+Agente de retención 
+Vendedores de bienes muebles en remate Agente de retención 
+…………………… 
+…………………… 
+…………………… 
+…………………… 
+…………………… 
+…………………… 
+…………………… 
+…………………… 
+…………………… 
+…………………… 
+…………………… 
+…………………… 
+2183161 o 162 
+2183163 
+214211,12 (INIA, 
+MEVIR) 110 a 129 
+(IMEBA) 
+214221,22 (INIA, 
+MEVIR) 210 a 229 
+(IMEBA) 
+1146171 (IRPF) 
+124671 o 171 (IRNR) 
+114681 o 181 (IRPF) 
+124681 o 181 (IRNR) 
+…………………… 
+…………………… 
+…………………… 
+…………………… 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 84 de 86
+
+=== PAGE 85 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+D.- TABLA DE MONEDAS 
+ ESTÁNDAR INTERNACIONAL ISO 4217 
+CÓDIGO 
+MONEDA 
+VIGENCIA 
+DESDE 
+HASTA 
+ARS 
+BRL 
+CAD 
+CLP 
+CNY 
+COP 
+EUR 
+JPY 
+MXN 
+PYG 
+PEN 
+USD 
+UYU 
+VEF 
+… 
+Peso argentino 
+Real brasileño 
+Dólar canadiense 
+Peso chileno 
+Yuan Renminbi de China 
+Peso colombiano 
+Euro 
+Yen japonés 
+Peso mexicano 
+Guaraní paraguayo 
+Nuevo sol peruano 
+Dólar estadounidense 
+Peso uruguayo 
+Bolívar fuerte venezolano 
+… 
+1/10/2011 
+1/10/2011 
+1/10/2011 
+1/10/2011 
+1/10/2011 
+1/10/2011 
+1/10/2011 
+1/10/2011 
+1/10/2011 
+1/10/2011 
+1/10/2011 
+1/10/2011 
+1/10/2011 
+1/10/2011 
+… 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 85 de 86
+
+=== PAGE 86 ===
+[P1]  OTRAS 
+COMPROBANTE FISCAL ELECTRÓNICO 
+CÓDIGO 
+MONEDA 
+VIGENCIA 
+DESDE 
+HASTA 
+UYI 
+UYR 
+Unidad Indexada uruguaya 
+Unidad Reajustable 
+uruguaya 
+1/10/2011 
+1/10/2011 
+E.- IDENTIFICACIÓN DEL RECEPTOR Y ENVÍO OBLIGATORIO DE E-TICKETS Y SUS NOTAS DE CORRECIÓN 
+ Para operaciones documentadas en e-tickets y sus notas de corrección, cuyo monto neto excluido el IVA supere los topes establecidos, según cotización vigente al 
+cierre del año civil anterior. 
+ Si documentan retenciones o percepciones, independientemente del monto, siempre corresponde su identificación y envío. 
+MONTO NETO EN UI 
+(UNIDADES INDEXADAS) 
+VIGENCIA 
+DESDE 
+HASTA 
+Más de 10.000 
+Más de 5.000 
+08/05/2012 31/10/2022 
+01/11/2022 
+Doc: 
+Formato_CFE_v24.doc 
+Impresión: 30/6/2023 11:39:00 
+Página 86 de 86
+

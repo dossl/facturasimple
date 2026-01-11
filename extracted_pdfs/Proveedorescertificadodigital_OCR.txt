@@ -1,0 +1,242 @@
+SOURCE_PDF: /Users/sergiolazaro/Documents/GitHub/facturasimple/extracted_web/Proveedorescertificadodigital.html
+EXTRACTED_AT: 2026-01-11T16:31:45.747646
+EXTRACTION_METHOD: OCR (tesseract eng) over rendered page images (PyMuPDF).
+PARAGRAPH_RULE: paragraphs are blocks separated by blank lines in OCR text; numbering restarts each page.
+
+=== PAGE 1 ===
+[P1] | CORREO | Ba = agesic
+y sociedad de la informacién
+ACUERDO ESPECIFICO DE COOPERACION INTERINSTITUCIONAL PARA LA
+PROVISION DE SERVICIOS DE CERTIFICACION ELECTRONICA
+ENTRE
+LA ADMINISTRACION NACIONAL DE CORREOS
+Y
+LA AGENCIA PARA EL DESARROLLO DEL GOBIERNO DE GESTION ELECTRONICA
+Y LA SOCIEDAD DE LA INFORMACION Y DEL CONOCIMIENTO
+
+[P2] En Montevideo el dia 21 de julio de 2011 comparecen, por una parte, la Administracién
+
+[P3] Nacional de Correos (en adelante ANC), representada en este acto por el Sr. José Luis
+
+[P4] Juarez y la Cra. Nancy Ibarra, en sus calidades de Presidente y Secretaria General del
+
+[P5] organismo respectivamente, con domicilio en Buenos Aires 451 de esta ciudad; y por otra
+
+[P6] parte, la Agencia para el Desarrollo del Gobierno de Gestion Electronica y la
+
+[P7] Sociedad de la Informacién y del Conocimiento (en adelante AGESIC), representada
+
+[P8] en este acto por su Director Ejecutivo, Ing. José Clastornik, con domicilio en Andes 1365
+
+[P9] piso 7, quienes acuerdan:
+
+[P10] PRIMERO: Antecedentes.-
+
+[P11] 1.- Con fecha 27 de enero de 2011 las Instituciones comparecientes suscribieron un
+
+[P12] Convenio Marco de Cooperacién Institucional, con el objetivo de establecer un ambito de
+
+[P13] actuacién conjunta en actividades de interés comUn para ambas, asi como para los
+ba intereses superiores del Estado. En ese sentido, acordaron que las diversas areas de
+
+[P14] colaboracién, serian objeto de acuerdos especificos complementarios.
+
+[P15] 2.- El desarrollo de proyectos de Gobierno Electrénico impone la necesidad de contar con
+
+[P16] certificados electrénicos para firma electronica para ser usados por distintos Organos y
+
+[P17] servicios de la Administracién Publica.
+
+[P18] SEGUNDO: Objeto.-
+
+[P19] Ambas partes han entendido necesario y conveniente suscribir el presente Acuerdo
+
+[P20] Especifico de cooperacién interinstitucional, a efectos de que ANC brinde servicios de
+
+[P21] certificacién electronica a los sectores de la Administracién Publica que AGESIC
+
+[P22] determine oportunamente.
+
+[P23] TERCERO: Objetivos especificos.-
+
+=== PAGE 2 ===
+[P1] a. AGESIC adquirira hasta 5.000 certificados electrénicos para persona fisica
+emitidos por la Autoridad de Certificacién (en adelante CA) de ANC, segun el siguiente
+detalle:
+
+[P2] i) 2.000 por un monto de $ 720 (pesos uruguayos setecientos veinte) cada uno.
+
+[P3] ii) 2.000 por un monto de $ 670 (pesos uruguayos seiscientos setenta) cada uno.
+
+[P4] iii) 1.000 por un monto de $ 630 (pesos uruguayos seiscientos treinta) cada uno.
+En caso que AGESIC adquiera mas de 12.000 certificados electrénicos para persona
+fisica emitidos por la CA de ANC, se fija su precio en $ 585 (pesos uruguayos quinientos
+ochenta y cinco), por los certificados electronicos adicionales a 12.000.
+
+[P5] b. AGESIC adquiriré hasta 5.000 certificados electrénicos para persona juridica
+emitidos por la CA de ANC, segutn el siguiente detalle:
+
+[P6] i) 2.000 por un monto de $ 1.865 (pesos uruguayos un mil ochocientos sesenta y
+cinco) cada uno.
+ii) 2.000 por un monto de $ 1.735 (pesos uruguayos mil setecientos treinta y cinco)
+cada uno.
+iii) 1.000 por un monto de $ 1.710 (pesos uruguayos mil setecientos diez) cada
+uno.
+Los montos maximos previstos en los items ii) y iii) de los literales a) y b) no generaran
+derecho a cobro en caso de no utilizarse en su totalidad durante la ejecucién de la
+presente contratacién, no pudiendo reclamar la ANC el saldo remanente en caso de
+generarse.
+
+[P7] c. ANC proveera a AGESIC, 0 a quien AGESIC disponga oportunamente, los
+certificados electrénicos emitidos por su CA hasta la cantidad estipulada en los literales
+anteriores.
+
+[P8] d. ANC brindara los servicios de Autoridad de Registro (en adelante RA), para la
+emision de dichos certificados en todo el territorio nacional, pudiendo AGESIC contratar
+libremente estos servicios con otras RA, cuando lo estime oportuno.
+
+[P9] e. ANC brindara a AGESIC servicios de asesoramiento, soporte y capacitacién en
+certificacion electronica, pactandose el mismo en $ 200.000 (pesos uruguayos doscientos
+mil), que comprenderan hasta un total de 250 horas. De superarse las 250 horas,
+AGESIC podra contratar a ANC un maximo de hasta 500 horas adicionales, siendo el
+valor de $ 1.000 (pesos uruguayos un mil) por hora. En este caso, la Agencia podra
+considerar la contrataci6n o no de las mismas, por un total de $ 500.000 (pesos
+uruguayos quinientos mil), que en caso de no utilizarse no generaran derecho a cobro por
+parte de la ANC. La ANC enviara un reporte mensual de horas invertidas por este
+
+=== PAGE 3 ===
+[P1] |
+CORREO | Sex =: agesic
+
+[P2] yp Leucuaro F ~ =" agencia de gobierno elecrénico
+
+[P3] mammal y sociedad de la informacion
+concepto, el cual AGESIC debera conformar en un plazo de 5 dias habiles contados a
+partir de la recepcién de dicho reporte. Como contrapartida de las horas adicionales antes
+mencionadas, AGESIC abonara a mes vencido las horas correspondientes a los servicios
+efectivamente prestados, previa aceptacién por parte de la Agencia de los mismos.
+
+[P4] f. Aefectos del inicio de la ejecucién del presente Acuerdo, AGESIC se compromete
+
+[P5] a abonar un monto inicial de $ 1.852.500 (pesos uruguayos un mill6n ochocientos
+cincuenta y dos mil quinientos), segtin el siguiente detalle:
+
+[P6] - $ 1.652.500 (pesos uruguayos un millén seiscientos cincuenta y dos mil
+quinientos), por concepto de pago inicial de certificados electrénicos previstos
+en los literales a) y b) de la presente clausula, los cuales deberan ser
+entregados en funcién de lo dispuesto en el literal c) de la clausula cuarta;
+
+[P7] - $ 200.000 (pesos uruguayos doscientos mil) por concepto de 250 horas de
+servicios de asesoramiento, soporte y capacitacién. AGESIC fijara mediante
+este Acuerdo Especifico, los niveles de servicio requeridos para la prestacién
+del servicio de certificacién electrénica.
+
+[P8] El resto de los servicios utilizados por AGESIC los abonara al mes siguiente de haber
+realizado la solicitud, quedando el servicio disponible hasta que se haga efectiva la
+emisién correspondiente.
+La Administracién Nacional de Correos esta inscripta en la Direccién General Impositiva
+con el R.U.T. N° 214130990011, estando exonerada del impuesto al valor agregado
+(I.V.A.) en virtud de lo dispuesto por el articulo 14 de su Carta Organica, aprobada por el
+¢ articulo 747 de la Ley numero 16.736 del 05 de enero de 1996.
+
+[P9] CUARTO: Obligaciones especificas de las partes.-
+
+[P10] ; Son obligaciones especificas de ambas partes:
+
+[P11] ty a) Proporcionarse en forma oportuna, los datos y la informacién requerida durante
+
+[P12] el desarrollo del presente convenio;
+
+[P13] b) Cumplir con las demas obligaciones que se establezcan en cada documento
+
+[P14] que se suscriba, en relacién con la ejecucién del servicio de certificacién
+
+[P15] electronica;
+
+[P16] c) ANC se compromete a cumplir con los siguientes items necesarios para la
+
+[P17] prestaci6n del servicio de certificacién electrénica:
+
+[P18] - Contar con procedimientos documentados tanto relacionados con la
+certificacién electronica (CP y CPS) como los vinculados a soporte a usuarios
+y gestion de incidentes;
+
+=== PAGE 4 ===
+[P1] - Contar con planes de contingencia para los servicios de certificacién
+electronica;
+
+[P2] - Nivelar los conocimientos informaticos de sus funcionarios;
+
+[P3] - Proporcionar un listado de funcionarios y estructura organizacional;
+
+[P4] - Brindar servicio de soporte a usuarios e infraestructura en dias habiles de 8 a
+20 horas y soporte a infraestructura con 4 horas de tiempo de respuesta en los
+demas horarios;
+
+[P5] - Contar con la capacidad de emitir certificados en el dia en la Casa Central
+(Misiones 1328) 0 en 48 horas en cualquier localidad automatizada del pais.
+ANC se compromete a un plan de desarrollo del servicio que permita emitir
+certificados en el dia en 3 locales de Montevideo y los 19 locales de las
+capitales departamentales a los 5 meses de la firma del presente Acuerdo. A
+partir de esa fecha ANC se compromete a extender esta capacidad a un
+minimo de 10 locales por mes hasta cubrir el total de locales automatizados;
+
+[P6] - Contar con mecanismos de evaluacién de la calidad del servicio brindado al
+usuario y a AGESIC que incluyan, como minimo, la cantidad de solicitudes de
+soporte y el tiempo transcurrido hasta la solucion.
+
+[P7] QUINTO: Seguimiento.-
+Para el efectivo cumplimiento de las actividades previstas en este convenio, cada parte
+designara un responsable a cargo del Acuerdo Especifico, el cual sera considerado
+interlocutor valido hasta tanto se comunique su cambio o remocién, el cual tendra como
+cometidos:
+
+[P8] a) Priorizar las actividades necesarias para llevar adelante el presente Acuerdo
+
+[P9] Especifico;
+
+[P10] b) Indicar la asignacién de los recursos necesarios para el correcto funcionamiento
+del mismo;
+
+[P11] c) Evaluar el logro de los objetivos especificos previstos, disponiendo en su caso, los
+correctivos necesarios;
+
+[P12] d) Informar periddicamente a sus respectivas autoridades en cuanto al nivel de
+avance de ejecucién del servicio;
+
+[P13] e) Difundir y comunicar los resultados alcanzados.
+
+[P14] SEXTO: Rescision.-
+
+=== PAGE 5 ===
+[P1] —s a
+| CORREO | =n = agesic
+p_ URUCUATO Ff NWT ganda de gobierno elecrinico
+ee foacietad dela ntrmacidn
+La rescisién del presente Acuerdo, siempre debera ser dispuesta en forma conjunta por
+las autoridades de los organismos firmantes, debiéndose fijar en cada caso en que fase
+se detendran las actividades que se estén ejecutando.
+Asimismo, sera motivo de rescisién el incumplimiento de las obligaciones asumidas por
+las partes.
+SEPTIMO: Vigencia.-
+El presente convenio tendra vigencia de un afio a partir de la suscripcién del mismo.
+OQCTAVO: Domicilios.-
+A todos los efectos a que diere lugar este convenio, las partes constituyen domicilios
+especiales en los indicados como respectivamente suyos en la comparecencia de modo
+que, no mediando comunicacién formal a la otra parte de cualquier variaci6n que se
+produzca al respecto, sera considerada valida toda comunicaci6n, notificacién, intimacién
+0 similares que se practiquen mediante telegrama colacionado u otro medio idéneo que
+se dirija a los sefialados domicilios.
+NOVENO: Otorgamiento.-
+En prueba de conformidad, se firman dos ejemplares de un mismo tenor y contenido, a
+un mismo efecto, en el lugar y fecha arriba indicados.
+Por Administracié for de Correos Por AGESIC
+1
+ai
+Sr. José Luig Juarez Ing/ Jo: lastornik
+Presiderite Director Ejecutivo
+Por Administracién Nacional de Correos
+(\
+ola Nee IDarfa
+Secretans\Genetal
+

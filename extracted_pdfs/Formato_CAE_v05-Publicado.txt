@@ -1,0 +1,188 @@
+SOURCE_PDF: /Users/sergiolazaro/Documents/GitHub/facturasimple/Fuentes-Gub.uy/Generales-Documentos de Interes/Formato_CAE_v05-Publicado.pdf
+EXTRACTED_AT: 2026-01-11T16:27:33.812174
+PARAGRAPH_RULE: paragraphs are blocks separated by blank lines in extracted text; numbering restarts each page.
+
+=== PAGE 1 ===
+[P1] DDOOCCUUMMEENNTTOO FFUUNNCCIIOONNAALL 
+FFOORRMMAATTOO DDEE LLAA CCOONNSSTTAANNCCIIAA DDEE AAUUTTOORRIIZZAACCIIÓÓNN PPAARRAA 
+EEMMIISSIIÓÓNN DDEE CCFFEE ((CCAAEE)) 
+CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+VVEERRSSIIÓÓNN 0055-- 2299//0055//22002200
+
+=== PAGE 2 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+Í N D I C E 
+Fecha: 
+29/05/2020 
+ACTUALIZACIONES DE VERSIÓN ................................................................................................................................................................................................................................................ 3 
+INTRODUCCIÓN ................................................................................................................................................................................................................................................................... 4 
+CONTENIDO DEL CAE ............................................................................................................................................................................................................................................................ 4 
+A.- DATOS DEL CAE ......................................................................................................................................................................................................................................................... 5 
+B.- FECHA Y HORA DE FIRMA ELECTRÓNICA AVANZADA DEL CAE ................................................................................................................................................................................................ 6 
+C.- FIRMA ELECTRÓNICA AVANZADA DEL CAE ........................................................................................................................................................................................................................ 6 
+Doc: 
+Formato_CAE_v05 
+Impresión: 29/5/2020 10:54:00 
+Página 2 de 6
+
+=== PAGE 3 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+Actualizaciones de Versión 
+Versión 05- 29/05/2020 
+ A-C7.1: Se modifica texto en Validación. 
+Versión 04- 25/02/2019 
+ A-C7.1: Se agrega Validación 
+Versión 03- 10/07/2017 
+ A-C7.1 : Se modifica Tipo 
+ A-C7.2 : Se modifica Tipo y validación 
+Versión 02- 17/01/2017 
+ A-C7.1 y A-C7.2: Se incorporan nuevos campos 
+Versión 01-01/07/2012 
+ 
+Ídem documento Formato_CAE_preliminar_v03 
+Preliminar 
+Versión 03-01/11/2011 
+Preliminar 
+Versión 02-27/10/2011 
+Preliminar 
+Versión 01-15/08/2011 
+ A-C5 y A-C6: Se modifica Validación. 
+ A-C9 y A-C10: Se modifica Tipo de campo. 
+ B-C1: Se modifica Tipo de campo 
+ A-C8: Se modifica Tipo de campo y validación. 
+Doc: 
+Formato_CAE_v05 
+Impresión: 29/5/2020 10:54:00 
+Página 3 de 6
+
+=== PAGE 4 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+FORMATO DEL CAE 
+INTRODUCCIÓN 
+La constancia de Autorización para Emisión de CFE (en adelante CAE) es un archivo informático generado y firmado electrónicamente por DGI, en base a una solicitud 
+de autorización enviada por un emisor electrónico, que contiene el rango de numeración autorizado para la emisión de CFE. 
+Características del CAE: 
+ Por cada tipo de CFE, se solicita un CAE. 
+ Se deja disponible en la Web al emisor electrónico. 
+ El plazo de validez es de 2 años. 
+CONTENIDO DEL CAE 
+Se distinguen las siguientes zonas: 
+A. Datos del CAE: Corresponde a la información contenida en el archivo. 
+B. Fecha y hora de Firma Electrónica avanzada. 
+C. Firma Electrónica avanzada: Se firma toda la información anterior para garantizar la integridad del CFE enviado a la DGI. 
+Doc: 
+Formato_CAE_v05 
+Impresión: 29/5/2020 10:54:00 
+Página 4 de 6
+
+=== PAGE 5 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+A.- DATOS DEL CAE 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+1 VERSIÓN 
+2 RUC Emisor 
+Versión del formato utilizado. 
+Indica RUC emisor electrónico al que se le asigna el CAE. 
+3 Tipo CFE 
+4 Serie CFE 
+5 Número Desde 
+6 Número Hasta 
+7 Tipo Autorización Código de autorización para emisor electrónico. 
+7.1 CAE especial 
+Tipo de CFE que se autoriza. 
+Serie de CFE que se autoriza. 
+Desde del rango autorizado para el CFE. 
+Hasta del rango autorizado para el CFE. 
+Código que indica el tipo de CAE especial solicitado. Se completa sólo si se 
+trata de un CAE especial 
+ALFA 3 Valor: 1.0 
+NUM 
+12 
+NUM 3 Valida con tabla de códigos de los CFE 
+ALFA 2 A a ZZ 
+NUM 7 ≤1 y ≤ 9999999 
+NUM 7 ≤1 y ≤ 9999999 
+ALFA 1 = E 
+NUM 1 1- Exonerada 
+2- IVA Mínimo 
+3- Monotributo 
+4- Monotributo MIDES 
+Si C7.1=1; existe C7.2 
+7.2 Causal tipo del 
+CAE 
+Código que indica la causa del tipo de CAE especial solicitado (por ej. la 
+causa de la exoneración). 
+8 Número 
+Autorización 
+9 Fecha Emisión 
+Número asignado a la autorización: 
+- Dos primeros dígitos indican que es emisor electrónico. 
+- Tercer y cuarto dígito el año de emisión 
+- Seis dígitos centrales que es la numeración correlativa asignada por el 
+sistema 
+- El último, es dígito de control 
+Fecha de emisión del CAE 
+NUM 3 Debe corresponder a un código según Tabla de tipos de 
+NUM 
+11 
+CAE especial 
+Si existe C7.2; entonces C7.1=1 
+- Dígito 1 y 2: = 90 
+- Dígitos 3 y 4: año emisión 
+- Dígitos 5 a 10: ≤1 y ≤ 999999 
+- Dígito 11: dígito verificador 
+FECHA - AAAAMMDD; 
+- Fecha válida entre 01/10/2011 a 31/12/2050 
+10 Fecha 
+Fecha de vigencia de la documentación 
+FECHA - AAAAMMDD; 
+Doc: 
+Formato_CAE_v05 
+Impresión: 29/5/2020 10:54:00 
+Página 5 de 6
+
+=== PAGE 6 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+Vencimiento 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+ - Fecha de vigencia es igual: 
+Si no tiene fecha de vto. especial: 24 meses calendario 
+contados a partir de C9 
+ Si tiene fecha de vto. Especial: la menor de los plazos 
+B.- FECHA Y HORA DE FIRMA ELECTRÓNICA AVANZADA DEL CAE 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+1 Fecha y hora de la firma 
+electrónica avanzada del CFE 
+FECHA- 
+HORA 
+- AAAA-MM-DD HH:MM:SS 
+- Fecha y hora válidas 
+C.- FIRMA ELECTRÓNICA AVANZADA DEL CAE 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+1 Certificado Electrónico 
+Información pública del Certificado Electrónico de DGI, 
+necesaria para validar la firma. 
+Certificado vigente, no revocado y habilitado para 
+facturación electrónica al momento de generar la 
+firma. 
+2 Firma Electrónica Avanzada 
+Firma electrónica avanzada sobre todo el documento. 
+Firma electrónica avanzada según el estándar 
+XML Digital Signature. 
+Doc: 
+Formato_CAE_v05 
+Impresión: 29/5/2020 10:54:00 
+Página 6 de 6
+

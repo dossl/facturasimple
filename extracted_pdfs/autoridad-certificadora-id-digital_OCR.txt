@@ -1,0 +1,117 @@
+SOURCE_PDF: /Users/sergiolazaro/Documents/GitHub/facturasimple/extracted_web/autoridad-certificadora-id-digital.html
+EXTRACTED_AT: 2026-01-11T16:31:42.425066
+EXTRACTION_METHOD: OCR (tesseract eng) over rendered page images (PyMuPDF).
+PARAGRAPH_RULE: paragraphs are blocks separated by blank lines in OCR text; numbering restarts each page.
+
+=== PAGE 1 ===
+[P1] Expediente N°: 2014-2-10-0000092
+1‘) Certificacion Ss estan = agesic Saks
+Electronica — t mene
+“— CONSEJOEJECUTIVODELAUNIDADDE ———
+CERTIFICACION ELECTRONICA
+
+[P2] pa Montevideo, 14 de mayo de 2014.
+VISTO: la solicitud planteada por ABITAB S.A. a los efectos de su acreditacién como
+Prestador de Servicios de Certificacién Acreditado;
+
+[P3] RESULTANDO: I) que la Ley N° 18.600 de 21 de setiembre de 2009 y su Decreto
+reglamentario N° 436/011 de 8 de diciembre de 2011, establecen los requisitos que se
+deben cumplir para ser Prestador de Servicios de Certificacion Acreditado;
+
+[P4] Il) que las normas referidas establecen como requisitos para ser
+
+[P5] Prestador de Servicios de Certificacién Acreditado, entre otros, los siguientes: a) ser
+persona fisica o juridica constituida en el pais, dar garantia economica y solvencia
+suficiente para prestar los servicios; b) contar con personal calificado con
+conocimientos y experiencia necesarios para la prestacidn de los servicios de
+certificacion ofrecidos y los procedimientos de seguridad y de gestidn adecuados en el
+ambito de la firma electronica avanzada; c) utilizar estandares y herramientas
+adecuadas segun lo establecido por esta Unidad; y d) estar domiciliado en el territorio
+de la Republica Oriental del Uruguay, entendiéndose que cumple con este requisito,
+cuando su infraestructura tecnolégica y demas recursos materiales y humanos se
+encuentren situados en territorio uruguayo;
+
+[P6] CONSIDERANDO: 1) que por informe juridico de fecha 28 de marzo de 2014, se
+establecié que la entidad solicitante “verifica regularidad y adecuacion a la normativa
+nacional vigente, motivo por el cual no habria objeciones para proceder a la
+acreditacion de ABITAB S.A. como Prestador de Servicios de Certificacion
+Acreditado.”;
+
+[P7] Il) que por informe técnico informatico de fecha 7 de mayo de 2014,
+se establecid que “teniendo en cuenta la informacion provista por ABITAB S.A. en la
+documentacion presentada, y los resultados de la auditoria realizada, entendemos que
+no existen impedimentos de indole técnica para otorgarle la acreditacion y que
+comience sus operaciones como Prestador de Servicios dentro de la Infraestructura
+
+[P8] ApiaDocumentum——s—s—s—SSSSCSCS SR ti 232
+
+=== PAGE 2 ===
+[P1] Expediente N°: 2014-2-10-0000092
+1‘) Certificacion Ss estan = agesic Saks
+Electronica — t mene
+“— CONSEJOEJECUTIVODELAUNIDADDE ———
+CERTIFICACION ELECTRONICA
+Nacional de Certificacion Electronica, emitiendo certificados de Persona Fisica y
+Persona Juridica.”;
+
+[P2] Ill) que en el informe de auditoria técnica de fecha 24 de febrero de
+2014, se establecio que: “los documentos “Practicas de Certificacion de la Autoridad
+Certificadora de ABITAB” y “Politica de Seguridad de la Autoridad Certificadora de
+ABITAB’, y los controles de seguridad fisica de los sitios principal y de contingencia de
+la Autoridad Certificadora de ABITAB, han sido formulados adecuadamente en sus
+aspectos significativos ...”;
+
+[P3] IV) que por informe contable de fecha 13 de mayo de 2014, se
+establecié que “la firma Abitab S.A. ha constituido el seguro de responsabilidad civil y
+ha acreditado solvencia econémica, de acuerdo con la normativa vigente en relacion a
+la acreditacion de nuevos prestadores de servicios de certificacion.”;
+
+[P4] V) que se constituyO seguro de responsabilidad civil contratado con
+el Banco de Seguros del Estado, lo que verifica el cumplimiento con lo establecido en
+la normativa vigente;
+
+[P5] VI) que, en virtud de lo expuesto, los requerimientos exigidos se
+consideran cumplidos, por lo que en consecuencia, procede su acreditacién como
+Prestador de Servicios de Certificacién Acreditado;
+
+[P6] ATENTO: a lo precedentemente expuesto, a lo establecido en la Ley N° 18.600, de 21
+de setiembre de 2009, y en el Decreto N° 436/011, de 8 de diciembre de 2011;
+EI Consejo Ejecutivo de la UCE
+RESUELVE:
+1.- Autorizar la condicién de Prestador de Servicios de Certificacién Acreditado de
+ABITAB S.A..
+2.- Inscribir en el Registro de Prestadores de Servicios de Certificacion Acreditados a
+ABITAB S.A., de acuerdo con lo estipulado por el articulo 24 del Decreto N° 436/011,
+de 8 de diciembre de 2011.
+3.- Notifiquese, comuniquese, publiquese.
+ApiaDocumentum——s—s—s—SSSSSSCOCOC SR ti 233
+
+=== PAGE 3 ===
+[P1] Expediente N°: 2014-2-10-0000092000
+Avesic EXPEDIENTE N°
+Bes 2014-2-10-0000092
+Secretaria General AGESIC
+[Fecha: = 5/05/2014 17:34:45
+De acuerdo con lo aprobado en el Acta N° 08/014 de fecha 14 de mayo de 2014, se remite Proyecto de
+Resolucion para su consideraci6n.-
+Archivos Adjuntos
+Convertido a PDF
+[1 2014-2-10-0000092-UCERESORD14004.pdf
+Alejandro Santomauro
+Jorge Forcella
+José Clastornik
+ApiaDocumentum Folio n° 234
+
+=== PAGE 4 ===
+[P1] Expediente N°: 2014-2-10-0000092
+Avesic EXPEDIENTE N°
+Bes 2014-2-10-0000092
+16/05/2014 14:57:03
+Tipo: «JAG - Constancia Pase a Firma
+AG - Constancia de Firma.
+Alejandro Santomauro 15/05/2014 18:12:14 Avala el documento |
+16/05/2014 14:57:01 Avala el documento |
+Jorge Forcella 15/05/2014 17:56:08 Avala el documento |
+José Clastornik 16/05/2014 12:42:23 Avala el documento |
+ApiaDocumentum Folio n° 235
+

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Factura Electrónica - DGI
+El presente documento define el esquema XML que debe ser utilizado realizar el envío de la declaración de Soluciones y Clientes.
+Para la firma debe usarse X509IssuerSerial ( para la KeyInfo / X509Data ) cuyo Subject deberá corresponderse con el RUC de Proveedor declarado.
+FUA:  05/02/2021
+Version: 1.0.8
+-->
+<xs:schema xmlns:DGICFE="http://cfe.dgi.gub.uy" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://cfe.dgi.gub.uy" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="DGIProveedorTypes.xsd"/>
+	<xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema.xsd"/>	
+	<xs:element name="Declaracion" type="DGICFE:DeclaracionDefType"/>	
+	<xs:complexType name="DeclaracionDefType">
+		<xs:annotation>
+			<xs:documentation>Declaración de proveedor</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Caratula">
+				<xs:annotation>
+					<xs:documentation>
+						Carátula de la declaración
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>					
+						<xs:element name="RUCProveedor" type="DGICFE:RUCType">
+							<xs:annotation>
+								<xs:documentation>
+									RUC del Proveedor
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="Periodo" type="DGICFE:PeriodoType">
+							<xs:annotation>
+								<xs:documentation>
+									Período declarado
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="IdEmisor" type="DGICFE:IDEmisorType" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>
+									ID dado por el emisor de la declaración
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="Secuencia" type="DGICFE:CantidadType">
+							<xs:annotation>
+								<xs:documentation>
+									Secuencia de declaración del período
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="ZonaInformada" type="DGICFE:ZonaInformadaType">
+							<xs:annotation>
+								<xs:documentation>
+									Zona/s Informada/s
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="TextoDeclaracion" type="DGICFE:TextoDeclaracionType" minOccurs="1" maxOccurs="1">
+							<xs:annotation>
+								<xs:documentation>
+									Documento Declaracion Cumplimiento de Requisitos Técnicos
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="AcepDeclaracion" type="DGICFE:AcepDeclaracionType" minOccurs="0" maxOccurs="1">
+							<xs:annotation>
+								<xs:documentation>
+									Aceptación de declaración
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="CantSolSoft" type="DGICFE:CantidadType">
+							<xs:annotation>
+								<xs:documentation>
+									Cantidad de soluciones
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="CantRUCs" type="DGICFE:CantidadType">
+							<xs:annotation>
+								<xs:documentation>
+									Cantidad de RUCs de clientes informados
+								</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DetalleSoluciones" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						Detalle de las soluciones
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Solucion" type="DGICFE:Item_DetalleSoluciones" maxOccurs="999"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DetalleClientes" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>
+						Detalle de los Clientes
+					</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Cliente" type="DGICFE:Item_DetalleClientes" maxOccurs="99999"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element ref="ds:Signature" minOccurs="1" maxOccurs="1"/>		
+
+		</xs:sequence>
+		<xs:attribute name="version" use="required" fixed="1.0">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="3"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>		
+	</xs:complexType>
+
+	<xs:complexType name="Item_DetalleSoluciones">
+		<xs:sequence>
+			<xs:element name="TipoRegistro" type="DGICFE:TipoRegistroType">
+				<xs:annotation>
+					<xs:documentation>Tipo de registro</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FechaDesde" type="DGICFE:FechaType" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Fecha desde</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FechaHasta" type="DGICFE:FechaType" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Fecha hasta</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CodigoSolucion" type="DGICFE:CodigoSolucionType">
+				<xs:annotation>
+					<xs:documentation>Código de Solución según tabla de códigos</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CodigoProducto" type="DGICFE:CodigoProductoType">
+				<xs:annotation>
+					<xs:documentation>Código de Producto según Proveedor</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="NombreSW" type="DGICFE:NombreType">
+				<xs:annotation>
+					<xs:documentation>Nombre del software</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Modulo" type="DGICFE:NombreType" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Módulo</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+
+			<xs:element name="Procesos">
+				<xs:annotation>
+					<xs:documentation>Procesos</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Proceso" type="DGICFE:Item_DetalleProcesos" maxOccurs="99">
+							<xs:annotation>
+								<xs:documentation>Declaración de los procesos cubiertos</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="Item_DetalleSolucionContratada">
+		<xs:sequence>
+			<xs:element name="TipoRegistro" type="DGICFE:TipoRegistroType">
+				<xs:annotation>
+					<xs:documentation>Tipo de registro</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FechaDesde" type="DGICFE:FechaType2012" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Fecha desde</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FechaHasta" type="DGICFE:FechaTypeZona2" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Fecha hasta</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CodigoSolucion" type="DGICFE:CodigoSolucionType">
+				<xs:annotation>
+					<xs:documentation>Código de Solución según Tabla de Códigos</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CodigoProducto" type="DGICFE:CodigoProductoType">
+				<xs:annotation>
+					<xs:documentation>Código de Producto según Proveedor</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Procesos">
+				<xs:annotation>
+					<xs:documentation>Procesos contratados</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Proceso" type="DGICFE:Item_DetalleProcesosCubiertos" maxOccurs="99">
+							<xs:annotation>
+								<xs:documentation>Detalle de los procesos contratados</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="Item_DetalleProcesos">
+		<xs:sequence>
+			<xs:element name="TipoRegistro" type="DGICFE:TipoRegistro2Type">
+				<xs:annotation>
+					<xs:documentation>Tipo de registro</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FechaDesde" type="DGICFE:FechaType" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Fecha desde</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FechaHasta" type="DGICFE:FechaType" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Fecha hasta</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CodigoProceso" type="DGICFE:CodigoProcesoType">
+				<xs:annotation>
+					<xs:documentation>Código de Proceso</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Item_DetalleProcesosCubiertos">
+		<xs:sequence>
+			<xs:element name="TipoRegistro" type="DGICFE:TipoRegistro2Type">
+				<xs:annotation>
+					<xs:documentation>Tipo de registro</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FechaDesde" type="DGICFE:FechaType2012" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Fecha desde</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FechaHasta" type="DGICFE:FechaTypeZona2" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Fecha hasta</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CodigoProceso" type="DGICFE:CodigoProcesoType">
+				<xs:annotation>
+					<xs:documentation>Código de Proceso</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Item_DetalleClientes">
+		<xs:sequence>
+			<xs:element name="RUCCliente" type="DGICFE:RUCType">
+				<xs:annotation>
+					<xs:documentation>RUC del cliente</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TipoCliente" type="DGICFE:TipoClienteType">
+				<xs:annotation>
+					<xs:documentation>RUC del cliente</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TipoRegistro" type="DGICFE:TipoRegistroType">
+				<xs:annotation>
+					<xs:documentation>Tipo de registro</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FechaInicio" type="DGICFE:FechaType2012" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Fecha de inicio</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="FechaFin" type="DGICFE:FechaTypeZona2" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Fecha de fin</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SolucionesContratadas">
+				<xs:annotation>
+					<xs:documentation>Soluciones contratadas por el cliente</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Solucion" type="DGICFE:Item_DetalleSolucionContratada" maxOccurs="99">
+							<xs:annotation>
+								<xs:documentation>Detalle de las soluciones y procesos contratados</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
+
+
+
+

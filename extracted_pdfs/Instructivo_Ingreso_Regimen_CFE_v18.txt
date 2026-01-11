@@ -1,0 +1,566 @@
+SOURCE_PDF: /Users/sergiolazaro/Documents/GitHub/facturasimple/Fuentes-Gub.uy/Instructuvos-DGI/Instructivo_Ingreso_Regimen_CFE_v18.pdf
+EXTRACTED_AT: 2026-01-11T16:27:31.878142
+PARAGRAPH_RULE: paragraphs are blocks separated by blank lines in extracted text; numbering restarts each page.
+
+=== PAGE 1 ===
+[P1] DDOOCCUUMMEENNTTOO FFUUNNCCIIOONNAALL 
+IINNSSTTRRUUCCTTIIVVOO 
+IINNGGRREESSOO AALL RRÉÉGGIIMMEENN DDEE CCFFEE 
+CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+VVEERRSSIIÓÓNN 1188-- 1155//1100//22002255
+
+=== PAGE 2 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+ÍÍNNDDIICCEE 
+INTRODUCCIÓN ................................................................................................................................................ 3 
+SOLICITUD DE CLAVES ...................................................................................................................................... 5 
+TESTING .......................................................................................................................................................... 6 
+I. ENVÍOS ....................................................................................................................................................... 6 
+II. CONSULTAS ................................................................................................................................................ 6 
+III. PROCESAR REPORTE .................................................................................................................................. 7 
+IV. PRUEBA DE TESTING ................................................................................................................................. 7 
+POSTULACIÓN .................................................................................................................................................. 9 
+I. INGRESAR: .................................................................................................................................................. 9 
+I.1. INGRESO TRADICIONAL AL SISTEMA: ............................................................................................................ 9 
+I.2. INGRESO SIMPLIFICADO AL SISTEMA .......................................................................................................... 11 
+II. CERTIFICAR NUEVO CFE: .......................................................................................................................... 14 
+Doc: 
+Impresión: 15/10/20255 
+Instructivo_Ingreso_Regimen_CFE_v18 
+Página 2 de 15
+
+=== PAGE 3 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+Introducción 
+Los ambientes disponibles en el Portal eFactura de la Web DGI para operar en el 
+sistema de facturación electrónica son: 
+ Testing 
+En este ambiente se tendrá disponible una serie de facilidades para realizar 
+recepción 
+libres que permitirán mediante mecanismos de 
+pruebas 
+automatizados validar los formatos y la firma electrónica de los CFE, reportes 
+y mensajes de respuesta según corresponda. 
+Pueden ingresar los interesados en operar con documentación fiscal 
+electrónica y los emisores electrónicos ya autorizados. Los contribuyentes 
+que desean postularse como emisores electrónicos mediante el sistema 
+tradicional de 
+ingreso al régimen, obligatoriamente deberán cumplir 
+satisfactoriamente la “Prueba de Testing” dispuesta. 
+Para poder acceder a este ambiente debe haber previamente solicitado la 
+clave que lo autoriza a ingresar al ambiente de Testing. 
+ Homologación 
+los contribuyentes que cumplieron 
+En este ambiente pueden operar 
+exitosamente 
+testing”, quienes postulen mediante el 
+mecanismo simplificado de ingreso al régimen y los emisores electrónicos 
+que soliciten autorización para emitir Nuevo CFE. 
+la “Prueba de 
+Comprende las siguientes etapas: 
+o Postulación. Para solicitar la calidad de emisor electrónico o la 
+autorización de nuevo CFE. 
+Existen dos modalidades para solicitar la calidad de emisor electrónico: 
+ 
+ 
+Ingreso tradicional al sistema 
+Ingreso simplificado al sistema 
+o Actualización de Datos. Permite actualizar los datos declarados en 
+oportunidad de la Postulación. 
+Para poder acceder a este ambiente, aunque ya esté autorizado para operar 
+en el ambiente de Testing, debe igualmente solicitar la clave para operar en 
+el ambiente de Homologación a los efectos que la DGI le incorpore el nuevo 
+rol manteniendo la clave anterior. 
+Doc: 
+Impresión: 15/10/20255 
+Instructivo_Ingreso_Regimen_CFE_v18 
+Página 3 de 15
+
+=== PAGE 4 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+ Producción 
+En este ambiente están disponibles las funcionalidades necesarias para que 
+los emisores y receptores lleven adelante la operativa de facturación 
+electrónica. Ej. Envío de la información requerida (CFE y reportes), 
+Consultas, Actualización de datos, etc. 
+Pueden operar exclusivamente los emisores electrónicos a partir de la fecha 
+de vigencia de la autorización que los habilita y con los tipos de 
+comprobantes que les fueron certificados. 
+Para poder acceder a este ambiente, aunque ya esté autorizado para operar 
+en el ambiente de Testing y de Homologación, debe igualmente solicitar la 
+clave para operar en el ambiente de Producción a los efectos que la DGI le 
+incorpore el nuevo rol manteniendo la clave anterior. 
+Doc: 
+Impresión: 15/10/20255 
+Instructivo_Ingreso_Regimen_CFE_v18 
+Página 4 de 15
+
+=== PAGE 5 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+Solicitud de claves 
+Para solicitar clave para el ingreso en el Portal eFactura es necesario disponer de clave 
+con o sin contrato. Se ingresa en la Web de DGI en el Portal de Servicios en Línea en 
+la opción eFactura-Solicitud Usuario. 
+Debe solicitar clave para ingresar a cada uno de los ambientes disponibles en el 
+sistema de facturación electrónica. A tales efectos, debe completar el formulario 
+“Solicitud de Creación de Usuario para eFactura” indicando: 
+ Nº de Cédula de Identidad o NIE y Casilla de Correo de la persona que se 
+autoriza. 
+ Rol que se le asigna: Testing, Homologación, Homologación simplificada, y/o 
+Producción. 
+ Clave. 
+Posteriormente se procesa la solicitud y se envía la confirmación de la misma a la 
+casilla de correo declarada. 
+En el ingreso de la solicitud de clave, el sistema asigna un número de trámite que se 
+muestra en pantalla, a los efectos de comprobar si el trámite fue culminado con éxito. 
+Le recomendamos esperar dicho número e imprimir la pantalla. 
+Cuando solicita clave para operar en el ambiente de Homologación a efectos de 
+postularse como emisor electrónico mediante el sistema tradicional de ingreso al 
+régimen, debe indicar la fecha en que cumplió satisfactoriamente la “Prueba de 
+Testing” a efectos de su verificación. 
+Para solicitar clave para operar en el ambiente de Producción debe haber sido 
+comunicado por la DGI de la autorización que lo habilita como emisor electrónico. 
+La DGI habilita en el rol solicitado a la persona autorizada y le comunica la clave 
+asignada por correo electrónico a la dirección de correo declarada. 
+Importante: 
+ Aunque la persona ya esté autorizada para operar en algún ambiente del Portal 
+eFactura, igualmente debe solicitar la clave para operar en el nuevo ambiente y 
+la DGI le incorporará el nuevo rol manteniendo la clave anterior. 
+Doc: 
+Impresión: 15/10/20255 
+Instructivo_Ingreso_Regimen_CFE_v18 
+Página 5 de 15
+
+=== PAGE 6 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+Testing 
+Para acceder a Testing, el contribuyente debe haber solicitado la clave para el 
+ambiente de Testing. A tales efectos, completará el formulario correspondiente 
+detallado en el apartado “Solicitud de Claves”. 
+Se ingresa en el Portal eFactura, identificándose con RUC, C.I. y clave de la persona 
+autorizada a operar en el ambiente de Testing. 
+El ambiente de Testing permite realizar pruebas libres de envío de documentos, sobres 
+y reportes, representativos de su operativa real permitiendo verificar su sistema 
+informático e ir depurando sus aplicaciones. 
+El testing es de uso obligatorio para el contribuyente que se postula como emisor 
+electrónico mediante el sistema tradicional de ingreso al régimen, y de uso opcional 
+para aquel que se postula mediante el sistema simplificado de ingreso al régimen, y 
+para aquellos emisores electrónicos que ya están operando en el sistema y se postulan 
+para certificar nuevos CFE o desean probar el funcionamiento de actualizaciones 
+realizadas a su sistema de facturación. 
+Cuando el contribuyente entienda que su sistema funciona adecuadamente y desee 
+postularse como emisor electrónico podrá solicitar clave para acceder al ambiente de 
+Homologación. Para otorgarse la misma en el caso de postulación tradicional, se 
+verificará que haya alcanzado un nivel mínimo de pruebas a través de la “Prueba de 
+Testing”. 
+En este ambiente, el contribuyente puede realizar: 
+I. Envíos 
+Opciones de envíos: Sobres y Reportes. 
+Mediante mecanismos de recepción automatizados se valida los formatos y la firma 
+electrónica de los Sobres, de los CFE y de los Reportes enviados. 
+II. Consultas 
+Opciones de consulta: Envíos realizados y Envíos CFE/CFC. 
+Puede consultar el estado de recepción de los Sobres y Reportes y de cada uno de los 
+CFE o CFC enviados. 
+Doc: 
+Impresión: 15/10/20255 
+Instructivo_Ingreso_Regimen_CFE_v18 
+Página 6 de 15
+
+=== PAGE 7 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+III. Procesar Reporte 
+Con esta opción es posible validar que los datos del Reporte Diario se correspondan 
+con los CFE enviados a DGI con Fecha de Firma igual a Fecha de Resumen del 
+reporte. 
+Se accede a la opción de la siguiente manera: 
+ Consulta/ Envíos Realizados 
+ Se selecciona el Reporte que se desea validar. Éste debe tener el estado 
+“Recibido” 
+ En la línea correspondiente al reporte que se desea verificar se selecciona el 
+icono 
+ “Procesar Reporte”. 
+ Si el reporte verifica las validaciones se le asigna el estado “Reporte Procesado”. 
+IV. Prueba de Testing 
+Para superar la etapa de testing exigida, quienes ingresan al régimen por el sistema 
+tradicional, deben realizar una prueba del nivel que se indica a continuación. 
+ Enviar a DGI comprobantes en las siguientes condiciones: 
+o Los sobres pueden contener uno o múltiples CFE. 
+o Todos los comprobantes tienen la misma fecha de emisión (Fecha de 
+Firma). 
+o Un mínimo de 50 documentos distintos por cada tipo de CFE del combo 
+mínimo, (e-Factura, Nota de crédito de e-Factura, Nota de débito de e-
+Factura, e-Ticket, Nota de crédito de e-Ticket y Nota de débito de e-
+Ticket), que cumplan las validaciones dispuestas y tengan el estado 
+“Recibido”. 
+o Pueden existir comprobantes enviados en estado “Rechazado”, los que 
+no se computan para alcanzar el mínimo de 50 CFEs recibidos. 
+ Generar y enviar el Reporte Diario correspondiente: 
+o La totalidad de los comprobantes enviados (recibidos y rechazados) 
+forman parte de la prueba y deben estar recogidos en el reporte. 
+o El reporte debe tener un formato válido (estado “Recibido”). Si es 
+rechazado se puede volver a generar y enviar nuevamente. 
+ Procesar Reporte Diario: 
+o El contribuyente dispara el proceso según lo indicado en el apartado IV). 
+Doc: 
+Impresión: 15/10/20255 
+Instructivo_Ingreso_Regimen_CFE_v18 
+Página 7 de 15
+
+=== PAGE 8 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+o Automáticamente se valida que 
+los datos del Reporte Diario se 
+correspondan con los CFE enviados a la DGI, emitidos (Fecha de Firma) 
+el día que se ejecuta la prueba. 
+o Si la validación es correcta se le asigna el estado: “Reporte Procesado”. 
+o Si no cumple la validación, puede generar y enviar nuevamente el reporte 
+y volver a procesarlo. 
+Importante: 
+ La prueba de Testing se exige únicamente cuando el contribuyente se postula 
+como emisor electrónico por el sistema tradicional de ingreso al régimen, no 
+requiriéndose la misma cuando se postula por el sistema simplificado de ingreso 
+al régimen o a un nuevo CFE. 
+ Únicamente se testean los CFEs correspondientes al combo mínimo obligatorio: 
+e-factura, e-ticket y sus correspondientes notas de corrección, no exigiéndose 
+superar esta prueba de testing para los restantes CFEs. 
+ Una vez superada esta etapa, aunque con posterioridad se cancele la 
+postulación, no corresponde volver a realizarla. 
+Doc: 
+Impresión: 15/10/20255 
+Instructivo_Ingreso_Regimen_CFE_v18 
+Página 8 de 15
+
+=== PAGE 9 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+Postulación 
+Para poder comenzar con la etapa de Postulación se ingresa con RUC, C.I. y clave al 
+Portal eFactura, ambiente de Homologación en Servicios/Postulación, opción Ingresar. 
+trata de un 
+Si se 
+tradicional al sistema, deberá haber cumplido 
+satisfactoriamente la “Prueba de Testing”, dejando constancia del día que realizó la 
+misma cumpliendo las condiciones dispuestas. Para otorgar la clave, DGI verifica que: 
+ingreso 
+ Exista un Reporte Diario con “Fecha de Resumen” igual a la indicada como 
+“Fecha de prueba de testing” con estado “Reporte Procesado”. 
+ Se cumple con el mínimo de 50 comprobantes “Recibidos” por cada tipo de CFE 
+del combo mínimo. 
+I. Ingresar: 
+I.1. 
+Ingreso tradicional al sistema: 
+El sistema despliega el formulario Ingreso al sistema. 
+El postulante deberá: 
+o Verificar los datos registrales que ya vienen cargados en el formulario. Si alguno 
+no es correcto deberá realizar la actualización en RUT antes de continuar el 
+trámite. 
+o Completar los siguientes datos: 
+ Teléfono de contacto para CFE. 
+ Software, con las siguientes opciones de ingreso no excluyentes: 
+o Desarrollo Propio 
+o Externo. 
+ “Proveedor local” y “Proveedor del exterior”, opciones de ingreso no 
+excluyentes habilitadas únicamente en caso de seleccionar la opción 
+“Externo”, permitiendo el ingreso de más de un proveedor. 
+ “Nombre del Software”, “Versión” y “RUC” de la empresa proveedora del 
+software si es proveedor local ó, “Nombre del Software”, “Versión” y “Nombre 
+del Proveedor” si es proveedor del exterior 
+ “Soluciones de Software”, “Código de producto” y “Nombre” y sus 
+correspondientes “Procesos de facturación”. 
+ Dirección del sitio Web del postulante – URL. 
+ Mail de contacto DGI para CFE. 
+ Mail de contacto con otros emisores electrónicos. 
+Doc: 
+Impresión: 15/10/20255 
+Instructivo_Ingreso_Regimen_CFE_v18 
+Página 9 de 15
+
+=== PAGE 10 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+ “URL para Webservice”, obligatorio completar si el proveedor de SW es un 
+proveedor habilitado. 
+ “Mail de contacto técnico”, obligatorio completar si el proveedor de SW es un 
+proveedor habilitado. 
+ CFE a certificar. 
+o Verificar en la dirección de mail de contacto DGI para CFE la recepción de un 
+correo de la DGI conteniendo un código de confirmación de postulación. 
+o 
+Ingresar el código recibido en el campo “Código de confirmación de postulación” del 
+formulario y aceptar la “Declaración de cumplimiento de requisitos técnicos 
+(Postulante)”. 
+El texto de la declaración es el siguiente: 
+DOCUMENTO DE CUMPLIMIENTO DE REQUISITOS TÉCNICOS PARA OPERAR EN EL SISTEMA DE 
+FACTURACIÓN ELECTRÓNICA 
+&RUC& 
+&Denominación& 
+&Fecha& 
+Por la presente declaro que cuento con la implementación de los procedimientos formales 
+establecidos para Comprobantes Fiscales Electrónicos (en adelante CFE), que podrán ser auditados 
+por la Dirección General Impositiva (en adelante DGI) y que cumplen adecuadamente las siguientes 
+funciones, estimadas críticas: 
+ Almacenamiento y control de acceso del archivo Constancia de Autorización para la Emisión de 
+CFE (CAE). 
+ Numeración controlada de los CFE (asignación única de cada número autorizado). 
+ Respaldo de los CFE e información generada (incluye la publicación de los e-tickets, e-tickets 
+Venta por Cuenta Ajena y sus respectivas notas de corrección en la Web del emisor 
+electrónico). 
+ Envío de CFE y de los Reportes Diarios a DGI. 
+ 
+Intercambio (envío y recepción) de CFE y sus correspondientes mensajes de respuesta, con 
+otros contribuyentes. Si el intercambio es realizado entre emisores electrónicos y ejecutado a 
+través de proveedores habilitados, me comprometo a contar con un servicio web que cumpla 
+con el “Estándar de intercambio entre emisores a través de Servicios web” publicado en la Web 
+oficial de DGI (www.dgi.gub.uy). 
+ Control de cierre del total de envíos: recibidos o rechazados por DGI. 
+ Administración de contingencias. 
+ Cumplir con las exigencias establecidas en las cartillas de formatos publicadas en la Web oficial 
+de DGI (www.dgi.gub.uy), comprometiéndose a actualizar sus sistemas ante cualquier cambio 
+que pueda surgir en nuevas versiones. 
+ 
+Impresión de los CFE de acuerdo a los requisitos de impresión establecidos en la cartilla de 
+formato de CFE publicada en la Web oficial de DGI (www.dgi.gub.uy), comprometiéndose a 
+actualizar sus sistemas ante cualquier cambio que pueda surgir en nuevas versiones. 
+ No permitir la emisión de comprobantes que no cumplan con el estándar de emisión, firma y 
+envío definidos por DGI. 
+A su vez, declaro que se han realizado todas las pruebas necesarias para garantizar que estaré en 
+condiciones de operar en el sistema de facturación electrónica a partir de la fecha de vigencia de la 
+autorización que me habilite como emisor electrónico. 
+Doc: 
+Impresión: 15/10/20255 
+Instructivo_Ingreso_Regimen_CFE_v18 
+Página 10 de 15
+
+=== PAGE 11 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+Una vez que el postulante haya dado cumplimiento a los requisitos exigidos, la DGI le 
+comunicará su inclusión en el régimen, así como los CFE que le fueron autorizados. La 
+referida inclusión se efectivizará el día siguiente a aquel en que se verifique la 
+comunicación. 
+A partir de la fecha de vigencia de la autorización que lo habilita como emisor 
+electrónico, el contribuyente se transforma en receptor electrónico de todos los CFEs 
+independientemente que los haya certificado o no. 
+Una vez que el emisor electrónico obtiene la calidad de tal mediante la autorización 
+correspondiente, la empresa dispone de un plazo de 1 mes para documentar sus 
+operaciones exclusivamente mediante los CFE que les hubiesen sido autorizados, 
+pudiendo en ese período coexistir la documentación electrónica con la en papel. 
+I.2. 
+Ingreso simplificado al sistema 
+El sistema despliega el Formulario “Ingreso simplificado al sistema”. 
+El postulante deberá: 
+o Verificar los datos registrales que ya vienen cargados en el formulario. Si alguno 
+no es correcto deberá realizar la actualización en RUT antes de continuar el 
+trámite. 
+o Completar los siguientes datos: 
+ Teléfono de contacto para CFE. 
+ “Proveedor habilitado”, con las opciones de ingreso excluyentes según lista 
+inscriptos en Registro de Proveedores Habilitados 
+de proveedores 
+desplegados. 
+ “Nombre del Software” y “Versión” 
+ “Soluciones de Software”, “Código de producto” y “Nombre” y sus 
+correspondientes “Procesos de facturación” 
+ Dirección del sitio Web del postulante – URL. 
+ Mail de contacto DGI para CFE. 
+ Mail de contacto con otros emisores electrónicos. 
+ “URL para Webservice” 
+ “Mail de contacto técnico” 
+ CFE a certificar. 
+o Verificar en la dirección de mail de contacto DGI para CFE la recepción de un 
+correo de la DGI conteniendo un código de confirmación de postulación. 
+o 
+Ingresar el código recibido en el campo “Código de confirmación de postulación” del 
+formulario y aceptar la “Declaración de cumplimiento de requisitos técnicos 
+(Postulante). 
+Doc: 
+Impresión: 15/10/20255 
+Instructivo_Ingreso_Regimen_CFE_v18 
+Página 11 de 15
+
+=== PAGE 12 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+El texto de la declaración es el siguiente: 
+DOCUMENTO DE CUMPLIMIENTO DE REQUISITOS TÉCNICOS PARA OPERAR EN EL SISTEMA DE 
+FACTURACIÓN ELECTRÓNICA 
+&RUC& 
+&Denominación& 
+&Fecha& 
+Por la presente declaro que cuento con la implementación de los procedimientos formales 
+establecidos para Comprobantes Fiscales Electrónicos (en adelante CFE), que podrán ser auditados 
+por la Dirección General Impositiva (en adelante DGI) y que cumplen adecuadamente las siguientes 
+funciones, estimadas críticas: 
+ Almacenamiento y control de acceso del archivo Constancia de Autorización para la Emisión de 
+CFE (CAE). 
+ Numeración controlada de los CFE (asignación única de cada número autorizado). 
+ Respaldo de los CFE e información generada (incluye la publicación de los e-tickets, e-tickets 
+Venta por Cuenta Ajena y sus respectivas notas de corrección en la Web del emisor 
+electrónico). 
+ Envío de CFE y de los Reportes Diarios a DGI. 
+ 
+Intercambio (envío y recepción) de CFE y sus correspondientes mensajes de respuesta, con 
+otros contribuyentes. Si el intercambio es realizado entre emisores electrónicos y ejecutado a 
+través de proveedores habilitados, me comprometo a contar con un servicio web que cumpla 
+con el “Estándar de intercambio entre emisores a través de Servicios web” publicado en la Web 
+oficial de DGI (www.dgi.gub.uy). 
+ Control de cierre del total de envíos: recibidos o rechazados por DGI. 
+ Administración de contingencias. 
+ Cumplir con las exigencias establecidas en las cartillas de formatos publicadas en la Web oficial 
+de DGI (www.dgi.gub.uy), comprometiéndose a actualizar sus sistemas ante cualquier cambio 
+que pueda surgir en nuevas versiones. 
+ 
+Impresión de los CFE de acuerdo a los requisitos de impresión establecidos en la cartilla de 
+formato de CFE publicada en la Web oficial de DGI (www.dgi.gub.uy), comprometiéndose a 
+actualizar sus sistemas ante cualquier cambio que pueda surgir en nuevas versiones. 
+ No permitir la emisión de comprobantes que no cumplan con el estándar de emisión, firma y 
+envío definidos por DGI. 
+A su vez, declaro que se han realizado todas las pruebas necesarias para garantizar que estaré en 
+condiciones de operar en el sistema de facturación electrónica a partir de la fecha de vigencia de la 
+autorización que me habilite como emisor electrónico. 
+Una vez verificado que el postulante dio cumplimiento a los requisitos exigidos, la DGI 
+acepta la solicitud de postulación simplificada y le envía un correo electrónico al 
+proveedor habilitado comunicándole que tiene un trabajo asignado por el postulante. 
+El proveedor habilitado deberá: 
+o 
+Ingreso 
+Ingresar al ambiente de Proveedor Habilitado opción Solicitudes 
+Simplificado, para aceptar o rechazar el trabajo. En caso que no lo haga en un plazo 
+de 5 días hábiles a partir de la fecha de envío del correo electrónico, el trabajo se 
+Doc: 
+Impresión: 15/10/20255 
+Instructivo_Ingreso_Regimen_CFE_v18 
+Página 12 de 15
+
+=== PAGE 13 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+entenderá como rechazado y se cancelará la solicitud de postulación simplificada, 
+debiendo el postulante iniciar nuevamente el trámite. 
+o Una vez aceptado el trabajo de ingreso simplificado, ingresar en el link “Declaración 
+de cumplimiento de requisitos técnicos (Proveedor Habilitado)” y declarar que el 
+postulante está en condiciones de cumplir con los requisitos técnicos establecidos 
+presionando la casilla de aprobación correspondiente. En caso de no aprobar las 
+condiciones, la solicitud de postulación simplificada será cancelada. 
+El texto de la declaración es el siguiente: 
+DOCUMENTO DE CUMPLIMIENTO DE REQUISITOS TÉCNICOS PARA OPERAR EN EL SISTEMA DE 
+FACTURACIÓN ELECTRÓNICA (PROVEEDOR HABILITADO) 
+&RUC del Proveedor Habilitado& 
+&Denominación del Proveedor Habilitado & 
+&Fecha& 
+Por la presente declaro que el software implementado en la empresa &RUC del postulante&, 
+&Denominación del postulante & cuenta con los procedimientos formales establecidos para 
+Comprobantes Fiscales Electrónicos (en adelante CFE), que podrán ser auditados por la Dirección 
+General Impositiva (en adelante DGI) y que cumplen adecuadamente las siguientes funciones, 
+estimadas críticas: 
+ Almacenamiento y control de acceso del archivo Constancia de Autorización para la Emisión de 
+CFE (CAE). 
+ Numeración controlada de los CFE (asignación única de cada número autorizado). 
+ Respaldo de los CFE e información generada (incluye la publicación de los e-tickets, e-tickets 
+Venta por Cuenta Ajena y sus respectivas notas de corrección en la Web del emisor 
+electrónico). 
+ Envío de CFE y de los Reportes Diarios a DGI. 
+ 
+Intercambio (envío y recepción) de CFE y sus correspondientes mensajes de respuesta, con 
+otros contribuyentes. 
+ Control de cierre del total de envíos: recibidos o rechazados por DGI. 
+ Administración de contingencias. 
+ Cumplir con las exigencias establecidas en las cartillas de formatos publicadas en la Web oficial 
+de DGI (www.dgi.gub.uy), comprometiéndose a actualizar sus sistemas ante cualquier cambio 
+que pueda surgir en nuevas versiones. 
+ 
+Impresión de los CFE de acuerdo a los requisitos de impresión establecidos en la cartilla de 
+formato de CFE publicada en la Web oficial de DGI (www.dgi.gub.uy), comprometiéndose a 
+actualizar sus sistemas ante cualquier cambio que pueda surgir en nuevas versiones. 
+ No permitir la emisión de comprobantes que no cumplan con el estándar de emisión, firma y 
+envío definidos por DGI. 
+A su vez, declaro que se han realizado todas las pruebas necesarias para garantizar que el 
+postulante estará en condiciones de operar en el sistema de facturación electrónica a partir de la 
+fecha de vigencia de la autorización que lo habilite como emisor electrónico. 
+Una vez que el proveedor habilitado haya declarado que el postulante está en 
+condiciones de cumplir con las condiciones y requisitos técnicos necesarios para ser 
+Doc: 
+Impresión: 15/10/20255 
+Instructivo_Ingreso_Regimen_CFE_v18 
+Página 13 de 15
+
+=== PAGE 14 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+emisor electrónico, la DGI comunicará al postulante su inclusión en el régimen, así 
+como los CFE que le fueron autorizados. La referida inclusión se efectivizará el día 
+siguiente a aquel en que se verifique la comunicación. 
+A partir de la fecha de vigencia de la autorización que lo habilita como emisor 
+electrónico, el contribuyente se transforma en receptor electrónico de todos los CFEs 
+independientemente que los haya certificado o no. 
+Una vez que el emisor electrónico obtiene la calidad de tal mediante la autorización 
+correspondiente, la empresa dispone de un plazo de 1 mes para documentar sus 
+operaciones exclusivamente mediante los CFE que les hubiesen sido autorizados, 
+pudiendo en ese período coexistir la documentación electrónica con la en papel. 
+II. Certificar nuevo CFE: 
+El sistema despliega el Formulario “Nuevo CFE a certificar”. 
+El postulante deberá: 
+o Verificar los datos que ya vienen cargados en el formulario. Si alguno no es correcto 
+deberá realizar la actualización en RUT o a través de la página Web de DGI en el 
+Portal eFactura/Actualización de Datos según corresponda, y luego comenzar una 
+nueva solicitud de Certificar nuevo CFE”. 
+o Completar en el campo en blanco “Nuevo CFE a certificar” el tipo de CFE que 
+desea incorporar al sistema de facturación electrónica. El sistema le desplegará las 
+posibles opciones de ingreso no excluyentes. 
+o 
+Ingresar en el link “Declaración de cumplimiento de requisitos técnicos (Postulante)” 
+y declarar que cumple con los requisitos técnicos establecidos presionando la 
+casilla de aprobación correspondiente. En caso de no aprobar las condiciones, la 
+solicitud de Certificar nuevo CFE será cancelada. 
+El texto de la declaración es el siguiente: 
+Doc: 
+Impresión: 15/10/20255 
+Instructivo_Ingreso_Regimen_CFE_v18 
+Página 14 de 15
+
+=== PAGE 15 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+DOCUMENTO DE CUMPLIMIENTO DE REQUISITOS TÉCNICOS PARA OPERAR EN EL SISTEMA DE 
+FACTURACIÓN ELECTRÓNICA 
+&RUC& 
+&Denominación& 
+&Fecha& 
+Por la presente declaro que cuento con la implementación de los procedimientos formales 
+establecidos para Comprobantes Fiscales Electrónicos (en adelante CFE), que podrán ser auditados 
+por la Dirección General Impositiva (en adelante DGI) y que cumplen adecuadamente las siguientes 
+funciones, estimadas críticas: 
+ Almacenamiento y control de acceso del archivo Constancia de Autorización para la Emisión de 
+CFE (CAE). 
+ Numeración controlada de los CFE (asignación única de cada número autorizado). 
+ Respaldo de los CFE e información generada (incluye la publicación de los e-tickets, e-tickets 
+Venta por Cuenta Ajena y sus respectivas notas de corrección en la Web del emisor 
+electrónico). 
+ Envío de CFE y de los Reportes Diarios a DGI. 
+ 
+Intercambio (envío y recepción) de CFE y sus correspondientes mensajes de respuesta, con 
+otros contribuyentes. Si el intercambio es realizado entre emisores electrónicos y ejecutado a 
+través de proveedores habilitados, me comprometo a contar con un servicio web que cumpla 
+con el “Estándar de intercambio entre emisores a través de Servicios web” publicado en la Web 
+oficial de DGI (www.dgi.gub.uy). 
+ Control de cierre del total de envíos: recibidos o rechazados por DGI. 
+ Administración de contingencias. 
+ Cumplir con las exigencias establecidas en las cartillas de formatos publicadas en la Web oficial 
+de DGI (www.dgi.gub.uy), comprometiéndose a actualizar sus sistemas ante cualquier cambio 
+que pueda surgir en nuevas versiones. 
+ 
+Impresión de los CFE de acuerdo a los requisitos de impresión establecidos en la cartilla de 
+formato de CFE publicada en la Web oficial de DGI (www.dgi.gub.uy), comprometiéndose a 
+actualizar sus sistemas ante cualquier cambio que pueda surgir en nuevas versiones. 
+ No permitir la emisión de comprobantes que no cumplan con el estándar de emisión, firma y 
+envío definidos por DGI. 
+A su vez, declaro que se han realizado todas las pruebas necesarias para garantizar que estaré en 
+condiciones de operar en el sistema de facturación electrónica a partir de la fecha de vigencia de la 
+autorización que me habilite como emisor electrónico. 
+Una vez que el postulante haya dado cumplimiento a los requisitos exigidos, la DGI le 
+comunicará la autorización como emisor electrónico de los comprobantes solicitados 
+incluir. La referida inclusión se efectivizará el día siguiente a aquel en que se verifique 
+la comunicación. 
+Cabe destacar que, luego que se obtiene la autorización de DGI que lo habilita a emitir 
+estos nuevos comprobantes, deberá comenzar a emitir la totalidad de los mismos 
+desde la fecha de vigencia de la autorización no contando con el período de transición 
+de 1 mes que tuvo para la emisión de los primeros CFE. 
+Doc: 
+Impresión: 15/10/20255 
+Instructivo_Ingreso_Regimen_CFE_v18 
+Página 15 de 15
+

@@ -1,0 +1,275 @@
+SOURCE_PDF: /Users/sergiolazaro/Documents/GitHub/facturasimple/Fuentes-Gub.uy/Instructuvos-DGI/Instructivo_Solicitud_Constancias_CFE_v06.pdf
+EXTRACTED_AT: 2026-01-11T16:27:32.658775
+PARAGRAPH_RULE: paragraphs are blocks separated by blank lines in extracted text; numbering restarts each page.
+
+=== PAGE 1 ===
+[P1] DDOOCCUUMMEENNTTOO FFUUNNCCIIOONNAALL 
+IINNSSTTRRUUCCTTIIVVOO 
+ SSOOLLIICCIITTUUDD DDEE CCOONNSSTTAANNCCIIAASS 
+EEMMIISSOORREESS EELLEECCTTRRÓÓNNIICCOOSS 
+CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+VVEERRSSIIÓÓNN 0066 -- 0055//1111//22002255
+
+=== PAGE 2 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+ÍÍNNDDIICCEE 
+1 
+1. INTRODUCCIÓN ............................................................................................................................................................. 3 
+2 
+2. SOLICITUD DE CONSTANCIAS ............................................................................................................................................ 3 
+2.1. Autorización Impresión Documentación - Solicitud ............................................................................................... 5 
+2.1.1. Comprobantes para los cuales se certificó como Emisor Electrónico ................................................................. 6 
+2.1.1.1 Solicitud de autorización para emisión de comprobantes fiscales electrónicos ............................................... 7 
+2.1.1.2 “Solicitud de autorización para emisión de comprobantes fiscales de contingencia” ..................................... 9 
+2.1.1.3 “Solicitud de autorización para emisión de comprobantes en período de transición” .................................. 10 
+2.2. eFactura - Constancia Comprobante Fiscal Electrónico – Solicitud ..................................................................... 12 
+2.3. eFactura - Constancia Comprobante Fiscal de Contingencia – Solicitud ............................................................. 12 
+3 
+3. CONSULTA DE CONSTANCIAS ......................................................................................................................................... 13 
+3.1. eFactura - CAE - Consulta Autorizaciones Emitidas ............................................................................................. 13 
+3.2. Autorización Impresión Documentación - Consulta de solicitudes...................................................................... 14 
+3.3. Autorización Impresión Documentación – Consulta de solicitudes emitidas ..................................................... 15 
+Doc: 
+Impresión: 06/11/2025 
+Instructivo_Solicitud_Constancias_CFE_v06 
+Página 2 de 15
+
+=== PAGE 3 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+1. INTRODUCCIÓN 
+Este servicio podrá ser utilizado exclusivamente por los contribuyentes autorizados como 
+emisores electrónicos. Deberán realizar las solicitudes de autorización de comprobantes 
+solamente a través del sitio Web de DGI. 
+Quienes tengan alguna inhibición, deberán ingresar a Servicios en línea/ Trámites /Solicitud 
+Inicio, seleccionando el Trámite: “RUT Exclusivo DGI” y el Subtrámite: “Constancias: anulación, 
+inhibiciones”, a efectos de solicitar el levantamiento de la inhibición si corresponde, o en su 
+defecto solicitar una autorización para imprimir documentación, la que tendrá un plazo de 
+vencimiento especial y una cantidad máxima de documentación a emitir. 
+Los contribuyentes exonerados deberán previamente realizar un trámite de autorización: 
+Solicitud de autorización de documentación para contribuyentes exonerados | DGI 
+(www.gub.uy) 
+Cuando se soliciten comprobantes en papel, las imprentas para las cuales podrán solicitar 
+autorizaciones deberán estar en el Registro de imprentas Web. 
+2. SOLICITUD DE CONSTANCIAS 
+Desde el Portal Web ingrese en la opción “Servicios en línea”: 
+Doc: 
+Impresión: 06/11/2025 
+Instructivo_Solicitud_Constancias_CFE_v06 
+Página 3 de 15
+
+=== PAGE 4 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+En “Usuarios registrados” podrá ingresar con Usuario DGI (contrato de adhesión o PIN) o con 
+Identidades Digitales: 
+Al final de la lista del menú de servicios encontrará la opción “Constancias”: 
+Doc: 
+Impresión: 06/11/2025 
+Instructivo_Solicitud_Constancias_CFE_v06 
+Página 4 de 15
+
+=== PAGE 5 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+Podrá realizar la solicitud de constancias a través de tres opciones: 
+1 - Autorización Impresión Documentación - Solicitud 
+2 - eFactura - Constancia Comprobante Fiscal Electrónico - Solicitud 
+3 - eFactura - Constancia Comprobante Fiscal de Contingencia - Solicitud 
+Desde las tres opciones accede al mismo menú, aunque por las opciones 2 y 3 puede 
+directamente solicitar comprobantes fiscales electrónicos o de contingencia. 
+2.1. Autorización Impresión Documentación - Solicitud 
+Se despliega una pantalla con dos opciones de ingreso: 
+2.1.1.- Comprobantes para los cuales se certificó como Emisor Electrónico 
+2.1.2.- Comprobantes NO certificados (Habilitado exclusivamente para remito) 
+Doc: 
+Impresión: 06/11/2025 
+Instructivo_Solicitud_Constancias_CFE_v06 
+Página 5 de 15
+
+=== PAGE 6 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+2.1.1. Comprobantes para los cuales se certificó como Emisor Electrónico 
+A su vez, se despliegan dos opciones: 
+2.1.1.1 Solicitud de autorización para emisión de comprobantes fiscales electrónicos 
+2.1.1.2 Solicitud de autorización para emisión de comprobantes fiscales de contingencia 
+Y en caso de estar en período de transición, se agrega la siguiente opción: 
+2.1.1.3 Solicitud de autorización para emisión de comprobantes en período de transición 
+Doc: 
+Impresión: 06/11/2025 
+Instructivo_Solicitud_Constancias_CFE_v06 
+Página 6 de 15
+
+=== PAGE 7 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+Posicionándose sobre el icono 
+se brinda información sobre cada opción. 
+2.1.1.1 Solicitud de autorización para emisión de comprobantes fiscales 
+electrónicos - Tipo de constancia E 
+Permite obtener una autorización para la emisión de comprobantes fiscales electrónicos 
+(Constancia de CFE), con fecha de vencimiento del CAE igual a 2 años (salvo que exista una 
+vigencia especial otorgada). Con esta autorización, podrá emitir en forma electrónica todos 
+aquellos comprobantes para los cuales se ha certificado como emisor electrónico. 
+Deberá verificar si los datos registrales están correctos previamente a completar el formulario. 
+De no ser así deberá actualizarlos. Podrá consultar sobre el trámite a través Servicios en 
+línea/Trámites/Solicitud Inicio, seleccionando el Trámite: “RUT Exclusivo DGI” y el Subtrámite: 
+“Constancias: anulación, inhibiciones”. 
+Si los datos son correctos, deberá confirmarlos marcando la casilla de verificación: 
+Seleccione el tipo de comprobante a solicitar y complete la cantidad requerida del mismo, 
+(como máximo 1.000.000): 
+Doc: 
+Impresión: 06/11/2025 
+Instructivo_Solicitud_Constancias_CFE_v06 
+Página 7 de 15
+
+=== PAGE 8 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+Luego de presionar el botón “Confirmar” se desplegará una pantalla confirmando la 
+autorización, dejando disponible para descargar el archivo CAE y permitiendo imprimir la 
+autorización, con los íconos 
+ respectivamente: 
+ y 
+Doc: 
+Impresión: 06/11/2025 
+Instructivo_Solicitud_Constancias_CFE_v06 
+Página 8 de 15
+
+=== PAGE 9 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+2.1.1.2 “Solicitud de autorización para emisión de comprobantes fiscales de 
+contingencia” - Tipo de constancia F 
+Permite obtener una autorización para la emisión de comprobantes fiscales de contingencia 
+(Constancia de CFC), con fecha de vencimiento de la documentación igual a 2 años (salvo que 
+exista una vigencia especial otorgada). Con esta autorización, podrá solicitar en la imprenta 
+elegida, la confección de los comprobantes de contingencia para los cuales se ha certificado 
+como emisor electrónico. 
+Deberá verificar si los datos registrales están correctos previamente a completar el formulario. 
+De no ser así, deberá actualizarlos. Podrá consultar sobre el trámite a través Servicios en 
+línea/Trámites/Solicitud Inicio, seleccionando el Trámite: “RUT Exclusivo DGI” y el Subtrámite: 
+“Constancias: anulación, inhibiciones”. 
+Si los datos son correctos, deberá confirmarlos marcando la casilla de verificación: 
+Deberá completar: 
+• RUC de la imprenta: deberá estar inscripta en el Registro de Imprentas Web 
+(https://www.gub.uy/direccion-general-
+impositiva/comunicacion/publicaciones/imprentas-incluidas-registro-imprentas-
+web), además de ser una imprenta autorizada por DGI para imprimir documentación. 
+Consulte a la imprenta para verificarlo. 
+• Cantidad de documentos: máximo 999.999. 
+Luego de presionar “Confirmar” se desplegará una pantalla con la solicitud procesada, 
+dejándola disponible para descargar e imprimir: 
+Doc: 
+Impresión: 06/11/2025 
+Instructivo_Solicitud_Constancias_CFE_v06 
+Página 9 de 15
+
+=== PAGE 10 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+2.1.1.3 “Solicitud de autorización para emisión de comprobantes en período 
+de transición” - Tipo de constancia H 
+Permite obtener una autorización para la impresión de comprobantes fiscales tradicionales, a 
+efectos de emitir documentación en papel para comprobantes certificados mientras se 
+encuentre en el período de transición. 
+El plazo de transición es de un mes a partir de que obtuvo la calidad de emisor 
+electrónico, para documentar exclusivamente mediante los CFE que les hubiesen sido 
+autorizados. 
+La fecha de vencimiento de la documentación será igual a la fecha de fin del período de 
+transición (Fecha de vigencia de la autorización que lo habilita como emisor electrónico más un 
+mes). 
+Deberá completar: 
+• RUC de la imprenta: deberá estar inscripta en el Registro de Imprentas Web 
+(https://www.gub.uy/direccion-general-
+impositiva/comunicacion/publicaciones/imprentas-incluidas-registro-imprentas-
+Doc: 
+Impresión: 06/11/2025 
+Instructivo_Solicitud_Constancias_CFE_v06 
+Página 10 de 15
+
+=== PAGE 11 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+web), además de ser una imprenta autorizada por DGI para imprimir documentación. 
+Consulte a la imprenta para verificarlo. 
+• Cantidad de documentos: máximo 999.999. 
+• Número de local: seleccionar el local de la lista desplegable para el cual solicita 
+documentación. 
+Luego de presionar “Confirmar” se desplegará una pantalla con la solicitud procesada, 
+dejándola disponible para descargar e imprimir: 
+2.1.2. Comprobantes NO certificados (Habilitado exclusivamente para 
+remito) - Tipo de constancia G 
+Permite obtener una autorización para emitir remitos siempre que el emisor no tenga certificado 
+el e-remito. 
+Doc: 
+Impresión: 06/11/2025 
+Instructivo_Solicitud_Constancias_CFE_v06 
+Página 11 de 15
+
+=== PAGE 12 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+Deberá completar: 
+• RUC de la imprenta: deberá estar inscripta en el Registro de Imprentas Web 
+(https://www.gub.uy/direccion-general-
+impositiva/comunicacion/publicaciones/imprentas-incluidas-registro-imprentas-
+web), además de ser una imprenta autorizada por DGI para imprimir documentación. 
+Consulte a la imprenta para verificarlo. 
+• Cantidad de documentos: máximo 999.999. 
+• Número de local: seleccionar el local de la lista desplegable para el cual solicita 
+documentación. 
+Luego de presionar “Confirmar” se desplegará una pantalla con la solicitud procesada, 
+dejándola disponible para descargar e imprimir. 
+2.2. eFactura – Constancia Comprobante Fiscal Electrónico - Solicitud 
+Se accede a la misma opción descripta en el punto 2.1.1.1 “Solicitud de autorización para 
+emisión de comprobantes fiscales electrónicos”. 
+2.3. eFactura - Constancia Comprobante Fiscal de Contingencia - 
+Solicitud 
+Se accede a la misma opción descripta en el punto 2.1.1.2 “Solicitud de autorización para 
+emisión de comprobantes fiscales de contingencia”. 
+Doc: 
+Impresión: 06/11/2025 
+Instructivo_Solicitud_Constancias_CFE_v06 
+Página 12 de 15
+
+=== PAGE 13 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+3. CONSULTA DE CONSTANCIAS 
+Adicionalmente en el mismo menú de Constancias, se encuentran disponibles tres consultas 
+sobre las solicitudes de constancias realizadas: 
+3.1. eFactura - CAE - Consulta Autorizaciones Emitidas 
+Permite consultar las solicitudes de autorizaciones de emisión de Comprobantes Fiscales 
+Electrónicos, filtrando por tipo de comprobante, estado y período. 
+Asimismo, quedan disponibles el CAE y el archivo PDF de la autorización solicitada (en tanto la 
+misma se encuentre activa), pudiendo ser descargados: 
+Doc: 
+Impresión: 06/11/2025 
+Instructivo_Solicitud_Constancias_CFE_v06 
+Página 13 de 15
+
+=== PAGE 14 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+3.2. Autorización Impresión Documentación - Consulta de solicitudes 
+Permite consultar las autorizaciones solicitadas (aceptadas y rechazadas por la imprenta) para 
+imprimir comprobantes en período de 
+transición, comprobantes NO certificados y 
+Comprobantes Fiscales de Contingencia (CFC). 
+Se puede consultar filtrando por RUT de la Imprenta, tipo de solicitud y local, y descargar el 
+formulario de la solicitud realizada en un archivo PDF. 
+| 
+Doc: 
+Impresión: 06/11/2025 
+Instructivo_Solicitud_Constancias_CFE_v06 
+Página 14 de 15
+
+=== PAGE 15 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+3.3. Autorización Impresión Documentación – Consulta de solicitudes 
+emitidas 
+Permite acceder a: 
+ consultar las solicitudes de autorizaciones emitidas 
+ el formulario de la solicitud realizada en formato PDF 
+Podrá realizar consultas filtrando por tipo de autorización, local por el cual realizó la solicitud, 
+período de emisión y RUT de la imprenta que realiza el trabajo de impresión. 
+Cabe señalar que esta consulta incluye las solicitudes emitidas para: 
+ Comprobantes NO certificados, 
+ Comprobantes Fiscales de Contingencia, y 
+ Documentación tradicional en papel de comprobantes certificados, solicitada en el 
+periodo de transición. 
+Doc: 
+Impresión: 06/11/2025 
+Instructivo_Solicitud_Constancias_CFE_v06 
+Página 15 de 15
+

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Factura Electrónica - DGI
+Esquema para tipos de datos generales Declaración de Productos y Servicios.
+FUA:  09/09/20
+Version: 1.0.8
+-->
+<xs:schema xmlns:ns1="http://cfe.dgi.gub.uy" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://cfe.dgi.gub.uy" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:simpleType name="RUCType">
+		<xs:annotation>
+			<xs:documentation>RUC (RUT de persona jurídica / empresa)</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="12"/>
+			<xs:maxLength value="12"/>
+			<xs:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="PeriodoType">
+		<xs:annotation>
+			<xs:documentation> Período en formato: AAAAMM</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:length value="6"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="IDEmisorType">
+		<xs:annotation>
+			<xs:documentation>ID del envío</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:totalDigits value="10"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ZonaInformadaType">
+		<xs:annotation>
+			<xs:documentation>
+				Zona Informada
+				1: Soluciones y procesos
+				2: Clientes
+				3: Informe Completo
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:totalDigits value="1"/>
+			<xs:enumeration value="1"/>
+			<xs:enumeration value="2"/>
+			<xs:enumeration value="3"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TextoDeclaracionType">
+		<xs:annotation>
+			<xs:documentation>Texto fijo de declaración.
+            Se deja margen en largo máximo
+            por si cambia cualquier detalle mínimo.
+            </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="250"/>
+			<xs:enumeration value="Declaro que las soluciones de Software de facturación electrónica informadas no permiten la emisión de comprobantes que no cumplan con el estándar de emisión, firma y envío definidos por DGI"/>
+			<xs:enumeration value="Declaro que las soluciones de Software de facturacion electronica informadas no permiten la emision de comprobantes que no cumplan con el estandar de emision, firma y envio definidos por DGI"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="AcepDeclaracionType">
+		<xs:annotation>
+			<xs:documentation>
+                Aceptación de la Declaración
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="2"/>
+			<xs:enumeration value="SI"/>
+			<xs:enumeration value="NO"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CantidadType">
+		<xs:annotation>
+			<xs:documentation>Cantidad de soluciones</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:decimal">
+			<xs:totalDigits value="5"/>
+			<xs:fractionDigits value="0"/>
+			<xs:minInclusive value="0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TipoClienteType">
+		<xs:annotation>
+   			<xs:documentation>
+                Tipo Cliente
+				1: Cliente Emisor
+				2: Proveedor de Software
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:totalDigits value="1"/>
+			<xs:enumeration value="1"/>
+			<xs:enumeration value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+ 	<xs:simpleType name="TipoRegistroType">
+		<xs:annotation>
+   			<xs:documentation>
+				Zona Informada
+				1: Alta
+				2: Baja
+				3: Sin cambios
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:totalDigits value="1"/>
+			<xs:enumeration value="1"/>
+			<xs:enumeration value="2"/>
+			<xs:enumeration value="3"/>
+		</xs:restriction>
+	</xs:simpleType>
+ 	<xs:simpleType name="TipoRegistro2Type">
+		<xs:annotation>
+   			<xs:documentation>
+				Zona Informada
+				1: Alta
+				2: Baja
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:totalDigits value="1"/>
+			<xs:enumeration value="1"/>
+			<xs:enumeration value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="FechaType">
+		<xs:annotation>
+			<xs:documentation>
+				Fecha &gt;= 2020-10-01
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:date">
+			<xs:minInclusive value="2020-10-01" fixed="false"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="FechaType2012">
+		<xs:annotation>
+			<xs:documentation>
+				Fecha &gt;= 2012-07-01
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:date">
+			<xs:minInclusive value="2012-07-01" fixed="false"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="FechaTypeZona2">
+		<xs:annotation>
+			<xs:documentation>
+				Fecha &gt;= 2021-04-01
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:date">
+			<xs:minInclusive value="2021-04-01" fixed="false"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CodigoSolucionType">
+		<xs:annotation>
+			<xs:documentation>
+				Códigos de solución
+				1 ERP – Sistema de gestión integral que resuelve toda o casi toda la operativa
+				2 Software de gestión
+				3 Software de facturación
+				4 Caja -  Punto de venta
+				5 POS con incorporación de factura electrónica
+				6 E-commerce: venta Web
+				7 Móvil: facturación a través del celular
+				8 Soluciones móviles (tablets, PDAs, etc.)
+				9 Batch: emisión masiva de lotes
+				10 Middleware
+				99 Otros
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1"/>
+			<xs:enumeration value="2"/>
+			<xs:enumeration value="3"/>
+			<xs:enumeration value="4"/>
+			<xs:enumeration value="5"/>
+			<xs:enumeration value="6"/>
+			<xs:enumeration value="7"/>
+			<xs:enumeration value="8"/>
+			<xs:enumeration value="9"/>
+			<xs:enumeration value="10"/>
+			<xs:enumeration value="99"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CodigoProductoType">
+		<xs:annotation>
+			<xs:documentation>Código de producto asignado por el Proveedor</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="20"/>
+			<xs:pattern value="([a-zA-Z0-9])+"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="NombreType">
+		<xs:annotation>
+			<xs:documentation>Nombre</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="150"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CodigoProcesoType">
+		<xs:annotation>
+			<xs:documentation>
+				Códigos de proceso factura electrónica
+				1 Todo el proceso (origen de datos, generación, firma, envío, impresión, almacenamiento y publicación)
+				2 Origen de los datos para la generación del comprobante fiscal electrónico.
+				3 Generación del xml
+				4 Servicio de Firma de CFE
+				5 Envío de xml
+				6 Envío de reporte
+				7 Servicio de representación impresa
+				8 Almacenamiento de xml
+				9 Servicio de publicación de CFE en la Web
+				99 Otro
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:enumeration value="1"/>
+			<xs:enumeration value="2"/>
+			<xs:enumeration value="3"/>
+			<xs:enumeration value="4"/>
+			<xs:enumeration value="5"/>
+			<xs:enumeration value="6"/>
+			<xs:enumeration value="7"/>
+			<xs:enumeration value="8"/>
+			<xs:enumeration value="9"/>
+			<xs:enumeration value="99"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
+
+
+
+
+
+

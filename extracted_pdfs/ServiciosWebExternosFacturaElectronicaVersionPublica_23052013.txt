@@ -1,0 +1,1057 @@
+SOURCE_PDF: /Users/sergiolazaro/Documents/GitHub/facturasimple/Fuentes-Gub.uy/Generales-Documentos de Interes/ServiciosWebExternosFacturaElectronicaVersionPublica_23052013.pdf
+EXTRACTED_AT: 2026-01-11T16:27:51.549230
+PARAGRAPH_RULE: paragraphs are blocks separated by blank lines in extracted text; numbering restarts each page.
+
+=== PAGE 1 ===
+[P1] DOCUMENTOS TÉCNICOS 
+DIVISIÓN INFORMÁTICA 
+DESARROLLO 
+Servicios Web Externos DGI 
+Factura Electrónica 
+CÓDIGO: T-5.020.00.001-004
+
+=== PAGE 2 ===
+[P1] CÓDIGO: 
+T-5.020.00.001-004 
+VERSIÓN: 
+1.1 
+FECHA: 
+23/05/2013 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+Índice 
+Índice....................................................................................................................................................................2 
+Introducción..........................................................................................................................................................3 
+Servicios Disponibles............................................................................................................................................3 
+ws_efactura / EFACRECEPCIONSOBRE .........................................................................................................3 
+ws_efactura / EFACRECEPCIONREPORTE ....................................................................................................4 
+ws_efactura / EFACCONSULTARESTADOENVIO ...........................................................................................4 
+Breve descripción funcional de los servicios disponibles .......................................................................................5 
+ws_efactura / EFACRECEPCIONSOBRE .........................................................................................................5 
+ws_efactura / EFACRECEPCIONREPORTE ....................................................................................................5 
+ws_efactura / EFACCONSULTARESTADOENVIO ...........................................................................................5 
+Desarrollo de un cliente para nuestro webservice..................................................................................................6 
+Pruebas previas................................................................................................................................................6 
+Ejemplo de Pruebas con SoapUI ......................................................................................................................6 
+WS-Security .....................................................................................................................................................7 
+Anexo - Ejemplos de Invocaciones...................................................................................................................... 13 
+Caso 1: Envío de mensaje SOAP con Sobre.................................................................................................... 13 
+Caso 2: Envío de mensaje SOAP con Reporte Diario ...................................................................................... 16 
+Caso 3: Envío de mensaje SOAP para obtener respuesta de CFEs................................................................. 18 
+Fecha de impresión: 23/05/2013 12:07 
+DGI – Informática – Desarrollo 
+Página 2 de 20
+
+=== PAGE 3 ===
+[P1] CÓDIGO: 
+T-5.020.00.001-004 
+VERSIÓN: 
+1.1 
+FECHA: 
+23/05/2013 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+Introducción 
+DGI publica un Servicio Web externo para factura electrónica que funciona como un único canal por el cual se 
+brindan los distintos servicios de factura electrónica. 
+El Servicio Web de DGI para factura electrónica utiliza un esquema de seguridad basado en “WS-Security”. Este 
+estándar permite garantizar un nivel de seguridad tal -a través del uso de certificados y firmas digitales- que se logra 
+cumplir con los siguientes requisitos de seguridad: 
+ Autenticación 
+ Confidencialidad (vía https) 
+ 
+Integridad 
+ No repudio 
+Quien desarrolle un cliente externo de este Servicio Web deberá tener en cuenta el uso de los certificados digitales 
+para poder lograr una invocación exitosa. Más adelante en este documento encontrará un ejemplo de invocación 
+exitosa de nuestro Servicio Web hecho con SoapUI (www.soapui.org), una de las herramientas más difundidas para 
+testeo de webservices. 
+Servicios Disponibles 
+El servicio publicado (ws_efactura) tiene los métodos que resuelven la recepción de Sobres y Reportes, y la consulta 
+de los comprobantes, los mismos son los siguientes: 
+Métodos del WebService 
+Nombre 
+EFACRECEPCIONSOBRE 
+EFACRECEPCIONREPORTE 
+EFACCONSULTARESTADOENVIO Consulta de estado de comprobantes 
+Descripción 
+Recepción de sobre 
+Recepción de reporte diario 
+Servicios Disponibles 
+Parám.Request Parám.Respuesta Correcta 
+Método 
+Servicio 
+Dataout 
+Datain 
+ws_efactura EFACRECEPCIONSOBRE 
+Dataout 
+ws_efactura EFACRECEPCIONREPORTE 
+Datain 
+Dataout 
+ws_efactura EFACCONSULTARESTADOENVIO Datain 
+Para la invocación de los servicios, se definen los parámetros de entrada y salida como XML que debe contener en 
+cada caso: 
+ws_efactura / EFACRECEPCIONSOBRE 
+Parámetro entrada 
+<Datain xmlns="http://dgi.gub.uy"> 
+Parámetro salida 
+<Dataout xmlns="http://dgi.gub.uy"> 
+<xmlData> 
+<![CDATA[ 
+<xmlData> 
+<![CDATA[ 
+<EnvioCFE …> 
+ ...... 
+ ...... 
+ ...... 
+</EnvioCFE> 
+]]> 
+</xmlData> 
+Fecha de impresión: 23/05/2013 12:07 
+<ACKSobre …> 
+ ...... 
+ ...... 
+ ...... 
+</ACKSobre> 
+]]> 
+</xmlData> 
+DGI – Informática – Desarrollo 
+Página 3 de 20
+
+=== PAGE 4 ===
+[P1] CÓDIGO: 
+T-5.020.00.001-004 
+VERSIÓN: 
+1.1 
+FECHA: 
+23/05/2013 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+</Datain> 
+</Dataout> 
+ws_efactura / EFACRECEPCIONREPORTE 
+Parámetro entrada 
+<Datain xmlns="http://dgi.gub.uy"> 
+Parámetro salida 
+<Dataout xmlns="http://dgi.gub.uy"> 
+<xmlData> 
+<![CDATA[ 
+<xmlData> 
+<![CDATA[ 
+<Reporte…> 
+ ...... 
+ ...... 
+ ...... 
+</Reporte> 
+<ACKRepDiario…> 
+ ...... 
+ ...... 
+ ...... 
+</ACKRepDiario > 
+]]> 
+</xmlData> 
+</Datain> 
+]]> 
+</xmlData> 
+</Dataout> 
+ws_efactura / EFACCONSULTARESTADOENVIO 
+Parámetro entrada 
+<Datain xmlns="http://dgi.gub.uy"> 
+<xmlData> 
+<![CDATA[ 
+<ConsultaCFE xmlns="http://dgi.gub.uy"> 
+<IdReceptor>...<IdReceptor> 
+<Token>...</Token> 
+</ConsultaCFE> 
+]]> 
+</xmlData> 
+</Datain> 
+Parámetro salida 
+<Dataout xmlns="http://dgi.gub.uy"> 
+<xmlData> 
+<![CDATA[ 
+<ACKCFE…> 
+ ...... 
+ ...... 
+ ...... 
+</ACKCFE> 
+]]> 
+</xmlData> 
+</Dataout> 
+Fecha de impresión: 23/05/2013 12:07 
+DGI – Informática – Desarrollo 
+Página 4 de 20
+
+=== PAGE 5 ===
+[P1] CÓDIGO: 
+T-5.020.00.001-004 
+VERSIÓN: 
+1.1 
+FECHA: 
+23/05/2013 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+Breve descripción funcional de los servicios disponibles 
+ws_efactura / EFACRECEPCIONSOBRE 
+Dado un XML con un Sobre, con uno o varios CFE, el servicio devuelve un XML de respuesta del sobre, 
+determinando si el mismo fue aceptado o no. En caso de ser aceptado el sobre, luego el usuario deberá 
+consultar el estado de los diferentes CFE/CFC incluidos en él. 
+ws_efactura / EFACRECEPCIONREPORTE 
+Dado un XML con un Reporte diario, el servicio devuelve un XML de respuesta del reporte, determinando si 
+el mismo fue aceptado o no. 
+ws_efactura / EFACCONSULTARESTADOENVIO 
+Dado el Id de recepción del sobre y el Token, otorgado en la respuesta del sobre, el servicio devuelve un 
+XML con la Respuesta de los comprobantes, en la que se especifica, para cada CFE/CFC incluido en el 
+sobre, si los mismos fueron aceptados, rechazados u observados. 
+Fecha de impresión: 23/05/2013 12:07 
+DGI – Informática – Desarrollo 
+Página 5 de 20
+
+=== PAGE 6 ===
+[P1] CÓDIGO: 
+T-5.020.00.001-004 
+VERSIÓN: 
+1.1 
+FECHA: 
+23/05/2013 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+Desarrollo de un cliente para nuestro webservice 
+Pruebas previas 
+Antes de desarrollar un programa cliente para el webservice de DGI, recomendamos hacer pruebas con la 
+herramienta SoapUI (www.soapui.org) para hacer una validación básica del funcionamiento del webservice. De ese 
+modo se podrán descartar antes los problemas que no pertenecen al desarrollo del cliente (ej: redes, formatos del 
+xml, etc.). 
+Una vez que se supere exitosamente esta prueba, resultará más accesible para el desarrollador implementar un 
+cliente que interactúe del mismo modo que lo hace SoapUI con nuestro webservice. 
+Ejemplo de Pruebas con SoapUI 
+El WSDL del webservice para ambiente de TEST está publicado sobre Internet en: 
+https://efactura.dgi.gub.uy:6443/ePrueba/ws_eprueba?wsdl 
+Una vez instalado SoapUI, se debe crear un nuevo proyecto de la siguiente manera: 
+Fecha de impresión: 23/05/2013 12:07 
+DGI – Informática – Desarrollo 
+Página 6 de 20
+
+=== PAGE 7 ===
+[P1] CÓDIGO: 
+T-5.020.00.001-004 
+VERSIÓN: 
+1.1 
+FECHA: 
+23/05/2013 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+WS-Security 
+Dado que la información es confidencial, el sistema incorpora una estrategia de seguridad basada en el estándar WS-
+Security. Este estándar utiliza una infraestructura de clave pública (PKI o public key infraestructure). 
+El certificado a utilizar podrá ser un "Certificado Nominado de Persona Jurídica" o "Certificado Innominado de 
+Persona Jurídica" que al día de hoy solo emite el Correo del Uruguay (Única CA por lo pronto que formará parte de 
+PKI Uruguay). La decisión de cuál utilizar será resorte de cada Empresa/Organismo. 
+Una vez obtenido el certificado, deberá utilizarse el mismo para firmar digitalmente las consultas realizadas. 
+La manera más sencilla de trabajar con WS-Security es utilizando certificados almacenados en keystores. 
+Una vez obtenidos los certificados brindados por la autoridad certificadora, los keystores se pueden crear mediante la 
+aplicación Portecle, disponible en (http://portecle.sourceforge.net) o mediante openssl (http://www.openssl.org/). 
+Para poder utilizar firma digital en SoapUI, debemos hacer los siguientes ajustes: 
+Agregamos el keystore: 
+Fecha de impresión: 23/05/2013 12:07 
+DGI – Informática – Desarrollo 
+Página 7 de 20
+
+=== PAGE 8 ===
+[P1] CÓDIGO: 
+T-5.020.00.001-004 
+VERSIÓN: 
+1.1 
+FECHA: 
+23/05/2013 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+Ingresamos la contraseña necesaria para abrir el archivo KeyStore 
+Creamos una configuración de salida: 
+Fecha de impresión: 23/05/2013 12:07 
+DGI – Informática – Desarrollo 
+Página 8 de 20
+
+=== PAGE 9 ===
+[P1] CÓDIGO: 
+T-5.020.00.001-004 
+VERSIÓN: 
+1.1 
+FECHA: 
+23/05/2013 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+Seleccionamos que en esa configuración se agregue firma digital (signature): 
+En esta pantalla nos pide el nombre del keystore (seleccionamos el que agregamos antes), el alias es el nombre que 
+le dimos a la clave privada del cliente dentro del keystore. El resto de los parámetros se configuran como se ve en la 
+imagen. 
+Fecha de impresión: 23/05/2013 12:07 
+DGI – Informática – Desarrollo 
+Página 9 de 20
+
+=== PAGE 10 ===
+[P1] CÓDIGO: 
+T-5.020.00.001-004 
+VERSIÓN: 
+1.1 
+FECHA: 
+23/05/2013 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+Nota importante: Si en SoapUI creamos un request antes de configurar estos pasos de seguridad, luego de configurar 
+la seguridad debemos borrar el request y crear uno nuevo para que tome los cambios. 
+Fecha de impresión: 23/05/2013 12:07 
+DGI – Informática – Desarrollo 
+Página 10 de 20
+
+=== PAGE 11 ===
+[P1] CÓDIGO: 
+T-5.020.00.001-004 
+VERSIÓN: 
+1.1 
+FECHA: 
+23/05/2013 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+Vea que en la zona inferior del request aparece una opción “Aut” (Authentication) 
+Al seleccionarla nos permite elegir la configuración de salida (Outgoing WSS) que creamos antes (“conf_out” era el 
+nombre en nuestro ejemplo). 
+Sustituyendo los signos de interrogación por sus valores en el request ya podemos invocar al webservice utilizando la 
+firma digital correspondiente! 
+Fecha de impresión: 23/05/2013 12:07 
+DGI – Informática – Desarrollo 
+Página 11 de 20
+
+=== PAGE 12 ===
+[P1] CÓDIGO: 
+T-5.020.00.001-004 
+VERSIÓN: 
+1.1 
+FECHA: 
+23/05/2013 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+Fecha de impresión: 23/05/2013 12:07 
+DGI – Informática – Desarrollo 
+Página 12 de 20
+
+=== PAGE 13 ===
+[P1] CÓDIGO: 
+T-5.020.00.001-004 
+VERSIÓN: 
+1.1 
+FECHA: 
+23/05/2013 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+Anexo - Ejemplos de Invocaciones 
+Caso 1: Envío de mensaje SOAP con Sobre 
+POST https://efactura.dgi.gub.uy/ePrueba/ws_eprueba HTTP/1.1 
+Accept-Encoding: gzip,deflate 
+Content-Type: text/xml;charset=UTF-8 
+SOAPAction: "http://dgi.gub.uyaction/AWS_EFACTURA.EFACRECEPCIONSOBRE" 
+User-Agent: Jakarta Commons-HttpClient/3.1 
+Host: efactura.dgi.gub.uy:6443 
+Content-Length: 11550 
+Enviado 
+<soapenv:Envelope xmlns:dgi="http://dgi.gub.uy" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"> 
+ <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-
+1.0.xsd"><wsse:BinarySecurityToken EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" 
+ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" wsu:Id="CertId-45851B081998E431E8132880700036719" 
+xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-
+1.0.xsd">MIIFrDCCA5SgAwIBAgIQas+Rf7PxwFxNudVRjoOzEjANBgkqhkiG9w0BAQUFADB6MQswCQYDVQQGEwJVWTErMCkGA1UECgwiQURNSU5JU1RSQ
+UNJT04gTkFDSU9OQUwgREUgQ09SUkVPUzEfMB0GA1UECwwWU0VSVklDSU9TIEVMRUNUUk9OSUNPUzEdMBsGA1UEAwwUQ29ycmVvIFVydWd1YXlvIC
+0gQ0EwHhcNMTEwNDI4MjEwMDAxWhcNMTIwNDI4MjEwMDAxWjCBxzEiMCAGCSqGSIb3DQEJARYTam1vbnRhbmVAZGdpLmd1Yi51eTEfMB0GA1UECwwW
+QU5BTElTSVMgREUgUFJPRFVDQ0lPTjEhMB8GA1UECgwYREdJLVBSVUVCQSBTRVJWSUNJT1MgV0VCMRMwEQYDVQQIDApNb250ZXZpZGVvMQswCQ
+YDVQQGEwJVWTEYMBYGA1UEBRMPUlVDMjE5OTk5ODIwMDEzMSEwHwYDVQQDDBhER0ktUFJVRUJBIFNFUlZJQ0lPUyBXRUIwgZ8wDQYJKoZIhvcNAQE
+BBQADgY0AMIGJAoGBAMcMcu70s0RQkD6ifYBGXwATovTxxA/Hjc8WKM16yJkz63d0eSTjjREYmM87g6NRacADy9LZRyENiRPjsBI +Tw9PHR/7g+frTIS+vIQZ0+f
+9Rq1q2uxvw8TKoO9FvcrBabdl9dUBIrJEPa20wj6U+dupTZ66bD5uFXBUsKo2sZujAgMBAAGjggFiMIIBXjAeBgNVHREEFzAVgRNqbW9udGFuZUBkZ2kuZ3ViLnV
+5MAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgP4MB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDARBglghkgBhvhCAQEEBAMCBaAw
+HQYDVR0OBBYEFP0YQfFQvej6szyGhKlpNI0tESi5MB8GA1UdIwQYMBaAFCWP30Mvjmq6C75GXFdQk7dRvvzZMFQGA1UdIARNMEswSQYMKwYBBAGB9U8
+BAQEEMDkwNwYIKwYBBQUHAgEWK2h0dHA6Ly93d3cuY29ycmVvLmNvbS51eS9jb3JyZW9jZXJ0L2Nwcy5wZGYwGAYNKwYBBAGB9U8BAQEEAQQHDAVE
+aXNjbzA8BgNVHR8ENTAzMDGgL6AthitodHRwOi8vd3d3LmNvcnJlby5jb20udXkvQ29ycmVvQ2VydC9hbmMuY3JsMA0GCSqGSIb3DQEBBQUAA4ICAQA01MEJ
+sZ8VXJIybZQ0NlBJPXz7n8GbTf41Aq4lWxLI5rBWJD1uyWUdz2jUD0DuqflTAGknphzxn49QACCTA1Pv0aZ6hnK04uI9j7UJe4LiVx3aWbpLRBCnYrIs+QU2pyClEM
+4bNPt0BU2DG+Q9k9SeCDQ8VD7hiD2W/aK8HLo6EVLAEwrl3pTums2dwxtO1KKPw6OBbYYitCjR5j6Hy5q1+fMTFXmx0vo+ZYFOl8DVoSp6OQJd2mcaL0CNVWI
+9sOYRkJKEoELIJDSnIMKkUqgN2ilg05Dqcl/TDj2I5VfPLXZpnpuQbb6ADjEOtMzlkfe2EFemn0s/+2Hn97h5rtJMcjTuUhh937JZPWnD1XQTxICjS3ql1nSwbnJz9bk8P
+N/j8cK4Kw+xipGo7pRxITFKUHmOIXsj05tH3kFWf8htdU/4rIyrvzJ3xUhita78SHaJMALQa4AGxmSxIEvej0+qyrxx4geMkzb/n5t3JAAluxW2ja3f/FrXMuwT7iKebreMS4
+4FO0maMpP29SW94G8yClumghtU/6LI67oHxhpUNkCQ3UV4JaI6wEZcgV5KLXm9rr1i/hMKV5FspQcYg36qdeRz/N4DwuorVwZuTsXCIMwcKQCkzu1oUSkvO3PE
+5cCRnu9cyJ3GzPfUO0T8mrCmI2XwISAvkuLs3kd6FeRBAw==</wsse:BinarySecurityToken><ds:Signature Id="Signature-13" 
+xmlns:ds="http://www.w3.org/2000/09/xmldsig#"> 
+<ds:SignedInfo> 
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/> 
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/> 
+<ds:Reference URI="#id-14"> 
+<ds:Transforms> 
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/> 
+</ds:Transforms> 
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/> 
+<ds:DigestValue>62KaCXQkeXTGyGd+aoX46cGAl9M=</ds:DigestValue> 
+</ds:Reference> 
+</ds:SignedInfo> 
+<ds:SignatureValue> 
+YdwY0hmkHE8tnQmGQBdfA5fjVyoHWMiQhKanI1SEaii295hakwMbf5KsP3YMMhzl4HEHs6nqhZpq 
+lyL1OBcbJPJQN34uhOtucnzgObUYHckkJqfAN/sYmfNMSFGDvyZCFQSiJwh8dkvKxmxzdUwv3wza 
+M+i0nzLAh9viQZYS8N8= 
+</ds:SignatureValue> 
+<ds:KeyInfo Id="KeyId-45851B081998E431E8132880700036720"> 
+<wsse:SecurityTokenReference wsu:Id="STRId-45851B081998E431E8132880700036821" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-
+wss-wssecurity-utility-1.0.xsd"><wsse:Reference URI="#CertId-45851B081998E431E8132880700036719" ValueType="http://docs.oasis-
+open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3"/></wsse:SecurityTokenReference> 
+</ds:KeyInfo> 
+</ds:Signature></wsse:Security></soapenv:Header> 
+ <soapenv:Body wsu:Id="id-14" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"> 
+ <dgi:WS_eFactura.EFACRECEPCIONSOBRE> 
+ <dgi:Datain> 
+ <dgi:xmlData><![CDATA[<?xml version="1.0" encoding="UTF-8"?> 
+<DGICFE:EnvioCFE version="1.0" xsi:schemaLocation="http://cfe.dgi.gub.uy EnvioCFE_v1.11.xsd" xmlns:DGICFE="http://cfe.dgi.gub.uy" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+<DGICFE:Caratula version="1.0"> 
+<DGICFE:RutReceptor>214844360018</DGICFE:RutReceptor> 
+<DGICFE:RUCEmisor>219999820013</DGICFE:RUCEmisor> 
+<DGICFE:Idemisor>3009</DGICFE:Idemisor> 
+<DGICFE:CantCFE>1</DGICFE:CantCFE> 
+<DGICFE:Fecha>2011-10-01T13:10:00-03:00</DGICFE:Fecha> 
+<DGICFE:X509Certificate>MIIFrDCCA5SgAwIBAgIQas+Rf7PxwFxNudVRjoOzEjANBgkqhkiG9w0BAQUFADB6MQswCQYDVQQGEwJVWTErM
+CkGA1UECgwiQURNSU5JU1RSQUNJT04gTkFDSU9OQUwgREUgQ09SUkVPUzEfMB0GA1UECwwWU0VSVklDSU9TIEVMRUNUUk9OSUNPUzEdMBsGA
+1UEAwwUQ29ycmVvIFVydWd1YXlvIC0gQ0EwHhcNMTEwNDI4MjEwMDAxWhcNMTIwNDI4MjEwMDAxWjCBxzEiMCAGCSqGSI b3DQEJARYTam1vbnRhb
+mVAZGdpLmd1Yi51eTEfMB0GA1UECwwWQU5BTElTSVMgREUgUFJPRFVDQ0lPTjEhMB8GA1UECgwYREdJLVBSVUVCQSBTRVJWSUNJT 1MgV0VCM
+RMwEQYDVQQIDApNb250ZXZpZGVvMQswCQYDVQQGEwJVWTEYMBYGA1UEBRMPUlVDMjE5OTk5ODIwMDEzMSEwHwYDVQQDDBhER0ktU FJVRUJ
+BIFNFUlZJQ0lPUyBXRUIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMcMcu70s0RQkD6ifYBGXwATovTxxA/Hjc8WKM16yJkz63d0eSTjjREYmM
+87g6NRacADy9LZRyENiRPjsBI+Tw9PHR/7g+frTIS+vIQZ0+f9Rq1q2uxvw8TKoO9FvcrBabdl9dUBIrJEPa20wj6U+dupTZ66bD 5uFXBUsKo2sZujAgMBAAGj
+ggFiMIIBXjAeBgNVHREEFzAVgRNqbW9udGFuZUBkZ2kuZ3ViLnV5MAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgP4MB0GA1UdJQQWMBQGC
+CsGAQUFBwMCBggrBgEFBQcDBDARBglghkgBhvhCAQEEBAMCBaAwHQYDVR0OBBYEFP0YQfFQvej6szyGhKlpNI0tESi5MB8GA1UdI wQYMBaAFCW
+P30Mvjmq6C75GXFdQk7dRvvzZMFQGA1UdIARNMEswSQYMKwYBBAGB9U8BAQEEMDkwNwYIKwYBBQUHAgEWK2h0dHA6Ly93d3cuY29ycmVvLmNv
+bS51eS9jb3JyZW9jZXJ0L2Nwcy5wZGYwGAYNKwYBBAGB9U8BAQEEAQQHDAVEaXNjbzA8BgNVHR8ENTAzMDGgL6AthitodHRwOi8vd3d3LmNvcnJlb
+y5jb20udXkvQ29ycmVvQ2VydC9hbmMuY3JsMA0GCSqGSIb3DQEBBQUAA4ICAQA01MEJsZ8VXJIybZQ0NlBJPXz7n8GbTf41Aq4lW xLI5rBWJD1uyWUdz
+2jUD0DuqflTAGknphzxn49QACCTA1Pv0aZ6hnK04uI9j7UJe4LiVx3aWbpLRBCnYrIs+QU2pyClEM4bNPt0BU2DG+Q9k9SeCDQ8VD7hiD2W/aK8HLo6EVLA
+Ewrl3pTums2dwxtO1KKPw6OBbYYitCjR5j6Hy5q1+fMTFXmx0vo+ZYFOl8DVoSp6OQJd2mcaL0CNVWI9sOYRkJKEoELIJDSnIMKkUqgN2ilg05Dqcl/TDj2I5
+VfPLXZpnpuQbb6ADjEOtMzlkfe2EFemn0s/+2Hn97h5rtJMcjTuUhh937JZPWnD1XQTxICjS3ql1nSwbnJz9bk8PN/j8cK4Kw+xipGo7pRxITFKUHmOIXsj05tH
+3kFWf8htdU/4rIyrvzJ3xUhita78SHaJMALQa4AGxmSxIEvej0+qyrxx4geMkzb/n5t3JAAluxW2ja3f/FrXMuwT7iKebreMS44F O0maMpP29SW94G8yClumghtU/
+6LI67oHxhpUNkCQ3UV4JaI6wEZcgV5KLXm9rr1i/hMKV5FspQcYg36qdeRz/N4DwuorVwZuTsXCIMwcKQCkzu1oUSkvO3PE5cCRnu9cyJ3GzPfUO0T8mrC
+mI2XwISAvkuLs3kd6FeRBAw==</DGICFE:X509Certificate> 
+Fecha de impresión: 23/05/2013 12:07 
+DGI – Informática – Desarrollo 
+Página 13 de 20
+
+=== PAGE 14 ===
+[P1] CÓDIGO: 
+T-5.020.00.001-004 
+VERSIÓN: 
+1.1 
+FECHA: 
+23/05/2013 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+</DGICFE:Caratula> 
+<ns0:CFE version="1.0" xmlns:ns0="http://cfe.dgi.gub.uy"><ns0:eTck><ns0:TmstFirma>2012-02-
+08T09:48:51Z</ns0:TmstFirma><ns0:Encabezado><ns0:IdDoc><ns0:TipoCFE>101</ns0:TipoCFE><ns0:Serie>A</ns0:Serie><ns0:Nro>1</ns0:Nro><ns0
+:FchEmis>2011-11-
+08</ns0:FchEmis><ns0:FmaPago>1</ns0:FmaPago></ns0:IdDoc><ns0:Emisor><ns0:RUCEmisor>219999820013</ns0:RUCEmisor><ns0:RznSoc>DGI-
+PRUEBA SERVICIOS WEB</ns0:RznSoc><ns0:CdgDGISucur>1</ns0:CdgDGISucur><ns0:DomFiscal>FERNANDEZ CRESPO AVDA. DANIEL 
+1534</ns0:DomFiscal><ns0:Ciudad>MONTEVIDEO</ns0:Ciudad><ns0:Departamento>MONTEVIDEO</ns0:Departamento></ns0:Emisor><ns0:Totales>
+<ns0:TpoMoneda>UYU</ns0:TpoMoneda><ns0:MntTotal>5280</ns0:MntTotal><ns0:CantLinDet>3</ns0:CantLinDet><ns0:MntPagar>5280</ns0:MntPag
+ar></ns0:Totales></ns0:Encabezado><ns0:Detalle><ns0:Item><ns0:NroLinDet>1</ns0:NroLinDet><ns0:IndFact>3</ns0:IndFact><ns0:NomItem>aaa</n
+s0:NomItem><ns0:Cantidad>20</ns0:Cantidad><ns0:UniMed>KG</ns0:UniMed><ns0:PrecioUnitario>230</ns0:PrecioUnitario><ns0:MontoItem>4600</
+ns0:MontoItem></ns0:Item><ns0:Item><ns0:NroLinDet>2</ns0:NroLinDet><ns0:IndFact>3</ns0:IndFact><ns0: NomItem>bbb</ns0:NomItem><ns0:Cant
+idad>15</ns0:Cantidad><ns0:UniMed>Un</ns0:UniMed><ns0:PrecioUnitario>12</ns0:PrecioUnitario><ns0:MontoItem>180</ns0:MontoItem></ns0:Item
+><ns0:Item><ns0:NroLinDet>3</ns0:NroLinDet><ns0:IndFact>1</ns0:IndFact><ns0:NomItem>ccc</ns0:NomItem><ns0:Cantidad>20</ns0:Cantidad><n
+s0:UniMed>Un</ns0:UniMed><ns0:PrecioUnitario>25</ns0:PrecioUnitario><ns0:MontoItem>500</ns0:MontoItem></ns0:Item></ns0:Detalle><ns0:CAED
+ata><ns0:CAE_ID>90110001945</ns0:CAE_ID><ns0:DNro>1</ns0:DNro><ns0:HNro>100</ns0:HNro><ns0:FecVenc>2013-11-
+07</ns0:FecVenc></ns0:CAEData></ns0:eTck><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"> 
+<SignedInfo> 
+ <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/> 
+ <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/> 
+ <Reference URI=""> 
+ <Transforms> 
+ <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/> 
+ <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/> 
+ </Transforms> 
+ <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/> 
+ <DigestValue>tW2WWjTbBa7zn/wX44WxBZmLxlc=</DigestValue> 
+ </Reference> 
+</SignedInfo> 
+<SignatureValue>rYtRK+rUzRLvHBZtt1dYe5KgIT7lmdTWuYW1MBXWDO0GjA0VPIaga0f/tFdGzO3bI95p/N+F6f/yo0Dry9fcGw2b+q1p3fRsGiR8zVVpH1hg
+NsXltFspKEwFcYQ/S5CXi0/WAMAmLAHYDuwPi7SetRPXDlmumCcG4BbwDUt0FBo=</SignatureValue><KeyInfo><X509Data><X509IssuerSerial><X509I
+ssuerName>CN=Correo Uruguayo - CA, OU=SERVICIOS ELECTRONICOS, O=ADMINISTRACION NACIONAL DE CORREOS, 
+C=UY</X509IssuerName><X509SerialNumber>141975924069977036928305508705255011090</X509SerialNumber></X509IssuerSerial></X509Data></Ke
+yInfo></Signature></ns0:CFE></DGICFE:EnvioCFE>]]></dgi:xmlData> 
+ </dgi:Datain> 
+ </dgi:WS_eFactura.EFACRECEPCIONSOBRE> 
+ </soapenv:Body> 
+</soapenv:Envelope> 
+Recibido 
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-
+ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+ <SOAP-ENV:Header> 
+ <wsse:Security SOAP-ENV:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"> 
+ <wsse:BinarySecurityToken wsu:Id="SecurityToken-c0477b7a-df1a-4883-9ae1-59a518913f96" EncodingType="http://docs.oasis-
+open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-
+x509-token-profile-1.0#X509v3" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-
+1.0.xsd">MIIFrDCCA5SgAwIBAgIQas+Rf7PxwFxNudVRjoOzEjANBgkqhkiG9w0BAQUFADB6MQswCQYDVQQGEwJVWTErMCkGA1UECgwiQURNSU5JU1RSQ
+UNJT04gTkFDSU9OQUwgREUgQ09SUkVPUzEfMB0GA1UECwwWU0VSVklDSU9TIEVMRUNUUk9OSUNPUzEdMBsGA1UEAwwUQ29ycmVvIFVydWd1YXlvIC
+0gQ0EwHhcNMTEwNDI4MjEwMDAxWhcNMTIwNDI4MjEwMDAxWjCBxzEiMCAGCSqGSIb3DQEJARYTam1vbnRhbmVAZGdpLmd1Yi51eTEfMB0GA1UECwwW
+QU5BTElTSVMgREUgUFJPRFVDQ0lPTjEhMB8GA1UECgwYREdJLVBSVUVCQSBTRVJWSUNJT1MgV0VCMRMwEQYDVQQIDApNb250ZXZpZGVvMQswCQ
+YDVQQGEwJVWTEYMBYGA1UEBRMPUlVDMjE5OTk5ODIwMDEzMSEwHwYDVQQDDBhER0ktUFJVRUJBIFNFUlZJQ0lPUyBXRUIwgZ8wDQYJKoZIhvcNAQE
+BBQADgY0AMIGJAoGBAMcMcu70s0RQkD6ifYBGXwATovTxxA/Hjc8WKM16yJkz63d0eSTjjREYmM87g6NRacADy9LZRyENiRPjsBI +Tw9PHR/7g+frTIS+vIQZ0+f
+9Rq1q2uxvw8TKoO9FvcrBabdl9dUBIrJEPa20wj6U+dupTZ66bD5uFXBUsKo2sZujAgMBAAGjggFiMIIBXjAeBgNVHREEFzAVgRNqbW9udGFuZUBkZ2kuZ3ViLnV
+5MAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgP4MB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDARBglghkgBhvhCAQEEBAMCBaAw
+HQYDVR0OBBYEFP0YQfFQvej6szyGhKlpNI0tESi5MB8GA1UdIwQYMBaAFCWP30Mvjmq6C75GXFdQk7dRvvzZMFQGA1UdIARNMEswSQYMKwYBBAGB9U8
+BAQEEMDkwNwYIKwYBBQUHAgEWK2h0dHA6Ly93d3cuY29ycmVvLmNvbS51eS9jb3JyZW9jZXJ0L2Nwcy5wZGYwGAYNKwYBBAGB9U8BAQEEAQQHDAVE
+aXNjbzA8BgNVHR8ENTAzMDGgL6AthitodHRwOi8vd3d3LmNvcnJlby5jb20udXkvQ29ycmVvQ2VydC9hbmMuY3JsMA0GCSqGSIb3DQEBBQUAA4ICAQA01MEJ
+sZ8VXJIybZQ0NlBJPXz7n8GbTf41Aq4lWxLI5rBWJD1uyWUdz2jUD0DuqflTAGknphzxn49QACCTA1Pv0aZ6hnK04uI9j7UJe4LiVx3aWbpLRBCnYrIs+QU2pyClEM
+4bNPt0BU2DG+Q9k9SeCDQ8VD7hiD2W/aK8HLo6EVLAEwrl3pTums2dwxtO1KKPw6OBbYYitCjR5j6Hy5q1+fMTFXmx0vo+ZYFOl8DVoSp6OQJd2mcaL0CNVWI
+9sOYRkJKEoELIJDSnIMKkUqgN2ilg05Dqcl/TDj2I5VfPLXZpnpuQbb6ADjEOtMzlkfe2EFemn0s/+2Hn97h5rtJMcjTuUhh937JZPWnD1XQTxICjS3ql1nSwbnJz9bk8P
+N/j8cK4Kw+xipGo7pRxITFKUHmOIXsj05tH3kFWf8htdU/4rIyrvzJ3xUhita78SHaJMALQa4AGxmSxIEvej0+qyrxx4geMkzb/n5t3JAAluxW2ja3f/FrXMuwT7iKebreMS4
+4FO0maMpP29SW94G8yClumghtU/6LI67oHxhpUNkCQ3UV4JaI6wEZcgV5KLXm9rr1i/hMKV5FspQcYg36qdeRz/N4DwuorVwZuTsXCIMwcKQCkzu1oUSkvO3PE
+5cCRnu9cyJ3GzPfUO0T8mrCmI2XwISAvkuLs3kd6FeRBAw==</wsse:BinarySecurityToken> 
+ <Signature xmlns="http://www.w3.org/2000/09/xmldsig#"> 
+ <SignedInfo> 
+ <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/> 
+ <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/> 
+ <Reference URI="#Body-75c3e1d7-a956-4387-827e-58e7bf7f9672"> 
+ <Transforms> 
+ <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/> 
+ </Transforms> 
+ <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/> 
+ <DigestValue>O+QjV1cBEXJlS3Z15FBQZImx/Gs=</DigestValue> 
+ </Reference> 
+ </SignedInfo> 
+<SignatureValue>lCEfQOGBeSvfvHPLUYtT5PUlwe8Gdbv6b2yto4WzSsoEpYz+6d4YFlyt+Vzq1DSK8Jcmz1ELuJkzPwZCt2aAkSxpToI51vjziELJJqiZfGR5gLJRCZ
+CK/zhk3pJUBzaiLLSwfN1iX9t4X8IGqisc6yqrS9kabkhUvvsiYrdRIr4=</SignatureValue> 
+ <KeyInfo> 
+ <wsse:SecurityTokenReference xmlns=""> 
+ <wsse:Reference URI="#SecurityToken-c0477b7a-df1a-4883-9ae1-59a518913f96" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-
+wss-x509-token-profile-1.0#X509v3"/> 
+ </wsse:SecurityTokenReference> 
+ </KeyInfo> 
+ </Signature> 
+ </wsse:Security> 
+ </SOAP-ENV:Header> 
+ <SOAP-ENV:Body wsu:Id="Body-75c3e1d7-a956-4387-827e-58e7bf7f9672" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-
+utility-1.0.xsd"> 
+ <WS_eFactura.EFACRECEPCIONSOBREResponse xmlns="http://dgi.gub.uy"> 
+ <Dataout> 
+ <xmlData><![CDATA[<?xml version="1.0" encoding="UTF-8"?> 
+Fecha de impresión: 23/05/2013 12:07 
+DGI – Informática – Desarrollo 
+Página 14 de 20
+
+=== PAGE 15 ===
+[P1] CÓDIGO: 
+T-5.020.00.001-004 
+VERSIÓN: 
+1.1 
+FECHA: 
+23/05/2013 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+<ACKSobre 
+xmlns="http://cfe.dgi.gub.uy"><Caratula><RUCReceptor>214844360018</RUCReceptor><RUCEmisor>219999820013</RUCEmisor><IDRespuesta>1414
+</IDRespuesta><NomArch/><FecHRecibido>2012-02-
+09T15:03:14</FecHRecibido><IDEmisor>3009</IDEmisor><IDReceptor>1414</IDReceptor><CantidadCFE>1</CantidadCFE><Tmst>2012-02-
+09T15:00:34Z</Tmst></Caratula><Detalle><Estado>AS</Estado><ParamConsulta><Token>iFJ+E2vBkfJ7oQ71l5DRqyT8D3ECCO+Fk8Pf/y4s/3jplDusOO
+WN+6OSll2+Yifq9n/zcz1I6R35Yovfos+mUA==</Token><Fechahora>2012-02-09T15:00:53</Fechahora></ParamConsulta></Detalle><Signature 
+xmlns="http://www.w3.org/2000/09/xmldsig#"> 
+<SignedInfo> 
+ <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/> 
+ <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/> 
+ <Reference URI=""> 
+ <Transforms> 
+ <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/> 
+ <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/> 
+ </Transforms> 
+ <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/> 
+ <DigestValue>Mbh7lZCIL4ZVEh5EsVY/yUNK07k=</DigestValue> 
+ </Reference> 
+</SignedInfo> 
+<SignatureValue>rZCf8YNvl6ctiFOj0YKyVpo7Ge3+UjW/aKctD65YssqZF/gs7qsJt98E90/kKLxSSftSwPlJP3W+jseFkzM2PZm032RLVCETSoGsfZ6E0fUdC3
+3qOYmCu0HOAby7fwaeAEF7e9J+Ackr3OlnoMCPRjyi4zyHt2sxX/oSUtrBO8A=</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIFrDCCA5Sg
+AwIBAgIQas+Rf7PxwFxNudVRjoOzEjANBgkqhkiG9w0BAQUFADB6MQswCQYDVQQGEwJVWTErMCkGA1UECgwiQURNSU5JU1RSQUNJT04gTkFDSU9
+OQUwgREUgQ09SUkVPUzEfMB0GA1UECwwWU0VSVklDSU9TIEVMRUNUUk9OSUNPUzEdMBsGA1UEAwwUQ29ycmVvIFVydWd1YXlvIC0gQ0EwHhcN
+MTEwNDI4MjEwMDAxWhcNMTIwNDI4MjEwMDAxWjCBxzEiMCAGCSqGSIb3DQEJARYTam1vbnRhbmVAZGdpLmd1Yi51eTEfMB0GA1UECwwWQU5BTE
+lTSVMgREUgUFJPRFVDQ0lPTjEhMB8GA1UECgwYREdJLVBSVUVCQSBTRVJWSUNJT1MgV0VCMRMwEQYDVQQIDApNb250ZXZpZGVvMQswCQYDVQ
+QGEwJVWTEYMBYGA1UEBRMPUlVDMjE5OTk5ODIwMDEzMSEwHwYDVQQDDBhER0ktUFJVRUJBIFNFUlZJQ0lPUyBXRUIwgZ8wDQYJKoZIhvcNAQEB
+BQADgY0AMIGJAoGBAMcMcu70s0RQkD6ifYBGXwATovTxxA/Hjc8WKM16yJkz63d0eSTjjREYmM87g6NRacADy9LZRyENiRPjsBI+Tw9PHR/7g+frTIS+vI
+QZ0+f9Rq1q2uxvw8TKoO9FvcrBabdl9dUBIrJEPa20wj6U+dupTZ66bD5uFXBUsKo2sZujAgMBAAGjggFiMIIBXjAeBgNVHREEFzAVgRNqbW9udGFuZUBk
+Z2kuZ3ViLnV5MAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgP4MB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDARBglghkgBhvh
+CAQEEBAMCBaAwHQYDVR0OBBYEFP0YQfFQvej6szyGhKlpNI0tESi5MB8GA1UdIwQYMBaAFCWP30Mvjmq6C75GXFdQk7dRvvzZMFQGA1UdIARNMEs
+wSQYMKwYBBAGB9U8BAQEEMDkwNwYIKwYBBQUHAgEWK2h0dHA6Ly93d3cuY29ycmVvLmNvbS51eS9jb3JyZW9jZXJ0L2Nwcy5wZGYwGAYNKwYB
+BAGB9U8BAQEEAQQHDAVEaXNjbzA8BgNVHR8ENTAzMDGgL6AthitodHRwOi8vd3d3LmNvcnJlby5jb20udXkvQ29ycmVvQ2VydC9h bmMuY3JsMA0GC
+SqGSIb3DQEBBQUAA4ICAQA01MEJsZ8VXJIybZQ0NlBJPXz7n8GbTf41Aq4lWxLI5rBWJD1uyWUdz2jUD0DuqflTAGknphzxn49QACCTA1Pv0aZ6hnK04uI
+9j7UJe4LiVx3aWbpLRBCnYrIs+QU2pyClEM4bNPt0BU2DG+Q9k9SeCDQ8VD7hiD2W/aK8HLo6EVLAEwrl3pTums2dwxtO1KKPw6OBbYYitCjR5j6Hy5q1+f
+MTFXmx0vo+ZYFOl8DVoSp6OQJd2mcaL0CNVWI9sOYRkJKEoELIJDSnIMKkUqgN2ilg05Dqcl/TDj2I5VfPLXZpnpuQbb6ADjEOtMzlkfe2EFemn0s/+2Hn97h
+5rtJMcjTuUhh937JZPWnD1XQTxICjS3ql1nSwbnJz9bk8PN/j8cK4Kw+xipGo7pRxITFKUHmOIXsj05tH3kFWf8htdU/4rIyrvzJ3xUhita78SHaJMALQa4AGxmS
+xIEvej0+qyrxx4geMkzb/n5t3JAAluxW2ja3f/FrXMuwT7iKebreMS44FO0maMpP29SW94G8yClumghtU/6LI67oHxhpUNkCQ3UV4JaI6wEZcgV5KLXm9rr1i/h
+MKV5FspQcYg36qdeRz/N4DwuorVwZuTsXCIMwcKQCkzu1oUSkvO3PE5cCRnu9cyJ3GzPfUO0T8mrCmI2XwISAvkuLs3kd6FeRBAw==</X509Certificate>
+<X509IssuerSerial><X509IssuerName>CN=Correo Uruguayo - CA, OU=SERVICIOS ELECTRONICOS, O=ADMINISTRACION NACIONAL DE CORREOS, 
+C=UY</X509IssuerName><X509SerialNumber>141975924069977036928305508705255011090</X509SerialNumber></X509IssuerSerial></X509Data></Ke
+yInfo></Signature></ACKSobre>]]></xmlData> 
+ </Dataout> 
+ </WS_eFactura.EFACRECEPCIONSOBREResponse> 
+ </SOAP-ENV:Body> 
+</SOAP-ENV:Envelope> 
+Fecha de impresión: 23/05/2013 12:07 
+DGI – Informática – Desarrollo 
+Página 15 de 20
+
+=== PAGE 16 ===
+[P1] CÓDIGO: 
+T-5.020.00.001-004 
+VERSIÓN: 
+1.1 
+FECHA: 
+23/05/2013 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+Caso 2: Envío de mensaje SOAP con Reporte Diario 
+POST https://efactura.dgi.gub.uy/ePrueba/ws_eprueba HTTP/1.1 
+Accept-Encoding: gzip,deflate 
+Content-Type: text/xml;charset=UTF-8 
+SOAPAction: "http://dgi.gub.uyaction/AWS_EFACTURA.EFACRECEPCIONREPORTE" 
+User-Agent: Jakarta Commons-HttpClient/3.1 
+Host: efactura.dgi.gub.uy:6443 
+Content-Length: 8920 
+Enviado 
+<soapenv:Envelope xmlns:dgi="http://dgi.gub.uy" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"> 
+ <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-
+1.0.xsd"><wsse:BinarySecurityToken EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" 
+ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" wsu:Id="CertId-
+B887A199828AAAB9D2132888175609628" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-
+1.0.xsd">MIIFrDCCA5SgAwIBAgIQas+Rf7PxwFxNudVRjoOzEjANBgkqhkiG9w0BAQUFADB6MQswCQYDVQQGEwJVWTErMCkGA1UECgwiQURNSU5JU1RSQ
+UNJT04gTkFDSU9OQUwgREUgQ09SUkVPUzEfMB0GA1UECwwWU0VSVklDSU9TIEVMRUNUUk9OSUNPUzEdMBsGA1UEAwwUQ29ycmVvIFVydWd1YXlvIC
+0gQ0EwHhcNMTEwNDI4MjEwMDAxWhcNMTIwNDI4MjEwMDAxWjCBxzEiMCAGCSqGSIb3DQEJARYTam1vbnRhbmVAZGdpLmd1Yi51eTEfMB0GA1UECwwW
+QU5BTElTSVMgREUgUFJPRFVDQ0lPTjEhMB8GA1UECgwYREdJLVBSVUVCQSBTRVJWSUNJT1MgV0VCMRMwEQYDVQQIDApNb250ZXZpZGVvMQswCQ
+YDVQQGEwJVWTEYMBYGA1UEBRMPUlVDMjE5OTk5ODIwMDEzMSEwHwYDVQQDDBhER0ktUFJVRUJBIFNFUlZJQ0lPUyBXRUIwgZ8wDQYJKoZIhvcNAQE
+BBQADgY0AMIGJAoGBAMcMcu70s0RQkD6ifYBGXwATovTxxA/Hjc8WKM16yJkz63d0eSTjjREYmM87g6NRacADy9LZRyENiRPjsBI +Tw9PHR/7g+frTIS+vIQZ0+f
+9Rq1q2uxvw8TKoO9FvcrBabdl9dUBIrJEPa20wj6U+dupTZ66bD5uFXBUsKo2sZujAgMBAAGjggFiMIIBXjAeBgNVHREEFzAVgRNqbW9udGFuZUBkZ2kuZ3ViLnV
+5MAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgP4MB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDARBglghkgBhvhCAQEEBAMCBaAw
+HQYDVR0OBBYEFP0YQfFQvej6szyGhKlpNI0tESi5MB8GA1UdIwQYMBaAFCWP30Mvjmq6C75GXFdQk7dRvvzZMFQGA1UdIARNMEswSQYMKwYBBAGB9U8
+BAQEEMDkwNwYIKwYBBQUHAgEWK2h0dHA6Ly93d3cuY29ycmVvLmNvbS51eS9jb3JyZW9jZXJ0L2Nwcy5wZGYwGAYNKwYBBAGB9U8BAQEEAQQHDAVE
+aXNjbzA8BgNVHR8ENTAzMDGgL6AthitodHRwOi8vd3d3LmNvcnJlby5jb20udXkvQ29ycmVvQ2VydC9hbmMuY3JsMA0GCSqGSIb3DQEBBQUAA4ICAQA01MEJ
+sZ8VXJIybZQ0NlBJPXz7n8GbTf41Aq4lWxLI5rBWJD1uyWUdz2jUD0DuqflTAGknphzxn49QACCTA1Pv0aZ6hnK04uI9j7UJe4LiVx3aWbpLRBCnYrIs+QU2pyClEM
+4bNPt0BU2DG+Q9k9SeCDQ8VD7hiD2W/aK8HLo6EVLAEwrl3pTums2dwxtO1KKPw6OBbYYitCjR5j6Hy5q1+fMTFXmx0vo+ZYFOl8DVoSp6OQJd2mcaL0CNVWI
+9sOYRkJKEoELIJDSnIMKkUqgN2ilg05Dqcl/TDj2I5VfPLXZpnpuQbb6ADjEOtMzlkfe2EFemn0s/+2Hn97h5rtJMcjTuUhh937JZPWnD1XQTxICjS3ql1nSwbnJz9bk8P
+N/j8cK4Kw+xipGo7pRxITFKUHmOIXsj05tH3kFWf8htdU/4rIyrvzJ3xUhita78SHaJMALQa4AGxmSxIEvej0+qyrxx4geMkzb/n5t3JAAluxW2ja3f/FrXMuwT7iKebreMS4
+4FO0maMpP29SW94G8yClumghtU/6LI67oHxhpUNkCQ3UV4JaI6wEZcgV5KLXm9rr1i/hMKV5FspQcYg36qdeRz/N4DwuorVwZuTsXCIMwcKQCkzu1oUSkvO3PE
+5cCRnu9cyJ3GzPfUO0T8mrCmI2XwISAvkuLs3kd6FeRBAw==</wsse:BinarySecurityToken><ds:Signature Id="Signature-19" 
+xmlns:ds="http://www.w3.org/2000/09/xmldsig#"> 
+<ds:SignedInfo> 
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/> 
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/> 
+<ds:Reference URI="#id-20"> 
+<ds:Transforms> 
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/> 
+</ds:Transforms> 
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/> 
+<ds:DigestValue>Yb928EozO/YY+MiIMLHkPQGkopw=</ds:DigestValue> 
+</ds:Reference> 
+</ds:SignedInfo> 
+<ds:SignatureValue> 
+CsZfy9DKYpsbcDflOzmtZLNRTlQOYZ4w3AKWrrOVnPRKpwbMxiR94WtBLPXfX1JyK8+8B8XLb9tH 
+GULeooEScI28qCFNFN4WPo+OT8dgyVR7Jgyf668G8vYpNlY9l5vIrWwpYF6Bd1HBC+u4MXZ0Z3kl 
+gO2ROtxUOn1HoqG9Igg= 
+</ds:SignatureValue> 
+<ds:KeyInfo Id="KeyId-B887A199828AAAB9D2132888175609629"> 
+<wsse:SecurityTokenReference wsu:Id="STRId-B887A199828AAAB9D2132888175609630" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-
+wss-wssecurity-utility-1.0.xsd"><wsse:Reference URI="#CertId-B887A199828AAAB9D2132888175609628" ValueType="http://docs.oasis-
+open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3"/></wsse:SecurityTokenReference> 
+</ds:KeyInfo> 
+</ds:Signature></wsse:Security></soapenv:Header> 
+ <soapenv:Body wsu:Id="id-20" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"> 
+ <dgi:WS_eFactura.EFACRECEPCIONREPORTE> 
+ <dgi:Datain> 
+ <dgi:xmlData><![CDATA[ 
+<?xml version="1.0" encoding="UTF-8"?> 
+<ns1:Reporte xsi:schemaLocation="http://cfe.dgi.gub.uy ReporteDiarioCFE_v1.3.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:ns1="http://cfe.dgi.gub.uy"><ns1:Caratula 
+version="1.0"><ns1:RUCEmisor>219999820013</ns1:RUCEmisor><ns1:FechaResumen>2012-01-
+19</ns1:FechaResumen><ns1:SecEnvio>1</ns1:SecEnvio><ns1:TmstFirmaEnv>2012-02-
+09T14:08:54Z</ns1:TmstFirmaEnv><ns1:CantComprobantes>7</ns1:CantComprobantes></ns1:Caratula><ns1:Rsmn_Resg><ns1:TipoComp>182</ns1:
+TipoComp><ns1:RsmnData><ns1:Montos><ns1:Mnts_Res_Item><ns1:Fecha>2012-01-
+19</ns1:Fecha><ns1:CodSuc>1</ns1:CodSuc><ns1:TotMntRetenido>140050</ns1:TotMntRetenido></ns1:Mnts_Res_Item></ns1:Montos><ns1:CantDo
+csUtil>5</ns1:CantDocsUtil><ns1:CantDocsAnulados>1</ns1:CantDocsAnulados><ns1:CantDocsEmi>4</ns1:CantDocsEmi><ns1:RngDocsUtil><ns1:
+RDU_Item><ns1:Serie>A</ns1:Serie><ns1:NroDesde>1</ns1:NroDesde><ns1:NroHasta>5</ns1:NroHasta></ns1:RDU_Item></ns1:RngDocsUtil><ns1:R
+ngDocsAnulados><ns1:RDA_Item><ns1:Serie>A</ns1:Serie><ns1:NroDesde>5</ns1:NroDesde><ns1:NroHasta>5</ns1:NroHasta></ns1:RDA_Item></n
+s1:RngDocsAnulados></ns1:RsmnData></ns1:Rsmn_Resg><ns1:Rsmn_Resg_Cont><ns1:TipoComp>282</ns1:TipoComp><ns1:RsmnData><ns1:Mont
+os><ns1:Mnts_Res_Item><ns1:Fecha>2012-01-
+19</ns1:Fecha><ns1:CodSuc>1</ns1:CodSuc><ns1:TotMntRetenido>0</ns1:TotMntRetenido></ns1:Mnts_Res_Item></ns1:Montos><ns1:CantDocsUtil
+>2</ns1:CantDocsUtil><ns1:CantDocsAnulados>1</ns1:CantDocsAnulados><ns1:CantDocsEmi>1</ns1:CantDocsEmi></ns1:RsmnData></ns1:Rsmn_
+Resg_Cont><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"> 
+<SignedInfo> 
+ <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/> 
+ <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/> 
+ <Reference URI=""> 
+ <Transforms> 
+ <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/> 
+ <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/> 
+ </Transforms> 
+ <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/> 
+ <DigestValue>Jh6VO5pBDCl2697v404nG19qwQU=</DigestValue> 
+ </Reference> 
+</SignedInfo> 
+<SignatureValue>Zm+2euo5UM9ZXkexH0IEEOizCtO3+Lu+n7z+j0P82IFgQFFT6xmO9fv0BPdRDowGYQ8O1aMRqB7B/ZBwNkeM +idzki2C0y/37mjEJgigdq
+n0HXS05hIfi64kx0TnUXIJNIyi3nNJrCL2rkd/kpB6xohyS8EOASc/q+32lXrio98=</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIFrDCCA5SgA
+wIBAgIQas+Rf7PxwFxNudVRjoOzEjANBgkqhkiG9w0BAQUFADB6MQswCQYDVQQGEwJVWTErMCkGA1UECgwiQURNSU5JU1RSQUNJT04gTkFDSU9O
+Fecha de impresión: 23/05/2013 12:07 
+DGI – Informática – Desarrollo 
+Página 16 de 20
+
+=== PAGE 17 ===
+[P1] CÓDIGO: 
+T-5.020.00.001-004 
+VERSIÓN: 
+1.1 
+FECHA: 
+23/05/2013 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+QUwgREUgQ09SUkVPUzEfMB0GA1UECwwWU0VSVklDSU9TIEVMRUNUUk9OSUNPUzEdMBsGA1UEAwwUQ29ycmVvIFVydWd1YXlvIC0gQ0EwHhcNMT
+EwNDI4MjEwMDAxWhcNMTIwNDI4MjEwMDAxWjCBxzEiMCAGCSqGSIb3DQEJARYTam1vbnRhbmVAZGdpLmd1Yi51eTEfMB0GA1UECwwWQU5BTElTS
+VMgREUgUFJPRFVDQ0lPTjEhMB8GA1UECgwYREdJLVBSVUVCQSBTRVJWSUNJT1MgV0VCMRMwEQYDVQQIDApNb250ZXZpZGVvMQswCQYDVQQG
+EwJVWTEYMBYGA1UEBRMPUlVDMjE5OTk5ODIwMDEzMSEwHwYDVQQDDBhER0ktUFJVRUJBIFNFUlZJQ0lPUyBXRUIwgZ8wDQYJKoZIhvcNAQEBBQ
+ADgY0AMIGJAoGBAMcMcu70s0RQkD6ifYBGXwATovTxxA/Hjc8WKM16yJkz63d0eSTjjREYmM87g6NRacADy9LZRyENiRPjsBI+Tw9PHR/7g+frTIS+vIQZ0
++f9Rq1q2uxvw8TKoO9FvcrBabdl9dUBIrJEPa20wj6U+dupTZ66bD5uFXBUsKo2sZujAgMBAAGjggFiMIIBXjAeBgNVHREEFzAVgRNqbW9udGFuZUBkZ2k
+uZ3ViLnV5MAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgP4MB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDARBglghkg BhvhCA
+QEEBAMCBaAwHQYDVR0OBBYEFP0YQfFQvej6szyGhKlpNI0tESi5MB8GA1UdIwQYMBaAFCWP30Mvjmq6C75GXFdQk7dRvvzZMFQGA1UdIARNMEswS
+QYMKwYBBAGB9U8BAQEEMDkwNwYIKwYBBQUHAgEWK2h0dHA6Ly93d3cuY29ycmVvLmNvbS51eS9jb3JyZW9jZXJ0L2Nwcy5wZGYwGAYNKwYBBA
+GB9U8BAQEEAQQHDAVEaXNjbzA8BgNVHR8ENTAzMDGgL6AthitodHRwOi8vd3d3LmNvcnJlby5jb20udXkvQ29ycmVvQ2VydC9hbmMuY3JsMA0GCSq
+GSIb3DQEBBQUAA4ICAQA01MEJsZ8VXJIybZQ0NlBJPXz7n8GbTf41Aq4lWxLI5rBWJD1uyWUdz2jUD0DuqflTAGknphzxn49QACCTA1Pv0aZ6hnK04uI9j7
+UJe4LiVx3aWbpLRBCnYrIs+QU2pyClEM4bNPt0BU2DG+Q9k9SeCDQ8VD7hiD2W/aK8HLo6EVLAEwrl3pTums2dwxtO1KKPw6OBbYYitCjR5j6Hy5q1+fMT
+FXmx0vo+ZYFOl8DVoSp6OQJd2mcaL0CNVWI9sOYRkJKEoELIJDSnIMKkUqgN2ilg05Dqcl/TDj2I5VfPLXZpnpuQbb6ADjEOtMzl kfe2EFemn0s/+2Hn97h5rt
+JMcjTuUhh937JZPWnD1XQTxICjS3ql1nSwbnJz9bk8PN/j8cK4Kw+xipGo7pRxITFKUHmOIXsj05tH3kFWf8htdU/4rIyrvzJ3xUhita78SHaJMALQa4AGxmSxI
+Evej0+qyrxx4geMkzb/n5t3JAAluxW2ja3f/FrXMuwT7iKebreMS44FO0maMpP29SW94G8yClumghtU/6LI67oHxhpUNkCQ3UV4JaI6wEZcgV5KLXm9rr1i/hMK
+V5FspQcYg36qdeRz/N4DwuorVwZuTsXCIMwcKQCkzu1oUSkvO3PE5cCRnu9cyJ3GzPfUO0T8mrCmI2XwISAvkuLs3kd6FeRBAw==</X509Certificate><X
+509IssuerSerial><X509IssuerName>CN=Correo Uruguayo - CA, OU=SERVICIOS ELECTRONICOS, O=ADMINISTRACION NACIONAL DE CORREOS, 
+C=UY</X509IssuerName><X509SerialNumber>141975924069977036928305508705255011090</X509SerialNumber></X509IssuerSerial></X509Data></Ke
+yInfo></Signature></ns1:Reporte> 
+]]></dgi:xmlData> 
+ </dgi:Datain> 
+ </dgi:WS_eFactura.EFACRECEPCIONREPORTE> 
+ </soapenv:Body> 
+</soapenv:Envelope> 
+Recibido 
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-
+ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+ <SOAP-ENV:Header> 
+ <wsse:Security SOAP-ENV:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"> 
+ <wsse:BinarySecurityToken wsu:Id="SecurityToken-05d3bc93-6090-44bd-a2bd-6128d52e99b8" EncodingType="http://docs.oasis-
+open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-
+x509-token-profile-1.0#X509v3" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-
+1.0.xsd">MIIFrDCCA5SgAwIBAgIQas+Rf7PxwFxNudVRjoOzEjANBgkqhkiG9w0BAQUFADB6MQswCQYDVQQGEwJVWTErMCkGA1UECgwiQURNSU5JU1RSQ
+UNJT04gTkFDSU9OQUwgREUgQ09SUkVPUzEfMB0GA1UECwwWU0VSVklDSU9TIEVMRUNUUk9OSUNPUzEdMBsGA1UEAwwUQ29ycmVvIFVydWd1YXlvIC
+0gQ0EwHhcNMTEwNDI4MjEwMDAxWhcNMTIwNDI4MjEwMDAxWjCBxzEiMCAGCSqGSIb3DQEJARYTam1vbnRhbmVAZGdpLmd1Yi51eTEfMB0GA1UECwwW
+QU5BTElTSVMgREUgUFJPRFVDQ0lPTjEhMB8GA1UECgwYREdJLVBSVUVCQSBTRVJWSUNJT1MgV0VCMRMwEQYDVQQIDApNb250ZXZpZGVvMQswCQ
+YDVQQGEwJVWTEYMBYGA1UEBRMPUlVDMjE5OTk5ODIwMDEzMSEwHwYDVQQDDBhER0ktUFJVRUJBIFNFUlZJQ0lPUyBXRUIwgZ8wDQYJKoZIhvcNAQE
+BBQADgY0AMIGJAoGBAMcMcu70s0RQkD6ifYBGXwATovTxxA/Hjc8WKM16yJkz63d0eSTjjREYmM87g6NRacADy9LZRyENiRPjsBI+Tw9PHR/7g+frTIS+vIQZ0+f
+9Rq1q2uxvw8TKoO9FvcrBabdl9dUBIrJEPa20wj6U+dupTZ66bD5uFXBUsKo2sZujAgMBAAGjggFiMIIBXjAeBgNVHREEFzAVgRNqbW9udGFuZUBkZ2kuZ3ViLnV
+5MAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgP4MB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDARBglghkgBhvhCAQEEBAMCBaAw
+HQYDVR0OBBYEFP0YQfFQvej6szyGhKlpNI0tESi5MB8GA1UdIwQYMBaAFCWP30Mvjmq6C75GXFdQk7dRvvzZMFQGA1UdIARNMEswSQYMKwYBBAGB9U8
+BAQEEMDkwNwYIKwYBBQUHAgEWK2h0dHA6Ly93d3cuY29ycmVvLmNvbS51eS9jb3JyZW9jZXJ0L2Nwcy5wZGYwGAYNKwYBBAGB9U8BAQEEAQQHDAVE
+aXNjbzA8BgNVHR8ENTAzMDGgL6AthitodHRwOi8vd3d3LmNvcnJlby5jb20udXkvQ29ycmVvQ2VydC9hbmMuY3JsMA0GCSqGSIb3DQEBBQUAA4ICAQA01MEJ
+sZ8VXJIybZQ0NlBJPXz7n8GbTf41Aq4lWxLI5rBWJD1uyWUdz2jUD0DuqflTAGknphzxn49QACCTA1Pv0aZ6hnK04uI9j7UJe4LiVx3aWbpLRBCnYrIs+QU2pyClEM
+4bNPt0BU2DG+Q9k9SeCDQ8VD7hiD2W/aK8HLo6EVLAEwrl3pTums2dwxtO1KKPw6OBbYYitCjR5j6Hy5q1+fMTFXmx0vo+ZYFOl8DVoSp6OQJd2mcaL0CNVWI
+9sOYRkJKEoELIJDSnIMKkUqgN2ilg05Dqcl/TDj2I5VfPLXZpnpuQbb6ADjEOtMzlkfe2EFemn0s/+2Hn97h5rtJMcjTuUhh937JZPWnD1XQTxICjS3ql1nSwbnJz9bk8P
+N/j8cK4Kw+xipGo7pRxITFKUHmOIXsj05tH3kFWf8htdU/4rIyrvzJ3xUhita78SHaJMALQa4AGxmSxIEvej0+qyrxx4geMkzb/n5t3JAAluxW2ja3f/FrXMuwT7iKebreMS4
+4FO0maMpP29SW94G8yClumghtU/6LI67oHxhpUNkCQ3UV4JaI6wEZcgV5KLXm9rr1i/hMKV5FspQcYg36qdeRz/N4DwuorVwZuTsXCIMwcKQCkzu1oUSkvO3PE
+5cCRnu9cyJ3GzPfUO0T8mrCmI2XwISAvkuLs3kd6FeRBAw==</wsse:BinarySecurityToken> 
+ <Signature xmlns="http://www.w3.org/2000/09/xmldsig#"> 
+ <SignedInfo> 
+ <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/> 
+ <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/> 
+ <Reference URI="#Body-e41537c8-a8e6-4e3e-a84a-7354ab2d260d"> 
+ <Transforms> 
+ <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/> 
+ </Transforms> 
+ <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/> 
+ <DigestValue>54wUo3sNxMs0h4jbG8YLl0Fxvrk=</DigestValue> 
+ </Reference> 
+ </SignedInfo> 
+<SignatureValue>pkTLmNDccJOCjnNN4vXhrPoahuLz6R8F1N/AyS8YaQMUiSJGABGiiHUuaWYqOTbMnFVxdvGcN3tM0zWK+eUWU4Vcsaxfb/CM4GjRfHMza0j
+wlVwvmRo+ExtGmXQ5LkZPcxUTE4KozV3e9ecIeTQDvlIwZC/WiTxMV/mOBIDDOvw=</SignatureValue> 
+ <KeyInfo> 
+ <wsse:SecurityTokenReference xmlns=""> 
+ <wsse:Reference URI="#SecurityToken-05d3bc93-6090-44bd-a2bd-6128d52e99b8" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-
+200401-wss-x509-token-profile-1.0#X509v3"/> 
+ </wsse:SecurityTokenReference> 
+ </KeyInfo> 
+ </Signature> 
+ </wsse:Security> 
+ </SOAP-ENV:Header> 
+ <SOAP-ENV:Body wsu:Id="Body-e41537c8-a8e6-4e3e-a84a-7354ab2d260d" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-
+wssecurity-utility-1.0.xsd"> 
+ <WS_eFactura.EFACRECEPCIONREPORTEResponse xmlns="http://dgi.gub.uy"> 
+ <Dataout> 
+ <xmlData><![CDATA[<?xml version="1.0" encoding="UTF-8"?> 
+<ACKRepDiario 
+xmlns="http://cfe.dgi.gub.uy"><Caratula><RUCReceptor>214844360018</RUCReceptor><RUCEmisor>219999820013</RUCEmisor><NomArch>Rep_21
+9999820013_20120119_01_CasiOKNV.xml</NomArch><FecHRecibido>2012-02-
+10T11:45:43</FecHRecibido><IDEmisor>0</IDEmisor><IDReceptor>1513</IDReceptor><Tmst>2012-02-
+10T11:42:37Z</Tmst></Caratula><Detalle><Estado>AR</Estado></Detalle><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"> 
+<SignedInfo> 
+ <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/> 
+ <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/> 
+ <Reference URI=""> 
+ <Transforms> 
+ <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/> 
+ <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/> 
+ </Transforms> 
+Fecha de impresión: 23/05/2013 12:07 
+DGI – Informática – Desarrollo 
+Página 17 de 20
+
+=== PAGE 18 ===
+[P1] CÓDIGO: 
+T-5.020.00.001-004 
+VERSIÓN: 
+1.1 
+FECHA: 
+23/05/2013 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+ <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/> 
+ <DigestValue>wiee+HGYRCqVGiGtaevvuSy2qaQ=</DigestValue> 
+ </Reference> 
+</SignedInfo> 
+<SignatureValue>VPBOJYz/OGcaV9KcGFeNSWD6ypLFmS9i6UKx4K+nThMKFPkG3T5lz1mnOIuQQ9bZ7ElnojhVj8pyCCPRXbpTO8ezHhxEfoNJJIDlYs3Z
+aERhuWZZqoX8MxSsMbFzumnM1H8L0yV214AGBzcA3ERvMCSZThqB+i9jVxdmfGEfuro=</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIF
+rDCCA5SgAwIBAgIQas+Rf7PxwFxNudVRjoOzEjANBgkqhkiG9w0BAQUFADB6MQswCQYDVQQGEwJVWTErMCkGA1UECgwiQURNSU5JU1RSQUNJT04
+gTkFDSU9OQUwgREUgQ09SUkVPUzEfMB0GA1UECwwWU0VSVklDSU9TIEVMRUNUUk9OSUNPUzEdMBsGA1UEAwwUQ29ycmVvIFVydWd 1YXlvIC0gQ
+0EwHhcNMTEwNDI4MjEwMDAxWhcNMTIwNDI4MjEwMDAxWjCBxzEiMCAGCSqGSIb3DQEJARYTam1vbnRhbmVAZGdpLmd1Yi51eTEfMB0GA1UECww
+WQU5BTElTSVMgREUgUFJPRFVDQ0lPTjEhMB8GA1UECgwYREdJLVBSVUVCQSBTRVJWSUNJT1MgV0VCMRMwEQYDVQQIDApNb250ZXZpZGVvMQs
+wCQYDVQQGEwJVWTEYMBYGA1UEBRMPUlVDMjE5OTk5ODIwMDEzMSEwHwYDVQQDDBhER0ktUFJVRUJBIFNFUlZJQ0lPUyBXRUIwgZ8 wDQYJKoZI
+hvcNAQEBBQADgY0AMIGJAoGBAMcMcu70s0RQkD6ifYBGXwATovTxxA/Hjc8WKM16yJkz63d0eSTjjREYmM87g6NRacADy9LZRyENiRPjsBI+Tw9PHR/7
+g+frTIS+vIQZ0+f9Rq1q2uxvw8TKoO9FvcrBabdl9dUBIrJEPa20wj6U+dupTZ66bD5uFXBUsKo2sZujAgMBAAGjggFiMIIBXjAeBgNVHREEFzAVgRNqbW9ud
+GFuZUBkZ2kuZ3ViLnV5MAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgP4MB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDARBgl
+ghkgBhvhCAQEEBAMCBaAwHQYDVR0OBBYEFP0YQfFQvej6szyGhKlpNI0tESi5MB8GA1UdIwQYMBaAFCWP30Mvjmq6C75GXFdQk7d RvvzZMFQGA1U
+dIARNMEswSQYMKwYBBAGB9U8BAQEEMDkwNwYIKwYBBQUHAgEWK2h0dHA6Ly93d3cuY29ycmVvLmNvbS51eS9jb3JyZW9jZXJ0L2Nwcy5wZGYwG
+AYNKwYBBAGB9U8BAQEEAQQHDAVEaXNjbzA8BgNVHR8ENTAzMDGgL6AthitodHRwOi8vd3d3LmNvcnJlby5jb20udXkvQ29ycmVvQ2VydC9hbmMuY3
+JsMA0GCSqGSIb3DQEBBQUAA4ICAQA01MEJsZ8VXJIybZQ0NlBJPXz7n8GbTf41Aq4lWxLI5rBWJD1uyWUdz2jUD0DuqflTAGknphzxn49QACCTA1Pv0aZ
+6hnK04uI9j7UJe4LiVx3aWbpLRBCnYrIs+QU2pyClEM4bNPt0BU2DG+Q9k9SeCDQ8VD7hiD2W/aK8HLo6EVLAEwrl3pTums2dwxtO1KKPw6OBbYYitCjR5j
+6Hy5q1+fMTFXmx0vo+ZYFOl8DVoSp6OQJd2mcaL0CNVWI9sOYRkJKEoELIJDSnIMKkUqgN2ilg05Dqcl/TDj2I5VfPLXZpnpuQbb6ADjEOtMzlkfe2EFemn0s
+/+2Hn97h5rtJMcjTuUhh937JZPWnD1XQTxICjS3ql1nSwbnJz9bk8PN/j8cK4Kw+xipGo7pRxITFKUHmOIXsj05tH3kFWf8htdU/4rIyrvzJ3xUhita78SHaJMALQ
+a4AGxmSxIEvej0+qyrxx4geMkzb/n5t3JAAluxW2ja3f/FrXMuwT7iKebreMS44FO0maMpP29SW94G8yClumghtU/6LI67oHxhpUNkCQ3UV4JaI6wEZcgV5KLX
+m9rr1i/hMKV5FspQcYg36qdeRz/N4DwuorVwZuTsXCIMwcKQCkzu1oUSkvO3PE5cCRnu9cyJ3GzPfUO0T8mrCmI2XwISAvkuLs3kd6FeRBAw==</X509Cer
+tificate><X509IssuerSerial><X509IssuerName>CN=Correo Uruguayo - CA, OU=SERVICIOS ELECTRONICOS, O=ADMINISTRACION NACIONAL DE 
+CORREOS, 
+C=UY</X509IssuerName><X509SerialNumber>141975924069977036928305508705255011090</X509SerialNumber></X509IssuerSerial></X509Data></Ke
+yInfo></Signature></ACKRepDiario>]]></xmlData> 
+ </Dataout> 
+ </WS_eFactura.EFACRECEPCIONREPORTEResponse> 
+ </SOAP-ENV:Body> 
+</SOAP-ENV:Envelope> 
+Caso 3: Envío de mensaje SOAP para obtener respuesta de CFEs 
+POST https://efactura.dgi.gub.uy/ePrueba/ws_eprueba HTTP/1.1 
+Accept-Encoding: gzip,deflate 
+Content-Type: text/xml;charset=UTF-8 
+SOAPAction: "http://dgi.gub.uyaction/AWS_EFACTURA.EFACCONSULTARESTADOENVIO" 
+User-Agent: Jakarta Commons-HttpClient/3.1 
+Host: efactura.dgi.gub.uy:6443 
+Content-Length: 4449 
+Enviado 
+<soapenv:Envelope xmlns:dgi="http://dgi.gub.uy" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"> 
+ <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-
+1.0.xsd"><wsse:BinarySecurityToken EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" 
+ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" wsu:Id="CertId-
+B887A199828AAAB9D2132888486500479" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-
+1.0.xsd">MIIFrDCCA5SgAwIBAgIQas+Rf7PxwFxNudVRjoOzEjANBgkqhkiG9w0BAQUFADB6MQswCQYDVQQGEwJVWTErMCkGA1UECgwiQURNSU5JU1RSQ
+UNJT04gTkFDSU9OQUwgREUgQ09SUkVPUzEfMB0GA1UECwwWU0VSVklDSU9TIEVMRUNUUk9OSUNPUzEdMBsGA1UEAwwUQ29ycmVvIFVydWd1YXlvIC
+0gQ0EwHhcNMTEwNDI4MjEwMDAxWhcNMTIwNDI4MjEwMDAxWjCBxzEiMCAGCSqGSIb3DQEJARYTam1vbnRhbmVAZGdpLmd1Yi51eTEfMB0GA1UECwwW
+QU5BTElTSVMgREUgUFJPRFVDQ0lPTjEhMB8GA1UECgwYREdJLVBSVUVCQSBTRVJWSUNJT1MgV0VCMRMwEQYDVQQIDApNb250ZXZpZGVvMQswCQ
+YDVQQGEwJVWTEYMBYGA1UEBRMPUlVDMjE5OTk5ODIwMDEzMSEwHwYDVQQDDBhER0ktUFJVRUJBIFNFUlZJQ0lPUyBXRUIwgZ8wDQYJKoZIhvcNAQE
+BBQADgY0AMIGJAoGBAMcMcu70s0RQkD6ifYBGXwATovTxxA/Hjc8WKM16yJkz63d0eSTjjREYmM87g6NRacADy9LZRyENiRPjsBI +Tw9PHR/7g+frTIS+vIQZ0+f
+9Rq1q2uxvw8TKoO9FvcrBabdl9dUBIrJEPa20wj6U+dupTZ66bD5uFXBUsKo2sZujAgMBAAGjggFiMIIBXjAeBgNVHREEFzAVgRNqbW9udGFuZUBkZ2kuZ3ViLnV
+5MAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgP4MB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDARBglghkgBhvhCAQEEBAMCBaAw
+HQYDVR0OBBYEFP0YQfFQvej6szyGhKlpNI0tESi5MB8GA1UdIwQYMBaAFCWP30Mvjmq6C75GXFdQk7dRvvzZMFQGA1UdIARNMEswSQYMKwYBBAGB9U8
+BAQEEMDkwNwYIKwYBBQUHAgEWK2h0dHA6Ly93d3cuY29ycmVvLmNvbS51eS9jb3JyZW9jZXJ0L2Nwcy5wZGYwGAYNKwYBBAGB9U8BAQEEAQQHDAVE
+aXNjbzA8BgNVHR8ENTAzMDGgL6AthitodHRwOi8vd3d3LmNvcnJlby5jb20udXkvQ29ycmVvQ2VydC9hbmMuY3JsMA0GCSqGSIb3DQEBBQUAA4ICAQA01MEJ
+sZ8VXJIybZQ0NlBJPXz7n8GbTf41Aq4lWxLI5rBWJD1uyWUdz2jUD0DuqflTAGknphzxn49QACCTA1Pv0aZ6hnK04uI9j7UJe4LiVx3aWbpLRBCnYrIs+QU2pyClEM
+4bNPt0BU2DG+Q9k9SeCDQ8VD7hiD2W/aK8HLo6EVLAEwrl3pTums2dwxtO1KKPw6OBbYYitCjR5j6Hy5q1+fMTFXmx0vo+ZYFOl8DVoSp6OQJd2mcaL0CNVWI
+9sOYRkJKEoELIJDSnIMKkUqgN2ilg05Dqcl/TDj2I5VfPLXZpnpuQbb6ADjEOtMzlkfe2EFemn0s/+2Hn97h5rtJMcjTuUhh937JZPWnD1XQTxICjS3ql1nSwbnJz9bk 8P
+N/j8cK4Kw+xipGo7pRxITFKUHmOIXsj05tH3kFWf8htdU/4rIyrvzJ3xUhita78SHaJMALQa4AGxmSxIEvej0+qyrxx4geMkzb/n5t3JAAluxW2ja3f/FrXMuwT7iKebreMS4
+4FO0maMpP29SW94G8yClumghtU/6LI67oHxhpUNkCQ3UV4JaI6wEZcgV5KLXm9rr1i/hMKV5FspQcYg36qdeRz/N4DwuorVwZuTsXCIMwcKQCkzu1oUSkvO3PE
+5cCRnu9cyJ3GzPfUO0T8mrCmI2XwISAvkuLs3kd6FeRBAw==</wsse:BinarySecurityToken><ds:Signature Id="Signature-53" 
+xmlns:ds="http://www.w3.org/2000/09/xmldsig#"> 
+<ds:SignedInfo> 
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/> 
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/> 
+<ds:Reference URI="#id-54"> 
+<ds:Transforms> 
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/> 
+</ds:Transforms> 
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/> 
+<ds:DigestValue>D5VRHmsw1VY8tzZODfbiI4hiBgw=</ds:DigestValue> 
+</ds:Reference> 
+</ds:SignedInfo> 
+<ds:SignatureValue> 
+sX49QJPyz1PQAu9VA1+NlO/DYiSAegJPerZsTuRjXJeqC/vb5hr8XgRUZ36hUnB8A8/MW66iWgDB 
+ZdxcZLI8D+nWca4mhY7VxhuNvrcoos29lBAiHWkcFm8LlSvaPFxlyNs8RZnbaRVN4RyNlkpSmcvo 
+l2ES47/oY7IvMOmv6Kg= 
+</ds:SignatureValue> 
+<ds:KeyInfo Id="KeyId-B887A199828AAAB9D2132888486500480"> 
+<wsse:SecurityTokenReference wsu:Id="STRId-B887A199828AAAB9D2132888486500481" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-
+wss-wssecurity-utility-1.0.xsd"><wsse:Reference URI="#CertId-B887A199828AAAB9D2132888486500479" ValueType="http://docs.oasis-
+open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3"/></wsse:SecurityTokenReference> 
+</ds:KeyInfo> 
+</ds:Signature></wsse:Security></soapenv:Header> 
+ <soapenv:Body wsu:Id="id-54" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"> 
+ <dgi:WS_eFactura.EFACCONSULTARESTADOENVIO> 
+Fecha de impresión: 23/05/2013 12:07 
+DGI – Informática – Desarrollo 
+Página 18 de 20
+
+=== PAGE 19 ===
+[P1] CÓDIGO: 
+T-5.020.00.001-004 
+VERSIÓN: 
+1.1 
+FECHA: 
+23/05/2013 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+ <dgi:Datain> 
+ <dgi:xmlData><![CDATA[<?xml version="1.0" encoding="UTF-8"?> 
+<ConsultaCFE xmlns="http://dgi.gub.uy"> 
+<IdReceptor>1516</IdReceptor> 
+<Token>jj25BULvoX2TRTJdJeLLhq9wN8xwsVji2IIWaxL0I2yOBrZ1ZB5mXFk5SFDWMnUgWoFKbR5r9gfvKAuxXBpEqw==</Token> 
+</ConsultaCFE> 
+ ]]></dgi:xmlData> 
+ </dgi:Datain> 
+ </dgi:WS_eFactura.EFACCONSULTARESTADOENVIO> 
+ </soapenv:Body> 
+</soapenv:Envelope> 
+Recibido 
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-
+ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+ <SOAP-ENV:Header> 
+ <wsse:Security SOAP-ENV:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"> 
+ <wsse:BinarySecurityToken wsu:Id="SecurityToken-893f26cc-077d-45ad-b97b-2f6f85e1e944" EncodingType="http://docs.oasis-
+open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-
+x509-token-profile-1.0#X509v3" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-
+1.0.xsd">MIIFrDCCA5SgAwIBAgIQas+Rf7PxwFxNudVRjoOzEjANBgkqhkiG9w0BAQUFADB6MQswCQYDVQQGEwJVWTErMCkGA1UECgwiQURNSU5JU1RSQ
+UNJT04gTkFDSU9OQUwgREUgQ09SUkVPUzEfMB0GA1UECwwWU0VSVklDSU9TIEVMRUNUUk9OSUNPUzEdMBsGA1UEAwwUQ29ycmVvIFVydWd1YXlvIC
+0gQ0EwHhcNMTEwNDI4MjEwMDAxWhcNMTIwNDI4MjEwMDAxWjCBxzEiMCAGCSqGSIb3DQEJARYTam1vbnRhbmVAZGdpLmd1Yi51eTEfMB0GA1UECwwW
+QU5BTElTSVMgREUgUFJPRFVDQ0lPTjEhMB8GA1UECgwYREdJLVBSVUVCQSBTRVJWSUNJT1MgV0VCMRMwEQYDVQQIDApNb250ZXZpZGVvMQswCQ
+YDVQQGEwJVWTEYMBYGA1UEBRMPUlVDMjE5OTk5ODIwMDEzMSEwHwYDVQQDDBhER0ktUFJVRUJBIFNFUlZJQ0lPUyBXRUIwgZ8wDQYJKoZIhvcNAQE
+BBQADgY0AMIGJAoGBAMcMcu70s0RQkD6ifYBGXwATovTxxA/Hjc8WKM16yJkz63d0eSTjjREYmM87g6NRacADy9LZRyENiRPjsBI +Tw9PHR/7g+frTIS+vIQZ0+f
+9Rq1q2uxvw8TKoO9FvcrBabdl9dUBIrJEPa20wj6U+dupTZ66bD5uFXBUsKo2sZujAgMBAAGjggFiMIIBXjAeBgNVHREEFzAVgRNqbW9udGFuZUBkZ2kuZ3ViLnV
+5MAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgP4MB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDARBglghkgBhvhCAQEEBAMCBaAw
+HQYDVR0OBBYEFP0YQfFQvej6szyGhKlpNI0tESi5MB8GA1UdIwQYMBaAFCWP30Mvjmq6C75GXFdQk7dRvvzZMFQGA1UdIARNMEswSQYMKwYBBAGB9U8
+BAQEEMDkwNwYIKwYBBQUHAgEWK2h0dHA6Ly93d3cuY29ycmVvLmNvbS51eS9jb3JyZW9jZXJ0L2Nwcy5wZGYwGAYNKwYBBAGB9U8BAQEEAQQHDAVE
+aXNjbzA8BgNVHR8ENTAzMDGgL6AthitodHRwOi8vd3d3LmNvcnJlby5jb20udXkvQ29ycmVvQ2VydC9hbmMuY3JsMA0GCSqGSIb3DQEBBQUAA4ICAQA01MEJ
+sZ8VXJIybZQ0NlBJPXz7n8GbTf41Aq4lWxLI5rBWJD1uyWUdz2jUD0DuqflTAGknphzxn49QACCTA1Pv0aZ6hnK04uI9j7UJe4LiVx3aWbpLRBCnYrIs+QU2pyClEM
+4bNPt0BU2DG+Q9k9SeCDQ8VD7hiD2W/aK8HLo6EVLAEwrl3pTums2dwxtO1KKPw6OBbYYitCjR5j6Hy5q1+fMTFXmx0vo+ZYFOl8DVoSp6OQJd2mcaL0CNVWI
+9sOYRkJKEoELIJDSnIMKkUqgN2ilg05Dqcl/TDj2I5VfPLXZpnpuQbb6ADjEOtMzlkfe2EFemn0s/+2Hn97h5rtJMcjTuUhh937JZPWnD1XQTxICjS3ql1nSwbnJz9bk8P
+N/j8cK4Kw+xipGo7pRxITFKUHmOIXsj05tH3kFWf8htdU/4rIyrvzJ3xUhita78SHaJMALQa4AGxmSxIEvej0+qyrxx4geMkzb/n5t3JAAluxW2ja3f/FrXMuwT7iKebreMS4
+4FO0maMpP29SW94G8yClumghtU/6LI67oHxhpUNkCQ3UV4JaI6wEZcgV5KLXm9rr1i/hMKV5FspQcYg36qdeRz/N4DwuorVwZuTsXCIMwcKQCkzu1oUSkvO3PE
+5cCRnu9cyJ3GzPfUO0T8mrCmI2XwISAvkuLs3kd6FeRBAw==</wsse:BinarySecurityToken> 
+ <Signature xmlns="http://www.w3.org/2000/09/xmldsig#"> 
+ <SignedInfo> 
+ <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/> 
+ <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/> 
+ <Reference URI="#Body-0f499b12-5d58-43fd-842b-f347427344cf"> 
+ <Transforms> 
+ <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/> 
+ </Transforms> 
+ <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/> 
+ <DigestValue>3uQU3vViGOoVRLivMRDYC3Eusfo=</DigestValue> 
+ </Reference> 
+ </SignedInfo> 
+<SignatureValue>hgDMOqcExK0u3u4n09YygVZDkm/sOOeBklTh30Ur9wPdEo9gjsh5XBXkWVFcpu/zAFOyJkmetqqwpCnCVcpfvB6yQ52lOt7so1EPCGER746pTq
+FwWiOrErD7eaL48V/nMVK8BYX7Oy3Po3jNXk8B1pjRFzNPZM0ikOs/Bjjul1M=</SignatureValue> 
+ <KeyInfo> 
+ <wsse:SecurityTokenReference xmlns=""> 
+ <wsse:Reference URI="#SecurityToken-893f26cc-077d-45ad-b97b-2f6f85e1e944" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-
+wss-x509-token-profile-1.0#X509v3"/> 
+ </wsse:SecurityTokenReference> 
+ </KeyInfo> 
+ </Signature> 
+ </wsse:Security> 
+ </SOAP-ENV:Header> 
+ <SOAP-ENV:Body wsu:Id="Body-0f499b12-5d58-43fd-842b-f347427344cf" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-
+utility-1.0.xsd"> 
+ <WS_eFactura.EFACCONSULTARESTADOENVIOResponse xmlns="http://dgi.gub.uy"> 
+ <Dataout> 
+ <xmlData><![CDATA[<?xml version="1.0" encoding="UTF-8"?> 
+<ACKCFE 
+xmlns="http://cfe.dgi.gub.uy"><Caratula><RUCReceptor>214844360018</RUCReceptor><RUCEmisor>219999820013</RUCEmisor><IDRespuesta>1516
+</IDRespuesta><NomArch>Sob_219999820013_20111001_3009_OK_SobreCFE.xml</NomArch><FecHRecibido>2012-02-
+10T11:58:10</FecHRecibido><IDEmisor>3009</IDEmisor><IDReceptor>1516</IDReceptor><CantenSobre>1</Cant enSobre><CantResponden>1</CantR
+esponden><CantCFEAceptados>1</CantCFEAceptados><CantCFERechazados>0</CantCFERechazados><CantCFCAceptados>0</CantCFCAceptados
+><CantCFCObservados>0</CantCFCObservados><CantOtrosRechazados>0</CantOtrosRechazados><Tmst>2012-02-
+10T11:55:00Z</Tmst></Caratula><ACKCFE_Det><Nro_ordinal>1</Nro_ordinal><TipoCFE>101</TipoCFE><Serie>A</Serie><NroCFE>1</NroCFE><Fech
+aCFE>2011-11-08T00:00:00</FechaCFE><TmstCFE>2012-02-08T09:48:51</TmstCFE><Estado>AE</Estado></ACKCFE_Det><Signature 
+xmlns="http://www.w3.org/2000/09/xmldsig#"> 
+<SignedInfo> 
+ <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/> 
+ <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/> 
+ <Reference URI=""> 
+ <Transforms> 
+ <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/> 
+ <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/> 
+ </Transforms> 
+ <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/> 
+ <DigestValue>4m2UhmGOC4wGpNmhxjDO7nd/n7E=</DigestValue> 
+ </Reference> 
+</SignedInfo> 
+<SignatureValue>YDCu1EgM3/2+mbYe2/IwJ7fprsKoJ/MewGvE3Hqe20wPPOdpVm+mDoOncdmA5R0DvoGklZBQh44pwoQDnwAgj7tWVrj7jMdj46/JDuitd
+/dvT6JyqckS7leSatXj+OoMv1FsQIKezb8JlJoDBwRh1Zy24O9L+qkD6VqJCGpzr/g=</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIFrDCCA
+5SgAwIBAgIQas+Rf7PxwFxNudVRjoOzEjANBgkqhkiG9w0BAQUFADB6MQswCQYDVQQGEwJVWTErMCkGA1UECgwiQURNSU5JU1RSQUNJT04gT kFD
+Fecha de impresión: 23/05/2013 12:07 
+DGI – Informática – Desarrollo 
+Página 19 de 20
+
+=== PAGE 20 ===
+[P1] CÓDIGO: 
+T-5.020.00.001-004 
+VERSIÓN: 
+1.1 
+FECHA: 
+23/05/2013 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+SU9OQUwgREUgQ09SUkVPUzEfMB0GA1UECwwWU0VSVklDSU9TIEVMRUNUUk9OSUNPUzEdMBsGA1UEAwwUQ29ycmVvIFVydWd1YXlvIC0gQ0EwHh
+cNMTEwNDI4MjEwMDAxWhcNMTIwNDI4MjEwMDAxWjCBxzEiMCAGCSqGSIb3DQEJARYTam1vbnRhbmVAZGdpLmd1Yi51eTEfMB0GA1UECwwWQU5B
+TElTSVMgREUgUFJPRFVDQ0lPTjEhMB8GA1UECgwYREdJLVBSVUVCQSBTRVJWSUNJT1MgV0VCMRMwEQYDVQQIDApNb250ZXZpZGVvMQswCQYD
+VQQGEwJVWTEYMBYGA1UEBRMPUlVDMjE5OTk5ODIwMDEzMSEwHwYDVQQDDBhER0ktUFJVRUJBIFNFUlZJQ0lPUyBXRUIwgZ8wDQYJKoZIhvcNAQ
+EBBQADgY0AMIGJAoGBAMcMcu70s0RQkD6ifYBGXwATovTxxA/Hjc8WKM16yJkz63d0eSTjjREYmM87g6NRacADy9LZRyENiRPjsBI+Tw9PHR/7g+frTIS+
+vIQZ0+f9Rq1q2uxvw8TKoO9FvcrBabdl9dUBIrJEPa20wj6U+dupTZ66bD5uFXBUsKo2sZujAgMBAAGjggFiMIIBXjAeBgNVHREEFzAVgRNqbW9udGFuZUB
+kZ2kuZ3ViLnV5MAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgP4MB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDARBgl ghkgBhv
+hCAQEEBAMCBaAwHQYDVR0OBBYEFP0YQfFQvej6szyGhKlpNI0tESi5MB8GA1UdIwQYMBaAFCWP30Mvjmq6C75GXFdQk7dRvvzZMF QGA1UdIARNME
+swSQYMKwYBBAGB9U8BAQEEMDkwNwYIKwYBBQUHAgEWK2h0dHA6Ly93d3cuY29ycmVvLmNvbS51eS9jb3JyZW9jZXJ0L2Nwcy5wZGYwGAYNKwY
+BBAGB9U8BAQEEAQQHDAVEaXNjbzA8BgNVHR8ENTAzMDGgL6AthitodHRwOi8vd3d3LmNvcnJlby5jb20udXkvQ29ycmVvQ2VydC9hbmMuY3JsMA0G
+CSqGSIb3DQEBBQUAA4ICAQA01MEJsZ8VXJIybZQ0NlBJPXz7n8GbTf41Aq4lWxLI5rBWJD1uyWUdz2jUD0DuqflTAGknphzxn49QACCTA1Pv0aZ6hnK04
+uI9j7UJe4LiVx3aWbpLRBCnYrIs+QU2pyClEM4bNPt0BU2DG+Q9k9SeCDQ8VD7hiD2W/aK8HLo6EVLAEwrl3pTums2dwxtO1KKPw6OBbYYitCjR5j6Hy5q1
++fMTFXmx0vo+ZYFOl8DVoSp6OQJd2mcaL0CNVWI9sOYRkJKEoELIJDSnIMKkUqgN2ilg05Dqcl/TDj2I5VfPLXZpnpuQbb6ADjEOtMzlkfe2EFemn0s/+2Hn9
+7h5rtJMcjTuUhh937JZPWnD1XQTxICjS3ql1nSwbnJz9bk8PN/j8cK4Kw+xipGo7pRxITFKUHmOIXsj05tH3kFWf8htdU/4rIyrvzJ3xUhita78SHaJMALQa4AGx
+mSxIEvej0+qyrxx4geMkzb/n5t3JAAluxW2ja3f/FrXMuwT7iKebreMS44FO0maMpP29SW94G8yClumghtU/6LI67oHxhpUNkCQ3UV4JaI6wEZcgV5KLXm9rr1i
+/hMKV5FspQcYg36qdeRz/N4DwuorVwZuTsXCIMwcKQCkzu1oUSkvO3PE5cCRnu9cyJ3GzPfUO0T8mrCmI2XwISAvkuLs3kd6FeRB Aw==</X509Certificat
+e><X509IssuerSerial><X509IssuerName>CN=Correo Uruguayo - CA, OU=SERVICIOS ELECTRONICOS, O=ADMINISTRACION NACIONAL DE CORREOS, 
+C=UY</X509IssuerName><X509SerialNumber>141975924069977036928305508705255011090</X509SerialNumber></X509IssuerSerial></X509Data></Ke
+yInfo></Signature></ACKCFE>]]></xmlData> 
+ </Dataout> 
+ </WS_eFactura.EFACCONSULTARESTADOENVIOResponse> 
+ </SOAP-ENV:Body> 
+</SOAP-ENV:Envelope> 
+Fecha de impresión: 23/05/2013 12:07 
+DGI – Informática – Desarrollo 
+Página 20 de 20
+

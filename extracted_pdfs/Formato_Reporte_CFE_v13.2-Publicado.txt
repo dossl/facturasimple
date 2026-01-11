@@ -1,0 +1,2042 @@
+SOURCE_PDF: /Users/sergiolazaro/Documents/GitHub/facturasimple/Fuentes-Gub.uy/Generales-Documentos de Interes/Formato_Reporte_CFE_v13.2-Publicado.pdf
+EXTRACTED_AT: 2026-01-11T16:27:46.710711
+PARAGRAPH_RULE: paragraphs are blocks separated by blank lines in extracted text; numbering restarts each page.
+
+=== PAGE 1 ===
+[P1] DDOOCCUUMMEENNTTOO FFUUNNCCIIOONNAALL 
+FFOORRMMAATTOO DDEELL RREEPPOORRTTEE DDIIAARRIIOO CCOONNSSOOLLIIDDAADDOO DDEE CCFFEE 
+CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+VVEERRSSIIÓÓNN 1133..22–– 3300//0066//22002233
+
+=== PAGE 2 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+Í N D I C E 
+Fecha: 
+3300//0066//22002233 
+ACTUALIZACIONES DE VERSIÓN ............................................................................................................................................................................................................................................................ 3 
+CONTENIDO DEL ARCHIVO .......................................................................................................................................................................................................................................................... 7 
+1. 
+ZONAS DEL REPORTE ................................................................................................................................................................................................................................................................. 8 
+2. 
+FORMATO DEL REPORTE .......................................................................................................................................................................................................................................................... 10 
+3. 
+A) CARÁTULA ........................................................................................................................................................................................................................................................................ 10 
+B) RESUMEN ......................................................................................................................................................................................................................................................................... 13 
+FIRMA ELECTRÓNICA AVANZADA ........................................................................................................................................................................................................................................... 21 
+C) 
+ANEXO 1 – TIPO DE COMPROBANTE ................................................................................................................................................................................................................................................... 22 
+ANEXO 2– IDENTIFICACIÓN DEL RECEPTOR Y ENVÍO OBLIGATORIO DE E-TICKETS Y SUS NOTAS DE CORRECCIÓN................................................................................................................................................... 23 
+Doc: 
+Impresión: 30/6/2023 11:39:00 
+Formato_Reporte_CFE_v13 2.doc 
+Página 2 de 23
+
+=== PAGE 3 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+Actualizaciones de Versión 
+Versión 13.2–30/06/2023 
+ 1 Contenido del archivo: se agrega información relativa al tipo de cambio fiscal a utilizar para informar CFE que no fueron emitidos en 
+moneda nacional. 
+ B-C27: se modifica validación 
+Versión 13.1– 13/12/2022 
+ 1 Contenido del archivo: se agrega información relativa al tipo de cambio fiscal a utilizar para informar CFE que no fueron emitidos en 
+moneda nacional. 
+Versión 13 – 02/05/2022 
+ 1 Contenido del archivo: se modifica información relativa al tipo de cambio a utilizar para informar CFE en M/E 
+ 2 Zonas del Reporte/B Resumen: se agrega información 
+ Anexo 2: se modifica tope para Identificación del receptor y envío obligatorio de e-tickets y sus notas de corrección 
+Versión12 – 15/03/2021 
+ B-10: se incorpora nueva validación 
+Versión 11 – 29/05/2020 
+Versión 10 – 15/08/2018 
+ B-C25: se modifica nombre del campo. 
+ B-C27: se modifica nombre del campo y se agrega validación 
+ Anexo 2: Se incorpora tabla con calendario y detalle de topes establecidos para envío e identificación obligatoria de e-tickets 
+ Zona B Resumen/Tabla: se agrega información 
+ B-C11.1: se incorpora nuevo campo Indicador reintegro de gastos 
+ B-C18: se modifica nombre del campo 
+ B-C21: se modifica nombre del campo 
+Versión 9.2 – 23/02/2017 
+ 3 –Formato del Reporte: se incorpora nuevo tipo de CFE e-Boleta de Entrada y sus notas de corrección 
+ Anexo-Tipo de Comprobante: se incorpora nuevo tipo de CFE e-Boleta de Entrada y sus notas de corrección 
+Versión 9.1 – 16/01/2017 
+ ANULADA 
+Versión 9 - 09/11/2016 
+ ANULADA 
+Versión 8– 20/04/2016 
+ En 3-Formato del Reporte- B-Resumen-Tabla de Montos por Fecha de Comprobante y por Sucursal se incorpora: 
+o Código de obligatoriedad 2 
+o Validación que determina obligatoriedad 
+ B-C27: se precisa la observación 
+Doc: 
+Impresión: 30/6/2023 11:39:00 
+Formato_Reporte_CFE_v13 2.doc 
+Página 3 de 23
+
+=== PAGE 4 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+Versión 07.2- 28/11/2015 
+ B-C13: se modifica validación 
+ B-C15 y B-C16: se modifica código de obligatoriedad 
+ B-C24: se modifica validación 
+ B) Resumen: se modifica cantidad de repeticiones en: 
+o Tabla de rango de documentos utilizados de CFE 
+o Tabla de documentos anulados de CFE 
+Versión 07.1- 23/11/2015 
+ANULADA 
+Versión 07- 03/09/2015 
+ A-C7: se precisa la observación. 
+ B-C10: se incorpora validación. 
+ B-C11: se modifica validación 
+ B-C18: se incorpora validación 
+ B-C21: se incorpora validación. 
+ B-C25: se modifica obligatoriedad para e-resguardo 
+ B-C25.1: se incorpora nuevo campo 
+ B-C26, B-C28, B-C29 y B-C30: se precisa la observación 
+ B) Resumen: se modifica cantidad de repeticiones en: 
+o Tabla de rango de documentos utilizados de CFE 
+o Tabla de documentos anulados de CFE 
+Versión 06-1-10/03/2014 
+ Se incorpora en versión 6 la actualización de la versión 05-1 
+Versión 06-31/01/2014 
+ Se incorporan nuevos tipos de CFE de venta por cuenta ajena. 
+Versión 05-1-26/01/2014 
+ En 3-Formato del Reporte- B) Resumen- Tabla de Montos por fecha de comprobante y por sucursal: 
+o se modifica descripción. 
+o se aumenta cantidad de repeticiones. 
+Versión 05-25/11/2013 
+Versión 04-02/10/2012 
+ Exposición: se agrupan CFE con sus notas de corrección en una misma columna 
+ Se incorporan nuevos tipos de CFE de exportación. 
+ A-C4: se incorpora validación. 
+ B-C26: se incorpora información a la descripción del campo, se modifica validación y obligatoriedad del campo. 
+ B-C28: se incorpora información a la descripción del campo y se modifica validación. 
+ B-C29: se incorpora información a la descripción del campo y se modifica validación. 
+ B-C30: se incorpora información a la descripción del campo y se modifica validación. 
+Doc: 
+Impresión: 30/6/2023 11:39:00 
+Formato_Reporte_CFE_v13 2.doc 
+Página 4 de 23
+
+=== PAGE 5 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+Versión 03-21/09/2012 
+ B-C25: se modifica validación. 
+Versión 02-07/09/2012 
+ A-C4. se agrega campo ID emisor. 
+ A-C7: se modifica descripción y validación del campo. 
+ En 3-B Resumen se incorpora información. 
+ B-C26 se modifica descripción. 
+ B-C27: se incorpora información a la descripción del campo. 
+ B-C28: se modifica descripción del campo. 
+ B-C29: se modifica descripción del campo. 
+ B-C30: se agrega campo: cantidad de documentos (CFC) emitidos en el período. 
+Versión 01-01/07/2012 
+ 
+Idem documento Formato_Reporte_CFE_Preliminar_v05 
+Preliminar 
+Versión 05-25/01/2012 
+Preliminar 
+Versión 04-xx/12/2011 
+ 1- Contenido del archivo: se incorpora información. 
+ Obligatoriedad de Zonas de Reporte: se modifica obligatoriedad de la zona Resumen 
+ A-C3: se modifica descripción y tipo de campo. 
+ A-C6: se modifica tipo de campo 
+ A-C7: se agrega campo: cantidad de comprobantes. 
+ Zona B: se incorpora descripción 
+ B-C12 a B-C29: se modifica obligatoriedad y validación. 
+ B-C10 se modifica tipo de campo 
+ B-C12 al B-C21 y B-C25: se modifica descripción y tipo de campo. 
+ B-C24: se modifica tipo de campo. 
+ B-C27: se modifica nombre. 
+ B-C42 y B-C45: se modifica descripción y validación de campo. 
+ B-C43 y B-C46: se modifica descripción y validación de campo. 
+ Se modifican los campos con tipo NUM18 a NUM17 
+ Se modifica en campos fecha o fecha y hora, el Tipo 
+ Se modifica en campos tasa, el Tipo. 
+ Anexo: se incorpora Tabla de tipo de comprobante. 
+Preliminar 
+Versión 03-27/07/2011 
+ B-C22 y B-C23: se completa validación. 
+ Se modifica nombre y descripción del campo B-C26. 
+ Se modifica nombre, descripción y validación del campo B-C29. 
+Doc: 
+Impresión: 30/6/2023 11:39:00 
+Formato_Reporte_CFE_v13 2.doc 
+Página 5 de 23
+
+=== PAGE 6 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+Preliminar 
+Versión 02-15/07/2011 
+ Se modifica Nombre y descripción del campo A-C3 y se elimina A-C4: “Fecha Final del Resumen”. 
+ Se incorpora una tabla por fecha de comprobante y por sucursal para discriminar los montos por dichos conceptos. 
+ La cantidad de documentos emitidos y anulados y el rango de los mismos es global, no se discrimina por fecha de operación ni por 
+Preliminar 
+Versión 01-19/05/2011 
+sucursal. 
+Doc: 
+Impresión: 30/6/2023 11:39:00 
+Formato_Reporte_CFE_v13 2.doc 
+Página 6 de 23
+
+=== PAGE 7 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+REPORTE DIARIO DE INFORMACIÓN DE LOS CFE UTILIZADOS 
+1. Introducción 
+A) Nombre del archivo 
+El nombre sugerido del archivo es Rep_RUC_Período (AAAAMMDD)_secuencia(xx).xml donde “Período” corresponde a la “Fecha del Resumen”, donde la secuencia 
+indica la última versión del Reporte enviado. 
+B) Contenido del Archivo 
+Este reporte contiene información por tipo de Comprobante Fiscal Electrónico (CFE) certificado así como por tipo de Comprobante Fiscal de Contingencia (CFC). 
+La información debe ser expresada en pesos uruguayos. 
+A partir del 01 de noviembre de 2022, los importes correspondientes a comprobantes que no fueron emitidos en moneda nacional se deben incluir convertidos al tipo de 
+cambio fiscal, sin importar la fecha resumen del Reporte Diario enviado a DGI. 
+A los efectos de su conversión al tipo de cambio fiscal debe utilizarse la cotización que brinde el Banco Central del Uruguay, con todos los dígitos decimales. La moneda 
+extranjera se debe valuar a la cotización interbancaria tipo comprador billete al cierre del día anterior al de la operación, teniendo en cuenta que: 
+ 
+ 
+ 
+cuando la moneda de la operación no se cotice, se calculará su valor a moneda nacional de acuerdo al arbitraje correspondiente, 
+si no existiera cotización a dicha fecha, se tomará la del último día hábil anterior, 
+si no existiera ninguna cotización para el “Tipo moneda transacción” informada en el comprobante, se tomará el “Tipo de cambio” que surge en el propio CFE 
+(campos A-C110 y A-C111 respectivamente del documento de Formato de CFE). 
+Casos particulares: 
+ e-Resguardos: para su conversión a moneda nacional, debe utilizarse el tipo de cambio fiscal correspondiente a la operación, que surge en los respectivos 
+comprobantes (campo A-C111 del documento de Formato de CFE). 
+Doc: 
+Impresión: 30/6/2023 11:39:00 
+Formato_Reporte_CFE_v13 2.doc 
+Página 7 de 23
+
+=== PAGE 8 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+ Notas de corrección: Solamente a los efectos de informar las notas de corrección en el Reporte Diario y teniendo en cuenta que el tipo de cambio fiscal puede no 
+ser el correspondiente a la fecha comprobante del CFE, para su conversión a moneda nacional debe utilizarse el tipo de cambio que surge en los respectivos 
+comprobantes de corrección (campo A-C111 del documento de Formato de CFE). 
+ Comprobantes emitidos en UI o UR: Para su conversión a moneda nacional, debe utilizarse el tipo de cambio que surge en dichos comprobantes (campo A-C111 
+del documento de Formato de CFE). 
+ Para la conversión a moneda nacional de los comprobantes emitidos en moneda extranjera con “Fecha Comprobante” (campo A-C5 del documento de Formato 
+de CFE) mayor a “Fecha y hora de la firma digital del envío” (campo A-C6 del documento de Formato de Reporte), debe utilizarse el tipo de cambio que surge en 
+los respectivos comprobantes (campo A-C111 del documento de Formato de CFE). Cuando corresponda, el emisor reliquidará el reporte posteriormente. 
+2. Zonas del Reporte 
+A) Carátula: Es la zona donde se informa los datos del emisor, la fecha del Reporte y el total de CFE y CFC informados. 
+B) Resumen: Es la zona donde se informa para cada tipo de comprobante: 
+ Los montos totales de los conceptos detallados correspondientes a los CFE y CFC emitidos en la fecha del reporte, discriminados por tipo de comprobante, 
+fecha de comprobante, sucursal e indicador Pagos por cuenta de terceros. 
+ El consumo diario total de los CFE emitidos y anulados. No se incluye el consumo de CFC. 
+C) Firma Electrónica Avanzada: firma electrónica avanzada del emisor sobre la totalidad de los datos del reporte. 
+ZONAS DEL REPORTE 
+OBLIGATORIEDAD DE LA ZONA 
+Carátula 
+Resumen 
+Firma 
+1 
+2 
+1 
+Doc: 
+Impresión: 30/6/2023 11:39:00 
+Formato_Reporte_CFE_v13 2.doc 
+Página 8 de 23
+
+=== PAGE 9 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+Códigos de obligatoriedad: 
+0 - No corresponde: significa que el dato no debe ir. 
+1 - Dato obligatorio: el dato debe estar siempre 
+2 - Dato condicional: el dato no es obligatorio en todos los resúmenes, pero pasa a ser obligatorio en determinados casos si se cumple una cierta condición 
+Doc: 
+Impresión: 30/6/2023 11:39:00 
+Formato_Reporte_CFE_v13 2.doc 
+Página 9 de 23
+
+=== PAGE 10 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+3. Formato del Reporte 
+A continuación se especifica el contenido de cada zona, el formato de cada campo que la compone y el código de obligatoriedad del mismo: 
+A) Carátula 
+ZONAS del 
+CFE 
+e-Ticket y 
+NC-ND de 
+e-Tick 
+101-102-103 
+e-Factura y NC-ND 
+de e-Factura 
+111-112-113 
+e-
+Remito 
+181 
+e-
+Resguardo 
+182 
+e-Factura de exp y 
+NC-ND de e-Fac.Exp 
+121-122-123 
+e-Remito de 
+exportación 
+124 
+e.Tick.Cta ajena y 
+NC.ND de e-TicCtaAj 
+131-132-133 
+e-Fac.Cta ajena y NC-
+ND de e-FacCtaAj 
+141-142-143123 
+e.Bol.Entr 
+151 
+NCND e-
+Bol 
+Entr. 
+152-153 
+A Carátula 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+CAMPOS 
+OBSERVACIONES 
+TIPO 
+VALIDACIÓN 
+1 VERSION 
+Versión del formato utilizado 
+ALFA 3 Valor: x.x 
+2 RUC Emisor 
+Corresponde al RUC del 
+emisor electrónico. 
+NUM 
+12 
+Dígito 
+verificador 
+OBLIGATORIEDAD 
+e-Tick, 
+NC.ND 
+de e-T 
+y 
+Cont 
+e.Fact, 
+NC.ND 
+de 
+e.Fac 
+y 
+Cont 
+e-
+Rem 
+y 
+Cont 
+e-
+Res 
+y 
+Cont 
+e-
+FactExp, 
+NC-ND de 
+e-Fact 
+Exp 
+y 
+Cont 
+e-
+Remito 
+de exp 
+y 
+Cont 
+e-
+Tick.Cta.Aj, 
+NC-ND 
+de e-
+Tick.Cta.Aj 
+y Cont 
+e-
+Fac.Cta.Aj 
+y NC-ND 
+de e-
+Fac.Cta.Aj 
+y Cont 
+e-Bol 
+Entrada 
+y Cont 
+NC.ND 
+de e-
+Bol.Entr 
+y Cont 
+Doc: 
+Impresión: 30/6/2023 11:39:00 
+Formato_Reporte_CFE_v13 2.doc 
+Página 10 de 23
+
+=== PAGE 11 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+OBLIGATORIEDAD 
+e-Tick, 
+NC.ND 
+de e-T 
+y 
+Cont 
+e.Fact, 
+NC.ND 
+de 
+e.Fac 
+y 
+Cont 
+e-
+Rem 
+y 
+Cont 
+e-
+Res 
+y 
+Cont 
+e-
+FactExp, 
+NC-ND de 
+e-Fact 
+Exp 
+y 
+Cont 
+e-
+Remito 
+de exp 
+y 
+Cont 
+e-
+Tick.Cta.Aj, 
+NC-ND 
+de e-
+Tick.Cta.Aj 
+y Cont 
+e-
+Fac.Cta.Aj 
+y NC-ND 
+de e-
+Fac.Cta.Aj 
+y Cont 
+e-Bol 
+Entrada 
+y Cont 
+NC.ND 
+de e-
+Bol.Entr 
+y Cont 
+CAMPOS 
+OBSERVACIONES 
+TIPO 
+VALIDACIÓN 
+3 Fecha del 
+Resumen 
+4 
+ID emisor 
+Fecha a la cual corresponde el 
+Resumen. Es la fecha que se 
+genera el CFE, o sea la 
+indicada en la Zona H: “Fecha 
+y hora de firma electrónica 
+avanzada del comprobante” 
+del Formato de CFE. 
+Número asignado por el 
+emisor al envío 
+5 Secuencia de 
+envío 
+El primer envío del día trae el 
+numero1. Si se desea corregir 
+información se debe enviar el 
+archivo completo con 
+secuencia de envío 
+=secuencia anterior +1. 
+6 Fecha y hora 
+de la firma 
+digital del envío 
+FECHA AAAA-MM-DD; 
+Fecha válida 
+entre 2011-10-
+01 y 2050-12-31 
+- Sin validación. 
+- No es 
+obligatorio 
+completar este 
+campo 
+NUM 
+10 
+NUM 2 
+FECHA 
+HORA 
+AAAA-MM-DD 
+HH:MM:SS; 
+Fecha válida 
+entre 2011-10-
+01 y 2050-12-31 
+Doc: 
+Impresión: 30/6/2023 11:39:00 
+Formato_Reporte_CFE_v13 2.doc 
+Página 11 de 23
+
+=== PAGE 12 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+OBLIGATORIEDAD 
+e-Tick, 
+NC.ND 
+de e-T 
+y 
+Cont 
+e.Fact, 
+NC.ND 
+de 
+e.Fac 
+y 
+Cont 
+e-
+Rem 
+y 
+Cont 
+e-
+Res 
+y 
+Cont 
+e-
+FactExp, 
+NC-ND de 
+e-Fact 
+Exp 
+y 
+Cont 
+e-
+Remito 
+de exp 
+y 
+Cont 
+e-
+Tick.Cta.Aj, 
+NC-ND 
+de e-
+Tick.Cta.Aj 
+y Cont 
+e-
+Fac.Cta.Aj 
+y NC-ND 
+de e-
+Fac.Cta.Aj 
+y Cont 
+e-Bol 
+Entrada 
+y Cont 
+NC.ND 
+de e-
+Bol.Entr 
+y Cont 
+CAMPOS 
+OBSERVACIONES 
+TIPO 
+VALIDACIÓN 
+∑ C26 + ∑ C30 
+ocurrencias de 
+la zona 
+Resumen 
+7 Cantidad de 
+comprobantes 
+Cantidad total de todos los 
+tipos de CFE utilizados: 
+ CFE emitidos (recibidos 
+NUM 
+10 
+por DGI más los anulados 
+por rechazos de DGI), 
+más 
+ CFEs anulados por la 
+empresa, 
+más 
+ Todos los tipos de CFC 
+emitidos y no observados. 
+Si C7=0, puede omitirse la 
+Zona B Resumen. 
+Doc: 
+Impresión: 30/6/2023 11:39:00 
+Formato_Reporte_CFE_v13 2.doc 
+Página 12 de 23
+
+=== PAGE 13 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+B) RESUMEN 
+Si “Cantidad de comprobantes” (A-C7) en el período informado (A-C3) es cero, esta zona puede omitirse. 
+Si A-C7>0, debe existir por lo menos 1 ocurrencia de esta Zona. 
+La zona se repite para cada tipo de CFE utilizados y CFC emitidos en el periodo: de 1 a 1000 ocurrencias. 
+Las sucursales que no utilizaron ningún comprobante pueden no incluirse en el reporte. 
+ZONAS del 
+CFE 
+e-Ticket y 
+NC-ND de 
+e-Tick 
+101-102-103 
+e-Factura y NC-ND 
+de e-Factura 
+111-112-113 
+e-
+Remito 
+181 
+e-
+Resguardo 
+182 
+e-Factura de exp y 
+NC-ND de e-Fac.Exp 
+121-122-123 
+e-Remito de 
+exportación 
+124 
+e.Tick.Cta ajena y 
+NC.ND de e-TicCtaAj 
+131-132-133 
+e-Fac.Cta ajena y NC-
+ND de e-FacCtaAj 
+141-142-143123 
+e.Bol.Entr 
+151 
+NCND e-
+Bol 
+Entr. 
+152-153 
+B.- Resumen 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+CAMPOS 
+OBSERVACIONES 
+TIPO 
+VALIDACIÓN 
+1 
+Tipo de comprobante Indica el CFE o 
+comprobante de 
+contingencia informado. 
+NUM 3 
+Valida con tabla 
+de códigos de 
+los CFE y de los 
+comprobantes de 
+contingencia 
+TABLA de Montos por Fecha de Comprobante, por Sucursal y por 
+Indicador Pagos por cuenta de terceros (1000 repeticiones agrupadas por 
+fecha de comprobante, sucursal e indicador de Pagos por cuenta de 
+terceros no repetidas). 
+Obligatoria si C29+C30 > 0 
+OBLIGATORIEDAD 
+e-Tick, 
+NC.ND 
+y 
+Cont 
+e.Fact 
+NC.ND 
+y 
+Cont 
+e-Rem 
+y 
+Cont 
+e-Res 
+y 
+Cont 
+e-
+F.Exp, 
+NC-ND 
+y 
+Cont 
+e-Rem 
+de exp 
+ y 
+Cont 
+e-Tic 
+Cta.Aj, 
+NC-ND 
+y 
+Cont 
+e-Fac 
+Cta.Aj 
+NCND 
+Y 
+Cont 
+e- 
+BolEnt 
+y 
+Cont 
+NCND 
+e-Bol 
+Entr 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+Doc: 
+Impresión: 30/6/2023 11:39:00 
+Formato_Reporte_CFE_v13 2.doc 
+Página 13 de 23
+
+=== PAGE 14 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+OBLIGATORIEDAD 
+e-Tick, 
+NC.ND 
+y 
+Cont 
+e.Fact 
+NC.ND 
+y 
+Cont 
+e-Rem 
+y 
+Cont 
+e-Res 
+y 
+Cont 
+e-
+F.Exp, 
+NC-ND 
+y 
+Cont 
+e-Rem 
+de exp 
+ y 
+Cont 
+e-Tic 
+Cta.Aj, 
+NC-ND 
+y 
+Cont 
+e-Fac 
+Cta.Aj 
+NCND 
+Y 
+Cont 
+e- 
+BolEnt 
+y 
+Cont 
+NCND 
+e-Bol 
+Entr 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+1 
+2 
+2 
+0 
+0 
+2 
+0 
+2 
+2 
+0 
+0 
+CAMPOS 
+OBSERVACIONES 
+TIPO 
+VALIDACIÓN 
+10 Fecha de 
+comprobante 
+Fecha de Comprobante: 
+Campo A-C5 de Formato 
+de los CFE 
+FECHA 
+11 Código Casa 
+Principal /Sucursal 
+11.1 
+Indicador Pagos por 
+cuenta de terceros 
+12 Total Monto – No 
+gravado 
+Código numérico 
+entregado por la DGI, 
+que identifica a la casa 
+principal o a la sucursal 
+desde donde se realiza 
+la operación. Campo A-
+C47 de Formato de los 
+CFE 
+Montos del tipo de CFE o 
+de contingencia 
+informado, corresponde 
+a un reintegro de gastos: 
+Campo A-C19=1 de 
+Formato de los CFE 
+Importe del concepto en 
+los comprobantes 
+emitidos informados por 
+fecha y sucursal. 
+NUM 4 
+NUM 1 
+NUM 17 
+15 enteros 
+y 2 
+decimales 
+AAAA-MM-DD 
+- Fecha válida 
+entre 01/10/2011 
+a 31/12/2050 
+C10 debe ser ≤ 
+fecha del 
+servidor de DGI 
++ 60 días. 
+Valida con 
+código registrado 
+en la DGI, 
+asociado al RUC 
+emisor en la 
+fecha informada 
+en B-10:“Fecha 
+de comprobante” 
+1- Pagos por 
+cuenta de 
+terceros 
+C12 ≥ 0 
+2 
+2 
+0 
+0 
+0 
+0 
+2 
+2 
+2 
+2 
+Doc: 
+Impresión: 30/6/2023 11:39:00 
+Formato_Reporte_CFE_v13 2.doc 
+Página 14 de 23
+
+=== PAGE 15 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+OBSERVACIONES 
+TIPO 
+VALIDACIÓN 
+13 Total Monto - 
+Exportación y 
+asimiladas 
+14 Total Monto – 
+Impuesto percibido 
+15 Total Monto – IVA en 
+suspenso 
+16 Total Monto – IVA 
+Tasa mínima 
+17 Total Monto – IVA 
+Tasa básica 
+18 Total Monto – IVA 
+Otra Tasa/IVA sobre 
+fictos 
+19 Monto IVA – Tasa 
+Mínima 
+Importe del concepto en 
+los comprobantes 
+emitidos informados por 
+fecha y sucursal. 
+Importe del concepto en 
+los comprobantes 
+emitidos informados por 
+fecha y sucursal. 
+Importe del concepto en 
+los comprobantes 
+emitidos informados por 
+fecha y sucursal. 
+Importe del concepto en 
+los comprobantes 
+emitidos informados por 
+fecha y sucursal. 
+Importe del concepto en 
+los comprobantes 
+emitidos informados por 
+fecha y sucursal. 
+Importe del concepto en 
+los comprobantes 
+emitidos informados por 
+fecha y sucursal. 
+Importe del concepto en 
+los comprobantes 
+emitidos informados por 
+fecha y sucursal. 
+NUM 17 
+15 enteros 
+y 2 
+decimales 
+NUM 17 
+15 enteros 
+y 2 
+decimales 
+NUM 17 
+15 enteros 
+y 2 
+decimales 
+NUM 17 
+15 enteros 
+y 2 
+decimales 
+NUM 17 
+15 enteros 
+y 2 
+decimales 
+NUM 17 
+15 enteros 
+y 2 
+decimales 
+NUM 17 
+15 enteros 
+y 2 
+decimales 
+Doc: 
+Impresión: 30/6/2023 11:39:00 
+Formato_Reporte_CFE_v13 2.doc 
+OBLIGATORIEDAD 
+e-Tick, 
+NC.ND 
+y 
+Cont 
+e.Fact 
+NC.ND 
+y 
+Cont 
+e-Rem 
+y 
+Cont 
+e-Res 
+y 
+Cont 
+e-
+F.Exp, 
+NC-ND 
+y 
+Cont 
+e-Rem 
+de exp 
+ y 
+Cont 
+e-Tic 
+Cta.Aj, 
+NC-ND 
+y 
+Cont 
+e-Fac 
+Cta.Aj 
+NCND 
+Y 
+Cont 
+e- 
+BolEnt 
+y 
+Cont 
+NCND 
+e-Bol 
+Entr 
+2 
+2 
+0 
+0 
+1 
+1 
+2 
+2 
+0 
+0 
+2 
+2 
+0 
+0 
+0 
+0 
+2 
+2 
+0 
+0 
+Si tipo de 
+CFE=124/224: 
+sin validación, 
+sino.C13≥ 0 
+C14 ≥ 0 
+C15 ≥ 0 
+2 
+2 
+0 
+0 
+0 
+0 
+2 
+2 
+2 
+2 
+C16 ≥ 0 
+2 
+2 
+0 
+0 
+0 
+0 
+2 
+2 
+0 
+0 
+C17 ≥ 0 
+2 
+2 
+0 
+0 
+0 
+0 
+2 
+2 
+0 
+0 
+C18 ≥ 0 
+Si C21>0, C18 > 
+0 
+C19 = C16 *C22 
+≥ 0 
+2 
+2 
+0 
+0 
+0 
+0 
+2 
+2 
+0 
+0 
+2 
+2 
+0 
+0 
+0 
+0 
+2 
+2 
+0 
+0 
+Página 15 de 23
+
+=== PAGE 16 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+OBSERVACIONES 
+TIPO 
+VALIDACIÓN 
+20 Monto IVA – Tasa 
+Básica 
+21 Monto IVA – Otra 
+Tasa/IVA sobre fictos 
+22 Tasa Mínima IVA 
+23 Tasa Básica IVA 
+Importe del concepto en 
+los comprobantes 
+emitidos informados por 
+fecha y sucursal. 
+Importe del concepto en 
+los comprobantes 
+emitidos informados por 
+fecha y sucursal. 
+Tasa mínima vigente en 
+la fecha del comprobante 
+en %. 
+NUM 17 
+15 enteros 
+y 2 
+decimales 
+NUM 17 
+15 enteros 
+y 2 
+decimales 
+NUM 6 
+3 enteros y 
+3decimales 
+Tasa básica vigente en la 
+fecha del comprobante 
+en %. 
+NUM 6 
+3 enteros y 
+3decimales 
+24 Total Monto Total 
+Suma de totales 
+NUM 17 
+15 enteros 
+y 2 
+decimales 
+25 Total Monto 
+Retenido/Percibido 
+Importe del concepto en 
+los comprobantes 
+emitidos informados por 
+fecha y sucursal. 
+NUM 17 
+15 enteros 
+y 2 
+decimales 
+C20 = C17 *C23 
+≥ 0 
+C21 ≥ 0 
+Si C18>0, C21 > 
+0 
+Valida con tabla. 
+Disponible en 
+“Formato de los 
+CFE” 
+Valida con tabla. 
+Disponible en 
+“Formato de los 
+CFE” 
+∑ C12 a C21 
+Si tipo de 
+CFE=124/224: 
+sin validación, 
+sino.C24 ≥ 0 
+Sin validación 
+OBLIGATORIEDAD 
+e-Tick, 
+NC.ND 
+y 
+Cont 
+e.Fact 
+NC.ND 
+y 
+Cont 
+e-Rem 
+y 
+Cont 
+e-Res 
+y 
+Cont 
+e-
+F.Exp, 
+NC-ND 
+y 
+Cont 
+e-Rem 
+de exp 
+ y 
+Cont 
+e-Tic 
+Cta.Aj, 
+NC-ND 
+y 
+Cont 
+e-Fac 
+Cta.Aj 
+NCND 
+Y 
+Cont 
+e- 
+BolEnt 
+y 
+Cont 
+NCND 
+e-Bol 
+Entr 
+2 
+2 
+0 
+0 
+0 
+0 
+2 
+2 
+0 
+0 
+2 
+2 
+0 
+0 
+0 
+0 
+2 
+2 
+0 
+0 
+2 
+2 
+0 
+0 
+0 
+0 
+2 
+2 
+0 
+0 
+2 
+2 
+0 
+0 
+0 
+0 
+2 
+2 
+0 
+0 
+1 
+1 
+0 
+0 
+1 
+1 
+1 
+1 
+1 
+1 
+2 
+2 
+0 
+2 
+0 
+0 
+2 
+2 
+2 
+2 
+Doc: 
+Impresión: 30/6/2023 11:39:00 
+Formato_Reporte_CFE_v13 2.doc 
+Página 16 de 23
+
+=== PAGE 17 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+OBSERVACIONES 
+TIPO 
+VALIDACIÓN 
+OBLIGATORIEDAD 
+e-Tick, 
+NC.ND 
+y 
+Cont 
+e.Fact 
+NC.ND 
+y 
+Cont 
+e-Rem 
+y 
+Cont 
+e-Res 
+y 
+Cont 
+e-
+F.Exp, 
+NC-ND 
+y 
+Cont 
+e-Rem 
+de exp 
+ y 
+Cont 
+e-Tic 
+Cta.Aj, 
+NC-ND 
+y 
+Cont 
+e-Fac 
+Cta.Aj 
+NCND 
+Y 
+Cont 
+e- 
+BolEnt 
+y 
+Cont 
+NCND 
+e-Bol 
+Entr 
+25.1 Total Créditos 
+Fiscales 
+Fin TABLA 
+26 Cantidad de CFE 
+utilizados en el 
+periodo 
+Importe del concepto en 
+los comprobantes 
+emitidos informados por 
+fecha y sucursal 
+NUM 17 
+15 enteros 
+y 2 
+decimales 
+Sin validación 
+2 
+2 
+0 
+2 
+0 
+0 
+2 
+2 
+0 
+0 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+NUM 10 
+Cantidad de CFE 
+emitidos (recibidos por 
+DGI más los anulados 
+por rechazos de DGI), 
+más los anulados por la 
+empresa por tipo de 
+comprobante. 
+Si no hay comprobantes 
+utilizados se debe 
+registrar 0. 
+No corresponde informar 
+los CFC utilizados. 
+ Si C1=CFE: 
+o C26 ≥ 0 
+o ∑ (C43–
+C42+1) de 
+repeticiones. 
+ Si C1=CFC 
+no es 
+obligatorio 
+completar 
+este campo. 
+Si existe, 
+debe ser 0. 
+Doc: 
+Impresión: 30/6/2023 11:39:00 
+Formato_Reporte_CFE_v13 2.doc 
+Página 17 de 23
+
+=== PAGE 18 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+OBSERVACIONES 
+TIPO 
+VALIDACIÓN 
+OBLIGATORIEDAD 
+e-Tick, 
+NC.ND 
+y 
+Cont 
+e.Fact 
+NC.ND 
+y 
+Cont 
+e-Rem 
+y 
+Cont 
+e-Res 
+y 
+Cont 
+e-
+F.Exp, 
+NC-ND 
+y 
+Cont 
+e-Rem 
+de exp 
+ y 
+Cont 
+e-Tic 
+Cta.Aj, 
+NC-ND 
+y 
+Cont 
+e-Fac 
+Cta.Aj 
+NCND 
+Y 
+Cont 
+e- 
+BolEnt 
+y 
+Cont 
+NCND 
+e-Bol 
+Entr 
+NUM 10 
+C27 ≥ 0 
+2 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+0 
+27 Cantidad de CFE y 
+CFC cuyos montos 
+sean mayores al tope 
+establecido en UI 
+excluido el IVA, 
+emitidos en el 
+periodo 
+Cantidad de CFE 
+emitidos y no rechazados 
+por DGI y de CFC 
+emitidos y no observados 
+por DGI por tipo de 
+comprobante, con 
+montos totales excluido 
+el IVA mayores al tope 
+establecido, los que 
+deben enviarse a la DGI 
+uno a uno en 
+oportunidad de su 
+emisión. 
+Si no hay documentos 
+emitidos se debe 
+registrar 0 
+Doc: 
+Impresión: 30/6/2023 11:39:00 
+Formato_Reporte_CFE_v13 2.doc 
+Página 18 de 23
+
+=== PAGE 19 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+OBSERVACIONES 
+TIPO 
+VALIDACIÓN 
+28 Cantidad de CFE 
+anulados en el 
+periodo 
+29 Cantidad de CFE 
+emitidos en el 
+periodo 
+NUM 10 
+NUM 10 
+Cantidad de CFE 
+anulados por tipo de 
+comprobante. Refiere a 
+comprobantes emitidos 
+anulados por rechazos 
+de DGI y aquellos 
+anulados por la empresa, 
+y no a los emitidos que 
+se anulan con una Nota 
+de Crédito. 
+Si no hay comprobantes 
+anulados se debe 
+registrar 0. 
+No corresponde informar 
+la cantidad de CFC 
+anulados en este campo. 
+Cantidad de CFE 
+emitidos y no rechazados 
+por DGI, por tipo de 
+comprobante. 
+Si no hay comprobantes 
+emitidos se debe 
+registrar 0. 
+No corresponde informar 
+la cantidad de CFC 
+emitidos en este campo. 
+ Si C1=CFE: 
+o C28 ≥ 0 
+o ∑ (C46–
+C45+1) de 
+repeticiones. 
+ Si C1=CFC 
+no es 
+obligatorio 
+completar 
+este campo. 
+Si existe, 
+debe ser 0. 
+ Si C1= CFE: 
+o C29 ≥ 0 
+o C26-C28 
+ Si C1=CFC: 
+no es 
+obligatorio 
+completar 
+este campo. 
+Si existe, 
+debe ser 0. 
+OBLIGATORIEDAD 
+e-Tick, 
+NC.ND 
+y 
+Cont 
+e.Fact 
+NC.ND 
+y 
+Cont 
+e-Rem 
+y 
+Cont 
+e-Res 
+y 
+Cont 
+e-
+F.Exp, 
+NC-ND 
+y 
+Cont 
+e-Rem 
+de exp 
+ y 
+Cont 
+e-Tic 
+Cta.Aj, 
+NC-ND 
+y 
+Cont 
+e-Fac 
+Cta.Aj 
+NCND 
+Y 
+Cont 
+e- 
+BolEnt 
+y 
+Cont 
+NCND 
+e-Bol 
+Entr 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+Doc: 
+Impresión: 30/6/2023 11:39:00 
+Formato_Reporte_CFE_v13 2.doc 
+Página 19 de 23
+
+=== PAGE 20 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+OBSERVACIONES 
+TIPO 
+VALIDACIÓN 
+30 Cantidad de CFC 
+emitidos en el 
+periodo 
+Cantidad de CFC 
+emitidos y no 
+observados, por tipo de 
+comprobante. Si no hay 
+documentos emitidos se 
+debe registrar 0. 
+No corresponde informar 
+la cantidad de CFE 
+emitidos en este campo. 
+Tabla de rango de documentos Utilizados de 
+CFE 
+41 Serie utilizada 
+42 Numero utilizado 
+Inicial (desde) 
+43 Numero utilizado 
+final (hasta) 
+No hay cambio de serie 
+en un rango. Una serie 
+distinta implica un nuevo 
+rango. 
+Número inicial del rango 
+de documentos utilizados 
+en el periodo. 
+Número utilizado final del 
+rango debe ser igual o 
+mayor al número 
+utilizado inicial. 
+Tabla de documentos Anulados de CFE: 
+44 Serie anulados 
+No hay cambio de serie 
+en un rango. Una serie 
+distinta implica un nuevo 
+rango. 
+Doc: 
+Impresión: 30/6/2023 11:39:00 
+Formato_Reporte_CFE_v13 2.doc 
+NUM 10 
+ Si C1= CFC: 
+C30 ≥ 0 
+ Si C1= CFE: 
+no es 
+obligatorio 
+completar 
+este campo. 
+Si existe, 
+debe ser 0. 
+Hasta “50.000 “ repeticiones 
+ALFA 2 
+A ≤ C41 ≤ ZZ 
+NUM 7 
+1≤ C42≤ 
+9999999 
+NUM 7 
+C43 ≥ C42 
+1≤ C43 ≤ 9999 
+999 
+Hasta “50.000” repeticiones 
+ALFA 2 
+A ≤ C44 ≤ ZZ 
+OBLIGATORIEDAD 
+e-Tick, 
+NC.ND 
+y 
+Cont 
+e.Fact 
+NC.ND 
+y 
+Cont 
+e-Rem 
+y 
+Cont 
+e-Res 
+y 
+Cont 
+e-
+F.Exp, 
+NC-ND 
+y 
+Cont 
+e-Rem 
+de exp 
+ y 
+Cont 
+e-Tic 
+Cta.Aj, 
+NC-ND 
+y 
+Cont 
+e-Fac 
+Cta.Aj 
+NCND 
+Y 
+Cont 
+e- 
+BolEnt 
+y 
+Cont 
+NCND 
+e-Bol 
+Entr 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+2 
+(No se incluyen los CFC) 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+1 
+Si 
+C26>0 
+(No se incluyen los CFC) 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+Página 20 de 23
+
+=== PAGE 21 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+OBSERVACIONES 
+TIPO 
+VALIDACIÓN 
+OBLIGATORIEDAD 
+e-Tick, 
+NC.ND 
+y 
+Cont 
+e.Fact 
+NC.ND 
+y 
+Cont 
+e-Rem 
+y 
+Cont 
+e-Res 
+y 
+Cont 
+e-
+F.Exp, 
+NC-ND 
+y 
+Cont 
+e-Rem 
+de exp 
+ y 
+Cont 
+e-Tic 
+Cta.Aj, 
+NC-ND 
+y 
+Cont 
+e-Fac 
+Cta.Aj 
+NCND 
+Y 
+Cont 
+e- 
+BolEnt 
+y 
+Cont 
+NCND 
+e-Bol 
+Entr 
+45 Documento 
+anulado Inicial 
+(desde) 
+46 Documento 
+anulado Final 
+(hasta) 
+Número inicial del rango 
+de documentos anulados 
+en el periodo. 
+Número final del rango 
+de documentos anulados 
+en el periodo. Debe ser 
+igual o mayor al número 
+anulado inicial del rango. 
+C) Firma Electrónica Avanzada 
+NUM 7 
+1≤ C45 ≤ 
+9999999 
+NUM 7 
+C46 ≥ C45 
+1≤ C46 ≤ 
+9999999 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+1 
+Si 
+C28>0 
+CAMPOS 
+OBSERVACIONES 
+TIPO 
+VALIDACIÓN 
+1 Certificado Electrónico 
+2 Firma Electrónica Avanzada 
+Información pública del Certificado Electrónico, necesaria 
+para validar la firma. 
+Firma electrónica avanzada sobre todo el reporte. 
+BINARIO Certificado vigente, no revocado y habilitado para 
+facturación electrónica al momento de generar la firma. 
+Firma electrónica avanzada según el estándar XML 
+Digital ignatura. 
+Doc: 
+Impresión: 30/6/2023 11:39:00 
+Formato_Reporte_CFE_v13 2.doc 
+Página 21 de 23
+
+=== PAGE 22 ===
+[P1] ANEXO 1 – TIPO DE COMPROBANTE 
+COMPROBANTE FISCAL ELECTRÓNICO 
+TIPO DE COMPROBANTE 
+CFE 
+e-Ticket 
+e-Factura 
+CÓDIGO 
+101 
+102 Nota de Crédito de e-Ticket 
+103 Nota de Débito de e-Ticket 
+111 
+112 Nota de Crédito de e-Factura 
+113 Nota de Débito de e-Factura 
+121 
+e-Factura Exportación 
+122 Nota de Crédito de e-Factura Exportación 
+123 Nota de Débito de e-Factura Exportación 
+124 
+131 
+132 Nota de Crédito de e-Ticket Venta por Cuenta Ajena 
+133 Nota de Débito de e-Ticket Venta por Cuenta Ajena 
+141 
+142 Nota de Crédito de e-Factura Venta por Cuenta Ajena 
+143 Nota de Débito de e-Factura Venta por Cuenta Ajena 
+151 
+152 Nota de Crédito de e-Boleta de entrada 
+153 Nota de Débito de e-Boleta de entrada 
+181 
+182 
+e-Remito de Exportación 
+e-Ticket Venta por Cuenta Ajena 
+e-Factura Venta por Cuenta Ajena 
+e-Remito 
+e-Resguardo 
+e-Boleta de entrada 
+CFC 
+e-Ticket Contingencia 
+e-Factura Contingencia 
+CÓDIGO 
+201 
+202 Nota de Crédito de e-Ticket Contingencia 
+203 Nota de Débito de e-Ticket Contingencia 
+211 
+212 Nota de Crédito de e-Factura Contingencia 
+213 Nota de Débito de e-Factura Contingencia 
+221 
+e-Factura Exportación Contingencia 
+222 Nota de Crédito de e-Factura Exportación Contingencia 
+223 Nota de Débito de e-Factura Exportación Contingencia 
+224 
+231 
+232 Nota de Crédito de e-Ticket Venta por Cuenta Ajena Contingencia 
+233 Nota de Débito de e-Ticket Venta por Cuenta Ajena Contingencia 
+241 
+242 Nota de Crédito de e-Factura Venta por Cuenta Ajena Contingencia 
+243 Nota de Débito de e-Factura Venta por Cuenta Ajena Contingencia 
+251 
+252 Nota de Crédito de e-Boleta de entrada Contingencia 
+253 Nota de Débito de e-Boleta de entrada Contingencia 
+281 
+282 
+e-Remito de Exportación Contingencia 
+e-Ticket Venta por Cuenta Ajena Contingencia 
+e-Remito Contingencia 
+e-Resguardo Contingencia 
+e-Factura Venta por Cuenta Ajena Contingencia 
+e-Boleta de entrada Contingencia 
+Doc: 
+Impresión: 30/6/2023 11:39:00 
+Formato_Reporte_CFE_v13 2.doc 
+Página 22 de 23
+
+=== PAGE 23 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+ANEXO 2– IDENTIFICACIÓN DEL RECEPTOR Y ENVÍO OBLIGATORIO DE E-TICKETS Y SUS NOTAS DE CORRECCIÓN 
+ Para operaciones documentadas en e-tickets y sus notas de corrección, cuyo monto neto excluido el IVA supere los topes establecidos, según cotización vigente al 
+cierre del año civil anterior. 
+ Si documentan retenciones o percepciones, independientemente del monto, siempre corresponde su identificación y envío. 
+MONTO NETO EN UI 
+(UNIDADES INDEXADAS) 
+VIGENCIA 
+DESDE 
+HASTA 
+Más de 10.000 
+Más de 5.000 
+8/05/2012 31/10/2022 
+01/11/2022 
+Doc: 
+Impresión: 30/6/2023 11:39:00 
+Formato_Reporte_CFE_v13 2.doc 
+Página 23 de 23
+

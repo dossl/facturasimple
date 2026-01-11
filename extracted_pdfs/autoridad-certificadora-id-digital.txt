@@ -1,0 +1,16 @@
+SOURCE_PDF: /Users/sergiolazaro/Documents/GitHub/facturasimple/extracted_web/autoridad-certificadora-id-digital.html
+EXTRACTED_AT: 2026-01-11T16:30:30.857718
+PARAGRAPH_RULE: paragraphs are blocks separated by blank lines in extracted text; numbering restarts each page.
+
+=== PAGE 1 ===
+(no text extracted)
+
+=== PAGE 2 ===
+(no text extracted)
+
+=== PAGE 3 ===
+(no text extracted)
+
+=== PAGE 4 ===
+(no text extracted)
+

@@ -1,0 +1,1272 @@
+SOURCE_PDF: /Users/sergiolazaro/Documents/GitHub/facturasimple/Fuentes-Gub.uy/Generales-Documentos de Interes/Servicios+Consultas+eFactura+1.10.pdf
+EXTRACTED_AT: 2026-01-11T16:27:50.400344
+PARAGRAPH_RULE: paragraphs are blocks separated by blank lines in extracted text; numbering restarts each page.
+
+=== PAGE 1 ===
+[P1] DOCUMENTOS TÉCNICOS 
+DIVISIÓN INFORMÁTICA 
+DESARROLLO 
+Servicios Web Externos DGI 
+Factura Electrónica 
+CÓDIGO: T-5.020.00.001-000005
+
+=== PAGE 2 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+Índice 
+Índice ...................................................................................................................................................................... 2 
+Actualizaciones ....................................................................................................................................................... 3 
+Introducción ............................................................................................................................................................ 3 
+Servicios Disponibles .............................................................................................................................................. 3 
+WS_Consultas / EFACCONSULTARESTADOCFE ............................................................................................................. 6 
+WS_Consultas / EFACCONSULTARENVIOSCFE ............................................................................................................... 7 
+WS_Consultas / EFACCONSULTARENVIOSREPORTE ..................................................................................................... 9 
+WS_Consultas / EFACCONSULTARCFERECIBIDOS ........................................................................................................10 
+WS_Consultas / EFACCONSULTARENVIOSSOBRE.........................................................................................................11 
+WS_Consultas / EFACCONSULTARRESPUESTAREPORTE ............................................................................................13 
+WS_Consultas / EFACCONSULTARRUCEMISORES ........................................................................................................16 
+WS_Consultas / EFACCONSULTARRUCEMISORESTRANSICION ...................................................................................17 
+WS_Consultas / EFACCONSULTARRUCEMISORESTRANSICIONCOMPRIMIDO ............................................................18 
+WS_Consultas / EFACCONSULTARRUCEMISORESTRANSICIONCOMPRIMIDOPROV ...................................................19 
+Desarrollo de un cliente para nuestro webservice .................................................................................................. 21 
+Pruebas previas ................................................................................................................................................................21 
+Ejemplo de Pruebas con SoapUI .......................................................................................................................................21 
+WS-Security ......................................................................................................................................................................22 
+Compresión ......................................................................................................................................................................27 
+Descompresión .................................................................................................................................................................28 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 2 de 27
+
+=== PAGE 3 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+Actualizaciones 
+ Versión 1.10: Se incluye el nuevo método: 
+ EFACCONSULTARRUCEMISORESTRANSICIONCOMPRIMIDOPROV 
+ Versión 1.9: Se ajusta nombre del servicio (ws_eFactura_Consultas a ws_consultas) 
+ Versión 1.8: Se incluye el nuevo método EFACCONSULTARRUCEMISORESTRANSICIONCOMPRIMIDO 
+Introducción 
+DGI publica un Servicio Web externo para las consultas de factura electrónica. 
+Este Servicio Web utiliza un esquema de seguridad basado en “WS-Security” permitiendo así garantizar un nivel de 
+seguridad tal -a través del uso de certificados y firmas digitales- que se logra cumplir con los siguientes requisitos de 
+seguridad: 
+ Autenticación 
+ Confidencialidad (vía https) 
+ 
+Integridad 
+ No repudio 
+Quien desarrolle un cliente externo de este Servicio Web deberá tener en cuenta el uso de los certificados digitales 
+para poder lograr una invocación exitosa. Más adelante en este documento encontrará un ejemplo de invocación 
+exitosa de nuestro Servicio Web hecho con SoapUI (www.soapui.org), una de las herramientas más difundidas para 
+testeo de webservices. 
+Servicios Disponibles 
+El servicio publicado (ws_consultas) expone los siguientes métodos que resuelven las consultas de los envíos y 
+comprobantes: 
+Métodos del WebService 
+Nombre 
+EFACCONSULTARESTADOCFE 
+EFACCONSULTARENVIOSCFE 
+EFACCONSULTARENVIOSREPORTE 
+EFACCONSULTARCFERECIBIDOS 
+EFACCONSULTARENVIOSSOBRE 
+Descripción 
+Devuelve el estado del CFE y los parámetros de consulta del sobre en 
+que se recibió el mismo. 
+Devuelve una colección con los datos de los sobres donde fue 
+enviado dicho CFE, incluyendo los parámetros de consulta de los 
+mismos. 
+Devuelve una colección con los datos de los reportes recibidos 
+Devuelve una colección con los datos de los CFE recibidos y su 
+estado 
+Devuelve una colección con los datos de los sobres, incluyendo los 
+parámetros de consulta de los mismos. 
+EFACCONSULTARRESPUESTAREPORTE Devuelve la respuesta original al envío del reporte 
+EFACCONSULTARRUCEMISORES 
+EFACCONSULTARRUCEMISORESTRANSI
+CION 
+EFACCONSULTARRUCEMISORESTRANSI
+CIONCOMPRIMIDO 
+Devuelve una colección con los RUC Emisores Electrónicos y su mail 
+de contacto con otros emisores. 
+Devuelve una colección con los RUC Emisores Electrónicos, su fecha 
+fin del período de transición y su mail de contacto con otros emisores. 
+Devuelve comprimida una colección con los RUC Emisores 
+Electrónicos, su fecha fin del período de transición y su mail de 
+contacto con otros emisores. 
+EFACCONSULTARRUCEMISORESTRANSI Devuelve comprimida una colección con los RUC Emisores 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 3 de 27
+
+=== PAGE 4 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+CIONCOMPRIMIDOPROV 
+Electrónicos, su fecha fin del período de transición, su mail de 
+contacto con otros emisores, su url web service y su mail de contacto 
+técnico 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 4 de 27
+
+=== PAGE 5 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+Servicios Disponibles 
+Servicio 
+Método 
+ws_consultas EFACCONSULTARESTADOCFE 
+ws_consultas EFACCONSULTARENVIOSCFE 
+ws_consultas EFACCONSULTARENVIOSREPORTE Consultaenviosreporte 
+ws_consultas EFACCONSULTARCFERECIBIDOS 
+ws_consultas EFACCONSULTARENVIOSSOBRE 
+ws_consultas EFACCONSULTARRESPUESTA 
+Parám.Request 
+Cfeid 
+Cfeid 
+Consultacferecibidos 
+Consultaenviossobre 
+Consultarespuestareporte Ackrepdiario 
+Parám.Respuesta Correcta 
+Ackconsultaestadocfe 
+Ackconsultaenvioscfe 
+Ackconsultaenviosreporte 
+Ackconsultacferecibidos 
+Ackconsultaenviossobre 
+REPORTE 
+ws_consultas EFACCONSULTARRUCEMISORES 
+ws_consultas EFACCONSULTARRUCEMISORESTR
+Consultarucemisores 
+Consultarucemisores 
+Rucemisoresmail 
+Rucemisorestransicionmail 
+ANSICION 
+ws_consultas EFACCONSULTARRUCEMISORESTR
+Consultarucemisores 
+ANSICIONCOMPRIMIDO 
+ws_consultas EFACCONSULTARRUCEMISORESTR
+Consultarucemisores 
+ANSICIONCOMPRIMIDOPROV 
+Rucemisorestransicionmailc
+omprimido 
+Rucemisorestransicionmailpr
+ov 
+Para la invocación de los servicios, se definen los parámetros de entrada y salida como XML que debe contener en 
+cada caso: 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 5 de 27
+
+=== PAGE 6 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+WS_Consultas / EFACCONSULTARESTADOCFE 
+Dado el Tipo de CFE, la Serie y el Número de CFE, devuelve el estado del CFE y los datos de consulta del primer 
+sobre recibido por DGI con dicho comprobante. Los tres campos son obligatorios 
+Entrada 
+<dgi:WS_eFactura_Consultas.EFACCONSULTAREST
+ADOCFE> 
+ <dgi:Cfeid> 
+ <dgi:TipoCFE>…</dgi:TipoCFE> 
+ <dgi:Serie>…</dgi:Serie> 
+ <dgi:Nro>…</dgi:Nro> 
+ </dgi:Cfeid> 
+</dgi:WS_eFactura_Consultas.EFACCONSULTARES
+TADOCFE> 
+Salida 
+<WS_eFactura_Consultas.EFACCONSULTARESTADOCFEResponse 
+xmlns="http://dgi.gub.uy"> 
+ <Ackconsultaestadocfe> 
+ <EstadoCFE>AE</EstadoCFE> 
+ <IdEmisor>2020</IdEmisor> 
+ <IdReceptor>129</IdReceptor> 
+ <ParamConsulta> 
+ <Token>…</Token> 
+ <Fechahora>2012-10-19T11:43:38</Fechahora> 
+ </ParamConsulta> 
+ </Ackconsultaestadocfe> 
+</WS_eFactura_Consultas.EFACCONSULTARESTADOCFEResponse
+> 
+//-- Entrada 
+<dgi:Cfeid> 
+ <dgi:TipoCFE>…</dgi:TipoCFE> 
+ <dgi:Serie>…</dgi:Serie> 
+ <dgi:Nro>…</dgi:Nro> 
+</dgi:Cfeid> 
+//-- Salida 
+<Ackconsultaestadocfe> 
+ <EstadoCFE>AE</EstadoCFE> 
+ <IdEmisor>2020</IdEmisor> 
+ <IdReceptor>129</IdReceptor> 
+ <ParamConsulta> 
+ <Token>...</Token> 
+ <Fechahora>2012-10-19T11:43:38</Fechahora> 
+ </ParamConsulta> 
+</Ackconsultaestadocfe> 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 6 de 27
+
+=== PAGE 7 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+WS_Consultas / EFACCONSULTARENVIOSCFE 
+Dado el Tipo de CFE, la Serie y el Número de CFE, devuelve una colección con los parámetros de consulta de los 
+sobres donde fue enviado dicho CFE y su estado. Los tres campos son obligatorios 
+Entrada 
+<dgi:WS_eFactura_Consultas.EFACCONSULTAREN
+VIOSCFE> 
+ <dgi:Cfeid> 
+ <dgi:TipoCFE>…</dgi:TipoCFE> 
+ <dgi:Serie>…</dgi:Serie> 
+ <dgi:Nro>…</dgi:Nro> 
+ </dgi:Cfeid> 
+</dgi:WS_eFactura_Consultas.EFACCONSULTARE
+NVIOSCFE> 
+Salida 
+<WS_eFactura_Consultas.EFACCONSULTARENVIOSCFERespo
+nse xmlns="http://dgi.gub.uy"> 
+ <Ackconsultaenvioscfe> 
+ <ColeccionDatosSobres> 
+ <DatosSobres> 
+ <EstadoSobre>AS</EstadoSobre> 
+ <FechaHoraSobre>2013-01-
+01T00:00:00</FechaHoraSobre> 
+ <IdEmisor>…</IdEmisor> 
+ <IdReceptor>…</IdReceptor> 
+ <ParamConsulta> 
+ <Token>…</Token> 
+ <Fechahora>2013-01-
+01T11:09:00</Fechahora> 
+ </ParamConsulta> 
+ </DatosSobres> 
+ <DatosSobres> 
+ <EstadoSobre>AS</EstadoSobre> 
+ <FechaHoraSobre>2013-01-
+00T00:00:00</FechaHoraSobre> 
+ <IdEmisor>…</IdEmisor> 
+ <IdReceptor>...</IdReceptor> 
+ <ParamConsulta> 
+ <Token>...</Token> 
+ <Fechahora>2013-01-
+01T11:09:00</Fechahora> 
+ </ParamConsulta> 
+ </DatosSobres> 
+ </ColeccionDatosSobres> 
+ </Ackconsultaenvioscfe> 
+</WS_eFactura_Consultas.EFACCONSULTARENVIOSCFEResp
+onse> 
+//-- Entrada 
+<dgi:Cfeid> 
+ <dgi:TipoCFE>…</dgi:TipoCFE> 
+ <dgi:Serie>…</dgi:Serie> 
+ <dgi:Nro>…</dgi:Nro> 
+</dgi:Cfeid> 
+//-- Salida 
+<Ackconsultaenvioscfe> 
+ <ColeccionDatosSobres> 
+ <DatosSobres> 
+ <EstadoSobre>AS</EstadoSobre> 
+ <FechaHoraSobre>2013-01-01T00:00:00</FechaHoraSobre> 
+ <IdEmisor>…</IdEmisor> 
+ <IdReceptor>…</IdReceptor> 
+ <ParamConsulta> 
+ <Token>…</Token> 
+ <Fechahora>2013-01-01T11:09:00</Fechahora> 
+ </ParamConsulta> 
+ </DatosSobres> 
+ <DatosSobres> 
+ <EstadoSobre>AS</EstadoSobre> 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 7 de 27
+
+=== PAGE 8 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+ <FechaHoraSobre>2013-01-00T00:00:00</FechaHoraSobre> 
+ <IdEmisor>…</IdEmisor> 
+ <IdReceptor>…</IdReceptor> 
+ <ParamConsulta> 
+ <Token>…</Token> 
+ <Fechahora>2013-01-01T11:09:00</Fechahora> 
+ </ParamConsulta> 
+ </DatosSobres> 
+ </ColeccionDatosSobres> 
+</Ackconsultaenvioscfe> 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 8 de 27
+
+=== PAGE 9 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+WS_Consultas / EFACCONSULTARENVIOSREPORTE 
+Dada la Fecha del Resumen, la Secuencia y el Id Emisor, devuelve una colección con los datos de los reportes que 
+cumplen dichas condiciones. Los campos Secuencia e Id Emisor son opcionales 
+Entrada 
+<dgi:WS_eFactura_Consultas.EFACCONSULT
+ARENVIOSREPORTE> 
+ <dgi:Consultaenviosreporte> 
+ <dgi:FechaResumen>2013-01-
+01</dgi:FechaResumen> 
+ <dgi:Secuencia>…</dgi:Secuencia> 
+ <dgi:IdEmisor>…</dgi:IdEmisor> 
+ </dgi:Consultaenviosreporte> 
+</dgi:WS_eFactura_Consultas.EFACCONSUL
+TARENVIOSREPORTE> 
+Salida 
+<WS_eFactura_Consultas.EFACCONSULTARENVIOSREPORTERespo
+nse xmlns="http://dgi.gub.uy"> 
+ <Ackconsultaenviosreporte> 
+ <ColeccionDatosReporte> 
+ <DatosReporte> 
+ <IdEmisor>…</IdEmisor> 
+ <IdReceptor>…</IdReceptor> 
+ <Estado>AR</Estado> 
+ <FechaHoraRecepcion>2013-01-
+01T12:00:00</FechaHoraRecepcion> 
+ </DatosReporte> 
+ <DatosReporte> 
+ <IdEmisor>…</IdEmisor> 
+ <IdReceptor>…</IdReceptor> 
+ <Estado>BR</Estado> 
+ <FechaHoraRecepcion>2013-01-
+01T12:10:00</FechaHoraRecepcion> 
+ </DatosReporte> 
+ </ColeccionDatosReporte> 
+ </Ackconsultaenviosreporte> 
+</WS_eFactura_Consultas.EFACCONSULTARENVIOSREPORTEResp
+onse> 
+//-- Entrada 
+<dgi:Consultaenviosreporte> 
+ <dgi:FechaResumen>2013-01-01</dgi:FechaResumen> 
+ <dgi:Secuencia>…</dgi:Secuencia> 
+ <dgi:IdEmisor>…</dgi:IdEmisor> 
+</dgi:Consultaenviosreporte> 
+//-- Salida 
+<Ackconsultaenviosreporte> 
+ <ColeccionDatosReporte> 
+ <DatosReporte> 
+ <IdEmisor>…</IdEmisor> 
+ <IdReceptor>…</IdReceptor> 
+ <Estado>AR</Estado> 
+ <FechaHoraRecepcion>2013-01-01T12:00:00</FechaHoraRecepcion> 
+ </DatosReporte> 
+ <DatosReporte> 
+ <IdEmisor>…</IdEmisor> 
+ <IdReceptor>…</IdReceptor> 
+ <Estado>BR</Estado> 
+ <FechaHoraRecepcion>2013-01-01T12:10:00</FechaHoraRecepcion> 
+ </DatosReporte> 
+ </ColeccionDatosReporte> 
+</Ackconsultaenviosreporte> 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 9 de 27
+
+=== PAGE 10 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+WS_Consultas / EFACCONSULTARCFERECIBIDOS 
+Dado el RUC Emisor, Tipo de CFE, Serie, Número de CFE, y el rango de Fechas de emisión del CFE (FechaDesde, 
+FechaHasta), devuelve una colección con los CFEs que cumplen dichas condiciones y el estado de los mismos. 
+ Tipo de CFE, Serie, Número de CFE son opcionales 
+ Rango de Fechas de emisión del CFE no debe superar los 31 días 
+ FechaDesde y FechaHasta deben pertenecer al período 01/10/2011 al 31/12/2050 
+Entrada 
+Salida 
+<dgi:WS_eFactura_Consultas.EFACCONSULTARCFE
+RECIBIDOS> 
+ <dgi:Consultacferecibidos> 
+ <dgi:RUCEmisor></dgi:RUCEmisor> 
+ <dgi:TipoCFE>111</dgi:TipoCFE> 
+ <dgi:Serie>A</dgi:Serie> 
+ <dgi:Nro>0</dgi:Nro> 
+ <dgi:FechaDesde>2012-01-
+01</dgi:FechaDesde> 
+ <dgi:FechaHasta>2013-12-
+01</dgi:FechaHasta> 
+ </dgi:Consultacferecibidos> 
+</dgi:WS_eFactura_Consultas.EFACCONSULTARCF
+ERECIBIDOS> 
+<WS_eFactura_Consultas.EFACCONSULTARCFERECIBIDOSR
+esponse xmlns="http://dgi.gub.uy"> 
+ <Ackconsultacferecibidos> 
+ <ColeccionDatosCFE> 
+ <DatosCFE> 
+ <TipoCFE>111</TipoCFE> 
+ <Serie>A</Serie> 
+ <Nro>1</Nro> 
+ <Estado>AE</Estado> 
+ <FechaHora>2012-10-
+19T10:28:42</FechaHora> 
+ <RUCEmisor>219999830019</RUCEmisor> 
+ <Moneda>UYU</Moneda> 
+ <TotalNeto>100</TotalNeto> 
+ <TotalIVA>22</TotalIVA> 
+ <MontoTotal>122</MontoTotal> 
+ <TotalRetenido>0</TotalRetenido> 
+ </DatosCFE> 
+ </ColeccionDatosCFE> 
+ </Ackconsultacferecibidos> 
+</WS_eFactura_Consultas.EFACCONSULTARCFERECIBIDOS
+Response> 
+//-- Entrada 
+<dgi:Consultacferecibidos> 
+ <dgi:RUCEmisor></dgi:RUCEmisor> 
+ <dgi:TipoCFE>111</dgi:TipoCFE> 
+ <dgi:Serie>A</dgi:Serie> 
+ <dgi:Nro>0</dgi:Nro> 
+ <dgi:FechaDesde>2012-01-01</dgi:FechaDesde> 
+ <dgi:FechaHasta>2013-12-01</dgi:FechaHasta> 
+</dgi:Consultacferecibidos> 
+//-- Salida 
+<Ackconsultacferecibidos> 
+ <ColeccionDatosCFE> 
+ <DatosCFE> 
+ <TipoCFE>…</TipoCFE> 
+ <Serie>…</Serie> 
+ <Nro>…</Nro> 
+ <Estado>AE</Estado> 
+ <FechaHora>2013-01-01T00:30:00</FechaHora> 
+ <RUCEmisor>219999830019</RUCEmisor> 
+ <Moneda>UYU</Moneda> 
+ <TotalNeto>100</TotalNeto> 
+ <TotalIVA>22</TotalIVA> 
+ <MontoTotal>122</MontoTotal> 
+ <TotalRetenido>0</TotalRetenido> 
+ </DatosCFE> 
+ </ColeccionDatosCFE> 
+</Ackconsultacferecibidos> 
+Nota: El campo FechaHora hace referencia al campo Fecha de emisión 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 10 de 27
+
+=== PAGE 11 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+WS_Consultas / EFACCONSULTARENVIOSSOBRE 
+Dado el Id Emisor e Id Receptor, y un rango de Fechas de envío (FechaDesde, FechaHasta), devuelve una colección 
+con los datos de los sobres (que cumplen dichas condiciones) incluyendo los parámetros de consulta de los mismos. 
+Id Emisor e Id Receptor son opcionales 
+ 
+ Rango de Fechas de envío no debe superar los 31 días 
+ FechaDesde y FechaHasta deben pertenecer al período 01/10/2011 al 31/12/2050 
+Entrada 
+<dgi:WS_eFactura_Consultas.EFACCONSULTAREN
+VIOSSOBRE> 
+ <dgi:Consultaenviossobre> 
+ <dgi:IdEmisor>0</dgi:IdEmisor> 
+ <dgi:IdReceptor>0</dgi:IdReceptor> 
+ <dgi:FechaDesde>2012-05-
+20T15:18:58Z</dgi:FechaDesde> 
+ <dgi:FechaHasta>2013-05-
+20T15:18:58Z</dgi:FechaHasta> 
+ </dgi:Consultaenviossobre> 
+</dgi:WS_eFactura_Consultas.EFACCONSULTARE
+NVIOSSOBRE> 
+Salida 
+<WS_eFactura_Consultas.EFACCONSULTARENVIOSSOBRERes
+ponse xmlns="http://dgi.gub.uy"> 
+ <Ackconsultaenviossobre> 
+ <ColeccionDatosSobre> 
+ <DatosSobre> 
+ <EstadoSobre>AS</EstadoSobre> 
+ <FechaHoraSobre>2013-01-
+01T00:00:00</FechaHoraSobre> 
+ <IdEmisor>…</IdEmisor> 
+ <IdReceptor>…</IdReceptor> 
+ <ParamConsulta> 
+ <Token>…</Token> 
+ <Fechahora>2013-01-
+25T12:12:14</Fechahora> 
+ </ParamConsulta> 
+ </DatosSobre> 
+ <DatosSobre> 
+ <EstadoSobre>BS</EstadoSobre> 
+ <FechaHoraSobre>2013-01-
+01T00:10:00</FechaHoraSobre> 
+ <IdEmisor>…</IdEmisor> 
+ <IdReceptor>…</IdReceptor> 
+ </DatosSobre> 
+ </ColeccionDatosSobre> 
+ </Ackconsultaenviossobre> 
+</WS_eFactura_Consultas.EFACCONSULTARENVIOSSOBRERe
+sponse> 
+//-- Entrada 
+<dgi:Consultaenviossobre> 
+ <dgi:IdEmisor>0</dgi:IdEmisor> 
+ <dgi:IdReceptor>0</dgi:IdReceptor> 
+ <dgi:FechaDesde>2012-05-20T15:18:58Z</dgi:FechaDesde> 
+ <dgi:FechaHasta>2013-05-20T15:18:58Z</dgi:FechaHasta> 
+</dgi:Consultaenviossobre> 
+//-- Salida 
+<Ackconsultaenviossobre> 
+ <ColeccionDatosSobre> 
+ <DatosSobre> 
+ <EstadoSobre>AS</EstadoSobre> 
+ <FechaHoraSobre>2013-01-01T00:00:00</FechaHoraSobre> 
+ <IdEmisor>…</IdEmisor> 
+ <IdReceptor>…</IdReceptor> 
+ <ParamConsulta> 
+ <Token>…</Token> 
+ <Fechahora>2013-01-25T12:12:14</Fechahora> 
+ </ParamConsulta> 
+ </DatosSobre> 
+ <DatosSobre> 
+ <EstadoSobre>BS</EstadoSobre> 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 11 de 27
+
+=== PAGE 12 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+ <FechaHoraSobre>2013-01-01T00:10:00</FechaHoraSobre> 
+ <IdEmisor>…</IdEmisor> 
+ <IdReceptor>…</IdReceptor> 
+ </DatosSobre> 
+ </ColeccionDatosSobre> 
+</Ackconsultaenviossobre> 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 12 de 27
+
+=== PAGE 13 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+WS_Consultas / EFACCONSULTARRESPUESTAREPORTE 
+Dado el Id Receptor de un reporte, devuelve la respuesta original del reporte consultado. 
+Entrada 
+<dgi:WS_eFactura_Consultas.EFACCONSULTARRE
+SPUESTAREPORTE> 
+ <dgi:Consultarespuestareporte> 
+ <dgi:IdReceptor>…</dgi:IdReceptor> 
+ </dgi:Consultarespuestareporte> 
+</dgi:WS_eFactura_Consultas.EFACCONSULTARR
+ESPUESTAREPORTE> 
+Salida 
+<WS_eFactura_Consultas.EFACCONSULTARRESPUESTAREPOR
+TEResponse xmlns="http://dgi.gub.uy"> 
+ <Ackrepdiario><![CDATA[<?xml version="1.0" 
+encoding="UTF-8"?> 
+<ACKRepDiario xmlns="http://cfe.dgi.gub.uy" 
+version="1.0"><Caratula><RUCReceptor>...</RUCRecep
+tor><RUCEmisor>...</RUCEmisor><NomArch>Rep_..._201
+30101_01</NomArch><FecHRecibido>2013-01-
+02T00:00:00-
+03:00</FecHRecibido><IDEmisor>0</IDEmisor><IDRecep
+tor>...</IDReceptor><Tmst>2013-01-02T01:00:00-
+03:00</Tmst></Caratula><Detalle><Estado>AR</Estado
+></Detalle><Signature 
+xmlns="http://www.w3.org/2000/09/xmldsig#"> 
+<SignedInfo> 
+ <CanonicalizationMethod 
+Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-
+20010315"/> 
+ <SignatureMethod 
+Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-
+sha1"/> 
+ <Reference URI=""> 
+ <Transforms> 
+ <Transform 
+Algorithm="http://www.w3.org/2000/09/xmldsig#envel
+oped-signature"/> 
+ <Transform 
+Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-
+20010315"/> 
+ </Transforms> 
+ <DigestMethod 
+Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"
+/> 
+<DigestValue>9R4zsvpBd7UdAopy2kmMQpHbJF4=</DigestV
+alue> 
+ </Reference> 
+</SignedInfo> 
+<SignatureValue>...</SignatureValue><KeyInfo><X509
+Data><X509Certificate>...</X509Certificate><X509Is
+suerSerial><X509IssuerName>CN=Correo Uruguayo - 
+CA, OU=SERVICIOS ELECTRONICOS, O=ADMINISTRACION 
+NACIONAL DE CORREOS, 
+C=UY</X509IssuerName><X509SerialNumber>...</X509Se
+rialNumber></X509IssuerSerial></X509Data></KeyInfo
+></Signature></ACKRepDiario>]]></Ackrepdiario> 
+ <Mensajes/> 
+</WS_eFactura_Consultas.EFACCONSULTARRESPUESTAREPO
+RTEResponse> 
+//-- Entrada 
+<dgi:Consultarespuestareporte> 
+ <dgi:IdReceptor>…</dgi:IdReceptor> 
+</dgi:Consultarespuestareporte> 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 13 de 27
+
+=== PAGE 14 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+//-- Salida 
+<Ackrepdiario><![CDATA[<?xml version="1.0" encoding="UTF-8"?> 
+<ACKRepDiario xmlns="http://cfe.dgi.gub.uy" 
+version="1.0"><Caratula><RUCReceptor>…</RUCReceptor><RUCEmisor>…</RUCEmisor><NomArch>Re
+p_..._20130101_01</NomArch><FecHRecibido>2013-01-02T00:00:00-
+03:00</FecHRecibido><IDEmisor>0</IDEmisor><IDReceptor>…</IDReceptor><Tmst>2013-01-
+02T01:00:00-03:00</Tmst></Caratula><Detalle><Estado>AR</Estado></Detalle><Signature 
+xmlns="http://www.w3.org/2000/09/xmldsig#"> 
+<SignedInfo> 
+ <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/> 
+ <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/> 
+ <Reference URI=""> 
+ <Transforms> 
+ <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/> 
+ <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/> 
+ </Transforms> 
+ <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/> 
+ <DigestValue>…DigestValue> 
+ </Reference> 
+</SignedInfo> 
+<SignatureValue>…</SignatureValue><KeyInfo><X509Data><X509Certificate>…</X509Certificat
+e><X509IssuerSerial><X509IssuerName>CN=Correo Uruguayo - CA, OU=SERVICIOS ELECTRONICOS, 
+O=ADMINISTRACION NACIONAL DE CORREOS, 
+C=UY</X509IssuerName><X509SerialNumber>…</X509SerialNumber></X509IssuerSerial></X509Dat
+a></KeyInfo></Signature></ACKRepDiario>]]></Ackrepdiario> 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 14 de 27
+
+=== PAGE 15 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+WS_Consultas / EFACCONSULTARRUCEMISORES 
+los 
+filtros opcionales Filtro_eFacDocNro, Filtro_eFacDenominacion, Filtro_eFacRUCEmisorAudFchHora 
+Dado 
+correspondientes a un Nro de RUC, una Denominación y una Fecha, devuelve un XML con la lista de Emisores 
+Electrónicos, su fecha de inicio como Emisor Electrónico y su mail de contacto con otros Emisores. La aplicación de 
+los filtros se realiza de la siguiente manera: 
+ Filtro_eFacDocNro: Si está presente, los números de RUC Emisores contenidos en la consulta contienen 
+parcial o totalmente a dicho valor. 
+ Filtro_eFacDenominacion: Si está presente, las denominaciones de los RUC Emisores contenidos en la 
+consulta contienen parcial o total a dicho valor. 
+ Filtro_eFacRUCEmisorAudFchHora (obligatorio): Los RUC Emisores contenidos en la consulta existen 
+como Emisores Electrónicos o sufrieron alguna modificación de sus datos a partir de la fecha indicada. 
+(Ejemplo: se modificó el mail de contacto a partir de la fecha) 
+Entrada 
+<dgi:WS_eFactura_Consultas.EFACCONSULTARRU
+CEMISORES> 
+ <dgi:Consultarucemisores> 
+<dgi:Filtro_eFacDocNro>..</dgi:Filtro_eFac
+DocNro> 
+<dgi:Filtro_eFacDenominacion>..</dgi:Filtr
+o_eFacDenominacion> 
+<dgi:Filtro_eFacRUCEmisorAudFchHora>..</dg
+i:Filtro_eFacRUCEmisorAudFchHora> 
+ </dgi:Consultarucemisores > 
+</dgi:WS_eFactura_Consultas.EFACCONSULTARR
+UCEMISORES > 
+Salida 
+<WS_eFactura_Consultas.EFACCONSULTARRUCEMISORESRes
+ponse xmlns="http://dgi.gub.uy"> 
+ <Rucemisoresmail> 
+ <RucEmisoresMail.RucEmisoresMailItem> 
+ <RUC>..</RUC> 
+ <DENOMINACION>..</DENOMINACION> 
+ <FECHA_INICIO>..</FECHA_INICIO> 
+ <FECHA_FIN>..</FECHA_FIN> 
+ <MAIL>..</MAIL> 
+ </RucEmisoresMail.RucEmisoresMailItem> 
+ </Rucemisoresmail> 
+</WS_eFactura_Consultas.EFACCONSULTARRUCEMISORESRe
+sponse> 
+//-- Entrada 
+< dgi:Consultarucemisores> 
+ <dgi:Filtro_eFacDocNro>21</dgi:Filtro_eFacDocNro> 
+ <dgi:Filtro_eFacDenominacion>prueba</dgi:Filtro_eFacDenominacion> 
+ <dgi:Filtro_eFacRUCEmisorAudFchHora>2011-02-26T14:14:41Z</dgi:Filtro_eFacRUCEmisorAudFchHora> 
+</dgi:Consultarucemisores > 
+//-- Salida 
+ <Rucemisoresmail> 
+ <RucEmisoresMail.RucEmisoresMailItem> 
+ <RUC>219999830019</RUC> 
+ <DENOMINACION>DGI RUC PRUEBA CEDE</DENOMINACION> 
+ <FECHA_INICIO>2013-03-01</FECHA_INICIO> 
+ <FECHA_FIN>0000-00-00</FECHA_FIN> 
+ <MAIL>mail@empresa.com</MAIL> 
+ </RucEmisoresMail.RucEmisoresMailItem> 
+ </Rucemisoresmail> 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 15 de 27
+
+=== PAGE 16 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+WS_Consultas / EFACCONSULTARRUCEMISORESTRANSICION 
+los 
+filtros opcionales Filtro_eFacDocNro, Filtro_eFacDenominacion, Filtro_eFacRUCEmisorAudFchHora 
+Dado 
+correspondientes a un Nro de RUC, una Denominación y una Fecha, devuelve un XML con la lista de Emisores 
+Electrónicos, su fecha de inicio como Emisor Electrónico, su fecha de fin del período de transición y su mail de 
+contacto con otros Emisores. La aplicación de los filtros se realiza de la siguiente manera: 
+ Filtro_eFacDocNro: Si está presente, los números de RUC Emisores contenidos en la consulta contienen 
+parcial o totalmente a dicho valor. 
+ Filtro_eFacDenominacion: Si está presente, las denominaciones de los RUC Emisores contenidos en la 
+consulta contienen parcial o total a dicho valor. 
+ Filtro_eFacRUCEmisorAudFchHora (obligatorio): Los RUC Emisores contenidos en la consulta existen 
+como Emisores Electrónicos o sufrieron alguna modificación de sus datos a partir de la fecha indicada. 
+(Ejemplo: se modificó el mail de contacto a partir de la fecha) 
+Entrada 
+<dgi:WS_eFactura_Consultas.EFACCONSULTARRU
+CEMISORESTRANSICION> 
+ <dgi:Consultarucemisores> 
+<dgi:Filtro_eFacDocNro>..</dgi:Filtro_eFac
+DocNro> 
+<dgi:Filtro_eFacDenominacion>..</dgi:Filtr
+o_eFacDenominacion> 
+<dgi:Filtro_eFacRUCEmisorAudFchHora>..</dg
+i:Filtro_eFacRUCEmisorAudFchHora> 
+ </dgi:Consultarucemisores > 
+</dgi:WS_eFactura_Consultas.EFACCONSULTARR
+UCEMISORESTRANSICION> 
+Salida 
+<WS_eFactura_Consultas.EFACCONSULTARRUCEMISORESTRANSIC
+IONResponse xmlns="http://dgi.gub.uy"> 
+ <Rucemisorestansicionmail> 
+<RucEmisoresTransicionMail.RucEmisoresTransicionMailIt
+em> 
+ <RUC>..</RUC> 
+ <DENOMINACION>..</DENOMINACION> 
+ <FECHA_INICIO>..</FECHA_INICIO> 
+ <FECHA_FIN_TRANSICION>..</FECHA_FIN_TRANSICION> 
+ <FECHA_FIN>..</FECHA_FIN> 
+ <MAIL>..</MAIL> 
+</RucEmisoresTransicionMail.RucEmisoresTransicionMailI
+tem> 
+ </Rucemisorestransicionmail> 
+</WS_eFactura_Consultas.EFACCONSULTARRUCEMISORESTRANSI
+CIONResponse > 
+//-- Entrada 
+< dgi:Consultarucemisores> 
+ <dgi:Filtro_eFacDocNro>21</dgi:Filtro_eFacDocNro> 
+ <dgi:Filtro_eFacDenominacion>prueba</dgi:Filtro_eFacDenominacion> 
+ <dgi:Filtro_eFacRUCEmisorAudFchHora>2011-02-26T14:14:41Z</dgi:Filtro_eFacRUCEmisorAudFchHora> 
+</dgi:Consultarucemisores > 
+//-- Salida con Fecha Fin Transición 
+ <Rucemisorestansicionmail> 
+ <RucEmisoresTransicionMail.RucEmisoresTransicionMailItem> 
+ <RUC>219999830019</RUC> 
+ <DENOMINACION>DGI RUC PRUEBA CEDE</DENOMINACION> 
+ <FECHA_INICIO>2013-03-01</FECHA_INICIO> 
+ <FECHA_FIN_TRANSICION>2013-06-30</FECHA_FIN_TRANSICION> 
+ <FECHA_FIN>0000-00-00</FECHA_FIN> 
+ <MAIL>mail@empresa.com</MAIL> 
+ </RucEmisoresTransicionMail.RucEmisoresTransicionMailItem> 
+ </Rucemisorestansicionmail> 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 16 de 27
+
+=== PAGE 17 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+WS_Consultas / EFACCONSULTARRUCEMISORESTRANSICIONCOMPRIMIDO 
+los 
+filtros opcionales Filtro_eFacDocNro, Filtro_eFacDenominacion, Filtro_eFacRUCEmisorAudFchHora 
+Dado 
+correspondientes a un Nro de RUC, una Denominación y una Fecha, devuelve un XML con la lista de Emisores 
+Electrónicos, su fecha de inicio como Emisor Electrónico, su fecha de fin del período de transición y su mail de 
+contacto con otros Emisores. La aplicación de los filtros se realiza de la siguiente manera: 
+ Filtro_eFacDocNro: Si está presente, los números de RUC Emisores contenidos en la consulta contienen 
+parcial o totalmente a dicho valor. 
+ Filtro_eFacDenominacion: Si está presente, las denominaciones de los RUC Emisores contenidos en la 
+consulta contienen parcial o total a dicho valor. 
+ Filtro_eFacRUCEmisorAudFchHora (obligatorio): Los RUC Emisores contenidos en la consulta existen 
+como Emisores Electrónicos o sufrieron alguna modificación de sus datos a partir de la fecha indicada. 
+(Ejemplo: se modificó el mail de contacto a partir de la fecha) 
+Entrada 
+<dgi:WS_eFactura_Consultas.EFACCONSULTARRU
+CEMISORESTRANSICIONCOMPRIMIDO> 
+ <dgi:Consultarucemisores> 
+<dgi:Filtro_eFacDocNro>..</dgi:Filtro_eFac
+DocNro> 
+<dgi:Filtro_eFacDenominacion>..</dgi:Filtr
+o_eFacDenominacion> 
+<dgi:Filtro_eFacRUCEmisorAudFchHora>..</dg
+i:Filtro_eFacRUCEmisorAudFchHora> 
+ </dgi:Consultarucemisores > 
+</dgi:WS_eFactura_Consultas.EFACCONSULTARR
+UCEMISORESTRANSICIONCOMPRIMIDO> 
+Salida 
+<WS_eFactura_Consultas. 
+EFACCONSULTARRUCEMISORESTRANSICIONCOMPRIMIDOResponse 
+xmlns="http://dgi.gub.uy"> 
+ <Rucemisorestansicionmailcomprimido> 
+... 
+ </Rucemisorestansicionmailcomprimido> 
+</WS_eFactura_Consultas.EFACCONSULTARRUCEMISORESTRANSI
+CIONCOMPRIMIDOResponse> 
+//-- Entrada 
+< dgi:Consultarucemisores> 
+ <dgi:Filtro_eFacDocNro></dgi:Filtro_eFacDocNro> 
+ <dgi:Filtro_eFacDenominacion>prueba</dgi:Filtro_eFacDenominacion> 
+ <dgi:Filtro_eFacRUCEmisorAudFchHora>2012-01-01T00:00:00Z</dgi:Filtro_eFacRUCEmisorAudFchHora> 
+</dgi:Consultarucemisores > 
+//-- Salida comprimida 
+ <Rucemisorestansicionmailcomprimido> 
+H4sIAAAAAAAAAJ2QTwuCQBDFz/kppLvumh0qtqVNtxrILazOoSa2kBb+gfr2rUaUQR0a5vTe+z2YIX4V8VQW5zwutnmQFTKS
+58wL5Em/pqesGHePZXkZIXRIpJlUoVndulTrkK+Y+dWBMk5/lqrWnUN71lDNwMbYGhJUK7XjcrHyQDAHVoK6c9CVoa/9HZ8y
+3eEuJ6iVqJEZdxZsDwKUQnvY6hvYUktQy3glZyD2W5+JDTQVD6Jv2PhJfARaJMVqjGbf4k3GY7Ckl7yKw2DyOpigRlevRH/+
+kmo/UKrdAe7rtXzaAQAA 
+</Rucemisorestansicionmailcomprimido> 
+//-- Salida luego de descomprimida 
+<RucEmisoresTransicionMail xmlns="http://dgi.gub.uy"> 
+<RucEmisoresTransicionMail.RucEmisoresTransicionMailItem xmlns="http://dgi.gub.uy"> 
+<RUC>219999830019</RUC> 
+<DENOMINACION>DGI RUC PRUEBA CEDE</DENOMINACION> 
+<FECHA_INICIO>2014-01-01</FECHA_INICIO> 
+<FECHA_FIN_TRANSICION>2014-04-30</FECHA_FIN_TRANSICION> 
+<FECHA_FIN>0000-00-00</FECHA_FIN> 
+<MAIL>prueba@dgi.gub.uy</MAIL> 
+</RucEmisoresTransicionMail.RucEmisoresTransicionMailItem> 
+</RucEmisoresTransicionMail> 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 17 de 27
+
+=== PAGE 18 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+WS_Consultas / EFACCONSULTARRUCEMISORESTRANSICIONCOMPRIMIDOPROV 
+los 
+filtros opcionales Filtro_eFacDocNro, Filtro_eFacDenominacion, Filtro_eFacRUCEmisorAudFchHora 
+Dado 
+correspondientes a un Nro de RUC, una Denominación y una Fecha, devuelve un XML con la lista de Emisores 
+Electrónicos, su fecha de inicio como Emisor Electrónico, su fecha de fin del período de transición y su mail de 
+contacto con otros Emisores. La aplicación de los filtros se realiza de la siguiente manera: 
+ Filtro_eFacDocNro: Si está presente, los números de RUC Emisores contenidos en la consulta contienen 
+parcial o totalmente a dicho valor. 
+ Filtro_eFacDenominacion: Si está presente, las denominaciones de los RUC Emisores contenidos en la 
+consulta contienen parcial o total a dicho valor. 
+ Filtro_eFacRUCEmisorAudFchHora (obligatorio): Los RUC Emisores contenidos en la consulta existen 
+como Emisores Electrónicos o sufrieron alguna modificación de sus datos a partir de la fecha indicada. 
+(Ejemplo: se modificó el mail de contacto a partir de la fecha) 
+Entrada 
+<dgi:WS_eFactura_Consultas.EFACCONSULTARRU
+CEMISORESTRANSICIONCOMPRIMIDO> 
+ <dgi:Consultarucemisores> 
+<dgi:Filtro_eFacDocNro>..</dgi:Filtro_eFac
+DocNro> 
+<dgi:Filtro_eFacDenominacion>..</dgi:Filtr
+o_eFacDenominacion> 
+<dgi:Filtro_eFacRUCEmisorAudFchHora>..</dg
+i:Filtro_eFacRUCEmisorAudFchHora> 
+ </dgi:Consultarucemisores > 
+</dgi:WS_eFactura_Consultas.EFACCONSULTARR
+UCEMISORESTRANSICIONCOMPRIMIDO> 
+Salida 
+<WS_eFactura_Consultas. 
+EFACCONSULTARRUCEMISORESTRANSICIONCOMPRIMIDOPROVRespon
+se xmlns="http://dgi.gub.uy"> 
+ <Rucemisorestansicionmailprov> 
+... 
+ </Rucemisorestansicionmailprov> 
+</WS_eFactura_Consultas.EFACCONSULTARRUCEMISORESTRANSI
+CIONCOMPRIMIDOPROVResponse> 
+//-- Entrada 
+< dgi:Consultarucemisores> 
+ <dgi:Filtro_eFacDocNro></dgi:Filtro_eFacDocNro> 
+ <dgi:Filtro_eFacDenominacion>prueba</dgi:Filtro_eFacDenominacion> 
+ <dgi:Filtro_eFacRUCEmisorAudFchHora>2012-01-01T00:00:00Z</dgi:Filtro_eFacRUCEmisorAudFchHora> 
+</dgi:Consultarucemisores > 
+//-- Salida comprimida 
+ <Rucemisorestansicionmailcomprimidoprov> 
+H4sIAAAAAAAAAO2Y/46iSBDH/759is7+rwLyQy6escXW6U3TbRqYzcw/hlXGI1ExIDPnvcU9073YFc65o3ORyy7JBjcYEw1d
+VeRb9aGqm77MF2QTZ0kaZX4abrN4ESdbN4zXszR5Rn9s1tvst4+/7/e7Xzud5Spur/Iv7fzwcfDhl36pa7t0le6jTWlwiB44
+A0VXDMs0TEVRu/1OcaVYGRMuXMqxQwUfeIRjRN0ZkRQz9EncYQ4X3H7nwqpwmxDnDs8pp3BloCma3lKMVhH3YuHNckL53JeY
+e/QY4tXDbKnayeOdwYXnQIFP6/g9Mz/auJiyC2XDqPVnnkZJe5Fs+p3jcmEXSDb/TEYekffUIYN/0/Ty8tJexs/xMl4m2avH
+O8PTPeaO4D52fDH3iQPixGCRbLN8vQ+z4bv7/dcUytupWN8fhEhP0WxV6UIijSuIuCCOeMgXnoM5lBm5GGBBDnEog98HWJES
+DGb4EU3xSFLCUJEEhr3aY3SmvsGoAkYqJFFXdBUSqV3BCAM2hDGCZDCBImDfpwgyBfBQXHdO0mgR7Yq05IdhvH1O4sWhHW+f
+knJOMkjW6qm9iVdpuI+ODp1v4OQ5XuyTNA7DTZhG63U0DFdJlO5+Dl4MRbdMG7KuKtcmE+bTgHLi+2hGQedYIAyjieFA1p6X
+c3lNX6nGiWl2rWLO61c4mQqXPCLC6CNmY3KaQPh1StUdlO9vLOFulx8uewstAjiHb+kxhd8wT/NdeuQFcn/7yNhQIUO3S1qL
+FGNJpwFgA8C4hAl0R9iISIRH+CEY1Z6ac4lNe6nISs+yi/2ffYWV+2LXAmNHzAAXzCaCe+IW+DjJaviowIem6j1V16ySXjKl
+LuGAxgRq5YjTqajuhJwLawipRIhpaqpaHHx6VwgJmE9dgSRxAln/3nEuqCGjEhk9S7c1s/xIzOEP8ur/puRcTYNFJSxs1ejZ
+WsmWY0b//os8SIHGAZY+Ob1vw1IwMKk/KW8CG1KqkaLbVk8vGS14CpRQdyakfxtN5E1Rg0Y1NEzF1rsl+1Lq4inhqAtHXFDJ
+kCdZ3fGIN+Eq2naX0XYfrodP4T7K4gwSEmb5oRSTzvXyd26rqJbZs0omg4O5X2wXuHMHR47XuXCPGVT4NgbDV33N018RFFsx
+jJLB4MEDf8wNFd6NTIavkn5aNv4nxODDPxcVM+tOIAAA 
+</Rucemisorestansicionmailcomprimidoprov> 
+//-- Salida luego de descomprimida 
+<RucEmisoresTransicionMailProv xmlns="http://dgi.gub.uy"> 
+<RucEmisoresTransicionMailProv.RucEmisoresTransicionMailProvItem 
+xmlns="http://dgi.gub.uy"> 
+<RUC>219999830019</RUC> 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 18 de 27
+
+=== PAGE 19 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+<DENOMINACION>DGI RUC PRUEBA CEDE</DENOMINACION> 
+<FECHA_INICIO>2014-01-01</FECHA_INICIO> 
+<FECHA_FIN_TRANSICION>2014-04-30</FECHA_FIN_TRANSICION> 
+<FECHA_FIN>0000-00-00</FECHA_FIN> 
+<MAIL>prueba@dgi.gub.uy</MAIL> 
+<URL_WEBSERVICE>http://www.intercambio.com</URL_WEBSERVICE> 
+<MAIL_CONTACTO_TECNICO>consultas@mail.com</MAIL_CONTACTO_TECNICO> 
+</RucEmisoresTransicionMailProv.RucEmisoresTransicionMailProvItem> 
+</RucEmisoresTransicionMailProv> 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 19 de 27
+
+=== PAGE 20 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+Desarrollo de un cliente para nuestro webservice 
+Pruebas previas 
+Antes de desarrollar un programa cliente para el webservice de DGI, recomendamos hacer pruebas con la 
+herramienta SoapUI (www.soapui.org) para hacer una validación básica del funcionamiento del servicio. De ese 
+modo se podrán descartar antes los problemas que no pertenecen al desarrollo del cliente (ej: redes, validez del xml, 
+etc.). 
+Una vez que se supere exitosamente esta prueba, resultará más accesible para el desarrollador implementar un 
+cliente que interactúe del mismo modo que lo hace SoapUI con nuestro webservice. 
+Ejemplo de Pruebas con SoapUI 
+El WSDL del webservice para ambiente de TEST está publicado en: 
+https://efactura.dgi.gub.uy:6460/ePrueba/ws_consultasPrueba?wsdl 
+Una vez instalado SoapUI, se debe crear un nuevo proyecto de la siguiente manera: 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 20 de 27
+
+=== PAGE 21 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+WS-Security 
+Dado que la información es confidencial, el sistema incorpora una estrategia de seguridad basada en el estándar WS- 
+Security. Este estándar utiliza una infraestructura de clave pública (PKI o public key infraestructure). 
+El certificado a utilizar podrá ser un "Certificado Nominado de Persona Jurídica" o "Certificado Innominado de 
+Persona Jurídica" que al día de hoy solo emite el Correo del Uruguay (Única CA por lo pronto que formará parte de 
+PKI Uruguay). La decisión de cuál utilizar será resorte de cada Empresa/Organismo. 
+Una vez obtenido el certificado, deberá utilizarse el mismo para firmar digitalmente las consultas realizadas. 
+La manera más sencilla de trabajar con WS-Security es utilizando certificados almacenados en keystores. 
+Una vez obtenidos los certificados brindados por la autoridad certificadora, los keystores se pueden crear mediante la 
+aplicación Portecle, disponible en (http://portecle.sourceforge.net) o mediante openssl (http://www.openssl.org/). 
+Para poder utilizar firma digital en SoapUI, debemos hacer los siguientes ajustes: 
+Agregamos el keystore: 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 21 de 27
+
+=== PAGE 22 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+Ingresamos la contraseña necesaria para abrir el archivo KeyStore 
+Creamos una configuración de salida: 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 22 de 27
+
+=== PAGE 23 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+Seleccionamos que en esa configuración se agregue firma digital (signature): 
+En esta pantalla nos pide el nombre del keystore (seleccionamos el que agregamos antes), el alias es el nombre que 
+le dimos a la clave privada del cliente dentro del keystore. El resto de los parámetros se configuran como se ve en la 
+imagen. 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 23 de 27
+
+=== PAGE 24 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+Nota importante: Si en SoapUI creamos un request antes de configurar estos pasos de seguridad, luego de configurar 
+la seguridad debemos borrar el request y crear uno nuevo para que tome los cambios. 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 24 de 27
+
+=== PAGE 25 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+Vea que en la zona inferior del request aparece una opción “Aut” (Authentication) 
+Al seleccionarla nos permite elegir la configuración de salida (Outgoing WSS) que creamos antes (“conf_out” era el 
+nombre en nuestro ejemplo). 
+Sustituyendo los signos de interrogación por sus valores en el request ya podemos invocar al webservice utilizando la 
+firma digital correspondiente. 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 25 de 27
+
+=== PAGE 26 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+Compresión 
+Se deja como referencia la forma de compresión. 
+//////////// cmnTextoComprimir() ///////////////////////// 
+java byte[] bytesTexto = [!&textoOriginal!].getBytes("UTF-8"); //(1) 
+java java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream(); //(2) 
+java java.util.zip.GZIPOutputStream gzip = new java.util.zip.GZIPOutputStream(out); 
+java gzip.write(bytesTexto); 
+java gzip.close(); 
+java byte[] bytesTextoComp = out.toByteArray(); //(3) 
+java 
+[!&textoComprimido!] 
+org.apache.commons.codec.binary.Base64.encodeBase64String(bytesTextoComp); //(4) 
+= 
+///////////////////////////////////////////////////////////// 
+/* 
+bytes 
+Toma un texto, obtiene el binario que lo representa y lo comprime en formato zip, obteniendo un array de 
+El array de bytes comprimido lo devuelve como texto en base64 
+Los pasos para comprimir: 
+======================== 
+=> &textoOriginal 
+/ char[] (ENTRADA) 
+- linea (1) - Se obtienen los bytes que seran comprimidos. Estos bytes se obtienen codificando cada 'char' del 
+textoOriginal en un o mas 'byte' segun la codificacion UTF-8. 
+=> bytesTexto 
+/ byte[] 
+- linea (2) a (3) - Se comprime bytesTexto obtienendo otro array de bytes llamado bytesTextoComp 
+=> bytesTextoComp 
+/ byte[] 
+- linea (4) - Ese array de bytes se transforma a texto utilizando una libreria que lo hace en Base64 
+=> &textoComprimido 
+(SALIDA) 
+*/ 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 26 de 27
+
+=== PAGE 27 ===
+[P1] CÓDIGO: 
+VERSIÓN: 
+FECHA: 
+T-5.020.00.001-000005 
+1.9 
+13/05/2024 
+DOCUMENTOS TÉCNICOS 
+INFORMÁTICA – DESARROLLO 
+Servicios Web Externos DGI 
+Descompresión 
+Se deja como referencia la forma de descompresión. 
+//////////// cmnTextoDescomprimir() ///////////////////////// 
+//(1) 
+java byte[] bytes = org.apache.commons.codec.binary.Base64.decodeBase64([!&textoComprimido!]); 
+java 
+java.util.zip.GZIPInputStream 
+gunzip 
+= 
+new 
+java.util.zip.GZIPInputStream(new 
+java.io.ByteArrayInputStream(bytes)); //(2) 
+java java.io.BufferedReader bf = new java.io.BufferedReader(new java.io.InputStreamReader(gunzip, 
+"UTF-8")); //(3) 
+java StringBuffer sbf = new StringBuffer(); 
+java char[] charBuffer = new char[4096]; 
+java int len = bf.read(charBuffer);//(4) 
+java while (len != -1) { 
+java sbf.append(charBuffer, 0, len); 
+java len = bf.read(charBuffer); //(5) 
+java } 
+java [!&textoDescomprimido!] = sbf.toString(); 
+////////////////////////////////////////////////////////////////// 
+/* 
+Toma un texto base 64 devuelto por cmnTextoComprimir(), obtiene el binario que lo representa, 
+lo 
+descomprime y devuelve el texto UTF-8 correspondiente 
+Los pasos para des-comprimir: 
+======================== 
+=> &textoComprimido / char[] (ENTRADA) 
+- linea (1) - Se obtienen los bytes que seran descomprimidos mediante decodificacion Base64 
+=> bytes 
+/ byte[] 
+- Se descomprime 'bytes' (2) a la vez que se van obteniendo los 'chars' segun decodificacion UTF-8 (3) (es 
+decir, se supone que los bytes corresponde a una codificacion UTF-8 de caracteres) 
+- Esos arrays de caracteres que se van obteniendo en la variable 'charBuffer' ((4) y (5)) se van agregando a 
+un StringBuffer (sbf) 
+=> &textoComprimido 
+(SALIDA) 
+*/ 
+Fecha de impresión: 15/05/2024 11:08 
+DGI – Informática – Desarrollo 
+Página 27 de 27
+

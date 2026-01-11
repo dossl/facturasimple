@@ -1,0 +1,189 @@
+SOURCE_PDF: /Users/sergiolazaro/Documents/GitHub/facturasimple/Fuentes-Gub.uy/Generales-Documentos de Interes/Formato_Sobre_v05-Publicado.pdf
+EXTRACTED_AT: 2026-01-11T16:27:48.387297
+PARAGRAPH_RULE: paragraphs are blocks separated by blank lines in extracted text; numbering restarts each page.
+
+=== PAGE 1 ===
+[P1] DOCUMENTO FUNCIONAL 
+FORMATO DEL SOBRE 
+COMPROBANTE FISCAL ELECTRÓNICO 
+VERSIÓN 05- 10/06/2024
+
+=== PAGE 2 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+Í N D I C E 
+Fecha: 
+10/06/2024 
+ACTUALIZACIONES DE VERSIÓN ............................................................................................................................................................................................................................................................ 3 
+INTRODUCCIÓN ........................................................................................................................................................................................................................................................................ 4 
+1. 
+ZONAS DEL SOBRE .................................................................................................................................................................................................................................................................... 4 
+2. 
+3. DESCRIPCIÓN DEL FORMATO DEL SOBRE ....................................................................................................................................................................................................................................... 5 
+CARACTERÍSTICA DEL ARCHIVO ..................................................................................................................................................................................................................................................... 5 
+A.- CARÁTULA .......................................................................................................................................................................................................................................................................... 5 
+B.- CFE /CFC .......................................................................................................................................................................................................................................................................... 6 
+Doc: 
+Impresión: 10/6/2024 15:12:00 
+Formato_Sobre_v05.docx 
+Página 2 de 6
+
+=== PAGE 3 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+Actualizaciones de Versión 
+Versión 05 -10/06/2024 
+ 1 Introducción: Se ajusta redacción 
+Versión 04 -01/07/2013 
+ 3 Descripción del formato del sobre-Carátula A-C1: se incorpora número de versión. 
+Versión 03 -01/08/2012 
+ 3 Descripción del formato del sobre - Característica del archivo: Tamaño máximo del archivo 
+Versión 02 -26/07/2012 
+ Se reduce a 250 la cantidad de comprobantes que puede contener el sobre. 
+Versión 01 -01/07/2012 
+ 
+Idem documento Formato Sobre-Preliminar_v06 
+Preliminar 
+Versión 06 -26/01/2012 
+Preliminar 
+Versión 05 -01/11/2011 
+Preliminar 
+Versión 04 -25/10/2011 
+Preliminar 
+Versión 03 -06/10/2011 
+Preliminar 
+Versión 02 -27/07/2011 
+Preliminar 
+Versión 01 -20/07/2011 
+ 1 Introducción: se modifica texto. 
+ 2 Zona del sobre B) CFE/CFC: se incorpora tabla de obligatoriedad. 
+ Cap.3, A-C20: se modifica tipo de campo 
+ Cap.2, Zona A-Carátula: se incorpora datos del certificado electrónico. Se elimina la Zona C-Certificado Electrónico. 
+ Cap.3, A-C16: se modifica tipo de campo. 
+ Cap.3, A-C20: se incorpora certificado electrónico. Se elimina la Zona C-Certificado Electrónico 
+ Se modifica A-C16 
+ Se sustituye Zona C- Firma Electrónica por Zona C-Certificado Electrónico. 
+ Ajustes a la redacción. No se modifico el formato. 
+Doc: 
+Impresión: 10/6/2024 15:12:00 
+Formato_Sobre_v05.docx 
+Página 3 de 6
+
+=== PAGE 4 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+FORMATO DEL SOBRE 
+1. INTRODUCCIÓN 
+El emisor electrónico debe emitir y enviar a la DGI y previo al envío del comprobante al receptor electrónico, al transporte de las mercaderías, o a la entrega de su 
+representación impresa al receptor no electrónico, los comprobantes fiscales electrónicos (CFEs) que se detallan: 
+ 
+ 
+e-Facturas y sus notas de corrección, e-Resguardos y e-Remitos. 
+e-Tickets y sus notas de corrección con monto neto excluido el IVA mayor a 5.000 UI. 
+No se requiere esperar una autorización on line de la DGI para realizar el envío del CFE al receptor, o para realizar el transporte de las mercaderías, o para la entrega de 
+la representación impresa al receptor no electrónico. 
+En cuanto a la documentación de contingencia, la forma de envío a DGI sigue lo indicado para el tipo de CFE que sustituye. En este caso, el momento en que debe 
+realizarse el envío, siempre será posteriormente a la entrega del documento al cliente, cuando se haya solucionado la contingencia. Los Comprobantes Fiscales de 
+Contingencia (CFC) deben enviarse a DGI y no debe enviarlo al receptor. El comprobante valido fiscalmente es el documento papel. 
+Los documentos se deben enviar en un “Sobre” en el cual se especifica el origen, destino y contenido del envío. 
+2. ZONAS DEL SOBRE 
+En el archivo del Sobre se distinguen las siguientes zonas: 
+A) Carátula 
+Contiene datos generales de la información del envío, como identificación del contribuyente que envía los comprobantes, a quién va dirigida, la cantidad de 
+comprobantes que componen el envío, la fecha de generación del mismo y la información pública del certificado electrónico con el cual se firmaron los CFE 
+incorporados al sobre. Todos los CFE incluidos en el sobre deben ser firmados con el mismo certificado electrónico. 
+B) CFE /CFC 
+Los envíos incorporan de 1 a 250 comprobantes fiscales electrónicos y/o comprobantes fiscales de contingencia. 
+Doc: 
+Impresión: 10/6/2024 15:12:00 
+Formato_Sobre_v05.docx 
+Página 4 de 6
+
+=== PAGE 5 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+ZONAS del sobre 
+Obligatoriedad 
+A.- Carátula 
+B.- CFE/CFC 
+1 
+1 
+Códigos de Obligatoriedad: 
+1: Dato obligatorio. El dato debe estar en el documento siempre, independiente de las características de la transacción. 
+3. DESCRIPCIÓN DEL FORMATO DEL SOBRE 
+CARACTERÍSTICA DEL ARCHIVO 
+ Nombre del archivo: Sob_RUC_Fecha de creación (AAAAMMDD)_Id emisor.xml. 
+ Formato XML. 
+ Tamaño máximo: 2 Mega 
+ El emisor electrónico envía a DGI los CFE y CFC que emite y al receptor electrónico los CFE a su nombre. 
+ 
+Incluye el certificado electrónico con el que se firmaron los CFE que contiene el sobre 
+A.- CARÁTULA 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+VALIDACIÓN 
+OBLIGATOR. 
+1 VERSION 
+Versión del formato utilizado 
+ALFA 3 
+Valor: 1.0 
+1 
+Doc: 
+Impresión: 10/6/2024 15:12:00 
+Formato_Sobre_v05.docx 
+Página 5 de 6
+
+=== PAGE 6 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+2 RUC Receptor (DGI o RUC 
+receptor de los CFEs) 
+Corresponde al RUC receptor de los CFE o de 
+DGI. 
+TIPO 
+NUM 12 
+VALIDACIÓN 
+OBLIGATOR. 
+- Dígito verificador 
+- Igual a: 
+○ RUC DGI, o 
+○ RUC receptor del/los CFE que se 
+incorporan al sobre. 
+1 
+1 
+1 
+1 
+1 
+1 
+3 RUC Emisor 
+7 
+ID Emisor 
+Corresponde al RUC que emite los 
+comprobantes 
+Número asignado por el emisor al envío 
+9 Cantidad de Comprobantes 
+Cantidad de comprobantes en el sobre 
+16 Fecha de creación del sobre 
+AAAA-MM-DD HH:MM:SS 
+20 Certificado Electrónico 
+Información pública del Certificado Electrónico, 
+necesaria para validar la firma de los CFE 
+NUM 12 
+Dígito verificador 
+NUM 10 
+NUM 3 
+FECHA-
+HORA 
+BINARIO 
+≥1 Y ≤250 
+- AAAA-MM-DD HH:MM:SS 
+- Fecha y hora válidas 
+Certificado vigente, no revocado y 
+habilitado para facturación electrónica 
+al momento de generar la firma de los 
+CFE. 
+B.- CFE /CFC 
+De 1 a 250 ocurrencias con el formato descripto en el documento “Formato de los CFE”. 
+Doc: 
+Impresión: 10/6/2024 15:12:00 
+Formato_Sobre_v05.docx 
+Página 6 de 6
+

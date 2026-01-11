@@ -1,0 +1,1216 @@
+SOURCE_PDF: /Users/sergiolazaro/Documents/GitHub/facturasimple/Fuentes-Gub.uy/Generales-Documentos de Interes/Formato_Mensaje_de_Respuesta_v19-Publicado.pdf
+EXTRACTED_AT: 2026-01-11T16:27:48.661834
+PARAGRAPH_RULE: paragraphs are blocks separated by blank lines in extracted text; numbering restarts each page.
+
+=== PAGE 1 ===
+[P1] DDOOCCUUMMEENNTTOO FFUUNNCCIIOONNAALL 
+FFOORRMMAATTOO DDEELL MMEENNSSAAJJEE DDEE RREESSPPUUEESSTTAA 
+CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+VVEERRSSIIÓÓNN 1199 –– 2255//1111//22002255
+
+=== PAGE 2 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+Í N D I C E 
+Fecha: 
+25/11/2025 
+ACTUALIZACIONES DE VERSIÓN ............................................................................................................................................................................................................................................................ 4 
+INTRODUCCIÓN ........................................................................................................................................................................................................................................................................ 8 
+1. 
+ZONAS DEL MENSAJE DE RESPUESTA ............................................................................................................................................................................................................................................ 9 
+2. 
+3. DESCRIPCIÓN DEL FORMATO DEL MENSAJE DE RESPUESTA .............................................................................................................................................................................................................. 11 
+3.1. REPORTE DIARIO ................................................................................................................................................................................................................................................................. 11 
+CARACTERÍSTICA DEL ARCHIVO: .................................................................................................................................................................................................................................................. 11 
+3.1. A.- CARÁTULA ................................................................................................................................................................................................................................................................. 11 
+3.1. B.- DETALLE DE RESPUESTA: RESPUESTA A REPORTE ................................................................................................................................................................................................................ 12 
+3.1. C.- FIRMA ELECTRÓNICA .................................................................................................................................................................................................................................................... 12 
+3.2. SOBRE .............................................................................................................................................................................................................................................................................. 13 
+CARACTERÍSTICA DEL ARCHIVO: .................................................................................................................................................................................................................................................. 13 
+3.2. A.- CARÁTULA ................................................................................................................................................................................................................................................................. 13 
+3.2. B.- DETALLE DE RESPUESTA: RESPUESTA A SOBRE ................................................................................................................................................................................................................... 14 
+3.2. C.- FIRMA ELECTRÓNICA .................................................................................................................................................................................................................................................... 15 
+3.3. CONSULTA DE COMPROBANTES ............................................................................................................................................................................................................................................. 15 
+CARACTERÍSTICA DEL ARCHIVO: .................................................................................................................................................................................................................................................. 15 
+3.3. A.- CARÁTULA ................................................................................................................................................................................................................................................................. 16 
+3.3. B.- DETALLE DE RESPUESTA: RESPUESTA A COMPROBANTES ..................................................................................................................................................................................................... 17 
+3.3. C.- FIRMA ELECTRÓNICA .................................................................................................................................................................................................................................................... 18 
+3.4. ANULACIÓN DE CFE RECHAZADO POR DGI ............................................................................................................................................................................................................................... 19 
+CARACTERÍSTICA DEL ARCHIVO: .................................................................................................................................................................................................................................................. 19 
+3.4. A.- CARÁTULA ................................................................................................................................................................................................................................................................. 19 
+3.4. B.-DETALLE DE COMUNICACIÓN DE ANULACIÓN DE CFE POR RECHAZO DE DGI ............................................................................................................................................................................ 20 
+3.4. C.- FIRMA ELECTRÓNICA .................................................................................................................................................................................................................................................... 20 
+Doc: 
+Impresión: 25/11/2025 15:39:00 
+Formato_Mensaje_de_Respuesta_v19 
+Página 2 de 25
+
+=== PAGE 3 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+4. 
+TABLAS ................................................................................................................................................................................................................................................................................ 21 
+4.1. RECHAZO DE REPORTE .......................................................................................................................................................................................................................................................... 21 
+4.2. RECHAZO DE SOBRE ............................................................................................................................................................................................................................................................. 21 
+4.3. RECHAZO DE CFE/CONSULTA DE COMPROBANTES ..................................................................................................................................................................................................................... 22 
+4.4. OBSERVACIÓN DE CFC .......................................................................................................................................................................................................................................................... 24 
+4.5. TIPO DE COMPROBANTE ........................................................................................................................................................................................................................................................ 25 
+Doc: 
+Impresión: 25/11/2025 15:39:00 
+Formato_Mensaje_de_Respuesta_v19 
+Página 3 de 25
+
+=== PAGE 4 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+ACTUALIZACIONES DE VERSIÓN 
+Versión 19 – 25/11/2025 
+Versión 18 – 25/07/2025 
+Versión 17 – 25/09/2024 
+ En Tabla 4.3 Motivos de rechazo de CFE: se agrega un nuevo motivo de rechazo: E15 
+ En Tabla 4.4 Motivos de observación de CFC: se agrega un nuevo motivo de observación: C15 
+ En Introducción: se ajusta texto. 
+ En Tabla 4.3 Motivos de rechazo de CFE: se agrega un nuevo motivo de rechazo: E14 
+ En Tabla 4.4 Observación de CFC: se agrega un nuevo motivo de observación: C14 
+ En Introducción: se agrega texto 
+ En 3.1.B-C28: se modifica tipo 
+ En 3.2.B-C29: Detalle de respuesta: Respuesta a sobre: se agrega motivo de rechazo: S20 
+ En 3.2.B-C30: se modifica tipo 
+ En 3.3.B-C27: Detalle de respuesta: Respuesta a comprobantes: se agrega motivo de rechazo: E13 y motivo de observación: C13 
+ En 3.3.B-C28: se modifica tipo 
+ En Tabla 4.2 Rechazo de sobre: se agrega un nuevo motivo de rechazo: S20 
+ En Tabla 4.3 Motivos de rechazo de CFE: se agrega un nuevo motivo de rechazo: E13 
+ En Tabla 4.4 Observación de CFC: se agrega un nuevo motivo de observación: C13 
+Versión 16 – 30/06/2023 
+Versión 15 – 01/07/2022 
+Versión 14 – 29/05/2020 
+ En 3.3.B: se agrega nuevo motivo de observación: C12 
+ En Tabla 4.3. Rechazo de CFE/Consulta de Comprobantes: se incorpora nuevo motivo de rechazo: E12 
+ En Tabla 4.4 Observación de CFC: se incorpora nuevo motivo de observación: C12 
+ En Tabla 4.3. Rechazo de CFE/Consulta de Comprobantes: se modifica texto motivo E06 
+ En Tabla 4.4 Observación de CFC: se modifica texto motivo C06 
+ En 3.3.B: se agregan nuevos motivos de observación C06, C10 y C11 
+ En Tabla 4.3 Rechazo de CFE/Consulta de comprobante: se agregan nuevos motivos de rechazo E06, E10 y E11 
+ En Tabla 4.4 Observación de CFC: 
+o se agregan nuevos motivos de observación C06, C10 y C11 
+o se precisa leyenda de motivo de observación C08 
+Versión 13 – 29/06/2018 
+ En 3.3.B. Detalle de respuesta a comprobantes: se incorpora nuevo código de motivo de observación C09 
+Versión 12.1- 16/01/2017 
+ En 4.5 Tabla de comprobantes- Se incorpora nuevo tipo de CFE: e-Boleta de entrada y sus correcciones. 
+Doc: 
+Impresión: 25/11/2025 15:39:00 
+Formato_Mensaje_de_Respuesta_v19 
+Página 4 de 25
+
+=== PAGE 5 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+Versión 12- 08/11/2016 
+ ANULADA 
+Versión 11.1-09/08/2016 
+ En 1 Introducción: se modifica información 
+ En 3.1.B Detalle de respuesta: Respuesta a Reporte/B-C27: se agrega motivo de rechazo R06 
+ En Tabla 4.1 Rechazo del Reporte: se incorpora nuevo motivo de rechazo R06 
+ En Tabla 4.3 Rechazo de CFE/Consulta de comprobante: se modifica descripción del motivo de rechazo E09 
+ En Tabla 4.4 Observación de CFC: se incorpora nuevo motivo de rechazo C09 
+Versión 11 – 03/06/2016 
+ Versión anulada 
+Versión 10 – 18/06/2015 
+ En 1 Introducción: se agrega información. 
+ En 2.B) Detalle de respuesta a “Consulta de Comprobantes”: se modifica número de ocurrencias (0 a 250) 
+ En 3.1.A Carátula: se modifica descripción y obligatoriedad del campo 5 Nombre del archivo 
+ En 3.2.A Carátula: se modifica descripción y obligatoriedad del campo 5 Nombre del archivo 
+ En 3.2.B. Códigos de motivos de rechazo: se agrega motivo de rechazo S08 
+ En 3.3.A Carátula: se modifica descripción y obligatoriedad del campo 5 Nombre del archivo 
+ En 3.3.B. Detalle de respuesta a comprobantes: 
+o se modifica número de ocurrencias (0 a 250) 
+o se elimina código de motivo de observación C02. 
+ En 3.4.B Detalle de comunicación de anulación de CFE por rechazo de DGI: se modifica número de ocurrencias (0 a 250) 
+ En Tabla 4.2 Rechazo de sobre: se incorpora nuevo motivo de rechazo (S08) 
+ En Tabla 4.3 Rechazo de CFE/Consulta de comprobante: se agrega motivo de rechazo E09 
+ En Tabla 4.4 Observación CFC: se elimina motivo de observación C02. 
+Versión 09 – 14/05/2014 
+ En Tabla 4.3 Rechazo de CFE: se incorpora nuevo motivo de rechazo. 
+ En Tabla 4.4 Observación CFC: se incorpora nuevo motivo de observación. 
+Versión 08 – 31/01/2014 
+ En 4.5. Tipo de Comprobante: se incorporan nuevos tipos de comprobantes de venta por cuenta ajena. 
+Versión 07 – 22/01/2014 
+ En Introducción: Se agrega información. 
+ En Zona Mensaje de Respuesta-B Detalle de Respuesta: Se modifica título. 
+ En 3.3: Se incorpora el formato de “Consulta de Comprobantes” 
+ En Tabla 4.4 Observación CFC: se modifica observación C03 
+ En 4.5. Tipo de Comprobante: se incorporan nuevos tipos de comprobantes de exportación. 
+Versión 06 – 25/11/2013 
+ Versión anulada 
+Doc: 
+Impresión: 25/11/2025 15:39:00 
+Formato_Mensaje_de_Respuesta_v19 
+Página 5 de 25
+
+=== PAGE 6 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+Versión 05_1 – 26/08/2013 
+ Versión anulada 
+Versión 05-12/07/2013 
+ Versión anulada 
+Versión 04_1 – 26/08/2013 
+ En 3.1.B.- C29; 3.2.B.- C31; 3.3.B.- C29: se modifica el tamaño del campo. 
+Versión 04 – 29/01/2013 
+ En Introducción, se agrega información. 
+ En 3.1.B. Tabla de motivos de rechazo: Se aumenta las Repeticiones y se agrega B-C29, Detalle del rechazo. 
+ En 3.1.C. Se modifica número identificador de los campos. 
+ En 3.2.B. Detalle de respuesta-respuesta a sobre, se modifica obligatoriedad área Parámetros consulta. 
+ En 3.2.B. Tabla de motivos de rechazo: Se aumenta las Repeticiones y se agrega B-C31, Detalle del rechazo. 
+ En 3.2.C. Se modifica número identificador de los campos. 
+ En 3.3.B. Detalle de respuesta: respuesta a comprobantes, B-C21, B-C22, B-C23, B-C24 y B-C25 se eliminan las Notas al Pie. 
+ En 3.3.B. Tabla de motivos de rechazo: Se aumenta las Repeticiones y se agrega B-C29, Detalle del rechazo. 
+ En 3.3.B. Detalle de respuesta: respuesta a comprobantes, se agregan B-C30, B-C31, B-C32 y B-C33. 
+ En 3.3.C. Se modifica número identificador de los campos. 
+ Se agregan códigos para motivos de rechazo comercial de uso opcional entre receptores y emisores electrónicos. (Motivos E20 a E60). 
+Versión 03 – 07/09/2012 
+ En 3.2 Detalle de respuesta a sobre: B-C29 se modifica descripción. 
+ En 4.2 Rechazo de sobre se agrega motivo de rechazo. 
+Versión 02 – 26/07/2012 
+ En detalle de respuesta a comprobantes (2-B y 3.3-B) y en detalle de comunicación de anulación de CFE (3.4-B): se modifica cantidad de 
+Versión 01 – 01/07/2012 
+Preliminar 
+Versión 07 – 28/02/2012 
+Preliminar 
+Versión 06 – 24/01/2012 
+ocurrencias a 250 
+ En Introducción: se ajusta redacción. 
+ En 3.4. Anulación de CFE rechazado por DGI: Nombre del archivo. 
+ En 4.3 Rechazo de CFE: 
+o Se elimina motivo de rechazo E06. 
+o Se incorpora códigos opcionales de rechazo comercial de un CFE (E20 a E30). 
+ En 4.4 Observación de CFC, se elimina motivo de observación C06. 
+ En Introducción: se agrega información. 
+ En 3-Descripción del Formato de Mensaje de Respuesta: se incorpora el apartado 3.4. Anulación de CFE por rechazo de DGI. 
+ En A-Carátula de Reporte Diario, Sobre y Comprobante se modifica tipo de campo 5 Nombre de archivo. 
+ En B–Detalle de la respuesta de Sobre se agrega Área: Parámetros Consulta. 
+ Se elimina el apartado 3.4. Archivo no válido. 
+Doc: 
+Impresión: 25/11/2025 15:39:00 
+Formato_Mensaje_de_Respuesta_v19 
+Página 6 de 25
+
+=== PAGE 7 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+ En 4-Tablas se eliminan motivos de rechazo. 
+ Se elimina la tabla 4.4.Rechazo de archivo. 
+ En “Introducción” (4º párrafo) se corrige la redacción como opcional (“y/o”) del mensaje de repuesta del resultado de verificación de cada 
+CFE, estableciéndolo como obligatorio (“y”). 
+ En los campos Fecha y hora, se modifica tipo. 
+ En los campos Certificado Electrónico, se modifica tipo. 
+ Se cambio orden de las tablas de motivo de rechazo de reporte y de archivo. 
+ Se modifican tabla 4.2 rechazo de sobre, 4.3 rechazo de CFE y 4.5 observación de CFE. 
+ Se incorpora el apartado 3.4. Archivo no válido incorporando aquí el motivo de rechazo A01. 
+ Se agregan motivos de rechazo comercial de los CFE para ser utilizado en forma opcional entre receptores y emisores electrónicos. 
+(Motivos E20 a E30 a acordar con contribuyentes). 
+ Se ajusta la glosa de los motivos de rechazo al tamaño del campo: ALFA 50. 
+Preliminar 
+Versión 05 – 15/12/2011 
+Preliminar 
+Versión 04 – 04/11/2011 
+Preliminar 
+Versión 03 – 18/08/2011 
+Preliminar 
+Versión 02 – 27/07/2011 
+Preliminar 
+Versión 01 – 20/07/2011 
+Doc: 
+Impresión: 25/11/2025 15:39:00 
+Formato_Mensaje_de_Respuesta_v19 
+Página 7 de 25
+
+=== PAGE 8 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+FORMATO DEL MENSAJE DE RESPUESTA 
+1. Introducción 
+Las empresas autorizadas como emisores electrónicos son también receptores electrónicos y como tales, cada vez que reciban un envío de Comprobantes Fiscales 
+Electrónicos (CFE) de un emisor electrónico autorizado, deben generar una respuesta en el formato establecido por la DGI, en la que den cuenta del estado de la 
+recepción del envío. Posteriormente, deberán dar cuenta del estado de aceptación o rechazo de cada uno de los comprobantes que componen el envío. 
+Asimismo, los emisores electrónicos deben generar una comunicación al receptor electrónico en el formato establecido por la DGI, en el que den cuenta de la anulación 
+de todo CFE enviado al receptor electrónico que haya sido rechazado por DGI. 
+Con el mensaje de respuesta se responde a los envíos del emisor: 
+o Envío de “Reporte”: dando cuenta del estado de la recepción del Reporte Diario (recibido o rechazado), por parte de DGI 
+o Envío de “Sobre”: dando cuenta del estado de la recepción de un Sobre conteniendo 1 o más comprobantes (recibido o rechazado), por parte de DGI o del 
+receptor electrónico. 
+o Envío de “Consulta de Comprobantes”: dando cuenta del resultado de la revisión de cada uno de los CFE/CFC, asignando el estado de la recepción (recibido, 
+rechazado u observado) por parte de DGI, y por parte del receptor electrónico la aceptación o el rechazo de los CFE, en el marco de lo acordado entre las partes. 
+o Además, el emisor debe dar cuenta de la anulación del CFE enviado al receptor electrónico por rechazo de DGI. (Emisor electrónico a Receptor electrónico). 
+El mensaje que da cuenta del resultado de revisión de cada uno de los CFE, resultando el rechazo o aceptación explícita de cada comprobante, puede ser generado en 
+múltiples mensajes o en una sola respuesta, dependiendo de los procesos administrativos y autorizaciones al interior de la organización que cada receptor deba realizar 
+para determinar el estado final, en cuanto a la recepción o rechazo, de cada uno de los CFEs componentes del envío, en el marco de lo acordado entre las partes. No 
+obstante, cabe destacar que a todos sus efectos, el CFE recibido por DGI es válido y si corresponde su modificación, el emisor debe emitir la nota de corrección 
+correspondiente (Resolución 798/2012, inciso final del numeral 12). 
+En este documento se describe el contenido que deben tener los mensajes de respuesta, incorporando los códigos de recepción, rechazo y observación a ser utilizados 
+por la DGI y los receptores electrónicos, según corresponda, en sus respectivas respuestas. A su vez se codifican los motivos asociados a los rechazos definidos por DGI 
+para sus respuestas y que opcionalmente, podrán ser utilizados por los receptores electrónicos en su respuesta al emisor. Adicionalmente se incorporan motivos de 
+rechazo comercial sugeridos por los contribuyentes a efectos de estandarizar la no aceptación comercial de los CFEs por parte de los receptores electrónicos 
+Doc: 
+Impresión: 25/11/2025 15:39:00 
+Formato_Mensaje_de_Respuesta_v19 
+Página 8 de 25
+
+=== PAGE 9 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+(Codificados de E20 a 60), de uso opcional. También se describe la comunicación que debe realizar el emisor electrónico al receptor electrónico en caso que DGI rechace 
+un CFE que ya le fue enviado. 
+Todo CFE rechazado por DGI debe anularse no pudiendo volver a utilizarse (excepto cuando el motivo de rechazo es E02: “Tipo y Nº de CFE ya existe en los registros” y 
+E09 “RUC emisor y/o tipo de CFE no se corresponden con el CAE”. Respecto al CFC, dado que el documento válido es el comprobante en papel, éstos no se rechazan, 
+sino que se devuelven observados para su corrección, debiendo el emisor volver a informarlo corregido, salvo que el comprobante papel sea anulado. 
+El intercambio de información entre contribuyentes autorizados se efectuará por el medio que las partes acuerden, sin embargo deberán tener habilitado como mínimo la 
+posibilidad de recibir y enviar información por e-mail, al que se adjunta los mensajes de la respuesta de recepción de un Sobre (acuse de recibo o rechazo del Sobre) y de 
+respuesta del resultado de la verificación de los CFEs (recepción o rechazo de cada CFE contenido en el sobre), todos ellos en el formato XML establecido por la DGI en 
+este documento. Si el intercambio de información entre emisores es ejecutado por proveedores habilitados, es obligatorio el uso de web service. 
+2. Zonas del Mensaje de Respuesta 
+En los archivos de respuesta se distinguen las siguientes zonas: 
+A) Carátula 
+Contiene datos generales de la información del envío, como identificación del contribuyente que genera la respuesta, a quién va dirigida, la fecha de generación y 
+los datos del archivo que se responde. Se incluye el campo ID Respuesta (Identificador de Respuesta), un número único asignado por quien genera la respuesta, 
+con el fin de futuras referencias a ésta. 
+B) Detalle de Respuesta 
+ Respuesta a “Reporte Diario”: Incorpora el acuse de recibo del reporte por parte de la DGI, con la recepción o rechazo del mismo, indicando la glosa que 
+describa el motivo, en caso de rechazo 
+ Respuesta a “Sobres”: Incorpora el acuse de recibo del envío, con la recepción o rechazo del mismo, indicando la glosa que describa el motivo, en caso de 
+rechazo. No implica el análisis de cada comprobante individualmente ni la aceptación comercial de los mismos. 
+ Respuesta a “Consulta de Comprobantes”: Se detalla la recepción o rechazo de cada uno de los CFE, y por parte del adquirente implica además la 
+aceptación, en el marco de lo acordado entre las partes. El formato de esta respuesta debe indicar los datos de cada comprobante y en el caso de rechazos, 
+la glosa que describa el motivo. Presenta entre 0 y 250 ocurrencias. 
+Doc: 
+Impresión: 25/11/2025 15:39:00 
+Formato_Mensaje_de_Respuesta_v19 
+Página 9 de 25
+
+=== PAGE 10 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+ Comunicación de anulación de CFE por rechazo de DGI: Se detalla la anulación de un CFE enviado al receptor, por haber sido rechazado por parte de 
+DGI. Es un mensaje del emisor electrónico al receptor electrónico. No debe ser enviado a la DGI. 
+C) Firma Electrónica. 
+Firma electrónica avanzada que avala la integridad de la respuesta y la autenticidad del remitente. Debe realizarse con un certificado electrónico válidamente 
+emitido. 
+Códigos de Obligatoriedad: 
+1: Dato obligatorio: El dato debe estar en la respuesta siempre. 
+2: Dato condicional: El dato se registra sólo si se cumple la condición. 
+3: Opcional: El dato se registra si se entiende necesario 
+ZONAS DEL REPORTE 
+OBLIGATORIEDAD DE LA ZONA 
+Carátula 
+Detalle de Respuesta 
+Firma Electrónica 
+1 
+1 
+1 
+Las tres zonas son obligatorias en todos los mensajes de respuesta y los datos que la componen pueden ser obligatorios, condicionales u opcionales, según se indica en 
+el formato de los mensajes. 
+A continuación, se especifica el contenido de cada zona, formato de cada campo que la compone y código de obligatoriedad del mismo. 
+Doc: 
+Impresión: 25/11/2025 15:39:00 
+Formato_Mensaje_de_Respuesta_v19 
+Página 10 de 25
+
+=== PAGE 11 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+3. Descripción del Formato del mensaje de Respuesta 
+3.1. Reporte Diario 
+Característica del archivo: 
+ Nombre del archivo: M_ID Receptor_Rep_RUC_Período(AAAAMMDD)_Secuencia(xx).xml, donde RUC, Periodo y Secuencia corresponden a los datos del 
+reporte que se responde. 
+ Formato XML. 
+ DGI envía el mensaje al emisor del Reporte Diario. 
+ 
+Incluye la firma electrónica avanzada sobre toda la información. 
+3.1. A.- Carátula 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+OBLIGATORIEDAD 
+1 VERSION 
+Versión del formato utilizado 
+2 RUC Receptor del envío(DGI) 
+3 RUC Emisor del envío 
+5 Nombre de Archivo 
+Corresponde al RUC de DGI, quien redacta la respuesta (DE) 
+Corresponde al RUC del contribuyente de quien se recibió el envío 
+(PARA) 
+Nombre del archivo recibido: 
+Si la recepción fue en modalidad upload: Nombre del archivo recibido 
+Si la recepción fue en modalidad WS : Vacío (no existe nombre de 
+archivo recibido 
+6 Fecha y hora Recepción Envío AAAA-MM-DD HH:MM:SS 
+7 
+8 
+ID Emisor 
+ID Receptor 
+Número asignado por el emisor al envío que se responde 
+Número asignado por el receptor cuando recibió el envío que se 
+responde 
+ALFA 3 
+NUM 12 
+NUM 12 
+ALFA 40 
+FECHA 
+HORA 
+NUM 10 
+NUM 10 
+1 
+1 
+1 
+2 
+1 
+1 
+1 
+Doc: 
+Impresión: 25/11/2025 15:39:00 
+Formato_Mensaje_de_Respuesta_v19 
+Página 11 de 25
+
+=== PAGE 12 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+OBLIGATORIEDAD 
+16 Fecha y hora de firma 
+AAAA-MM-DD HH:MM:SS 
+electrónica avanzada del envío 
+FECHA 
+HORA 
+1 
+3.1. B.- Detalle de Respuesta: Respuesta a Reporte 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+OBLIGATORIEDAD 
+26 Estado Recepción del Envío 
+Tabla de motivos de rechazo 
+27 Código de motivo de rechazo 
+28 Glosa de motivo de rechazo 
+29 Detalle de Rechazo 
+Fin de tabla 
+AR – Reporte Recibido 
+BR – Reporte Rechazado 
+Hasta 30 repeticiones 
+Motivos R01 a R06 (Tabla 4.1. Rechazo de Reporte) 
+Descripción del motivo según tabla 
+Descripción detallada del motivo de rechazo 
+ALFA 2 
+ALFA 3 
+ALFA 100 
+ALFA 500 
+1 
+3 
+1 
+1 
+3 
+3.1. C.- Firma Electrónica 
+ CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+OBLIGATORIEDAD 
+40 Certificado Electrónico 
+41 Firma Electrónica Avanzada 
+Información pública del Certificado Electrónico, necesaria para validar 
+la firma. 
+Firma electrónica avanzada sobre todo el envío 
+Binario 
+1 
+1 
+Doc: 
+Impresión: 25/11/2025 15:39:00 
+Formato_Mensaje_de_Respuesta_v19 
+Página 12 de 25
+
+=== PAGE 13 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+3.2. Sobre 
+Característica del archivo: 
+ Nombre del archivo: M_ID Respuesta_Sob_RUC_Fecha de creación (AAAAMMDD) _Id emisor.xml, donde RUC, Fecha creación e Id emisor corresponden a los 
+datos del sobre que se responde. 
+ Formato XML. 
+ DGI y el Receptor Electrónico envían el mensaje al emisor del CFE. 
+Incluye la firma electrónica avanzada sobre toda la información. 
+ 
+3.2. A.- Carátula 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+OBLIGATORIEDAD 
+1 VERSION 
+Versión del formato utilizado 
+2 RUC Receptor del envío (DGI o 
+Receptor del Sobre 
+3 RUC Emisor del envío 
+4 
+ID Respuesta 
+5 Nombre de Archivo 
+Corresponde al RUC de quien redacta la respuesta, DGI o Receptor. 
+(DE) 
+Corresponde al RUC del contribuyente de quien se recibió el envío 
+(PARA) 
+Número único de identificación de la respuesta asignado por quien 
+responde 
+Nombre del archivo recibido: 
+Si la recepción fue en modalidad upload: Nombre del archivo recibido 
+Si la recepción fue en modalidad WS : Vacío (no existe nombre de 
+archivo recibido 
+6 Fecha y hora Recepción Envío AAAA-MM-DD HH:MM:SS 
+7 
+ID Emisor 
+Número asignado por el emisor al envío que se responde 
+ALFA 3 
+NUM 12 
+NUM 12 
+NUM 10 
+ALFA 40 
+FECHA 
+HORA 
+NUM 10 
+1 
+1 
+1 
+1 
+ 2 
+1 
+1 
+Doc: 
+Impresión: 25/11/2025 15:39:00 
+Formato_Mensaje_de_Respuesta_v19 
+Página 13 de 25
+
+=== PAGE 14 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+8 
+ID Receptor 
+9 Cantidad de Comprobantes 
+13 Fecha y hora de firma 
+electrónica del envío 
+DESCRIPCIÓN 
+TIPO 
+OBLIGATORIEDAD 
+Número asignado por el receptor cuando recibió el envío que se 
+responde 
+Cantidad de comprobantes en el sobre 
+AAAA-MM-DD HH:MM:SS 
+NUM 10 
+NUM 3 
+FECHA 
+HORA 
+1 
+1 
+1 
+3.2. B.- Detalle de Respuesta: Respuesta a Sobre 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+OBLIGATORIEDAD 
+26 Estado Recepción del Envío 
+ Área 
+27 Token 
+28 Fecha y hora Consulta 
+Fin de área 
+Tabla de motivos de rechazo 
+29 Código de motivo de rechazo 
+30 Glosa de motivo de rechazo 
+31 Detalle de Rechazo 
+Fin de tabla 
+AS – Sobre Recibido 
+BS – Sobre Rechazado 
+Parámetros Consulta 
+Cadena de caracteres a invocar en la respuesta 
+Fecha y hora a partir de la cual se puede consultar el 2do mensaje 
+(respuesta a comprobantes). 
+AAAA-MM-DD HH:MM:SS 
+Hasta 30 repeticiones 
+Motivos S01 a S20 (Tabla 4.2. Rechazo de Sobre) 
+Descripción del motivo según tabla 
+Descripción detallada del motivo de rechazo 
+ALFA 2 
+Binario 
+FECHA 
+HORA 
+ALFA 3 
+ALFA 100 
+ALFA 500 
+1 
+3 
+1 
+1 
+3 
+1 
+1 
+3 
+Doc: 
+Impresión: 25/11/2025 15:39:00 
+Formato_Mensaje_de_Respuesta_v19 
+Página 14 de 25
+
+=== PAGE 15 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+3.2. C.- Firma Electrónica 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+OBLIGATORIEDAD 
+40 Certificado Electrónico 
+41 Firma Electrónica Avanzada 
+Información pública del Certificado Electrónico, necesaria para validar 
+la firma. 
+Firma electrónica avanzada sobre todo el envío 
+BINARIO 
+1 
+1 
+3.3. Consulta de Comprobantes 
+ El emisor electrónico debe enviar la “Consulta de Comprobantes” a los efectos de consultar el estado de cada uno de los CFE/CFC enviados en el sobre en el 
+siguiente formato: 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+OBLIGATORIEDAD 
+1 
+ID Receptor 
+2 Token 
+Número asignado por el receptor cuando recibió el envío que se 
+responde 
+Cadena de caracteres a invocar en la respuesta (C27 Mensaje de 
+Respuesta Sobre, original)) 
+NUM 10 
+BINARIO 
+1 
+1 
+ En el mensaje de respuesta a la “Consulta de comprobantes” se informa el resultado de la verificación de cada CFE/CFC enviado (estado: recibido, rechazado u 
+observado). 
+Característica del archivo: 
+ Nombre del archivo: ME_ID Respuesta_Sob_RUC_Fecha de creación(AAAAMMDD) _Id emisor.xml, donde RUC, Fecha de creación e Id emisor corresponden a 
+los datos del Sobre que se responde. 
+Doc: 
+Impresión: 25/11/2025 15:39:00 
+Formato_Mensaje_de_Respuesta_v19 
+Página 15 de 25
+
+=== PAGE 16 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+ Formato XML. 
+ DGI y el Receptor Electrónico envía el mensaje al emisor del CFE. 
+ No obstante ser obligatorio para el receptor el envío del mensaje de respuesta al comprobante enviado por el emisor, la incorporación de motivos de rechazo 
+comercial es optativa, puede ser convenido entre emisor y receptor. 
+Incluye la firma electrónica avanzada sobre toda la información. 
+ 
+3.3. A.- Carátula 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+OBLIGATORIEDAD 
+1 VERSION 
+Versión del formato utilizado 
+2 RUC Receptor del envío (DGI o 
+Receptor del CFE) 
+3 RUC Emisor del envío 
+4 
+ID Respuesta 
+5 Nombre de Archivo 
+Corresponde al RUC de quien redacta la respuesta, DGI o Receptor, 
+(DE) 
+Corresponde al RUC del contribuyente de quien se recibió el envío 
+(PARA) 
+Número único de identificación de la respuesta asignado por el que 
+responde 
+Nombre del archivo recibido: 
+Si la recepción fue en modalidad upload: Nombre del archivo recibido 
+Si la recepción fue en modalidad WS : Vacío (no existe nombre de 
+archivo recibido 
+6 Fecha y hora Recepción Envío AAAA-MM-DD HH:MM:SS 
+7 
+8 
+ID Emisor 
+ID Receptor 
+9 Cantidad de Comprobantes del 
+Sobre 
+Número asignado por el emisor al envío que se responde 
+Número asignado por el receptor cuando recibió el envío que se 
+responde 
+Cantidad de comprobantes enviados en el sobre que se responde 
+ALFA 3 
+NUM 12 
+NUM 12 
+NUM 10 
+ALFA 40 
+FECHA 
+HORA 
+NUM 10 
+NUM 10 
+NUM 3 
+10 Cantidad de Comprobantes que 
+Cantidad de comprobantes que se responden en este mensaje 
+NUM 3 
+se responden 
+11 Cantidad CFE Aceptados 
+Cantidad de CFE aceptados en este mensaje 
+NUM 3 
+1 
+1 
+1 
+1 
+2 
+1 
+1 
+1 
+1 
+1 
+2 
+Doc: 
+Impresión: 25/11/2025 15:39:00 
+Formato_Mensaje_de_Respuesta_v19 
+Página 16 de 25
+
+=== PAGE 17 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+OBLIGATORIEDAD 
+12 Cantidad CFE Rechazados 
+13 Cantidad CFC1 Aceptados 
+14 Cantidad CFC2 Observados 
+15 Cantidad Otros Rechazados 
+16 Fecha y hora de firma 
+electrónica del envío 
+Cantidad de CFE rechazados en este mensaje 
+Cantidad de CFC aceptados en este mensaje 
+Cantidad de CFC observados en este mensaje 
+Archivo con formato que no corresponde a CFE o CFC 
+AAAA-MM-DD HH:MM:SS 
+NUM 3 
+NUM 3 
+NUM 3 
+NUM 3 
+FECHA 
+HORA 
+2 
+2 
+2 
+2 
+1 
+3.3. B.- Detalle de Respuesta: Respuesta a Comprobantes 
+(Entre 0 y 250 ocurrencias) 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+OBLIGATORIEDAD 
+20 Nro. Ordinal 
+21 Tipo CFE 
+22 Serie del Comprobante 
+23 Número de Comprobante 
+24 Fecha del Comprobante 
+25 Fecha de la Firma electrónica 
+avanzada del comprobante 
+26 Estado Recepción del 
+Comprobante 
+Tabla de motivos de rechazo 
+Nro. Ordinal asignado a cada comprobante del sobre 
+Indica el tipo de CFE informado. 
+Serie asignada al comprobante. 
+Nº asignado al comprobante. 
+Fecha del comprobante. 
+AAAA-MM-DD HH:MM:SS 
+AE – Comprobante Recibido 
+BE – Comprobante Rechazado (CFE) 
+CE – Comprobante Observado (CFC)3 
+Hasta 30 repeticiones 
+NUM 3 
+NUM 3 
+ALFA 2 
+NUM 7 
+NUM 8 
+FECHA 
+HORA 
+ALFA 2 
+1 
+2 
+2 
+2 
+2 
+2 
+1 
+3 
+1 Uso exclusivo de DGI. Los Comprobantes Fiscales de Contingencia (CFC) deben enviarse a DGI y no debe enviarlo al receptor. El comprobante valido fiscalmente es el 
+documento papel. 
+2 Ídem 1 
+3 Uso exclusivo DGI 
+Doc: 
+Impresión: 25/11/2025 15:39:00 
+Formato_Mensaje_de_Respuesta_v19 
+Página 17 de 25
+
+=== PAGE 18 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+OBLIGATORIEDAD 
+27 Código de motivo de 
+rechazo/observación 
+28 Glosa de motivo de rechazo 
+29 Detalle de Rechazo 
+Fin de tabla 
+ Área 
+30 
+ID Respuesta Sobre 
+31 
+ID Emisor Sobre 
+32 
+ID Receptor Sobre 
+33 Token Sobre 
+Motivos E01 a E60 (Tabla 4.3. Rechazo de CFE) 
+Motivos C03 a C06, C08 a C15 (Tabla 4.4 Observación de CFC)4 
+Descripción del motivo según tabla 
+Descripción detallada del motivo de rechazo 
+ALFA 3 
+ALFA 100 
+ALFA 500 
+1 
+1 
+3 
+Información del Mensaje de Respuesta original, enviado cuando el 
+CFE, que se informa “Rechazado” por motivo E02, fue “Recibido” 
+Número único de identificación de la respuesta asignado por quien 
+responde (C4 Mensaje de Respuesta Sobre, original) 
+Número asignado por el emisor al envío que se responde (C7 Mensaje 
+de Respuesta Sobre, original) 
+Número asignado por el receptor cuando recibió el envío que se 
+responde (C8 Mensaje de Respuesta Sobre, original) 
+Cadena de caracteres a invocar en la respuesta (C27 Mensaje de 
+Respuesta Sobre, original) 
+NUM 10 
+NUM 10 
+NUM 10 
+Binario 
+1 
+Si C27=E02 
+1 
+1 
+1 
+3 
+3.3. C.- Firma Electrónica 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+OBLIGATORIEDAD 
+40 Certificado Electrónico 
+41 Firma Electrónica Avanzada 
+Información pública del Certificado Electrónico, necesaria para validar 
+la firma. 
+Firma electrónica avanzada sobre todo el envío 
+BINARIO 
+1 
+1 
+4 Idem 1 
+Doc: 
+Impresión: 25/11/2025 15:39:00 
+Formato_Mensaje_de_Respuesta_v19 
+Página 18 de 25
+
+=== PAGE 19 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+3.4. anulación de CFE rechazado por DGI 
+Detalle de la anulación de un CFE enviado al receptor, por haber sido rechazado por parte de DGI. 
+Característica del archivo: 
+ Nombre del archivo: Rech_RUC Emisor_ Id Comunicacion.xml, 
+ Formato XML. 
+ Emisor Electrónico envía al receptor electrónico, comunicación de la anulación de un CFE que ya le fue enviado, por rechazo de DGI. 
+ No debe ser enviado a DGI. 
+ 
+Incluye la firma electrónica avanzada sobre toda la información. 
+3.4. A.- Carátula 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+OBLIGATORIEDAD 
+1 VERSION 
+Versión del formato utilizado 
+2 RUC Emisor electrónico 
+3 RUC Receptor electrónico 
+ID Comunicación 
+4 
+5 Cantidad de Comprobantes que 
+se comunican 
+Corresponde al RUC de quien redacta el mensaje, (DE) 
+Corresponde al RUC del contribuyente receptor del Sobre/CFE 
+rechazado por DGI (PARA) 
+Número único de la comunicación asignado por el emisor electrónico. 
+Cantidad de comprobantes que se reportan como anulados 
+6 Fecha y hora de firma 
+AAAA-MM-DD HH:MM:SS 
+electrónica del envío de la 
+comunicación 
+ALFA 3 
+NUM 12 
+NUM 12 
+NUM 10 
+NUM 3 
+FECHA 
+HORA 
+1 
+1 
+1 
+3 
+1 
+1 
+Doc: 
+Impresión: 25/11/2025 15:39:00 
+Formato_Mensaje_de_Respuesta_v19 
+Página 19 de 25
+
+=== PAGE 20 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+3.4. B.-Detalle de Comunicación de anulación de CFE por rechazo de DGI 
+(Entre 0 y 250 ocurrencias) 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+OBLIGATORIEDAD 
+21 Tipo CFE 
+22 Serie del Comprobante 
+23 Número de Comprobante 
+24 Fecha del Comprobante 
+25 Código de motivo de anulación Motivo: RD 
+26 Glosa de motivo de rechazo 
+Indica el tipo de CFE anulado. 
+Serie asignada al comprobante anulado. 
+Nº asignado al comprobante anulado. 
+Fecha del comprobante anulado. 
+Comprobante anulado por rechazo de DGI 
+NUM 3 
+ALFA 2 
+NUM 7 
+NUM 8 
+ALFA 2 
+1 
+1 
+1 
+1 
+1 
+3.4. C.- Firma Electrónica 
+CAMPOS 
+DESCRIPCIÓN 
+TIPO 
+OBLIGATORIEDAD 
+30 Certificado Electrónico 
+31 Firma Electrónica Avanzada 
+Información pública del Certificado Electrónico, necesaria para validar 
+la firma. 
+Firma electrónica avanzada sobre todo el envío 
+BINARIO 
+1 
+1 
+Doc: 
+Impresión: 25/11/2025 15:39:00 
+Formato_Mensaje_de_Respuesta_v19 
+Página 20 de 25
+
+=== PAGE 21 ===
+[P1] 4. Tablas 
+4.1. Rechazo de Reporte 
+4.2. Rechazo de Sobre 
+COMPROBANTE FISCAL ELECTRÓNICO 
+Código 
+Motivos de rechazo de un Reporte 
+DGI 
+Receptor 
+R01 
+R02 
+R03 
+R04 
+R05 
+R06 
+Formato del archivo no es el indicado 
+No coincide RUC en Reporte, Certificado o envío 
+Firma o Certificado electrónicos no son válidos 
+No cumple validaciones según Formato de Reporte 
+La secuencia indicada en el reporte no es correcta 
+Fecha recepción no puede ser menor a fecha resumen 
+X 
+X 
+X 
+X 
+X 
+X 
+Código 
+Motivos de rechazo de un sobre 
+DGI 
+Receptor 
+S01 
+S02 
+S03 
+S04 
+S05 
+S06 
+S07 
+S08 
+………. 
+S20 
+Formato del archivo no es el indicado 
+No coincide RUC de Sobre, Certificado, envío o CFE 
+Certificado electrónico no es válido 
+No cumple validaciones según Formato de sobre 
+No coinciden cantidad CFE de carátula y contenido 
+No coinciden certificado de sobre y comprobantes 
+Sobre enviado supera el tamaño máximo admitido 
+Sobre enviado ya existe en los registros de DGI 
+Sobre enviado ya existe en los registros del receptor 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+Doc: 
+Impresión: 25/11/2025 15:39:00 
+Formato_Mensaje_de_Respuesta_v19 
+Página 21 de 25
+
+=== PAGE 22 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+4.3. Rechazo de CFE/Consulta de Comprobantes 
+Los códigos E01 a E15 corresponden a los motivos de rechazo de un CFE que DGI utiliza en sus mensajes de respuesta. 
+Los códigos E02 a E07, E10 a E12, y los códigos E20 a E60 (motivos de rechazo comercial) opcionalmente pueden ser usados por los receptores electrónicos en sus 
+mensajes de respuesta. 
+Código 
+Motivos de rechazo de un CFE 
+DGI Receptor 
+E01 
+E02 
+E03 
+E04 
+E05 
+E06 
+E07 
+E08 
+E09 
+E10 
+E11 
+E12 
+E13 
+E14 
+E15 
+….. 
+E20 
+E21 
+E22 
+E23 
+Tipo y Nº de CFE ya fue reportado como anulado 
+Tipo y Nº de CFE ya existe en los registros 
+Tipo y Nº de CFE no se corresponden con el CAE 
+Firma electrónica no es válida 
+No cumple validaciones (*) de Formato comprobantes 
+Importe informado en el CFE excede montos habituales 
+Fecha Firma de CFE no se corresponde con fecha CAE 
+No coincide RUC de CFE y Complemento Fiscal 
+RUC emisor y/o tipo de CFE no se corresponden con el CAE 
+Tipo de cambio no válido 
+Tipo de CAE especial del CFE no se corresponde con el CAE 
+Información en Zona de Referencia no existe en los registros 
+Tipo de CAE del CFE no se corresponde con el CAE utilizado 
+Irregularidades detectadas 
+Deudor contumaz sin informar situación 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+Orden de compra vencida 
+Mercadería en mal estado 
+Proveedor inhabilitado por organismo de contralor 
+Contraprestación no recibida 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+Doc: 
+Impresión: 25/11/2025 15:39:00 
+Formato_Mensaje_de_Respuesta_v19 
+Página 22 de 25
+
+=== PAGE 23 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+Código 
+Motivos de rechazo de un CFE 
+DGI Receptor 
+Diferencia precios y/o descuentos 
+Factura con error cálculos 
+Diferencia con plazos 
+E24 
+E25 
+E26 
+E27 
+E28 
+E29 
+E30 
+….. 
+E60 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+Doc: 
+Impresión: 25/11/2025 15:39:00 
+Formato_Mensaje_de_Respuesta_v19 
+Página 23 de 25
+
+=== PAGE 24 ===
+[P1] COMPROBANTE FISCAL ELECTRÓNICO 
+4.4. Observación de CFC5 
+Código 
+Motivos de observación de CFC 
+DGI Receptor 
+C03 
+C04 
+C05 
+C06 
+C08 
+C09 
+C10 
+C11 
+C12 
+C13 
+C14 
+C15 
+Constancia no autorizada según registros 
+Firma electrónica no es válida 
+No cumple validaciones (*) de Formato comprobantes 
+Importe informado en el CFC excede montos habituales 
+No coincide RUC de CFC y Complemento Fiscal 
+Tipo de CFC recibido no figura en la base de CFE certificados 
+Tipo de cambio no válido 
+Tipo de constancia especial del CFC no se corresponde con la 
+constancia 
+Información en Zona de Referencia no existe en nuestros 
+registros. 
+Tipo de constancia del CFC no se corresponde con la 
+constancia 
+Irregularidades detectadas 
+Deudor contumaz sin informar situación 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+X 
+5 Uso exclusivo de DGI 
+Doc: 
+Impresión: 25/11/2025 15:39:00 
+Formato_Mensaje_de_Respuesta_v19 
+Página 24 de 25
+
+=== PAGE 25 ===
+[P1] 4.5. Tipo de Comprobante 
+COMPROBANTE FISCAL ELECTRÓNICO 
+TIPO DE COMPROBANTE 
+CFE 
+e-Ticket 
+e-Factura 
+CÓDIGO 
+101 
+102 Nota de Crédito de e-Ticket 
+103 Nota de Débito de e-Ticket 
+111 
+112 Nota de Crédito de e-Factura 
+113 Nota de Débito de e-Factura 
+121 
+e-Factura Exportación 
+122 Nota de Crédito de e-Factura Exportación 
+123 Nota de Débito de e-Factura Exportación 
+124 
+131 
+132 Nota de Crédito de e-Ticket Venta por Cuenta Ajena 
+133 Nota de Débito de e-Ticket Venta por Cuenta Ajena 
+141 
+142 Nota de Crédito de e-Factura Venta por Cuenta Ajena 
+143 Nota de Débito de e-Factura Venta por Cuenta Ajena 
+151 
+152 Nota de Crédito de e-Boleta de entrada 
+153 Nota de Débito de e-Boleta de entrada 
+181 
+182 
+e-Remito de Exportación 
+e-Ticket Venta por Cuenta Ajena 
+e-Factura Venta por Cuenta Ajena 
+e-Remito 
+e-Resguardo 
+e-Boleta de entrada 
+CFC 
+e-Ticket Contingencia 
+e-Factura Contingencia 
+CÓDIGO 
+201 
+202 Nota de Crédito de e-Ticket Contingencia 
+203 Nota de Débito de e-Ticket Contingencia 
+211 
+212 Nota de Crédito de e-Factura Contingencia 
+213 Nota de Débito de e-Factura Contingencia 
+221 
+e-Factura Exportación Contingencia 
+222 Nota de Crédito de e-Factura Exportación Contingencia 
+223 Nota de Débito de e-Factura Exportación Contingencia 
+224 
+231 
+232 Nota de Crédito de e-Ticket Venta por Cuenta Ajena Contingencia 
+233 Nota de Débito de e-Ticket Venta por Cuenta Ajena Contingencia 
+241 
+242 Nota de Crédito de e-Factura Venta por Cuenta Ajena Contingencia 
+243 Nota de Débito de e-Factura Venta por Cuenta Ajena Contingencia 
+251 
+e-Boleta de entrada Contingencia 
+252 Nota de Crédito de e-Boleta de entrada 
+253 Nota de Débito de e-Boleta de entrada 
+281 
+282 
+e-Remito de Exportación Contingencia 
+e-Ticket Venta por Cuenta Ajena Contingencia 
+e-Remito Contingencia 
+e-Resguardo Contingencia 
+e-Factura Venta por Cuenta Ajena Contingencia 
+Doc: 
+Impresión: 25/11/2025 15:39:00 
+Formato_Mensaje_de_Respuesta_v19 
+Página 25 de 25
+

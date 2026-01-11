@@ -1,0 +1,591 @@
+SOURCE_PDF: /Users/sergiolazaro/Documents/GitHub/facturasimple/Fuentes-Gub.uy/Instructuvos-DGI/Instructivo_Actualizacion_Datos_SW_v03.pdf
+EXTRACTED_AT: 2026-01-11T16:27:33.049849
+PARAGRAPH_RULE: paragraphs are blocks separated by blank lines in extracted text; numbering restarts each page.
+
+=== PAGE 1 ===
+[P1] DDOOCCUUMMEENNTTOO FFUUNNCCIIOONNAALL 
+IINNSSTTRRUUCCTTIIVVOO 
+ AACCTTUUAALLIIZZAACCIIÓÓNN DDEE DDAATTOOSS 
+DDEE SSOOFFTTWWAARREE 
+CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+VVEERRSSIIÓÓNN 0033 -- 1177//1111//22002222
+
+=== PAGE 2 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+ÍÍNNDDIICCEE 
+1.- INTRODUCCIÓN ...................................................................................................... 3 
+2.- ACTUALIZACIÓN DE DATOS ................................................................................. 3 
+2.1.- Ingreso Desarrollo propio .................................................................................................................6 
+2.2.- Ingreso Software externo ..................................................................................................................7 
+2.2.1.- Proveedor local ................................................................................................................................7 
+2.2.2.- Proveedor del exterior .................................................................................................................. 13 
+2.2.3.- Modificación de datos informados .............................................................................................. 19 
+2.2.4.- Baja de proveedor de Software ................................................................................................... 21 
+3.- CONSULTAS .......................................................................................................... 24 
+4.- ANEXOS ................................................................................................................. 27 
+4.1.- Tabla Soluciones de Software ....................................................................................................... 27 
+4.2.- Tabla Procesos de Facturación Electrónica ................................................................................ 28 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 2 de 29
+
+=== PAGE 3 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+1.- Introducción 
+La Resolución de DGI Nº 168/2021 estableció la obligación a los emisores electrónicos de 
+informar todas las soluciones de software que integran sus procesos de facturación y/o 
+conservación de Comprobantes Fiscales Electrónicos (CFE). 
+La información deberá presentarse exclusivamente por los contribuyentes autorizados como 
+emisores electrónicos en el portal e-Factura del sitio Web de DGI, en los ambientes de 
+Homologación o Producción a través de la aplicación Actualización de datos. 
+La obligación se genera una vez adquirida la calidad de emisor electrónico o de producirse 
+modificaciones en la información ya declarada, existiendo plazo para la comunicación hasta el 
+segundo mes siguiente de producido el cambio. 
+2.- Actualización de datos 
+Ingresando al portal e-Factura: https://www.efactura.dgi.gub.uy/ se despliega la siguiente 
+pantalla donde debe completar el número de RUT, C.I. y clave asignada para el ingreso a los 
+ambientes Homologación o Producción: 
+Luego que presione el botón “Ingresar” y habiendo seleccionado el ambiente de Homologación 
+o de Producción, debe elegir la opción “Actualización de datos”: 
+Figura 1 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 3 de 29
+
+=== PAGE 4 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+El sistema despliega tres opciones, debiendo seleccionar la opción: “Actualización de otros 
+datos para CFE” para actualizar los datos del Software: 
+Figura 2 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 4 de 29 
+Figura 3
+
+=== PAGE 5 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+Seleccionada la opción “Actualización de otros datos para CFE” se despliega una pantalla con 
+los posibles datos a actualizar y en particular el Software: 
+Figura 4 
+El sistema muestra la información ya declarada por el emisor (“Software agregados”) y con el 
+título “Cuadros Informativos Declaración proveedores de SW” la información enviada a DGI por 
+los proveedores de software correspondiente a su RUC. 
+En el caso que ningún proveedor haya declarado como cliente a la empresa, el cuadro viene 
+vacío (Figura 4), mientras que si existe información se muestra el RUC del proveedor 
+detallando los datos de software y los procesos que cubre (Figura 5). 
+xxxxxxxxxxxx 
+Figura 5 
+Este cuadro se expone sólo a título informativo ya que la empresa debe ingresar los datos del 
+Software contratado y puede no coincidir con lo informado por los proveedores. 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 5 de 29
+
+=== PAGE 6 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+2.1.- Ingreso Desarrollo propio 
+Seleccionado el dato Software y la opción “Modificar” (Figura 4), el sistema despliega la 
+siguiente pantalla con la opción predeterminada Desarrollo Propio mostrando, la información ya 
+declarada por el emisor (“Software agregados”): 
+Figura 6 
+Si la empresa tiene que informar un Software de desarrollo propio no declarado, basta con 
+dejar marcada la opción “Desarrollo Propio” y presionar “Agregar Software”. 
+Si ya existe un desarrollo propio declarado (Figura 6), no corresponde actualizar la información 
+ya declarada, pues el sistema no solicita detalles con respecto al Software desarrollado por el 
+propio contribuyente. 
+En caso que no exista ningún otro dato para actualizar, debe presionar el botón “Confirmar 
+datos” para confirmar el ingreso de los datos y que quede grabada la información. 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 6 de 29
+
+=== PAGE 7 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+2.2.- Ingreso Software externo 
+Para poder ingresar un Software externo, debe seleccionar el dato Software y la opción 
+“Modificar”. El sistema muestra la opción predeterminada Desarrollo Propio, la que debe 
+cambiar por la opción Externo (Figuras 6 y 7). 
+El sistema despliega dos opciones de Software externo: 
+ Proveedor local 
+ Proveedor del exterior. 
+2.2.1.- Proveedor local 
+Si selecciona “Proveedor local”, debe completar los datos generales referentes al proveedor y 
+al Software contratado: 
+ Nombre del Software 
+ Versión 
+ RUC del proveedor 
+Figura 7 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 7 de 29
+
+=== PAGE 8 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+2.2.1.1 Ingreso información de la solución de Software: 
+Para ingresar la información de la solución de software debe presionar el botón "Agregar 
+Software” (Figura 7). 
+El sistema muestra la Denominación correspondiente al RUC del proveedor ingresado y 
+despliega la siguiente pantalla: 
+xxxxxxxxxxxx 
+Zy SA 
+Figura 8 
+Para ingresar los datos de la solución debe presionar el botón “Nueva Solución” (Figura 8) y 
+completar la siguiente información (Figura 9): 
+ Solución: según opciones de ingreso disponibles en Tabla de soluciones de software. 
+ Código de Producto: código asignado por el proveedor al software contratado. 
+ Nombre: nombre asignado por el proveedor al software contratado. 
+ Fecha desde: fecha en que contrató el software. 
+ Fecha hasta: si existe, fecha de culminación del servicio. 
+xxxxxxxxxxxx 
+Zy SA 
+Figura 9 
+Seleccionando el botón 
+ “Validar Solución”, el sistema valida los datos ingresados de la 
+solución de software y le habilita el ingreso de los datos del proceso que cubre la solución de 
+software declarada. 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 8 de 29
+
+=== PAGE 9 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+2.2.1.2 Ingreso información del o los procesos de la solución de Software: 
+Para ingresar los datos del proceso debe presionar el botón “Nuevo Proceso” (Figura 10), y 
+completar la siguiente información correspondiente a los procesos que cubre la solución de 
+software declarada (Figura 11): 
+ Proceso: según opciones de ingreso disponibles en Tabla de procesos de facturación 
+electrónica. 
+ Fecha desde: fecha desde que el software contratado cubre el proceso ingresado. 
+ Fecha hasta: si existe, fecha en que el proceso no es más cubierto por el software. 
+xxxxxxxxxxxx 
+Zy SA 
+Figura 10 
+Seleccionando el botón 
+ “Validar Proceso” (Figura 11), el sistema valida los datos ingresados 
+y teniendo en cuenta que la solución de software puede cubrir más de un proceso, le habilita 
+nuevamente los campos para el ingreso de la información de un nuevo proceso, debiendo 
+repetir el procedimiento antes detallado. 
+xxxxxxxxxxxx 
+Zy SA 
+Figura 11 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 9 de 29
+
+=== PAGE 10 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+2.2.1.3 Ingreso de la información de más de una solución de Software y sus 
+correspondientes procesos para un mismo RUC proveedor: 
+En caso de tener más de una solución de software contratada con el mismo RUC de proveedor 
+ingresado, corresponde repetir los pasos antes detallados hasta haber completado toda la 
+información de las soluciones y procesos contratados con dicho proveedor. 
+Una vez ingresada toda la información, debe presionar “Confirmar” (Figura 12). 
+xxxxxxxxxxxx 
+Zy SA 
+El sistema vuelve a la página principal de Actualización de Datos. Si desea verificar la 
+información ingresada puede presionar el botón “Ver detalle de de soluciones y procesos” 
+(Figura 13). 
+Figura 12 
+XXXXXXXXXXXX 
+Zy SA 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 10 de 29 
+Figura 13
+
+=== PAGE 11 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+2.2.1.4 Ingreso de la información correspondiente a servicios de Software 
+correspondientes a otro proveedor de Software: 
+Al aparecer la selección predeterminada “Desarrollo propio”, debe seleccionar nuevamente la 
+opción “Externo”/Proveedor Local” e ingresar los datos del proveedor y del Software contratado 
+(soluciones y procesos). 
+A tales efectos deberá seguir el procedimiento antes detallado hasta completar la información 
+de este proveedor y así sucesivamente en caso de tener servicios contratados con algún otro 
+proveedor. 
+Podrá en esta instancia también declarar un proveedor de software del exterior, debiendo 
+seguir el procedimiento detallado en el punto 2.2.2. 
+2.2.1.5 Confirmación de la actualización de datos: 
+Una vez ingresadas todas las actualizaciones relativas al software y en caso que no 
+corresponda actualizar ninguno de los restantes datos, debe presionar el botón “Confirmar 
+datos” (Figura 14) para confirmar el ingreso de los datos y que quede grabada la información. 
+XXXXXXXXXXXX 
+Zy SA 
+Figura 14 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 11 de 29
+
+=== PAGE 12 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+El sistema confirma en pantalla que la actualización de datos fue aceptada e ingresada en 
+nuestros sistemas (Figura 15), pudiendo imprimir la constancia del cambio (Figura 16). 
+XXXXXXXXXXXX 
+Figura 15 
+xxxxxxxxxxxx 
+Debe presionar “No” para finalizar el ingreso de datos y “Si” para actualizar algún otro dato 
+(Figura 15). 
+Figura 16 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 12 de 29
+
+=== PAGE 13 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+2.2.2.- Proveedor del exterior 
+Si selecciona “Proveedor del exterior”, debe completar los datos generales referentes al 
+proveedor y al Software contratado: 
+ Nombre del Software 
+ Versión 
+ Nombre del Proveedor 
+Figura 17 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 13 de 29
+
+=== PAGE 14 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+2.2.2.1 Ingreso información de la solución de Software: 
+Para ingresar la información de la solución de software debe presionar el botón “Agregar 
+Software” (Figura 17) y el sistema despliega: 
+Figura 18 
+Para ingresar los datos de la solución debe presionar el botón “Nueva Solución” (Figura 18) y 
+completar la siguiente información (Figura 19): 
+ Solución: según opciones de ingreso disponibles en Tabla de soluciones de software. 
+ Código de Producto: código asignado por el proveedor al software contratado. 
+ Nombre: nombre asignado por el proveedor al software contratado. 
+ Fecha desde: fecha en que contrató el software. 
+ Fecha hasta: si existe, fecha de culminación del servicio. 
+Figura 19 
+Seleccionando el botón 
+ “Validar Solución”, el sistema valida los datos ingresados de la 
+solución de software y le habilita el ingreso de los datos del proceso que cubre la solución de 
+software declarada. 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 14 de 29
+
+=== PAGE 15 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+2.2.2.2 Ingreso información del o los procesos de la solución de Software: 
+Para ingresar los datos del proceso debe presionar el botón “Nuevo Proceso” (Figura 20), y 
+completar la siguiente información correspondiente a los procesos que cubre la solución de 
+software declarada (Figura 21): 
+ Proceso: según opciones de ingreso disponibles en Tabla de procesos de facturación 
+electrónica. 
+ Fecha desde: fecha desde que el software contratado cubre el proceso ingresado. 
+ Fecha hasta: si existe, fecha en que el proceso no es más cubierto por el software. 
+Figura 20 
+Seleccionando el botón 
+ “Validar Proceso” (Figura 21), el sistema valida los datos ingresados 
+y teniendo en cuenta que la solución de software puede cubrir más de un proceso, le habilita 
+nuevamente los campos para el ingreso de la información de un nuevo proceso, debiendo 
+repetir el procedimiento antes detallado. 
+Figura 21 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 15 de 29
+
+=== PAGE 16 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+2.2.2.3 Ingreso de la información de más de una solución de Software y sus 
+correspondientes procesos para un mismo proveedor del exterior: 
+En caso de tener más de una solución de software contratada con el mismo proveedor del 
+exterior ingresado, corresponde repetir los pasos antes detallados hasta haber completado 
+toda la información de las soluciones y procesos contratados con dicho proveedor. 
+Una vez ingresada toda la información, debe presionar “Confirmar” (Figura 22). 
+El sistema vuelve a la página principal de Actualización de Datos. Si desea verificar la 
+información ingresada puede presionar el botón “Ver detalle de de soluciones y procesos” 
+(Figura 23). 
+Figura 22 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 16 de 29 
+Figura 23
+
+=== PAGE 17 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+2.2.2.4 Ingreso de la información correspondiente a servicios de Software 
+correspondientes a otro proveedor de Software: 
+Al aparecer la selección predeterminada “Desarrollo propio”, debe seleccionar nuevamente la 
+opción “Externo”/”Proveedor del Exterior” e ingresar los datos del proveedor y del Software 
+contratado (soluciones y procesos). 
+A tales efectos deberá seguir el procedimiento antes detallado hasta completar la información 
+de este proveedor y así sucesivamente en caso de tener servicios contratados con algún otro 
+proveedor. 
+Podrá en esta instancia también declarar un proveedor de software local, debiendo seguir el 
+procedimiento detallado en el punto 2.2.1. 
+2.2.2.5 Confirmación de la actualización de datos: 
+Una vez ingresadas todas las actualizaciones relativas al software y en caso que no 
+corresponda actualizar ninguno de los restantes datos, debe presionar el botón “Confirmar 
+datos” (Figura 24) para confirmar el ingreso de los datos y que quede grabada la información. 
+Figura 24 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 17 de 29
+
+=== PAGE 18 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+El sistema confirma en pantalla que la actualización de datos fue aceptada e ingresada en 
+nuestros sistemas (Figura 25), pudiendo imprimir la constancia del cambio (Figura 26). 
+XXXXXXXXXXX 
+Figura 25 
+Figura 26 
+Debe presionar “No” para finalizar el ingreso de datos y “Si” para actualizar algún otro dato 
+(Figura 25). 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 18 de 29
+
+=== PAGE 19 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+2.2.3.- Modificación de datos informados 
+En caso de tener que realizar una modificación a los datos declarados de un Proveedor local o 
+del exterior, debe seleccionar el dato Software y la opción “Modificar” (Figura 4) y 
+posteriormente la opción “Actualizar” correspondiente al Software a modificar (Figura 27). 
+Figura 27 
+El sistema despliega los datos declarados para el proveedor seleccionado permitiendo las 
+modificaciones deseadas. Para visualizar los procesos declarados deberá presionar la opción 
+“Ver Procesos” (Figura 28). 
+Seleccionando el botón “Modificar” (Figura 28) el sistema permite cambiar: Nombre del 
+Software, versión y Ruc del proveedor local o Nombre del proveedor del exterior (Figura 29). 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 19 de 29
+
+=== PAGE 20 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+Figura 28 
+Figura 29 
+Para modificar datos de soluciones y/o procesos debe presionar el botón 
+correspondiente. 
+Figura 30 
+Si necesita declarar una solución nueva o un proceso nuevo, debe realizarlo a través de las 
+opciones “Nueva Solución” o “Nuevo Proceso”. 
+Posteriormente debe seguir el procedimiento antes detallado para la confirmación de 
+actualización de datos (Puntos 2.2.1.5 y/o 2.2.2.5) 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 20 de 29
+
+=== PAGE 21 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+2.2.4.- Baja de proveedor de Software 
+Para realizar la baja de un proveedor de software debe seguir los siguientes pasos: 
+2.2.4.1 Fecha de baja de la solución de software y sus procesos 
+Debe realizar una actualización de datos ingresando las fechas de la baja, siguiendo el 
+procedimiento detallado en el punto 2.2.3 de este documento. 
+2.2.4.2 Baja del Proveedor de Software 
+Una vez confirmado el ingreso de los datos de las fechas de baja, corresponde realizar la baja 
+del proveedor de Software. Cuando el sistema le consulta si desea actualizar otros datos en la 
+pantalla “Solicitud de Actualización ingresada” (Figura 31), debe presionar “Si”: 
+Figura 31 
+El sistema despliega la pantalla inicial donde da la opción de seleccionar “Actualización de 
+otros datos para CFE” (Figura 3) y en la pantalla siguiente el sistema despliega la información 
+ya declarada por el emisor en “Software agregados”. 
+Importante: 
+Antes de dar de baja a un proveedor de Software, se recomienda verificar a través de la opción 
+“Ver detalle soluciones y procesos” (Figura 32) que los datos del proveedor a bajar son 
+correctos y que todas las soluciones y procesos tienen fecha de baja (Figura 33). 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 21 de 29
+
+=== PAGE 22 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+Figura 32 
+Figura 33 
+Para dar de baja al proveedor debe presionar el botón la opción “Eliminar”, que en pantalla se 
+observa como una cruz y posteriormente “Confirmar Datos” (Figura 34) para que los datos 
+queden grabados. 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 22 de 29
+
+=== PAGE 23 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+El sistema confirma en pantalla que la actualización de datos fue aceptada e ingresada en 
+nuestros sistemas, pudiendo imprimir la constancia del cambio. 
+Figura 34 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 23 de 29
+
+=== PAGE 24 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+3.- Consultas 
+Ingresando al portal e-Factura: https://www.efactura.dgi.gub.uy/ a la opción: “Datos declarados” 
+de los ambientes Homologación o Producción (Figura 35), puede consultar los datos 
+ingresados actuales e históricos (Figura 36). 
+Figura 35 
+Figura 36 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 24 de 29
+
+=== PAGE 25 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+Ingresando a la opción “Ver histórico”, el sistema muestra todos los cambios realizados con las 
+correspondientes fechas de inicio y fin. 
+Se observa en primer lugar el dato vigente con su correspondiente fecha de declaración y sin 
+fecha de fin. 
+Presionando sobre el link de la columna “Inicio Vigencia Software” (Figura 37) muestra los 
+datos de los proveedores de software y datos generales del Software declarado por el emisor 
+(Figura 38). 
+Figura 37 
+El detalle de las soluciones y procesos que cubre el software declarado se puede consultar 
+presionando sobre el link “Ver detalle soluciones y procesos” (Figura 39). 
+Figura 38 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 25 de 29
+
+=== PAGE 26 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+Figura 39 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 26 de 29
+
+=== PAGE 27 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+4.- Anexos 
+Para facilitar el ingreso de datos, adjuntamos las tablas con las distintas opciones de 
+soluciones de Software y de los procesos intermedios que deben ejecutarse para cumplir 
+correctamente con lo dispuesto por la Resolución de DGI Nº 798/2012, con una breve 
+definición de cada opción. 
+4.1.- Tabla Soluciones de Software 
+Soluciones de software 
+ERP – Sistema de gestión integral que resuelve toda o casi toda la operativa 
+Software de gestión 
+Software de facturación 
+Caja - Punto de venta 
+POS con incorporación de factura electrónica 
+E-commerce: venta Web 
+1 
+2 
+3 
+4 
+5 
+6 
+7 Móvil: facturación a través del celular 
+8 
+9 
+Soluciones móviles (tablets, PDAs, etc.) 
+Batch: emisión masiva de lotes 
+10 Middleware 
+99 Otros 
+1) ERP: Sistema de gestión integral que resuelve toda o casi toda la operativa de una 
+empresa, pero no necesariamente provee o cuenta con un sistema middleware propio 
+de facturación electrónica. 
+2) Software de gestión: Se trata de un sistema que cubre algunos procesos de la 
+empresa, por ejemplo facturación, stock. 
+3) Software de facturación: Sin llegar a ser un software de gestión, es un sistema 
+utilizado para resolver la generación de documentación relacionada al proceso de 
+facturación de la empresa. Existe la posibilidad que reciba los datos para la generación 
+de los CFEs de un sistema de gestión. 
+4) Caja – Punto de venta: Sistema tradicional de caja. Habitualmente interactúan con 
+middlewares de facturación electrónica. 
+5) POS con incorporación de factura electrónica: Pequeña terminal que se utiliza para 
+autorizar pagos de tarjetas de crédito y débito, además de la generación de CFEs. 
+Interactúan con un middlewares de facturación electrónica. 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 27 de 29
+
+=== PAGE 28 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+6) E-commerce: Sistemas de factura electrónica que solucionan la generación de CFEs 
+por ventas realizadas en la Web, tiendas electrónicas y venta online. 
+7) Móvil: Facturación a través del celular. Habitualmente interactúan con un middleware 
+de facturación electrónica. 
+8) Soluciones móviles (tablets, PDAs, etc.): Facturación a través de otros dispositivos 
+móviles. Habitualmente interactúan con un middleware de facturación electrónica. 
+9) Batch: Procesos automáticos que permiten emisión masiva y en lotes. Son utilizados 
+principalmente cuando existen grandes volúmenes de facturación y su utilización 
+habitualmente es fuera de línea. 
+10) Middleware: Software que asiste a otras aplicaciones o sistemas del contribuyente para 
+implementar funcionalidades como validación, numeración, firma de CFE además de la 
+interacción con DGI y otros emisores electrónicos. Consolida los CFE del contribuyente 
+en un único punto central y construye el reporte diario a DGI. 
+99) Otros: Cualquier otro Software que actúe en el sistema de facturación electrónica y no 
+pueda incluirse en las anteriores opciones. 
+4.2.- Tabla Procesos de Facturación Electrónica 
+Procesos de facturación electrónica 
+1 
+Todo el proceso (origen de datos, generación, firma, envío, impresión, 
+almacenamiento y publicación) 
+2 Origen de los datos para la generación del comprobante fiscal electrónico. 
+3 Generación del xml 
+4 
+5 
+6 
+7 
+8 
+9 
+Servicio de Firma de CFE 
+Envío del xml 
+Envío de reporte 
+Servicio de representación impresa 
+Almacenamiento de xml 
+Servicio de publicación de CFE en la Web 
+99 Otro 
+1) Todo el proceso: Cuando el Software cubre desde el origen de datos, generación del 
+xml, firma del mismo, envío, impresión del CFE, almacenamiento del mismo y el servicio 
+de publicación de los comprobantes en la Web. 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 28 de 29
+
+=== PAGE 29 ===
+[P1] CCOOMMPPRROOBBAANNTTEE FFIISSCCAALL EELLEECCTTRRÓÓNNIICCOO 
+2) Origen de los datos para la generación del comprobante fiscal electrónico: 
+Proceso por el cual se obtienen los datos necesarios para la generación del xml 
+correspondiente al comprobante. 
+3) Generación del xml: Proceso que permite la creación del archivo xml. 
+4) Servicio de firma del CFE: Proceso de firma electrónica avanzada a los archivos xml 
+relativos a los comprobantes. 
+5) Envío del xml: Cuando el Software cubre el envío el xml correspondiente a los CFE a la 
+DGI. 
+6) Envío de reporte: Cuando el Software cubre el envío del reporte diario a la DGI. 
+7) Servicio de representación impresa: Proceso de impresión en papel del contenido de 
+un CFE, cumpliendo con los requisitos mínimos establecidos por la DGI. 
+8) Almacenamiento de xml: Proceso que cumple con la obligación de almacenar y 
+conservar en forma electrónica los CFE emitidos y recibidos. 
+9) Servicio de publicación de CFE: Proceso que cumple con la obligación de publicar 
+establecida en la Resolución de DGI 798/2012. 
+99) Otro: cualquier otro proceso no detallado en los ítems anteriores. 
+Importante: Todos los procesos del 2 al 9 deben ser cubiertos por algún Software, pues son 
+obligaciones del sistema de factura electrónica. 
+Doc: 
+Impresión: 17/11/2022 10:01:00 
+Instructivo_Actualizacion_Datos_SW_v03.doc 
+Página 29 de 29
+

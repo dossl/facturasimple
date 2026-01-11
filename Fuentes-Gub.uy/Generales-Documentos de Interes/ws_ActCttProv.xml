@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap11="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp200409="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsp200607="http://www.w3.org/2006/07/ws-policy" xmlns:ns0="http://dgi.gub.uy" targetNamespace="http://dgi.gub.uy">
+<wsdl:types xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:schema>
+<xsd:import schemaLocation="ws_ActCttProv.xsd1.xsd" namespace="http://dgi.gub.uy"/></xsd:schema></wsdl:types>
+<wsdl:message name="WS_eFacSolicitud.EFACSOLACTUALIZARCONTACTOSoapIn">
+<wsdl:part name="parameters" element="xsns:WS_eFacSolicitud.EFACSOLACTUALIZARCONTACTO" xmlns:xsns="http://dgi.gub.uy"/></wsdl:message>
+<wsdl:message name="WS_eFacSolicitud.EFACSOLACTUALIZARCONTACTOSoapOut">
+<wsdl:part name="parameters" element="xsns:WS_eFacSolicitud.EFACSOLACTUALIZARCONTACTOResponse" xmlns:xsns="http://dgi.gub.uy"/></wsdl:message>
+<wsdl:portType name="WS_eFacSolicitudSoapPort">
+<wsdl:operation name="EFACSOLACTUALIZARCONTACTO">
+<wsdl:input name="EFACSOLACTUALIZARCONTACTORequest" message="ns0:WS_eFacSolicitud.EFACSOLACTUALIZARCONTACTOSoapIn"/>
+<wsdl:output name="EFACSOLACTUALIZARCONTACTOResponse" message="ns0:WS_eFacSolicitud.EFACSOLACTUALIZARCONTACTOSoapOut"/></wsdl:operation></wsdl:portType>
+<wsdl:binding name="WS_eFacSolicitudSoapBinding" type="ns0:WS_eFacSolicitudSoapPort">
+<soap11:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+<wsdl:operation name="EFACSOLACTUALIZARCONTACTO">
+<soap11:operation soapAction="http://dgi.gub.uyaction/AWS_EFACSOLICITUD.EFACSOLACTUALIZARCONTACTO" style="document"/>
+<wsdl:input name="EFACSOLACTUALIZARCONTACTORequest">
+<soap11:body use="literal"/></wsdl:input>
+<wsdl:output name="EFACSOLACTUALIZARCONTACTOResponse">
+<soap11:body use="literal"/></wsdl:output></wsdl:operation></wsdl:binding>
+<wsdl:service name="WS_eFacSolicitud">
+<wsp:PolicyReference URI="#policy0" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"/>
+<wsdl:port name="WS_eFacSolicitudSoapPort" binding="ns0:WS_eFacSolicitudSoapBinding">
+<soap11:address location="https://efactura.dgi.gub.uy:6450/efactura/ws_ActCttProv"/></wsdl:port>
+<wsdl:port name="WS_eFacSolicitudSoapPort.1" binding="ns0:WS_eFacSolicitudSoapBinding">
+<soap11:address location="https://efactura.dgi.gub.uy:6450/efactura/ws_ActCttProv"/></wsdl:port></wsdl:service>
+<wsp:Policy wsu:Id="policy0" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+<wsp:ExactlyOne>
+<wsp:All>
+<dpe:summary xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200512" xmlns:dpe="http://www.datapower.com/extensions">
+    
+<dppolicy:domain xmlns:dppolicy="http://www.datapower.com/policy">
+      http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200512
+    </dppolicy:domain>
+    
+<description>
+      Implements WS Security Policy 1.1 - support SignedParts
+    </description>
+  </dpe:summary>
+<sp:SignedParts xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200512">
+        
+<sp:Body/>
+      </sp:SignedParts></wsp:All></wsp:ExactlyOne></wsp:Policy></wsdl:definitions>
